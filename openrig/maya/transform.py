@@ -2,7 +2,7 @@
 import maya.cmds as mc
 import maya.api.OpenMaya as om2
 import math
-import showtools.maya.common as common
+import openrig.shared.common as common
 import numpy
 
 def align(source, target):

@@ -6,15 +6,15 @@ from collections import OrderedDict
 import maya.cmds as mc
 
 # showtools imports
-import showtools.maya.attr
-import showtools.maya.hierarchy
-import showtools.maya.transform
-import showtools.maya.common
-import showtools.maya.color
-import showtools.maya.shader
-import showtools.shared.core.color
-import showtools.maya.curve
-import showtools.maya.data.curve_data
+import openrig.maya.attr
+import openrig.maya.hierarchy
+import openrig.maya.transform
+import openrig.shared.common
+import openrig.maya.color
+import openrig.maya.shader
+import openrig.shared.color
+import openrig.maya.curve
+import openrig.maya.data.curve_data
 
 DEBUG = False
 SHAPES = ['cube', 'sphere', 'cylinder', 'circle', 'square']
@@ -62,7 +62,7 @@ def createControl(name, parent=None, hierarchy=None, position=None, orientation=
             hierarchy = [hierarchy]
         if isinstance(hierarchy, tuple):
             hierarchy = list(hierarchy)
-        hierarchyObjects = showtools.maya.hierarchy.create(names=hierarchy, parent=parent)
+        hierarchyObjects = openrig.maya.hierarchy.create(names=hierarchy, parent=parent)
         parent = hierarchyObjects[-1]
     
     # create control
@@ -82,7 +82,7 @@ def createControl(name, parent=None, hierarchy=None, position=None, orientation=
     if handle:
         mc.setAttr(control + '.displayHandle', True)
         if color:
-            showtools.maya.color.setOverrideColor(objects=control, color=color)
+            openrig.maya.color.setOverrideColor(objects=control, color=color)
     
     # add control attr
     addControlAttr(control)
@@ -159,7 +159,7 @@ def createControlForJoint(name, joint, hierarchy=None, parent=None, constraintPa
         parentConstraint = mc.parentConstraint(constraintParent, nul, mo=True)
 
     # orient to joint
-    showtools.maya.transform.alignRotate(ort, joint)
+    openrig.maya.transform.alignRotate(ort, joint)
 
     # constrain joint
     pointConstraint = mc.pointConstraint(control, joint)
@@ -286,7 +286,7 @@ def addRigControl(rigControl, parent):
     # create or instance rigControl
     if not mc.objExists(rigControl):
         rigControl = mc.createNode('locator', n=rigControl, p=parent)
-        showtools.maya.attr.lockAndHideAttrs(rigControl, ['lpx', 'lpy', 'lpz', 'lsx', 'lsy', 'lsz'])
+        openrig.maya.attr.lockAndHideAttrs(rigControl, ['lpx', 'lpy', 'lpz', 'lsx', 'lsy', 'lsz'])
         mc.hide(rigControl)
     else:
         mc.parent(rigControl, parent, add=True, shape=True)
@@ -313,13 +313,13 @@ def setControlColor(control, color, transparency=0.5, shaderType='lambert'):
     """
     colorName = str()
     if not isinstance(color, basestring):
-        rgb = showtools.shared.core.color.percent_to_rgb(color)
+        rgb = openrig.shared.core.color.percent_to_rgb(color)
         if rgb:
-            colorName = showtools.shared.core.color.rgb_to_name(rgb)
+            colorName = openrig.shared.core.color.rgb_to_name(rgb)
             if colorName:
                 colorName = colorName.lower()
     name = (colorName or str(color)) + '_controlMat'
-    shader = showtools.maya.shader.createShader(name=name,
+    shader = openrig.maya.shader.createShader(name=name,
                                                 shaderType=shaderType,
                                                 color=color,
                                                 transparency=transparency,
@@ -333,7 +333,7 @@ def setControlColor(control, color, transparency=0.5, shaderType='lambert'):
 # new stuff to talk about.
 #-------------------------------------------------------------------
 def create(name="control", controlType = "square", hierarchy=['nul'], position=[0,0,0],
-        rotation=[0,0,0], hideAttrs=['v'], parent=None, color=showtools.maya.common.BLUE,
+        rotation=[0,0,0], hideAttrs=['v'], parent=None, color=openrig.shared.common.BLUE,
         transformType="transform", type='', rotateOrder='xyz', pickface=False):
     '''
     This function will create a control hierarchy based on the arguments that are passed in. 
@@ -371,17 +371,17 @@ def create(name="control", controlType = "square", hierarchy=['nul'], position=[
 
 
     '''
-    curveData = showtools.maya.data.curve_data.CurveData()
+    curveData = openrig.maya.data.curve_data.CurveData()
     curveData.read(CONTROLPATH)
     data = curveData.getData()
     if data.has_key(controlType):
         shapeList = data[controlType]["shapes"].keys()
         for shape in shapeList:
             if shape == shapeList[0]:
-                control = showtools.maya.curve.createCurveFromPoints(data[controlType]["shapes"][shape]['cvPositions'],
+                control = openrig.maya.curve.createCurveFromPoints(data[controlType]["shapes"][shape]['cvPositions'],
                     degree=data[controlType]['shapes'][shape]['degree'],name=name, transformType=transformType)
                 continue
-            curve = showtools.maya.curve.createCurveFromPoints(data[controlType]["shapes"][shape]['cvPositions'],
+            curve = openrig.maya.curve.createCurveFromPoints(data[controlType]["shapes"][shape]['cvPositions'],
                     degree=data[controlType]['shapes'][shape]['degree'],name=name, transformType=transformType)
             curveShape = mc.listRelatives(curve, c=True, shapes=True)[0]
             mc.parent(curveShape, control, r=True, s=True)
@@ -467,9 +467,9 @@ def tagAsControl(ctrl, type=''):
     if not isinstance(ctrl, (tuple,list)):
         if not isinstance(ctrl, basestring):
             raise TypeError('{0} must be of type str, unicode, or list'.format(ctrl))
-        ctrls = showtools.maya.common.toList(ctrl)
+        ctrls = openrig.shared.common.toList(ctrl)
     else:
-        ctrls = showtools.maya.common.toList(ctrl)
+        ctrls = openrig.shared.common.toList(ctrl)
 
     for ctrl in ctrls:
         tagAttr = '{}.__control__'.format(ctrl)
@@ -490,9 +490,9 @@ def untagAsControl(ctrl):
     if not isinstance(ctrl, (tuple,list)):
         if not isinstance(ctrl, basestring):
             raise TypeError('{0} must be of type str, unicode, or list'.format(ctrl))
-        ctrls = showtools.maya.common.toList(ctrl)
+        ctrls = openrig.shared.common.toList(ctrl)
     else:
-        ctrls = showtools.maya.common.toList(ctrl)
+        ctrls = openrig.shared.common.toList(ctrl)
 
     for ctrl in ctrls:
         userAttributes = mc.listAttr(ctrl, ud=True) or list()
@@ -527,8 +527,8 @@ def setPoseAttr(controls, poseAttr=0):
     already exist. It will just overwrite it.
 
     .. example:
-        setPoseAttr(showtools.maya.riglib.control.getControls())
-        setPoseAttr(showtools.maya.riglib.control.getControls(),1)
+        setPoseAttr(openrig.maya.riglib.control.getControls())
+        setPoseAttr(openrig.maya.riglib.control.getControls(),1)
 
     :param controls: list of controls that you want to set pose on
     :type controls: str | list
@@ -537,7 +537,7 @@ def setPoseAttr(controls, poseAttr=0):
     :type poseAttr: int
     '''
     # make sure the controls are set as a list.
-    controls = showtools.maya.common.toList(controls)
+    controls = openrig.shared.common.toList(controls)
     skipAttrs = ("message")
     skipAttrList = ["ikfk_switch"]
     for ctrl in controls:
@@ -563,8 +563,8 @@ def toPoseAttr(controls, poseAttr=0):
     This will set the pose based on the way it was stored using setPoseAttr
 
     .. example:
-        toPoseAttr(showtools.maya.riglib.control.getControls())
-        toPoseAttr(showtools.maya.riglib.control.getControls(),1)
+        toPoseAttr(openrig.maya.riglib.control.getControls())
+        toPoseAttr(openrig.maya.riglib.control.getControls(),1)
 
     :param controls: list of controls that you want to set pose on
     :type controls: str | list
@@ -573,7 +573,7 @@ def toPoseAttr(controls, poseAttr=0):
     :type poseAttr: int
     '''
     # Make sure the controls are a list.
-    controls = showtools.maya.common.toList(controls)
+    controls = openrig.shared.common.toList(controls)
     
     # loop throught the controls and try and set the attributes back to the way they were stored.
     for ctrl in controls:
@@ -621,14 +621,14 @@ def translateShape (ctrl, translation = (0.0, 0.0, 0.0), index = 0 , world = Fal
         mc.move (translation [0],
                 translation [1],
                 translation [2],
-                showtools.maya.curve.getCVs (shape),
+                openrig.maya.curve.getCVs (shape),
                 relative = True,
                 worldSpace = True)
     else:
         mc.move (translation [0],
                 translation [1],
                 translation [2],
-                showtools.maya.curve.getCVs (shape),
+                openrig.maya.curve.getCVs (shape),
                 relative = True,
                 objectSpace = True)
 
@@ -652,7 +652,7 @@ def rotateShape (ctrl, rotation = (0.0, 0.0, 0.0), index = 0):
     mc.rotate (rotation [0],
             rotation [1],
             rotation [2],
-            showtools.maya.curve.getCVs (shape),
+            openrig.maya.curve.getCVs (shape),
             relative = True,
             objectSpace = True)
 
@@ -676,7 +676,7 @@ def scaleShape (ctrl, scale = [1, 1, 1], index = 0):
     mc.scale (scale [0],
             scale [1],
             scale [2],
-            showtools.maya.curve.getCVs (shape),
+            openrig.maya.curve.getCVs (shape),
             relative = True )
 
 def getShape(ctrl, index = 0):
@@ -737,18 +737,18 @@ def displayLine(point1, point2, name = 'ctrlLine#', parent = str(), displayType=
     pointList = (pnt1,pnt2)
 
     #create display line from pointList
-    displayLine = showtools.maya.curve.createCurveFromPoints(pointList, degree = 1, name = name)
+    displayLine = openrig.maya.curve.createCurveFromPoints(pointList, degree = 1, name = name)
 
     #cluster the two ends of the dispay line to point1 and point2
     mc.cluster( '{}.cv[0]'.format(displayLine),
             wn = [point1,point1],
             bs = True,
-            name = '{}_1_{}'.format(displayLine, showtools.maya.common.CLUSTER))
+            name = '{}_1_{}'.format(displayLine, openrig.shared.common.CLUSTER))
 
     mc.cluster('{}.cv[1]'.format(displayLine),
             wn = [point2,point2],
             bs = True,
-            name = '{}_2_{}'.format(displayLine, showtools.maya.common.CLUSTER))
+            name = '{}_2_{}'.format(displayLine, openrig.shared.common.CLUSTER))
 
     #override display type of displayLine to be templated
     mc.setAttr('{}.overrideEnabled'.format(displayLine), 1)

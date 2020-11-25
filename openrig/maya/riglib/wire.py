@@ -2,13 +2,13 @@
 '''
 import maya.cmds as mc
 import numpy
-import showtools.maya.weights
-import showtools.maya.shape
-import showtools.maya.skinCluster
-import showtools.maya.transform
-import showtools.maya.common
-import showtools.riglib.bindmesh
-import showtools.riglib.control
+import openrig.maya.weights
+import openrig.maya.shape
+import openrig.maya.skinCluster
+import openrig.maya.transform
+import openrig.shared.common
+import openrig.maya.riglib.bindmesh
+import openrig.maya.riglib.control
 
 def convertWiresToSkinCluster(newSkinName, targetGeometry, wireDeformerList, keepWires=False,
     rootParentNode="rig", rootPreMatrixNode="trs_aux", jointDepth=2):
@@ -131,7 +131,7 @@ def convertWiresToSkinCluster(newSkinName, targetGeometry, wireDeformerList, kee
                 matrixCon = mc.listConnections(jnt+'.worldMatrix[0]', p=1, d=1, s=0)
                 # Get inf index
                 # TODO: This should just use
-                # TODO: showtools.maya.skinCluster.getInfIndex(targetSkinCluster, jnt)
+                # TODO: openrig.maya.skinCluster.getInfIndex(targetSkinCluster, jnt)
                 infIndex = None
                 for con in matrixCon:
                     node = con.split('.')[0]
@@ -145,7 +145,7 @@ def convertWiresToSkinCluster(newSkinName, targetGeometry, wireDeformerList, kee
                     mc.move( 1, 0, 0, tempInf, r=1, worldSpaceDistance=1)
                     mc.pointPosition('{}.cp[0]'.format(target))
                     # get the delta to put into weightList
-                    weightList.append(showtools.maya.shape.getDeltas(base, target))
+                    weightList.append(openrig.maya.shape.getDeltas(base, target))
                     # recconect the joint and delete the temp influence.
                     mc.connectAttr(jnt+'.worldMatrix[0]', curveSkin+'.matrix[{}]'.format(infIndex), f=1)
                     mc.delete(tempInf)
@@ -155,13 +155,13 @@ def convertWiresToSkinCluster(newSkinName, targetGeometry, wireDeformerList, kee
             # Add jnt as influnce
             mc.skinCluster(targetSkinCluster, e=1, ai=jnt)
             # Get index
-            index = showtools.maya.skinCluster.getInfIndex(targetSkinCluster, jnt)
+            index = openrig.maya.skinCluster.getInfIndex(targetSkinCluster, jnt)
             # Connect bindPreMatrixNode
             mc.connectAttr("{}.worldInverseMatrix[0]".format(preMatrixNode), "{}.bindPreMatrix[{}]".format(targetSkinCluster, index), f=True)
 
         # connect the base joint so we have somewhere to put the weights not being used.
         # Hook up the bind preMatrix node for the root joint
-        index = showtools.maya.skinCluster.getInfIndex(targetSkinCluster, baseJnt)
+        index = openrig.maya.skinCluster.getInfIndex(targetSkinCluster, baseJnt)
         mc.connectAttr("{}.worldInverseMatrix[0]".format(rootPreMatrixNode), "{}.bindPreMatrix[{}]".format(targetSkinCluster, index), f=True)
 
         # RECONNECT other skinClusters
@@ -192,7 +192,7 @@ def convertWiresToSkinCluster(newSkinName, targetGeometry, wireDeformerList, kee
         weightList.insert(0, baseJntArray)
 
         # Set all the weights on the new target skinCluster
-        showtools.maya.weights.setWeights(targetSkinCluster, showtools.maya.weightObject.WeightObject(maps=influenceList, weights=weightList))
+        openrig.maya.weights.setWeights(targetSkinCluster, openrig.maya.weightObject.WeightObject(maps=influenceList, weights=weightList))
 
         # delete the base that we were using to compare deltas from
         mc.delete(base)
@@ -228,7 +228,7 @@ def convertWiresToSkinCluster(newSkinName, targetGeometry, wireDeformerList, kee
             if delete_curves:
                 mc.delete(curve_to_delete)
 
-def buildCurveRig(curve, name='limb_bend', ctrl_names=[], parent=None, control_color=showtools.maya.common.BLUE,
+def buildCurveRig(curve, name='limb_bend', ctrl_names=[], parent=None, control_color=openrig.shared.common.BLUE,
                   control_shape='circle', control_type='', hierarchy=['nul','ort','def_auto']):
     '''
     This will build a rig setup based on the curve that is passed in.
@@ -250,7 +250,7 @@ def buildCurveRig(curve, name='limb_bend', ctrl_names=[], parent=None, control_c
         mc.createNode("transform", n=grp)
 
     # create the bindmesh
-    bindmeshGeometry, follicleList = showtools.riglib.bindmesh.createFromCurve(name, curve, cv_names=ctrl_names)
+    bindmeshGeometry, follicleList = openrig.maya.riglib.bindmesh.createFromCurve(name, curve, cv_names=ctrl_names)
 
     # emptry list to append controls to in the loop
     controlHieracrchyList = list()
@@ -268,7 +268,7 @@ def buildCurveRig(curve, name='limb_bend', ctrl_names=[], parent=None, control_c
         if ctrl_names:
             ctrl_name = ctrl_names[follicleIndex]
         # create the control with a large enough hierarchy to create proper SDK's
-        ctrlHierarchy = showtools.riglib.control.create(name=ctrl_name,
+        ctrlHierarchy = openrig.maya.riglib.control.create(name=ctrl_name,
                                                     controlType=control_shape,
                                                     hierarchy=hierarchy,
                                                     parent=follicle,
@@ -309,7 +309,7 @@ def buildCurveRig(curve, name='limb_bend', ctrl_names=[], parent=None, control_c
     #mc.parent(jointList[-1], jointList[0])
     ## get the axis we want to use to aim.
     #aimDistance = mc.getAttr("{}.t".format(jointList[-1]))[0]
-    #aimAttr, aimVector = showtools.riglib.transform.getDistanceVector(aimDistance)
+    #aimAttr, aimVector = openrig.maya.riglib.transform.getDistanceVector(aimDistance)
     ## parent the joint back to the control
     #mc.parent(jointList[-1], controlHieracrchyList[-1][-1])
     #mc.pointConstraint(controlHieracrchyList[0][-1],controlHieracrchyList[2][-1], controlHieracrchyList[1][2], mo=True)
@@ -321,7 +321,7 @@ def buildCurveRig(curve, name='limb_bend', ctrl_names=[], parent=None, control_c
     ## parenting the last joint to the first on to grab the axis I want to use for aiming
     #mc.parent(jointList[0], jointList[-1])
     #aimDistance = mc.getAttr("{}.t".format(jointList[0]))[0]
-    #aimAttr, aimVector = showtools.riglib.transform.getDistanceVector(aimDistance)
+    #aimAttr, aimVector = openrig.maya.riglib.transform.getDistanceVector(aimDistance)
     ## parent the joint back to the control
     #mc.parent(jointList[0], controlHieracrchyList[0][-1])
     #mc.pointConstraint(controlHieracrchyList[2][-1],controlHieracrchyList[4][-1], controlHieracrchyList[3][2], mo=True)

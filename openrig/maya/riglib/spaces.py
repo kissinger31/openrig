@@ -5,9 +5,9 @@ Spaces module
 import maya.cmds as mc
 
 # Import showwtools modules
-from showtools.maya import attr
-from showtools.maya import transform
-from showtools.maya import common
+from openrig.maya import attr
+from openrig.maya import transform
+from openrig.shared import common
 
 def create( node, attrNode = None , parent=None, spaceAttrName="space", nameDefault='local'):
     '''

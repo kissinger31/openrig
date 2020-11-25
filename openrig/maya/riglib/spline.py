@@ -3,9 +3,9 @@ This module is used for everything spline ik related
 '''
 
 import maya.cmds as mc
-import showtools.maya.curve
-import showtools.maya.cluster
-import showtools.maya.transform
+import openrig.maya.curve
+import openrig.maya.cluster
+import openrig.maya.transform
 
 class SplineBase(object):
     '''
@@ -118,7 +118,7 @@ class SplineBase(object):
         startJoint = self._ikJointList[0]
         endJoint = self._ikJointList[-1]
 
-        curve = showtools.maya.curve.createCurveFromTransforms((self._ikJointList[0],
+        curve = openrig.maya.curve.createCurveFromTransforms((self._ikJointList[0],
                                                                 self._ikJointList[1], 
                                                                 self._ikJointList[-2], 
                                                                 self._ikJointList[-1]), 
@@ -134,12 +134,12 @@ class SplineBase(object):
 
         # Create clusters
         #clusterGrp = mc.createNode('transform', n=self._name+'_clusters_grp', p=self._group)
-        cvs = showtools.maya.curve.getCVs(self._curve)
+        cvs = openrig.maya.curve.getCVs(self._curve)
         for i,cv in enumerate(cvs):
             cluster,handle = mc.cluster(cv, n='{}_cluster_{}'.format(self._name, i))
             self._clusters.append(handle)
             mc.parent(handle, self._group)
-            showtools.maya.cluster.localize(cluster, self._group, self._group,
+            openrig.maya.cluster.localize(cluster, self._group, self._group,
                                             weightedCompensation=True)
 
         # Stretch 
@@ -174,7 +174,7 @@ class SplineBase(object):
         mc.parent(start, startGrp)
         con = mc.parentConstraint(self._ikJointList[0], startGrp)
         mc.delete(con)
-        showtools.maya.transform.decomposeRotation(start, twistAxis=twistAxis)
+        openrig.maya.transform.decomposeRotation(start, twistAxis=twistAxis)
 
         # End 
         endGrp = mc.createNode('transform', n=self._name+'_end_grp', p=self._group)
@@ -183,7 +183,7 @@ class SplineBase(object):
         mc.parent(end, endGrp)
         con = mc.parentConstraint(self._ikJointList[-1], endGrp)
         mc.delete(con)
-        showtools.maya.transform.decomposeRotation(end, twistAxis=twistAxis)
+        openrig.maya.transform.decomposeRotation(end, twistAxis=twistAxis)
 
         twist_add = mc.createNode('plusMinusAverage', n=self._name+'_addtwist')
 
@@ -277,7 +277,7 @@ def preserveLength(name='spineIk',
     for i in no_rotate_cvs:
         cluster, handle = mc.cluster(curve_full + '.cv[{}]'.format(i),
                                      name=name + '_no_rotate_cluster_{}'.format(i))
-        showtools.maya.cluster.localize(cluster, parent, parent,
+        openrig.maya.cluster.localize(cluster, parent, parent,
                                       weightedCompensation=True)
         mc.parent(handle, nul)
         mc.hide(handle)
@@ -315,7 +315,7 @@ def preserveLength(name='spineIk',
     scale_cluster, scale_cluster_handle = mc.cluster(curve, n=name + '_scale_cluster')
     mc.hide(scale_cluster_handle)
     mc.parent(scale_cluster_handle, scale_pivot)
-    showtools.maya.cluster.localize(scale_cluster, parent, parent,
+    openrig.maya.cluster.localize(scale_cluster, parent, parent,
                                   weightedCompensation=True)
 
     # Move scale cluster to front of deformation order

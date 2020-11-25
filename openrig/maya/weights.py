@@ -11,12 +11,12 @@ import xml.etree.ElementTree as et
 import numpy
 
 import showtools
-from showtools.maya import common
-from showtools.maya import weightObject
-import showtools.maya.transform as rig_transform
-import showtools.maya.blendShape as rig_blendshape
-import showtools.maya.skinCluster as rig_skincluster
-import showtools.maya.shape as rig_shape
+from openrig.shared import common
+from openrig.maya import weightObject
+import openrig.maya.transform as rig_transform
+import openrig.maya.blendShape as rig_blendshape
+import openrig.maya.skinCluster as rig_skincluster
+import openrig.maya.shape as rig_shape
 
 BLENDWEIGHTS_ATTR = 'blendWeights'
 SKINCLUSTER_ATTRIBUTE_LIST = ['skinningMethod', BLENDWEIGHTS_ATTR, 'normalizeWeights']

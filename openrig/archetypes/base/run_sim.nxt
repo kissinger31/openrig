@@ -54,7 +54,7 @@
             "code": [
                 "target_anim_file = self.target_anim_file", 
                 "if target_anim_file is not None:", 
-                "    showtools.simlib.cacheManager.exportAnim(namespace=${namespace},", 
+                "    openrig.simlib.cacheManager.exportAnim(namespace=${namespace},",
                 "                                             filePath=target_anim_file,", 
                 "                                             startFrame=${sim_start_frame},", 
                 "                                             endFrame=${sim_end_frame},", 
@@ -65,7 +65,7 @@
             "code": [
                 "target_cache_file = self.target_cache_file", 
                 "if target_cache_file is not None:", 
-                "    showtools.simlib.cacheManager.exportModel(namespace=${namespace},", 
+                "    openrig.simlib.cacheManager.exportModel(namespace=${namespace},",
                 "                                              filePath=target_cache_file,", 
                 "                                              startFrame=${sim_start_frame},", 
                 "                                              endFrame=${sim_end_frame},", 

@@ -760,7 +760,7 @@
             "instance": "/button", 
             "code": [
                 "import maya.cmds as mc", 
-                "import showtools.riglib.control as rig_control", 
+                "import openrig.maya.riglib.control as rig_control",
                 "", 
                 "controls = rig_control.getControls()", 
                 "mc.cutKey(controls)"

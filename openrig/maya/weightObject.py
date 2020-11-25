@@ -2,7 +2,7 @@
 This module will have the class that deals with weights.
 '''
 import numpy
-from showtools.maya import common
+from openrig.shared import common
 class WeightObject(object):
     '''
     Class that contains maps and weights per map.

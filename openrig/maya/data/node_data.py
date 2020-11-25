@@ -1,7 +1,7 @@
 '''
 This is our json module.
 '''
-import showtools.maya.data.maya_data as maya_data
+import openrig.maya.data.maya_data as maya_data
 from collections import OrderedDict
 import maya.cmds as mc
 

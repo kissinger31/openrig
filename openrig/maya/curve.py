@@ -1,8 +1,8 @@
 """Curve functions"""
 import maya.cmds as mc
 import maya.api.OpenMaya as om2
-from showtools.maya import transform
-from showtools.maya import common
+from openrig.maya import transform
+from openrig.shared import common
 
 def createCurveFromPoints(points, degree=3, name='curve', transformType="transform", form="Open"):
     '''

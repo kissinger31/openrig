@@ -4,7 +4,7 @@ This is going to work on nodes in the scene.
 from collections import OrderedDict
 
 import maya.cmds as mc
-import showtools.maya.data.maya_data as maya_data
+import openrig.maya.data.maya_data as maya_data
 
 class DeformerOrderData(maya_data.MayaData):
     '''

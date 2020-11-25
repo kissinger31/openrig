@@ -129,10 +129,10 @@
                 "    # look for a cleaner way without mel and selection", 
                 "    if output_cloth:", 
                 "        # mc.select([cleanup_mesh, output_cloth[0]],replace=True)", 
-                "        wrap_node = showtools.maya.core.wrap.createWrapDeformer(output_cloth[0], target_geo, name=target_geo+'_wrap')", 
+                "        wrap_node = openrig.maya.wrap.createWrapDeformer(output_cloth[0], target_geo, name=target_geo+'_wrap')",
                 "     ", 
                 "    else:", 
-                "        wrap_node = showtools.maya.core.wrap.createWrapDeformer(source_geo, target_geo, name=target_geo+'_wrap')", 
+                "        wrap_node = openrig.maya.wrap.createWrapDeformer(source_geo, target_geo, name=target_geo+'_wrap')",
                 "        ", 
                 "        "
             ]

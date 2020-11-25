@@ -3,9 +3,9 @@
 import maya.cmds as mc
 import maya.mel as mm
 # showtools Modules
-from showtools.maya import skinCluster
-from showtools.maya import cluster
-from showtools.maya import weights
+from openrig.maya import skinCluster
+from openrig.maya import cluster
+from openrig.maya import weights
 
 def arrangeToTop(geo, deformer):
     """Arrange given deformer on top of the deformer stack for given geometry(s).

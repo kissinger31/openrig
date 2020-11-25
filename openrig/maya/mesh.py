@@ -1,7 +1,7 @@
 """Mesh utilities."""
 import maya.cmds as mc
 import maya.api.OpenMaya as om2
-from showtools.shared.core import vectors
+from openrig.shared.core import vectors
 
 
 def getClosestPoint(position, mesh):

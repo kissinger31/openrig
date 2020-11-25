@@ -2,7 +2,7 @@
 This module is for dealing with skinClusters inside Maya
 '''
 import maya.cmds as mc
-from showtools.maya import common
+from openrig.shared import common
 
 
 def localize(skinClusters, transform):

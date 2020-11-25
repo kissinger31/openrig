@@ -1,5 +1,5 @@
 import maya.cmds as mc
-import showtools.maya.common as common
+import openrig.shared.common as common
 import maya.mel as mm
 
 #############

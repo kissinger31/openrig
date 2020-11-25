@@ -108,9 +108,9 @@
         }, 
         "/sim_install/connect_sim_rig/connect_model_hierarchy": {
             "code": [
-                "import showtools.maya.attr", 
-                "import showtools.maya.shape", 
-                "import showtools.maya.hierarchy", 
+                "import openrig.maya.attr",
+                "import openrig.maya.shape",
+                "import openrig.maya.hierarchy",
                 "", 
                 "# function to create and connect model hierarchy", 
                 "input_blendshapes = list()", 
@@ -163,12 +163,12 @@
                 "        if source_neighbor:", 
                 "            target_neighbor = ':'.join([${target_namespace}, source_neighbor.split(':')[-1]])", 
                 "            if mc.objExists(target_neighbor):", 
-                "                showtools.maya.hierarchy.reorderTo(target_node, target_neighbor)", 
+                "                openrig.maya.hierarchy.reorderTo(target_node, target_neighbor)",
                 "    ", 
                 "    # add attrs", 
                 "    source_add_attr_cmds = self.STAGE.nd.getNodeAddAttrCmds(source_node) or {}", 
                 "    for cmd in source_add_attr_cmds.values():", 
-                "        showtools.maya.attr.applyAddAttrCmds([[target_node, cmd]], targetNode=None)", 
+                "        openrig.maya.attr.applyAddAttrCmds([[target_node, cmd]], targetNode=None)",
                 "    ", 
                 "    # set attrs", 
                 "    for source_attr, source_value in self.STAGE.nd.getNodeAttrData(source_node).iteritems():", 
@@ -218,7 +218,7 @@
                 "        # input shapes", 
                 "        if mc.objExists(target_input_shape):", 
                 "            if not mc.objExists(target_out_shape):", 
-                "                showtools.maya.shape.connectShape(source_node, target_node)", 
+                "                openrig.maya.shape.connectShape(source_node, target_node)",
                 "            blend_shape_name = target_input_shape + '_input_blendShape'", 
                 "            target_input_blend_shape = mc.blendShape(source_node,", 
                 "                                                     target_input_shape,", 
@@ -229,7 +229,7 @@
                 "        ", 
                 "        # regular shapes", 
                 "        if not mc.objExists(target_out_shape) and not mc.objExists(target_input_shape):", 
-                "            showtools.maya.shape.connectShape(source_node, target_node)", 
+                "            openrig.maya.shape.connectShape(source_node, target_node)",
                 "    ", 
                 "    # recurse for children", 
                 "    children = self.STAGE.nd.getNodeChildren(source_node)", 
@@ -266,7 +266,7 @@
                 }
             }, 
             "code": [
-                "from showtools.maya.data import nodeData as nodeData", 
+                "from openrig.maya.data import nodeData as nodeData",
                 "", 
                 "source_upper_transforms = [${source_namespace} + ':' + n for n in ${upper_transforms}]", 
                 "trs_node_data = nodeData.NodeData(mc.ls(source_upper_transforms), addAttrCmds=True, defaultAttrs=True)", 
@@ -284,7 +284,7 @@
                 "    # add attrs", 
                 "    source_add_attr_cmds = trs_node_data.getNodeAddAttrCmds(source_node) or {}", 
                 "    for cmd in source_add_attr_cmds.values():", 
-                "        showtools.maya.attr.applyAddAttrCmds([[target_node, cmd]], target_node=None)", 
+                "        openrig.maya.attr.applyAddAttrCmds([[target_node, cmd]], target_node=None)",
                 "    ", 
                 "    # set attrs", 
                 "    for source_attr, source_value in trs_node_data.getNodeAttrData(source_node).iteritems():", 
@@ -295,7 +295,7 @@
         }, 
         "/sim_install/connect_sim_rig/get_node_data": {
             "code": [
-                "from showtools.maya.data import nodeData as nodeData", 
+                "from openrig.maya.data import nodeData as nodeData",
                 "", 
                 "nd = nodeData.NodeData(mc.ls(sourceModel, dag=True, ni=True), addAttrCmds=True, defaultAttrs=True)", 
                 "self.STAGE.nd = nd", 
@@ -338,7 +338,7 @@
         }, 
         "/sim_install/position_sim_rig": {
             "code": [
-                "import showtools.maya.deformerOnGeo as deformerOnGeo", 
+                "import openrig.maya.deformerOnGeo as deformerOnGeo",
                 "", 
                 "# position sim rig function", 
                 "def position_sim_rig():", 

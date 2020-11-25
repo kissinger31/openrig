@@ -3,7 +3,7 @@ This is going to work on Maya sets in the scene.
 '''
 from collections import OrderedDict
 import maya.cmds as mc
-import showtools.maya.data.maya_data as maya_data
+import openrig.maya.data.maya_data as maya_data
 
 class SetsData(maya_data.MayaData):
     '''

@@ -24,9 +24,9 @@ import math
 10 DEBUG
 0  NOTSET
 '''
-import showtools.maya.deformer as rig_deformer
-import showtools.maya.common as rig_common
-import showtools.maya.blendShape as rig_blendShape
+import openrig.maya.deformer as rig_deformer
+import openrig.shared.common as rig_common
+import openrig.maya.blendShape as rig_blendShape
 import logging
 import numpy
 logger_level = logging.DEBUG

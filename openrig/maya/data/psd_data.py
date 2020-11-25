@@ -1,6 +1,6 @@
-import showtools.maya.data.maya_data as maya_data
-import showtools.maya.common as common
-import showtools.maya.psd as rig_psd
+import openrig.maya.data.maya_data as maya_data
+import openrig.shared.common as common
+import openrig.maya.psd as rig_psd
 from collections import OrderedDict
 import maya.cmds as mc
 import traceback

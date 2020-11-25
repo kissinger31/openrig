@@ -2,9 +2,9 @@
 This is the module that will house functions and classes that have to do with clusters.
 '''
 import maya.cmds as mc
-import showtools.maya.common
-import showtools.maya.weights
-import showtools.maya.skinCluster
+import openrig.shared.common
+import openrig.maya.weights
+import openrig.maya.skinCluster
 import numpy
 
 def create(mesh, name, parent=None, contraintTypes=['point', 'orient', 'scale'],
@@ -103,7 +103,7 @@ def transferCluster(source, target, deformer, handle=False, surfaceAssociation="
             raise RuntimeError("{} doesn't exist in the current Maya session!".format(deformer))
 
     # first we will turn the target into a list if it's not already a list
-    meshList = showtools.maya.common.toList(target)
+    meshList = openrig.shared.common.toList(target)
 
     # make sure we have a cluster on the source mesh
     clusterList = list()
@@ -232,7 +232,7 @@ def convertClustersToSkinCluster(newSkinName, targetGeometry, clusterDeformerLis
         # create a target skinCluster that will replace the wire defomer
         targetSkinCluster = mc.skinCluster(target, baseJnt, tsb=1, name='{}__{}'.format(target, newSkinName), sm=1)[0]
         # Hook up the bind preMatrix node for the root joint
-        index = showtools.maya.skinCluster.getInfIndex(targetSkinCluster, baseJnt)
+        index = openrig.maya.skinCluster.getInfIndex(targetSkinCluster, baseJnt)
         mc.connectAttr("{}.worldInverseMatrix[0]".format(rootPreMatrixNode),
                        "{}.bindPreMatrix[{}]".format(targetSkinCluster, index), f=True)
         # make sure scaling is turned on so the scale works properly.
@@ -258,11 +258,11 @@ def convertClustersToSkinCluster(newSkinName, targetGeometry, clusterDeformerLis
             # Add jnt as influnce
             mc.skinCluster(targetSkinCluster, e=True, ai=joint)
             # Get index
-            index = showtools.maya.skinCluster.getInfIndex(targetSkinCluster, joint)
+            index = openrig.maya.skinCluster.getInfIndex(targetSkinCluster, joint)
             # Connect bindPreMatrixNode
             mc.connectAttr("{}.worldInverseMatrix[0]".format(preMatrixNode),
                            "{}.bindPreMatrix[{}]".format(targetSkinCluster, index), f=True)
-            weightList.append(showtools.maya.weights.getWeights(clusterDeformer, geometry=target).getWeights()[0])
+            weightList.append(openrig.maya.weights.getWeights(clusterDeformer, geometry=target).getWeights()[0])
 
         # RECONNECT other skinClusters
         #
@@ -291,8 +291,8 @@ def convertClustersToSkinCluster(newSkinName, targetGeometry, clusterDeformerLis
         weightList.insert(0, baseJntArray)
 
         # Set all the weights on the new target skinCluster
-        showtools.maya.weights.setWeights(targetSkinCluster,
-                                        showtools.maya.weightObject.WeightObject(maps=influenceList, weights=weightList))
+        openrig.maya.weights.setWeights(targetSkinCluster,
+                                        openrig.maya.weightObject.WeightObject(maps=influenceList, weights=weightList))
 
         # Reorder deformers
         if reorder_deformer:

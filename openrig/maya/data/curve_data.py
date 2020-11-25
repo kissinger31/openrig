@@ -1,9 +1,9 @@
 '''
 '''
 
-import showtools.maya.data.node_data as node_data
-import showtools.maya.curve as curve
-import showtools.maya.common as common
+import openrig.maya.data.node_data as node_data
+import openrig.maya.curve as curve
+import openrig.shared.common as common
 from collections import OrderedDict
 import maya.cmds as mc
 

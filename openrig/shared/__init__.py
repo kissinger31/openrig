@@ -7,4 +7,3 @@
 # You'll need to make sure there's a __init__.py inside the modelling directory you just created with the
 # following inside it:
 # ---
-import core

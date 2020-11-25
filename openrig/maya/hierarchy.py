@@ -1,6 +1,6 @@
 """Hierarchy functions"""
 import maya.cmds as mc
-from showtools.maya import naming
+from openrig.maya import naming
 
 
 def create(names, parent=None, children=None):

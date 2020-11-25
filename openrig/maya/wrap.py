@@ -1,8 +1,8 @@
 """Maya wrap deformer functions."""
 import maya.cmds as mc
 import maya.mel as mm
-from showtools.maya import common
-from showtools.maya import naming
+from openrig.shared import common
+from openrig.maya import naming
 
 
 def doWrapTo():

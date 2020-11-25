@@ -1,5 +1,5 @@
 import maya.cmds as mc
-from showtools.maya import common
+from openrig.shared import common
 import traceback
 
 def rotateToOrient(jointList):

@@ -5,8 +5,8 @@ from collections import OrderedDict
 
 import maya.cmds as mc
 
-import showtools.maya.data.maya_data as maya_data
-import showtools.maya.sdk
+import openrig.maya.data.maya_data as maya_data
+import openrig.maya.sdk
 
 class SdkData(maya_data.MayaData):
     '''
@@ -34,8 +34,8 @@ class SdkData(maya_data.MayaData):
             raise RuntimeError("{} is not an animCurve that is used for SDK.".format(node))
 
         # gather the driver and driven for the sdk
-        driver = showtools.maya.sdk.getSDKdriver(node)
-        driven = showtools.maya.sdk.getSDKdriven(node)
+        driver = openrig.maya.sdk.getSDKdriver(node)
+        driven = openrig.maya.sdk.getSDKdriven(node)
 
         # get the pre and post infinity for the sdk
         preInfinity = mc.getAttr('{}.preInfinity'.format(node))
@@ -92,7 +92,7 @@ class SdkData(maya_data.MayaData):
         # loop through the nodes and apply the data.
         for node in nodes:
             if self._data.has_key(node):
-                showtools.maya.sdk.setSDK(node,
+                openrig.maya.sdk.setSDK(node,
                                         self._data[node]["keyframes"], 
                                         preInfinity=self._data[node]["preInfinity"], 
                                         postInfinity=self._data[node]["postInfinity"])

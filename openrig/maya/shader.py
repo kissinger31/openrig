@@ -4,10 +4,10 @@ Shader function library
 """
 import maya.cmds as mc
 import maya.api.OpenMaya as om2
-from showtools.maya import attr
-import showtools.maya.naming
-import showtools.maya.shape
-import showtools.shared.core.color
+from openrig.maya import attr
+import openrig.maya.naming
+import openrig.maya.shape
+import openrig.shared.color
 
 SGINPUTS = ['surfaceShader', 'volumeShader', 'displcementShader']
 
@@ -35,7 +35,7 @@ def getConnectedShaders(obj):
     :rtype:
     """
     # get shapes
-    shapes = showtools.maya.shape.getShapes(obj)
+    shapes = openrig.maya.shape.getShapes(obj)
     
     # get shading groups
     shadingGroups = set()
@@ -361,13 +361,13 @@ def createShader(name=None, shaderType='lambert', color=None, transparency=None,
     # get color
     if isinstance(color, basestring):
         try:
-            color = showtools.shared.core.color.format_color_name(color)
-            color = showtools.shared.core.color.name_to_rgb(color, True)
+            color = openrig.shared.core.color.format_color_name(color)
+            color = openrig.shared.core.color.name_to_rgb(color, True)
         except ValueError:
             color = None
     elif isinstance(color, (tuple, list)):
         try:
-            color = showtools.shared.core.color.format_color_value(color)
+            color = openrig.shared.core.color.format_color_value(color)
         except ValueError:
             color = None
     
@@ -397,7 +397,7 @@ def createShader(name=None, shaderType='lambert', color=None, transparency=None,
     
     # assign to geo
     if geo:
-        shadingGroupName = showtools.maya.naming.getUniqueName(shader + 'SG')
+        shadingGroupName = openrig.maya.naming.getUniqueName(shader + 'SG')
         shadingGroupName = mc.sets(r=True, nss=True, empty=True, name=shadingGroupName)
         mc.connectAttr(shader + '.outColor', shadingGroupName + '.surfaceShader')
         mc.sets(geo, e=True, fe=shadingGroupName)

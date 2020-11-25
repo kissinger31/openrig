@@ -7,7 +7,7 @@ import os
 from collections import OrderedDict
 from time import gmtime, strftime
 
-import showtools.maya.common
+import openrig.shared.common
 
 
 class AbstractData(object):
@@ -168,6 +168,6 @@ class AbstractData(object):
 
         # set a new filepath on the class.
         self._filepath = filepath
-        self._data = showtools.maya.common.convertDictKeys(data['data'])
+        self._data = openrig.shared.common.convertDictKeys(data['data'])
         return self._data
 

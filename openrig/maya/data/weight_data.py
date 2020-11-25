@@ -3,11 +3,11 @@ This is going to work on Maya sets in the scene.
 '''
 from collections import OrderedDict
 import maya.cmds as mc
-import showtools.maya.data.maya_data as maya_data
-import showtools.maya.weights as weights
-import showtools.maya.weightObject as weightObject
-import showtools.maya.transform as tansform
-import showtools.maya.common as common
+import openrig.maya.data.maya_data as maya_data
+import openrig.maya.weights as weights
+import openrig.maya.weightObject as weightObject
+import openrig.maya.transform as tansform
+import openrig.shared.common as common
 import numpy
 import getpass
 from time import gmtime, strftime

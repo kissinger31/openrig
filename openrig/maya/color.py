@@ -1,6 +1,6 @@
 """Color functions"""
 import maya.cmds as mc
-import showtools.shared.core.color
+import openrig.shared.color
 
 
 def setOverrideColor(objects, color):
@@ -17,9 +17,9 @@ def setOverrideColor(objects, color):
         objects = [objects]
 
     # get color
-    # if showtools.shared.core.color.format_color_value(color):
-    #     color = showtools.shared.core.color.name_to_rgb(color, percent=True)
-    color = showtools.shared.core.color.format_color_value(color)
+    # if openrig.shared.core.color.format_color_value(color):
+    #     color = openrig.shared.core.color.name_to_rgb(color, percent=True)
+    color = openrig.shared.core.color.format_color_value(color)
 
 
     # color objects
@@ -43,9 +43,9 @@ def setOutlinerColor(objects, color):
         objects = [objects]
 
     # get color
-    # if showtools.shared.core.color.format_color_value(color):
-    #     color = showtools.shared.core.color.name_to_rgb(color, percent=True)
-    color = showtools.shared.core.color.format_color_value(color)
+    # if openrig.shared.core.color.format_color_value(color):
+    #     color = openrig.shared.core.color.name_to_rgb(color, percent=True)
+    color = openrig.shared.core.color.format_color_value(color)
 
     # color objects
     for obj in objects:
@@ -68,9 +68,9 @@ def setPolyColor(objects, color, reset=False, color_set=None):
         objects = [objects]
 
     # get color
-    # if showtools.shared.core.color.format_color_value(color):
-    #     color = showtools.shared.core.color.name_to_rgb(color, percent=True)
-    color = showtools.shared.core.color.format_color_value(color)
+    # if openrig.shared.core.color.format_color_value(color):
+    #     color = openrig.shared.core.color.name_to_rgb(color, percent=True)
+    color = openrig.shared.core.color.format_color_value(color)
 
     # color objects
     

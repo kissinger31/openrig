@@ -4,8 +4,8 @@ This module is for dealing with shape nodes in Maya
 import maya.cmds as mc
 import maya.mel as mm
 import numpy
-from showtools.maya import attr
-from showtools.maya import hierarchy
+from openrig.maya import attr
+from openrig.maya import hierarchy
 
 def getPointCount(shape):
     '''

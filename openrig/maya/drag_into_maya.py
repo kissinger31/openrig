@@ -14,7 +14,7 @@ PYTHONPATH +:= /pipeline/nxt/src
 maya_app_dir = os.environ['MAYA_APP_DIR']
 maya_mod_dir = os.path.abspath(os.path.join(maya_app_dir, 'modules'))
 mod_file_path = os.path.abspath(os.path.join(maya_mod_dir, 'sunrise.mod'))
-old_mod = os.path.abspath(os.path.join(maya_mod_dir, 'showtools.mod'))
+old_mod = os.path.abspath(os.path.join(maya_mod_dir, 'openrig.mod'))
 go = True
 if not os.path.isdir(maya_mod_dir):
     os.mkdir(maya_mod_dir)

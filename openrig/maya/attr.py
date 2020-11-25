@@ -2,7 +2,7 @@
 import maya.cmds as mc
 import maya.mel as mm
 import maya.api.OpenMaya as om2
-import showtools.maya.common as common
+import openrig.shared.common as common
 
 TRANSLATE = ['tx', 'ty', 'tz']
 ROTATE = ['rx', 'ry', 'rz']

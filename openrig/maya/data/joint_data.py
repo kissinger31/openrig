@@ -1,6 +1,6 @@
 '''
 '''
-import showtools.maya.data.node_data as node_data
+import openrig.maya.data.node_data as node_data
 from collections import OrderedDict
 import maya.cmds as mc
 

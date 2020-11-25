@@ -3,10 +3,10 @@ This module is for dealing with blendShapes inside Maya
 """
 import maya.cmds as mc
 import maya.mel as mm
-import showtools.maya.common
-import showtools.maya.wrap
-import showtools.maya.shape as shape
-import showtools.maya.skinCluster
+import openrig.shared.common
+import openrig.maya.wrap
+import openrig.maya.shape as shape
+import openrig.maya.skinCluster
 import os
 
 def transferBlendShape(source, target, deformer, differentTopology=0, connections=1):
@@ -22,14 +22,14 @@ def transferBlendShape(source, target, deformer, differentTopology=0, connection
     :type target: str | list
     """
     # putting the import here so we don't have recursive import issues.
-    import showtools.maya.weights
+    import openrig.maya.weights
 
     # do some error checking
     if not mc.objExists(source):
         raise RuntimeError('The source mesh "{}" does not exist in the current Maya session.'.format(source))
 
     # first we will turn the target into a list if it's not already a list
-    targetMeshList = showtools.maya.common.toList(target)
+    targetMeshList = openrig.shared.common.toList(target)
 
     # make sure we have a blendShape on the source mesh
     sourceBlendShapes = getBlendShapes(source)
@@ -101,7 +101,7 @@ def transferBlendShape(source, target, deformer, differentTopology=0, connection
             get_deltas_from_wrap_bs = mc.blendShape(wrap_source_dup, get_deltas_from_wrap_dup, w=[0,1], n='get_deltas_bs')[0]
 
             # Wrap the source dup to the target dup
-            wrap_node = showtools.maya.wrap.createWrap(wrap_source_dup, wrap_target_dup, exclusiveBind=1)
+            wrap_node = openrig.maya.wrap.createWrap(wrap_source_dup, wrap_target_dup, exclusiveBind=1)
 
             connectionsList = list()
             for target in targets:
@@ -132,9 +132,9 @@ def transferBlendShape(source, target, deformer, differentTopology=0, connection
             # Add blendshape node name into the maps names
             source_maps = []
             for target in targets:
-                if showtools.maya.weights.isDefault(source_bs, target):
+                if openrig.maya.weights.isDefault(source_bs, target):
                     continue
-                showtools.maya.weights.copyDeformerWeight(source_mesh=source,
+                openrig.maya.weights.copyDeformerWeight(source_mesh=source,
                                                         target_mesh=targetMesh,
                                                         source_deformer=source_bs,
                                                         target_deformer=target_bs,

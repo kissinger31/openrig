@@ -8,7 +8,7 @@ import math
 import maya.cmds as mc
 import maya.api.OpenMaya as om2
 
-from showtools.maya.modlib import mesh
+from openrig.maya.modlib import mesh
 
 
 def space(uvList, axis, useSelectionOrder=False, spacing=0.2):

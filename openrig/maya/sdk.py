@@ -2,7 +2,7 @@
 This module is for handle sdk's in Maya
 '''
 import maya.cmds as mc
-from showtools.maya import common
+from openrig.shared import common
 
 
 # GET
