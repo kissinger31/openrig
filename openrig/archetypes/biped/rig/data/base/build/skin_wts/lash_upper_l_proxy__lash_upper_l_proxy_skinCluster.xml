@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<deformerWeight>
+  <headerInfo fileName="C:/Users/Matt/Desktop/sunrise/rig/biped/rig/build/base/skin_wts/lash_upper_l_proxy__lash_upper_l_proxy_skinCluster.xml"/>
+  <shape name="lash_upper_l_proxyShape" group="8041" stride="3" size="88" max="88" worldMatrix="1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 ">
+    <point index="0" value=" 6.378636 159.536972 7.952680"/>
+    <point index="1" value=" 6.404054 159.411346 7.844199"/>
+    <point index="2" value=" 6.409793 159.298065 7.778044"/>
+    <point index="3" value=" 6.329938 159.667709 8.070586"/>
+    <point index="4" value=" 5.003838 160.676620 9.235501"/>
+    <point index="5" value=" 5.349269 160.568100 9.050207"/>
+    <point index="6" value=" 3.977438 160.761597 9.488488"/>
+    <point index="7" value=" 4.321024 160.766602 9.434422"/>
+    <point index="8" value=" 3.655177 160.705612 9.515867"/>
+    <point index="9" value=" 3.370604 160.613174 9.523392"/>
+    <point index="10" value=" 2.764925 160.154053 9.428330"/>
+    <point index="11" value=" 2.447249 159.639633 9.275790"/>
+    <point index="12" value=" 2.338305 159.332382 9.172834"/>
+    <point index="13" value=" 2.342383 159.069687 9.118700"/>
+    <point index="14" value=" 2.352417 159.054733 9.238486"/>
+    <point index="15" value=" 2.479798 159.618591 9.544734"/>
+    <point index="16" value=" 2.364457 159.298233 9.395326"/>
+    <point index="17" value=" 2.798648 160.150284 9.828930"/>
+    <point index="18" value=" 3.417650 160.615860 9.986997"/>
+    <point index="19" value=" 3.733006 160.713821 9.980502"/>
+    <point index="20" value=" 4.060521 160.765701 9.952148"/>
+    <point index="21" value=" 4.408816 160.773895 9.897396"/>
+    <point index="22" value=" 5.129440 160.667496 9.685698"/>
+    <point index="23" value=" 5.461718 160.543304 9.482125"/>
+    <point index="24" value=" 6.413987 159.599396 8.495353"/>
+    <point index="25" value=" 6.452331 159.482498 8.381722"/>
+    <point index="26" value=" 6.469264 159.350769 8.270192"/>
+    <point index="27" value=" 6.463526 159.237442 8.202019"/>
+    <point index="28" value=" 2.622113 159.891617 9.671418"/>
+    <point index="29" value=" 2.617300 159.946060 9.374553"/>
+    <point index="30" value=" 6.027715 160.173309 9.036274"/>
+    <point index="31" value=" 5.933202 160.201126 8.581758"/>
+    <point index="32" value=" 4.752284 160.743912 9.811639"/>
+    <point index="33" value=" 4.668391 160.738861 9.350681"/>
+    <point index="34" value=" 2.995048 160.357422 9.913086"/>
+    <point index="35" value=" 2.958344 160.351303 9.474374"/>
+    <point index="36" value=" 6.238170 159.939713 8.804503"/>
+    <point index="37" value=" 6.156529 159.968735 8.356962"/>
+    <point index="38" value=" 6.341710 159.770157 8.647552"/>
+    <point index="39" value=" 6.252975 159.819351 8.212186"/>
+    <point index="40" value=" 3.146333 160.488739 9.502772"/>
+    <point index="41" value=" 3.189059 160.498947 9.975558"/>
+    <point index="42" value=" 5.738823 160.386063 9.263173"/>
+    <point index="43" value=" 5.652905 160.410019 8.829703"/>
+    <point index="44" value=" 2.346293 159.059219 9.164603"/>
+    <point index="45" value=" 2.348046 159.304733 9.243057"/>
+    <point index="46" value=" 2.449882 159.603653 9.363756"/>
+    <point index="47" value=" 2.617915 159.908127 9.447360"/>
+    <point index="48" value=" 2.773392 160.108963 9.544151"/>
+    <point index="49" value=" 2.967494 160.306839 9.592539"/>
+    <point index="50" value=" 3.157014 160.442871 9.620969"/>
+    <point index="51" value=" 3.382366 160.565430 9.639293"/>
+    <point index="52" value=" 3.674634 160.659256 9.632026"/>
+    <point index="53" value=" 3.998209 160.714203 9.604403"/>
+    <point index="54" value=" 4.342972 160.720016 9.550165"/>
+    <point index="55" value=" 4.689364 160.691696 9.465920"/>
+    <point index="56" value=" 5.035239 160.625916 9.348051"/>
+    <point index="57" value=" 5.377381 160.513474 9.158187"/>
+    <point index="58" value=" 5.674385 160.355606 8.938070"/>
+    <point index="59" value=" 5.956830 160.145767 8.695387"/>
+    <point index="60" value=" 6.176939 159.913071 8.468847"/>
+    <point index="61" value=" 6.275159 159.758636 8.321027"/>
+    <point index="62" value=" 6.350950 159.602219 8.176778"/>
+    <point index="63" value=" 6.397060 159.474930 8.059940"/>
+    <point index="64" value=" 6.420357 159.347794 7.950697"/>
+    <point index="65" value=" 6.423226 159.234482 7.884037"/>
+    <point index="66" value=" 2.348933 159.052155 9.195602"/>
+    <point index="67" value=" 2.357553 159.299698 9.330302"/>
+    <point index="68" value=" 2.464307 159.604034 9.466930"/>
+    <point index="69" value=" 2.621931 159.893692 9.566000"/>
+    <point index="70" value=" 2.780977 160.106750 9.665446"/>
+    <point index="71" value=" 2.978210 160.306076 9.743973"/>
+    <point index="72" value=" 3.173037 160.441116 9.798264"/>
+    <point index="73" value=" 3.400008 160.560852 9.813145"/>
+    <point index="74" value=" 3.703820 160.656754 9.806264"/>
+    <point index="75" value=" 4.029365 160.710159 9.778275"/>
+    <point index="76" value=" 4.375894 160.717163 9.723781"/>
+    <point index="77" value=" 4.720824 160.688004 9.638780"/>
+    <point index="78" value=" 5.082339 160.616913 9.516874"/>
+    <point index="79" value=" 5.419550 160.498596 9.320156"/>
+    <point index="80" value=" 5.706604 160.341049 9.100622"/>
+    <point index="81" value=" 5.992272 160.129745 8.865830"/>
+    <point index="82" value=" 6.207554 159.896591 8.636675"/>
+    <point index="83" value=" 6.308434 159.734604 8.484289"/>
+    <point index="84" value=" 6.382468 159.570999 8.336066"/>
+    <point index="85" value=" 6.424695 159.448929 8.220831"/>
+    <point index="86" value=" 6.444810 159.319489 8.110445"/>
+    <point index="87" value=" 6.443376 159.206161 8.043029"/>
+  </shape>
+  <weights deformer="lash_upper_l_proxy_skinCluster" source="face_upper_bind" shape="lash_upper_l_proxyShape" layer="0" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lash_upper_l_proxy_skinCluster" source="head_tip_bind" shape="lash_upper_l_proxyShape" layer="1" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lash_upper_l_proxy_skinCluster" source="brow_inner_l_bind" shape="lash_upper_l_proxyShape" layer="2" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lash_upper_l_proxy_skinCluster" source="brow_main_l_bind" shape="lash_upper_l_proxyShape" layer="3" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lash_upper_l_proxy_skinCluster" source="brow_peak_l_bind" shape="lash_upper_l_proxyShape" layer="4" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lash_upper_l_proxy_skinCluster" source="eyeSocket_l_bind" shape="lash_upper_l_proxyShape" layer="5" defaultValue="0.000" size="88" max="87">
+    <point index="0" value="1.000"/>
+    <point index="1" value="1.000"/>
+    <point index="2" value="1.000"/>
+    <point index="3" value="1.000"/>
+    <point index="4" value="1.000"/>
+    <point index="5" value="1.000"/>
+    <point index="6" value="1.000"/>
+    <point index="7" value="1.000"/>
+    <point index="8" value="1.000"/>
+    <point index="9" value="1.000"/>
+    <point index="10" value="1.000"/>
+    <point index="11" value="1.000"/>
+    <point index="12" value="1.000"/>
+    <point index="13" value="1.000"/>
+    <point index="14" value="1.000"/>
+    <point index="15" value="1.000"/>
+    <point index="16" value="1.000"/>
+    <point index="17" value="1.000"/>
+    <point index="18" value="1.000"/>
+    <point index="19" value="1.000"/>
+    <point index="20" value="1.000"/>
+    <point index="21" value="1.000"/>
+    <point index="22" value="1.000"/>
+    <point index="23" value="1.000"/>
+    <point index="24" value="1.000"/>
+    <point index="25" value="1.000"/>
+    <point index="26" value="1.000"/>
+    <point index="27" value="1.000"/>
+    <point index="28" value="1.000"/>
+    <point index="29" value="1.000"/>
+    <point index="30" value="1.000"/>
+    <point index="31" value="1.000"/>
+    <point index="32" value="1.000"/>
+    <point index="33" value="1.000"/>
+    <point index="34" value="1.000"/>
+    <point index="35" value="1.000"/>
+    <point index="36" value="1.000"/>
+    <point index="37" value="1.000"/>
+    <point index="38" value="1.000"/>
+    <point index="39" value="1.000"/>
+    <point index="40" value="1.000"/>
+    <point index="41" value="1.000"/>
+    <point index="42" value="1.000"/>
+    <point index="43" value="1.000"/>
+    <point index="44" value="1.000"/>
+    <point index="45" value="1.000"/>
+    <point index="46" value="1.000"/>
+    <point index="47" value="1.000"/>
+    <point index="48" value="1.000"/>
+    <point index="49" value="1.000"/>
+    <point index="50" value="1.000"/>
+    <point index="51" value="1.000"/>
+    <point index="52" value="1.000"/>
+    <point index="53" value="1.000"/>
+    <point index="54" value="1.000"/>
+    <point index="55" value="1.000"/>
+    <point index="56" value="1.000"/>
+    <point index="57" value="1.000"/>
+    <point index="58" value="1.000"/>
+    <point index="59" value="1.000"/>
+    <point index="60" value="1.000"/>
+    <point index="61" value="1.000"/>
+    <point index="62" value="1.000"/>
+    <point index="63" value="1.000"/>
+    <point index="64" value="1.000"/>
+    <point index="65" value="1.000"/>
+    <point index="66" value="1.000"/>
+    <point index="67" value="1.000"/>
+    <point index="68" value="1.000"/>
+    <point index="69" value="1.000"/>
+    <point index="70" value="1.000"/>
+    <point index="71" value="1.000"/>
+    <point index="72" value="1.000"/>
+    <point index="73" value="1.000"/>
+    <point index="74" value="1.000"/>
+    <point index="75" value="1.000"/>
+    <point index="76" value="1.000"/>
+    <point index="77" value="1.000"/>
+    <point index="78" value="1.000"/>
+    <point index="79" value="1.000"/>
+    <point index="80" value="1.000"/>
+    <point index="81" value="1.000"/>
+    <point index="82" value="1.000"/>
+    <point index="83" value="1.000"/>
+    <point index="84" value="1.000"/>
+    <point index="85" value="1.000"/>
+    <point index="86" value="1.000"/>
+    <point index="87" value="1.000"/>
+  </weights>
+  <weights deformer="lash_upper_l_proxy_skinCluster" source="eye_l_bind" shape="lash_upper_l_proxyShape" layer="6" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lash_upper_l_proxy_skinCluster" source="face_mid_bind" shape="lash_upper_l_proxyShape" layer="7" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lash_upper_l_proxy_skinCluster" source="nose_bridge_bind" shape="lash_upper_l_proxyShape" layer="8" defaultValue="0.000" size="0" max="0"/>
+</deformerWeight>

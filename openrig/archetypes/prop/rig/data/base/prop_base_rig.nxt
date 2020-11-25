@@ -1,0 +1,152 @@
+{
+    "version": "1.16", 
+    "alias": "prop_rig", 
+    "color": "#769b70", 
+    "mute": false, 
+    "solo": false, 
+    "references": [
+        "../../../../base/anim_rig.nxt"
+    ], 
+    "meta_data": {
+        "positions": {
+            "/apply": [
+                2300.844714358125, 
+                -1761.2052604702692
+            ], 
+            "/center": [
+                648.7738329630885, 
+                -1761.5158253652785
+            ], 
+            "/delivery": [
+                2690.903247175527, 
+                -1760.5738126161464
+            ], 
+            "/import_psd": [
+                -1969.76665415195, 
+                -534.4335711129585
+            ], 
+            "/import_weight_directory": [
+                -1969.76665415195, 
+                -674.4335711129585
+            ], 
+            "/init": [
+                -814.0315748259982, 
+                -1765.1123894734978
+            ], 
+            "/left": [
+                1061.0320393350999, 
+                -1761.850066262242
+            ], 
+            "/load_joint_data": [
+                -1983.1209426490868, 
+                -68.26493116265219
+            ], 
+            "/load_maya_file": [
+                -1976.3098875733165, 
+                -216.53704069020483
+            ], 
+            "/post_build": [
+                1897.7095022076928, 
+                -1759.495933217878
+            ], 
+            "/prebuild": [
+                150.10484339139492, 
+                -1761.9248557840847
+            ], 
+            "/psd_mirror_deltas": [
+                -1981.1115282683481, 
+                -289.6989112196113
+            ], 
+            "/psd_mirror_system": [
+                -1981.111528268348, 
+                -146.2877959369278
+            ], 
+            "/right": [
+                1492.5721717604392, 
+                -1761.3241110888991
+            ], 
+            "/space_switch": [
+                -1963.012632771355, 
+                -787.3484995057528
+            ]
+        }, 
+        "collapse": {
+            "/apply": true, 
+            "/center": false, 
+            "/delivery": true, 
+            "/init": false, 
+            "/load": false, 
+            "/load/curves": true, 
+            "/load/joints": false, 
+            "/load/model": false, 
+            "/post_build": true, 
+            "/prebuild": false, 
+            "/prebuild/setup_model_override": true
+        }
+    }, 
+    "nodes": {
+        "/": {
+            "attrs": {
+                "element": {
+                    "type": "raw", 
+                    "value": "prop"
+                }, 
+                "variant": {
+                    "type": "raw", 
+                    "value": "base"
+                }
+            }
+        }, 
+        "/center/fk_chain": {
+            "attrs": {
+                "control_color": {
+                    "type": "int", 
+                    "value": "6"
+                }, 
+                "hierarchy": {
+                    "type": "bool", 
+                    "value": "True"
+                }, 
+                "joints": {
+                    "type": "list", 
+                    "value": "['root_bind', 'root_offset_bind']"
+                }, 
+                "parent": {
+                    "type": "str", 
+                    "value": "'rig'"
+                }
+            }, 
+            "code": [
+                "joints = ${joints}", 
+                "joints = mc.ls(joints)", 
+                "hierarchy = ${hierarchy}", 
+                "parent = ${parent}", 
+                "", 
+                "for joint in joints:", 
+                "    name = joint.replace('_bind', '')", 
+                "", 
+                "    # create the gimbal control for the end control", 
+                "    nul, ctrl = rig_control.create(name=name,", 
+                "                                controlType='circle',", 
+                "                                hierarchy=['nul'],", 
+                "                                transformType='transform',", 
+                "                                parent=parent,", 
+                "                                color=${control_color},", 
+                "                                type='body',", 
+                "                                rotateOrder='xyz')", 
+                "                            ", 
+                "    # lock attributes if it's in the hide_attrs attribute", 
+                "    rig_attribute.lockAndHide(ctrl, ['v'])", 
+                "                                ", 
+                "    # Align", 
+                "    rig_transform.align(nul, joint)", 
+                "    mc.parentConstraint(ctrl, joint)", 
+                "    mc.scaleConstraint(ctrl, joint)", 
+                "    ", 
+                "    if hierarchy:", 
+                "        parent = ctrl", 
+                ""
+            ]
+        }
+    }
+}

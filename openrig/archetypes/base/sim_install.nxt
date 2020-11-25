@@ -1,0 +1,423 @@
+{
+    "version": "1.16", 
+    "alias": "sim_install", 
+    "color": "#991c24", 
+    "mute": false, 
+    "solo": false, 
+    "nodes": {
+        "/sim_install": {
+            "child_order": [
+                "create_sim_scene", 
+                "load_sim_rig", 
+                "connect_sim_rig", 
+                "solver_start_frame", 
+                "position_sim_rig", 
+                "output"
+            ], 
+            "attrs": {
+                "namespace": {
+                    "type": "NoneType"
+                }, 
+                "sim_blend_frame": {
+                    "type": "int", 
+                    "value": "-25"
+                }, 
+                "sim_end_frame": {
+                    "type": "int", 
+                    "value": "200"
+                }, 
+                "sim_input_suffix": {
+                    "type": "raw", 
+                    "value": "_simInput"
+                }, 
+                "sim_rig_file": {
+                    "type": "raw"
+                }, 
+                "sim_start_frame": {
+                    "type": "int", 
+                    "value": "-30"
+                }, 
+                "source_cache_file": {
+                    "type": "raw"
+                }, 
+                "source_model": {
+                    "type": "str", 
+                    "value": "'${namespace}:model'"
+                }, 
+                "source_namespace": {
+                    "type": "str", 
+                    "value": "'${namespace}'"
+                }, 
+                "source_scene_file": {
+                    "type": "raw"
+                }, 
+                "target_model": {
+                    "type": "str", 
+                    "value": "'${namespace}${sim_input_suffix}:model'"
+                }, 
+                "target_namespace": {
+                    "type": "str", 
+                    "value": "'${namespace}${sim_input_suffix}'"
+                }, 
+                "target_scene_file": {
+                    "type": "raw"
+                }
+            }, 
+            "code": [
+                "# connect cleanup", 
+                "for cleanup_out_mesh in mc.ls(${source_namespace} + ':*cleanup_outShape'):", 
+                "    cleanup_in_mesh = cleanup_out_mesh.replace(", 
+                "        ${source_namespace}, ${target_namespace}).replace('_outShape', 'Shape')", 
+                "    if mc.objExists(cleanup_in_mesh):", 
+                "        blendshape_name = cleanup_out_mesh + '_input_blendShape'", 
+                "        mc.blendShape(cleanup_out_mesh,", 
+                "                      cleanup_in_mesh,", 
+                "                      name=blendshape_name,", 
+                "                      weight=(0, 1),", 
+                "                      origin='world')"
+            ]
+        }, 
+        "/sim_install/connect_sim_rig": {
+            "child_order": [
+                "get_node_data", 
+                "connect_upper_xforms", 
+                "connect_model_hierarchy", 
+                "connect_cleanup"
+            ], 
+            "code": [
+                "if not mc.objExists(${source_model}:", 
+                "    raise Exception('Source model not found under namespace \"%s\"' % ${source_namespace}", 
+                "", 
+                "if not mc.objExists(${target_model}:", 
+                "    raise Exception('Source model not found under namespace \"%s\"' % ${target_namespace}"
+            ]
+        }, 
+        "/sim_install/connect_sim_rig/connect_cleanup": {
+            "code": [
+                "# connect cleanup", 
+                "for cleanup_out_mesh in mc.ls(${source_namespace} + ':*cleanup_outShape'):", 
+                "    cleanup_in_mesh = cleanup_out_mesh.replace(${source_namespace}, ${target_namespace}).replace('_outShape', 'Shape')", 
+                "    if mc.objExists(cleanup_in_mesh):", 
+                "        blendshape_name = cleanup_out_mesh + '_input_blendShape'", 
+                "        mc.blendShape(cleanup_out_mesh,", 
+                "                      cleanup_in_mesh,", 
+                "                      name=blendshape_name,", 
+                "                      weight=(0, 1),", 
+                "                      origin='world')"
+            ]
+        }, 
+        "/sim_install/connect_sim_rig/connect_model_hierarchy": {
+            "code": [
+                "import showtools.maya.attr", 
+                "import showtools.maya.shape", 
+                "import showtools.maya.hierarchy", 
+                "", 
+                "# function to create and connect model hierarchy", 
+                "input_blendshapes = list()", 
+                "", 
+                "def create_model_hierarchy(node, ${source_namespace}, ${target_namespace}, root_parent=None):", 
+                "    \"\"\"Create node hierarchy starting with the given node. This node and all it's descendants", 
+                "    will be re-created in under a parent (rootParent). The rootParent is only used for the first", 
+                "    node into the hierarchy (root node). All the following nodes are parented to their", 
+                "    current parent names just in the new namespace.", 
+                "    ", 
+                "    :param node: node name to replicate under the new namespace.", 
+                "    :type node: str", 
+                "    ", 
+                "    :param ${source_namespace}: namespace name for the source hierarchy", 
+                "    :type ${source_namespace}: str", 
+                "    ", 
+                "    :param ${target_namespace}: namespace name for the target hierarchy", 
+                "    :type ${target_namespace}: str", 
+                "    ", 
+                "    :param root_parent: Unique parent node name for the first node to be replicated.", 
+                "    :type root_parent: str | None", 
+                "    \"\"\"", 
+                "    # get node name", 
+                "    source_node = self.STAGE.nd.findNode(node)", 
+                "    target_node = ':'.join([${target_namespace}, source_node.split(':')[-1]])", 
+                "    ", 
+                "    # check target node", 
+                "    if mc.objExists(target_node):", 
+                "        raise Exception('Target node \"%s\" should not exist.' % target_node)", 
+                "    ", 
+                "    # get target parent", 
+                "    source_parent = self.STAGE.nd.getNodeParent(source_node)", 
+                "    if root_parent:", 
+                "        target_parent = ':'.join([${target_namespace}, root_parent.split(':')[-1]])", 
+                "    else:", 
+                "        target_parent = ':'.join([${target_namespace}, source_parent.split(':')[-1]])", 
+                "    ", 
+                "    # check target parent", 
+                "    if not mc.objExists(target_parent):", 
+                "        raise Exception('Target parent \"%s\" not found.' % target_parent)", 
+                "    ", 
+                "    # create node", 
+                "    source_type = self.STAGE.nd.getNodeType(source_node)", 
+                "    target_node = mc.createNode(source_type, name=target_node, parent=target_parent)", 
+                "    ", 
+                "    # reorder", 
+                "    source_neighbors = self.STAGE.nd.getNodeNeighbors(source_node)", 
+                "    if source_neighbors:", 
+                "        source_neighbor = source_neighbors[0]", 
+                "        if source_neighbor:", 
+                "            target_neighbor = ':'.join([${target_namespace}, source_neighbor.split(':')[-1]])", 
+                "            if mc.objExists(target_neighbor):", 
+                "                showtools.maya.hierarchy.reorderTo(target_node, target_neighbor)", 
+                "    ", 
+                "    # add attrs", 
+                "    source_add_attr_cmds = self.STAGE.nd.getNodeAddAttrCmds(source_node) or {}", 
+                "    for cmd in source_add_attr_cmds.values():", 
+                "        showtools.maya.attr.applyAddAttrCmds([[target_node, cmd]], targetNode=None)", 
+                "    ", 
+                "    # set attrs", 
+                "    for source_attr, source_value in self.STAGE.nd.getNodeAttrData(source_node).iteritems():", 
+                "        target_plug = target_node + source_attr", 
+                "        self.STAGE.nd._applyAttr(target_plug, source_value)", 
+                "    ", 
+                "    # connect transforms", 
+                "    if source_type == 'transform':", 
+                "        # connect animation", 
+                "        input_plugs = mc.listConnections(source_node, p=True, c=True, s=True, d=False, type='animCurve') or []", 
+                "        for input_plug, output_plug in zip(input_plugs[::2], input_plugs[1::2]):", 
+                "            target_input_plug = ':'.join([${target_namespace}, input_plug.split(':')[-1]])", 
+                "            if mc.objExists(target_input_plug):", 
+                "                mc.connectAttr(output_plug, target_input_plug, f=True)", 
+                "    ", 
+                "    # connect shapes", 
+                "    if source_type != 'transform':", 
+                "        # get out and input shape names", 
+                "        target_out_shape = target_node.replace('Shape', '_outShape')", 
+                "        target_input_shape = target_node.replace('Shape', '_inputShape')", 
+                "        ", 
+                "        # out shapes", 
+                "        if mc.objExists(target_out_shape):", 
+                "            # get shape parent", 
+                "            target_node_parent = mc.listRelatives(target_node, p=True)[0]", 
+                "            ", 
+                "            # duplicate targetOut parent", 
+                "            target_out_node = mc.listRelatives(target_out_shape, p=True)[0]", 
+                "            dup = mc.rename(mc.duplicate(target_out_node)[0], target_out_node + '_TEMP')", 
+                "            dup_shape = mc.listRelatives(dup, s=True, ni=True)[0]", 
+                "            ", 
+                "            # replace original shape", 
+                "            mc.delete(target_node)", 
+                "            dup_target_node = mc.parent(dup_shape, target_node_parent, s=True, add=True)", 
+                "            mc.delete(dup)", 
+                "            target_node = mc.rename(dup_target_node, target_node)", 
+                "            mc.setAttr(target_node + '.intermediateObject', False)", 
+                "            ", 
+                "            # blendShape", 
+                "            blend_shape_name = target_out_shape + '_out_blendShape'", 
+                "            mc.blendShape(target_out_shape,", 
+                "                          target_node,", 
+                "                          name=blend_shape_name,", 
+                "                          weight=(0, 1),", 
+                "                          origin='world')", 
+                "        ", 
+                "        # input shapes", 
+                "        if mc.objExists(target_input_shape):", 
+                "            if not mc.objExists(target_out_shape):", 
+                "                showtools.maya.shape.connectShape(source_node, target_node)", 
+                "            blend_shape_name = target_input_shape + '_input_blendShape'", 
+                "            target_input_blend_shape = mc.blendShape(source_node,", 
+                "                                                     target_input_shape,", 
+                "                                                     name=blend_shape_name,", 
+                "                                                     weight=(0, 1),", 
+                "                                                     origin='world')", 
+                "            input_blendshapes.append(target_input_blend_shape[0])", 
+                "        ", 
+                "        # regular shapes", 
+                "        if not mc.objExists(target_out_shape) and not mc.objExists(target_input_shape):", 
+                "            showtools.maya.shape.connectShape(source_node, target_node)", 
+                "    ", 
+                "    # recurse for children", 
+                "    children = self.STAGE.nd.getNodeChildren(source_node)", 
+                "    if children:", 
+                "        for child in children:", 
+                "            create_model_hierarchy(child, ${source_namespace}, ${target_namespace})", 
+                "", 
+                "# create model hierarchy", 
+                "create_model_hierarchy(${source_model}, ${source_namespace}, ${target_namespace}, root_parent=None)", 
+                "", 
+                "# assign default shader", 
+                "mc.sets(${target_model}, e=True, fe='initialShadingGroup')", 
+                "", 
+                "# reorder model group", 
+                "mc.reorder(${target_model}, f=True)", 
+                "", 
+                "# connect model inherits transforms state", 
+                "mc.connectAttr(${source_namespace} + ':model.it', ${target_namespace} + ':model.it')", 
+                "", 
+                "# hide source hierarchy", 
+                "mc.hide(mc.ls(${source_namespace} + ':*', assemblies=True))", 
+                "", 
+                "# keyframe input blendShapes", 
+                "for blendshape in input_blendshapes:", 
+                "    mc.setKeyframe(blendShape + '.envelope', time=${sim_start_frame}, value=0.0)", 
+                "    mc.setKeyframe(blendShape + '.envelope', time=${sim_blend_frame}, value=1.0)"
+            ]
+        }, 
+        "/sim_install/connect_sim_rig/connect_upper_xforms": {
+            "attrs": {
+                "upper_transforms": {
+                    "type": "list", 
+                    "value": "['global_trs', 'master_trs', 'aux_trs']"
+                }
+            }, 
+            "code": [
+                "from showtools.maya.data import nodeData as nodeData", 
+                "", 
+                "source_upper_transforms = [${source_namespace} + ':' + n for n in ${upper_transforms}]", 
+                "trs_node_data = nodeData.NodeData(mc.ls(source_upper_transforms), addAttrCmds=True, defaultAttrs=True)", 
+                "for source_node in source_upper_transforms:", 
+                "    # get target node", 
+                "    target_node = source_node.replace(${source_namespace}, ${target_namespace})", 
+                "    ", 
+                "    # connections", 
+                "    input_plugs = mc.listConnections(source_node, p=True, c=True, s=True, d=False) or []", 
+                "    for input_plug, output_plug in zip(input_plugs[::2], input_plugs[1::2]):", 
+                "        target_input_plug = ':'.join([target_namespace, input_plug.split(':')[-1]])", 
+                "        if mc.objExists(target_input_plug):", 
+                "            mc.connectAttr(output_plug, target_input_plug, f=True)", 
+                "    ", 
+                "    # add attrs", 
+                "    source_add_attr_cmds = trs_node_data.getNodeAddAttrCmds(source_node) or {}", 
+                "    for cmd in source_add_attr_cmds.values():", 
+                "        showtools.maya.attr.applyAddAttrCmds([[target_node, cmd]], target_node=None)", 
+                "    ", 
+                "    # set attrs", 
+                "    for source_attr, source_value in trs_node_data.getNodeAttrData(source_node).iteritems():", 
+                "        target_plug = target_node + source_attr", 
+                "        if mc.getAttr(target_plug, settable=True):", 
+                "            trs_node_data._applyAttr(target_plug, source_value)"
+            ]
+        }, 
+        "/sim_install/connect_sim_rig/get_node_data": {
+            "code": [
+                "from showtools.maya.data import nodeData as nodeData", 
+                "", 
+                "nd = nodeData.NodeData(mc.ls(sourceModel, dag=True, ni=True), addAttrCmds=True, defaultAttrs=True)", 
+                "self.STAGE.nd = nd", 
+                "# Todo: why am i doing this?", 
+                "sourceModel = nd.findNode(sourceModel)"
+            ]
+        }, 
+        "/sim_install/create_sim_scene": {
+            "code": [
+                "# open source file", 
+                "source_scene_file = self.source_scene_file", 
+                "if source_scene_file is not None:", 
+                "    mc.file(source_scene_file, open=True)", 
+                "", 
+                "# set timeline", 
+                "mc.playbackOptions(min=${sim_start_frame}, max=${sim_end_frame}, ast=${sim_start_frame}, aet=${sim_end_frame})", 
+                "", 
+                "# save target file", 
+                "target_scene_file = self.target_scene_file", 
+                "if target_scene_file is not None:", 
+                "    mc.file(rename=target_scene_file)", 
+                "    mc.file(save=True)"
+            ]
+        }, 
+        "/sim_install/load_sim_rig": {
+            "code": [
+                "sim_rig_file = self.sim_rig_file", 
+                "mc.file(sim_rig_file, i=True, namespace=${target_namespace})"
+            ]
+        }, 
+        "/sim_install/output": {
+            "child_order": [
+                "save_changes"
+            ]
+        }, 
+        "/sim_install/output/save_changes": {
+            "code": [
+                "mc.file(save=True)"
+            ]
+        }, 
+        "/sim_install/position_sim_rig": {
+            "code": [
+                "import showtools.maya.deformerOnGeo as deformerOnGeo", 
+                "", 
+                "# position sim rig function", 
+                "def position_sim_rig():", 
+                "    # get alignment vert index", 
+                "    alignment_vert_plug = mc.ls(${target_namespace} + ':*.alignVertId')", 
+                "    if alignment_vert_plug:", 
+                "        vert = mc.getAttr(alignment_vert_plug[0])", 
+                "    else:", 
+                "        raise Exception('No alignment vert attribute found.')", 
+                "    ", 
+                "    # get source geo", 
+                "    source_geo = alignment_vert_plug[0].split('.')[0]", 
+                "    if not mc.objExists(source_geo):", 
+                "        raise Exception('Source geometry \"%s\" not found' % source_geo)", 
+                "    ", 
+                "    # get target geo", 
+                "    target_geo = source_geo.replace('_input', '')", 
+                "    if not mc.objExists(target_geo):", 
+                "        raise Exception('Target geometry \"%s\" not found' % target_geo)", 
+                "    ", 
+                "    # get sim group", 
+                "    # todo: cleanup these names once the rigs are more consistent", 
+                "    sim_group = mc.ls(${target_namespace} + ':cloth_sim', ${target_namespace} + ':hair', ${target_namespace} + ':cloth')", 
+                "    if sim_group:", 
+                "        sim_group = sim_group[0]", 
+                "    else:", 
+                "        raise Exception('Sim group not found.')", 
+                "    ", 
+                "    # source rivet", 
+                "    source_point = source_geo + '.vtx[%s]' % vert", 
+                "    source_rivet = mc.createNode('transform', n=source_geo + '_rivet')", 
+                "    source_geo_plug = source_geo + '.worldMesh'", 
+                "    deformerOnGeo.attachDeformerToGeo(point=source_point,", 
+                "                                      geo=source_geo,", 
+                "                                      nul=source_rivet,", 
+                "                                      plug=source_geo_plug)", 
+                "    ", 
+                "    # target rivet", 
+                "    target_point = target_geo + '.vtx[%s]' % vert", 
+                "    target_rivet = mc.createNode('transform', n=target_geo + '_rivet')", 
+                "    target_geo_plug = target_geo + '.worldMesh'", 
+                "    deformerOnGeo.attachDeformerToGeo(point=target_point,", 
+                "                                      geo=target_geo,", 
+                "                                      nul=target_rivet,", 
+                "                                      plug=target_geo_plug)", 
+                "    ", 
+                "    # build transform helper", 
+                "    parent = mc.createNode('transform', n='HELPER_PARENT')", 
+                "    mc.delete(mc.parentConstraint(target_rivet, parent))", 
+                "    transform = mc.createNode('transform', n='HELPER_TRANSFORM')", 
+                "    mc.parent(transform, parent)", 
+                "    mc.setAttr(transform + '.translate', 0, 0, 0)", 
+                "    mc.delete(mc.parentConstraint(source_rivet, parent))", 
+                "    ", 
+                "    # set rotation", 
+                "    rotate_offset = mc.xform(transform, q=True, ws=True, ro=True)", 
+                "    mc.xform(sim_group, ro=rotate_offset)", 
+                "    ", 
+                "    # set translation", 
+                "    source_position = mc.xform(source_rivet, q=True, ws=True, t=True)", 
+                "    target_position = mc.xform(target_rivet, q=True, ws=True, t=True)", 
+                "    translate_offset = [source_position[0] - target_position[0],", 
+                "                        source_position[1] - target_position[1],", 
+                "                        source_position[2] - target_position[2]]", 
+                "    mc.xform(sim_group, t=translate_offset)", 
+                "    ", 
+                "    # cleanup", 
+                "    mc.delete(source_rivet, target_rivet, parent)", 
+                "", 
+                "position_sim_rig()"
+            ]
+        }, 
+        "/sim_install/solver_start_frame": {
+            "code": [
+                "# set solver start frame", 
+                "for solver in mc.ls(${target_namespace} + ':*', type='carbon'): # Todo: is 'carbon' correct?", 
+                "    if solver.startswith(${target_namespace}):", 
+                "        mc.setAttr(solver + '.startFrame', startFrame)"
+            ]
+        }
+    }
+}

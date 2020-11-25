@@ -1,0 +1,173 @@
+{
+    "type": "CurveData", 
+    "user": "Matt", 
+    "time": "2020-10-27 12:38:11", 
+    "data": {
+        "root_offset": {
+            "dagPath": "|prop|trs_master|trs_shot|trs_aux|rig|root_nul|root|root_offset_nul|root_offset", 
+            "translate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "world_translate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "world_rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "shapes": {
+                "root_offsetShape": {
+                    "cvPositions": [
+                        [
+                            5.2277, 
+                            0.0, 
+                            -5.2277
+                        ], 
+                        [
+                            0.0, 
+                            0.0, 
+                            -7.3931
+                        ], 
+                        [
+                            -5.2277, 
+                            0.0, 
+                            -5.2277
+                        ], 
+                        [
+                            -7.3931, 
+                            0.0, 
+                            0.0
+                        ], 
+                        [
+                            -5.2277, 
+                            0.0, 
+                            5.2277
+                        ], 
+                        [
+                            0.0, 
+                            0.0, 
+                            7.3931
+                        ], 
+                        [
+                            5.2277, 
+                            0.0, 
+                            5.2277
+                        ], 
+                        [
+                            7.3931, 
+                            0.0, 
+                            0.0
+                        ]
+                    ], 
+                    "degree": 3, 
+                    "form": "Periodic"
+                }
+            }, 
+            "color": 24
+        }, 
+        "root": {
+            "dagPath": "|prop|trs_master|trs_shot|trs_aux|rig|root_nul|root", 
+            "translate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "world_translate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "world_rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "shapes": {
+                "rootShape": {
+                    "cvPositions": [
+                        [
+                            7.1854, 
+                            0.0, 
+                            -7.1854
+                        ], 
+                        [
+                            0.0, 
+                            0.0, 
+                            -10.1617
+                        ], 
+                        [
+                            -7.1854, 
+                            0.0, 
+                            -7.1854
+                        ], 
+                        [
+                            -10.1617, 
+                            0.0, 
+                            0.0
+                        ], 
+                        [
+                            -7.1854, 
+                            -0.0, 
+                            7.1854
+                        ], 
+                        [
+                            -0.0, 
+                            -0.0, 
+                            10.1617
+                        ], 
+                        [
+                            7.1854, 
+                            -0.0, 
+                            7.1854
+                        ], 
+                        [
+                            10.1617, 
+                            -0.0, 
+                            0.0
+                        ]
+                    ], 
+                    "degree": 3, 
+                    "form": "Periodic"
+                }
+            }, 
+            "color": 6
+        }
+    }
+}

@@ -1,0 +1,205 @@
+{
+    "version": "1.15", 
+    "alias": "delivery", 
+    "color": "#aa00ff", 
+    "mute": false, 
+    "solo": false, 
+    "meta_data": {
+        "positions": {
+            "/delivery": [
+                2608.194953610354, 
+                -1667.1660796636995
+            ], 
+            "/delivery/convert_to_skinclusters": [
+                0.0, 
+                0.0
+            ], 
+            "/delivery/lock_nodes": [
+                0.0, 
+                0.0
+            ]
+        }
+    }, 
+    "nodes": {
+        "/delivery": {
+            "child_order": [
+                "unique_deformers", 
+                "convert_to_skinclusters", 
+                "remove_nodes", 
+                "localize", 
+                "lock_nodes", 
+                "hide_history", 
+                "model_override", 
+                "delete_rig_sets", 
+                "hide_handles"
+            ], 
+            "enabled": false
+        }, 
+        "/delivery/convert_to_skinclusters": {}, 
+        "/delivery/delete_rig_sets": {
+            "attrs": {
+                "rig_set_list": {
+                    "type": "list", 
+                    "value": "['RigSets']"
+                }
+            }, 
+            "instance": "", 
+            "code": [
+                "# this node should go through and delete rig sets passed by the user.", 
+                "rig_sets = ${rig_set_list}", 
+                "", 
+                "if mc.objExists(rig_sets[0]):", 
+                "    rig_sets_all = rig_sets[:]", 
+                "", 
+                "    while rig_sets:", 
+                "        current_children = []", 
+                "        for rig_set in rig_sets:", 
+                "            children = mc.sets(rig_set, q=1)", 
+                "            if children:", 
+                "                for child in children:", 
+                "                    if mc.nodeType(child) == 'objectSet':", 
+                "                        current_children.append(child)", 
+                "        if current_children:", 
+                "            rig_sets = current_children", 
+                "            rig_sets_all += current_children", 
+                "        else:", 
+                "            rig_sets = None", 
+                "", 
+                "    if rig_sets_all:", 
+                "        mc.delete(rig_sets_all)"
+            ]
+        }, 
+        "/delivery/hide_handles": {
+            "attrs": {
+                "control_list": {
+                    "type": "raw", 
+                    "value": "mc.ls('*.__face_control__', o=True)"
+                }
+            }, 
+            "code": [
+                "ctrl_list = ${control_list}", 
+                "", 
+                "for ctrl in ctrl_list:", 
+                "    mc.setAttr('{}.displayHandle'.format(ctrl), 0)", 
+                ""
+            ]
+        }, 
+        "/delivery/hide_history": {
+            "attrs": {
+                "exclude_node_list": {
+                    "type": "list", 
+                    "value": "[]"
+                }, 
+                "exclude_type_list": {
+                    "type": "tuple", 
+                    "value": "(\"skinCluster\",\"wire\", \"blendShape\", \"deltaMush\", \"cluster\", \"mesh\", \"nurbsCurve\", \"nurbsSurface\")"
+                }
+            }, 
+            "instance": "", 
+            "code": [
+                "for node in mc.ls(\"*\"):", 
+                "    if node not in ${exclude_node_list}:", 
+                "        mc.setAttr(node + '.isHistoricallyInteresting', 0)", 
+                "        if mc.objectType(node) in ${exclude_type_list}:", 
+                "            mc.setAttr(node + '.isHistoricallyInteresting', 1)", 
+                ""
+            ]
+        }, 
+        "/delivery/localize": {
+            "attrs": {
+                "cluster_list": {
+                    "type": "raw", 
+                    "value": "mc.ls(\"lid*blink*cluster\")"
+                }, 
+                "localize_node": {
+                    "type": "str", 
+                    "value": "'model'"
+                }, 
+                "skinCluster_list": {
+                    "type": "raw", 
+                    "value": "mc.ls(type=\"skinCluster\")"
+                }
+            }, 
+            "instance": "", 
+            "code": [
+                "# localize the skinClusters", 
+                "rig_skinCluster.localize(${skinCluster_list}, ${localize_node})", 
+                "", 
+                "# localize clusters", 
+                "for cluster in ${cluster_list}:", 
+                "    cluster_name = cluster.split(\"__\")[-1]", 
+                "    rig_cluster.localize(cluster, \"{}_auto\".format(cluster_name), ${localize_node})", 
+                ""
+            ]
+        }, 
+        "/delivery/lock_nodes": {
+            "comment": "This will lock the nodes that aren't controls or nodes that need to be locked\n", 
+            "instance": "", 
+            "code": [
+                "# we shouldn't be locking translates of joints effected by ikHandles", 
+                "ik_joint_list = list()", 
+                "for hdl in mc.ls(type=\"ikHandle\"):", 
+                "    ik_joint_list.extend(mc.ikHandle(hdl, q=True, jl=True))", 
+                "    ", 
+                "control_list = rig_control.getControls()", 
+                "lockNodes = set(mc.ls(type=\"transform\")).difference(control_list + [mc.listRelatives(shape, p=True)[0] for shape in mc.ls(type=\"camera\")] + ik_joint_list)", 
+                "for node in lockNodes:", 
+                "    rig_attribute.lock(node, ['tx', 'ty', 'tz', 'rx', 'ry', 'rz', 'sx', 'sy', 'sz','t','r','s'])", 
+                "    ", 
+                "for ctrl in control_list:", 
+                "    if mc.objExists(ctrl+'.jointOrient'):", 
+                "        rig_attribute.lock(ctrl, ['jointOrient', 'rotateAxis', 'radius'])", 
+                "", 
+                "for ctrl in mc.ls((\"trs_master\", \"trs_shot\", \"trs_aux\")):", 
+                "    rig_attribute.lockAndHide(ctrl, ['v'])", 
+                "", 
+                "rig_attribute.lockAndHide(mc.listRelatives(\"trs_master\", p=True), ['tx', 'ty', 'tz', 'rx', 'ry', 'rz', 'sx', 'sy', 'sz','t','r','s','v'])", 
+                ""
+            ]
+        }, 
+        "/delivery/model_override": {
+            "attrs": {
+                "model_node": {
+                    "type": "raw", 
+                    "value": "model"
+                }
+            }, 
+            "instance": "", 
+            "code": [
+                "if mc.objExists('${model_node}'):", 
+                "    mc.setAttr('${model_node}.overrideModel', 1)", 
+                "        "
+            ]
+        }, 
+        "/delivery/remove_nodes": {
+            "attrs": {
+                "remove_node_list": {
+                    "type": "tuple", 
+                    "value": "(\"poseFreeze\", \"lip_up_*cluster\", \"lip_low_*cluster\", \"lip_corner_*cluster\", \"lip_center_*cluster\", \"?_leg_*wire\", \"?_arm_*wire\",\"brow*wire\", \"brow*curve\")"
+                }
+            }, 
+            "instance": "", 
+            "code": [
+                "mc.delete(mc.ls(${remove_node_list}))"
+            ]
+        }, 
+        "/delivery/unique_deformers": {
+            "attrs": {
+                "deformer_list": {
+                    "type": "list", 
+                    "value": "[]"
+                }, 
+                "geometry_list": {
+                    "type": "list", 
+                    "value": "[]"
+                }
+            }, 
+            "code": [
+                "# this will have to be updated to do multiple nodes", 
+                "for deformer, geometry in zip(${deformer_list}, ${geometry_list}):", 
+                "    if mc.objExists(deformer) and mc.objExists(geometry):", 
+                "        rig_deformer.makeDeformerUnique(deformer, geometry)"
+            ]
+        }
+    }
+}

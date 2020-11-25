@@ -1,0 +1,7147 @@
+{
+    "type": "JointData", 
+    "user": "walte", 
+    "time": "2020-09-28 18:31:05", 
+    "data": {
+        "ring_005_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wrist_l_bind|ring_001_l_bind|ring_002_l_bind|ring_003_l_bind|ring_004_l_bind|ring_005_l_bind", 
+            "translate": [
+                2.368, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "ring_004_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wrist_l_bind|ring_001_l_bind|ring_002_l_bind|ring_003_l_bind|ring_004_l_bind", 
+            "translate": [
+                2.7605, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "ring_003_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wrist_l_bind|ring_001_l_bind|ring_002_l_bind|ring_003_l_bind", 
+            "translate": [
+                3.8682, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "ring_002_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wrist_l_bind|ring_001_l_bind|ring_002_l_bind", 
+            "translate": [
+                5.387, 
+                -0.1972, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -7.7923, 
+                4.3545, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "ring_001_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wrist_l_bind|ring_001_l_bind", 
+            "translate": [
+                2.188, 
+                1.0667, 
+                0.765
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                90.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "middle_005_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wrist_l_bind|middle_001_l_bind|middle_002_l_bind|middle_003_l_bind|middle_004_l_bind|middle_005_l_bind", 
+            "translate": [
+                2.6984, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "middle_004_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wrist_l_bind|middle_001_l_bind|middle_002_l_bind|middle_003_l_bind|middle_004_l_bind", 
+            "translate": [
+                3.1316, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "middle_003_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wrist_l_bind|middle_001_l_bind|middle_002_l_bind|middle_003_l_bind", 
+            "translate": [
+                4.3058, 
+                0.0, 
+                -0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "middle_002_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wrist_l_bind|middle_001_l_bind|middle_002_l_bind", 
+            "translate": [
+                5.6544, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "middle_001_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wrist_l_bind|middle_001_l_bind", 
+            "translate": [
+                2.188, 
+                -1.4155, 
+                0.765
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                90.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "index_005_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wrist_l_bind|index_001_l_bind|index_002_l_bind|index_003_l_bind|index_004_l_bind|index_005_l_bind", 
+            "translate": [
+                2.933, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "index_004_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wrist_l_bind|index_001_l_bind|index_002_l_bind|index_003_l_bind|index_004_l_bind", 
+            "translate": [
+                2.6384, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "index_003_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wrist_l_bind|index_001_l_bind|index_002_l_bind|index_003_l_bind", 
+            "translate": [
+                3.5555, 
+                0.0, 
+                -0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "index_002_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wrist_l_bind|index_001_l_bind|index_002_l_bind", 
+            "translate": [
+                5.6683, 
+                0.0, 
+                0.3124
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                8.3652, 
+                -3.7815, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "index_001_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wrist_l_bind|index_001_l_bind", 
+            "translate": [
+                2.188, 
+                -3.515, 
+                0.547
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                90.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "pinky_005_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wrist_l_bind|pinkyCup_l_bind|pinky_001_l_bind|pinky_002_l_bind|pinky_003_l_bind|pinky_004_l_bind|pinky_005_l_bind", 
+            "translate": [
+                1.091, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "pinky_004_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wrist_l_bind|pinkyCup_l_bind|pinky_001_l_bind|pinky_002_l_bind|pinky_003_l_bind|pinky_004_l_bind", 
+            "translate": [
+                2.0866, 
+                0.0, 
+                -0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "pinky_003_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wrist_l_bind|pinkyCup_l_bind|pinky_001_l_bind|pinky_002_l_bind|pinky_003_l_bind", 
+            "translate": [
+                3.0123, 
+                -0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "pinky_002_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wrist_l_bind|pinkyCup_l_bind|pinky_001_l_bind|pinky_002_l_bind", 
+            "translate": [
+                5.9986, 
+                -0.2787, 
+                -0.6712
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -14.9378, 
+                6.1291, 
+                -2.4055
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "pinky_001_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wrist_l_bind|pinkyCup_l_bind|pinky_001_l_bind", 
+            "translate": [
+                -0.8587, 
+                2.4498, 
+                0.3998
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                89.9676, 
+                -90.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "pinkyCup_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wrist_l_bind|pinkyCup_l_bind", 
+            "translate": [
+                0.8928, 
+                0.1444, 
+                -0.0946
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                90.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "thumb_004_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wrist_l_bind|thumbCup_l_bind|thumb_001_l_bind|thumb_002_l_bind|thumb_003_l_bind|thumb_004_l_bind", 
+            "translate": [
+                3.3061, 
+                -0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "thumb_003_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wrist_l_bind|thumbCup_l_bind|thumb_001_l_bind|thumb_002_l_bind|thumb_003_l_bind", 
+            "translate": [
+                3.2016, 
+                0.0, 
+                -0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                -6.1847
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "thumb_002_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wrist_l_bind|thumbCup_l_bind|thumb_001_l_bind|thumb_002_l_bind", 
+            "translate": [
+                2.4116, 
+                -0.2675, 
+                -0.3754
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                27.4309, 
+                10.3722, 
+                -1.0206
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "thumb_001_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wrist_l_bind|thumbCup_l_bind|thumb_001_l_bind", 
+            "translate": [
+                1.4609, 
+                -4.3073, 
+                -0.6717
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                6.0367, 
+                25.3394, 
+                -87.6496
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "thumbCup_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wrist_l_bind|thumbCup_l_bind", 
+            "translate": [
+                0.841, 
+                -0.198, 
+                -0.0946
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                96.9309, 
+                -60.4967, 
+                -92.6874
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "wrist_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wrist_l_bind", 
+            "translate": [
+                25.2149, 
+                0.0, 
+                -0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 1, 
+            "jointOrient": [
+                -4.2399, 
+                -0.0, 
+                2.619
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 1
+        }, 
+        "wristSwing_l_driver": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wristTwist_l_bind|wristSwing_l_driver", 
+            "translate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                -0.0044, 
+                -0.1936, 
+                2.6118
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "wristTwist_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wristTwist_l_bind", 
+            "translate": [
+                25.2149, 
+                0.0, 
+                -0.0
+            ], 
+            "rotate": [
+                -4.2399, 
+                0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 1, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 1
+        }, 
+        "wristTwist_l_driver": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|wristTwist_l_driver", 
+            "translate": [
+                25.2149, 
+                0.0, 
+                -0.0
+            ], 
+            "rotate": [
+                -4.2399, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "elbow_l_driver": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|elbowTwist_l_bind|elbow_l_driver", 
+            "translate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                -2.619
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "elbowTwist_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind|elbowTwist_l_bind", 
+            "translate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                -0.0, 
+                2.619
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                -90.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "elbow_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind|elbow_l_bind", 
+            "translate": [
+                29.001, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                -2.619
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                -90.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "shoulder_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_bind", 
+            "translate": [
+                16.8552, 
+                0.9282, 
+                -1.5914
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "shoulderNoTwist_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulderNoTwist_l_bind", 
+            "translate": [
+                16.8552, 
+                0.9282, 
+                -1.5914
+            ], 
+            "rotate": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "clavicle_trans_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|clavicle_trans_l_bind", 
+            "translate": [
+                16.8552, 
+                0.9282, 
+                -1.5914
+            ], 
+            "rotate": [
+                -85.9187, 
+                3.5278, 
+                -5.1477
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                85.7601, 
+                -0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "shoulder_l_twist_driver": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_driver|shoulder_l_twist_driver", 
+            "translate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "shoulder_l_driver": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulder_l_driver", 
+            "translate": [
+                16.8552, 
+                0.9282, 
+                -1.5914
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "clavicle_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind", 
+            "translate": [
+                14.1032, 
+                2.8541, 
+                -0.3882
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                4.2399, 
+                90.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "brow_inner_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_upper_bind|head_tip_bind|brow_inner_l_bind", 
+            "translate": [
+                1.9079, 
+                1.0038, 
+                10.1599
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -12.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "brow_main_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_upper_bind|head_tip_bind|brow_main_l_bind", 
+            "translate": [
+                4.0592, 
+                1.0796, 
+                9.1355
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -12.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "brow_peak_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_upper_bind|head_tip_bind|brow_peak_l_bind", 
+            "translate": [
+                5.6881, 
+                1.126, 
+                8.3736
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -12.0, 
+                37.237, 
+                -7.6
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "brow_main_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_upper_bind|head_tip_bind|brow_main_r_bind", 
+            "translate": [
+                -4.0414, 
+                1.0796, 
+                9.1355
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                12.0, 
+                180.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "brow_peak_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_upper_bind|head_tip_bind|brow_peak_r_bind", 
+            "translate": [
+                -5.6703, 
+                1.126, 
+                8.3736
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                12.0, 
+                142.763, 
+                7.6
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "brow_inner_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_upper_bind|head_tip_bind|brow_inner_r_bind", 
+            "translate": [
+                -1.8901, 
+                1.0038, 
+                10.1599
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                12.0, 
+                180.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "head_tip_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_upper_bind|head_tip_bind", 
+            "translate": [
+                -0.0, 
+                4.926, 
+                1.6493
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "eye_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_upper_bind|eyeSocket_r_bind|eye_r_bind", 
+            "translate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "eyeSocket_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_upper_bind|eyeSocket_r_bind", 
+            "translate": [
+                -3.8831, 
+                2.7243, 
+                7.4882
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                180.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "eye_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_upper_bind|eyeSocket_l_bind|eye_l_bind", 
+            "translate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "eyeSocket_l_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_upper_bind|eyeSocket_l_bind", 
+            "translate": [
+                3.9009, 
+                2.7243, 
+                7.4882
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "face_upper_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_upper_bind", 
+            "translate": [
+                4.8505, 
+                -0.5323, 
+                0.0089
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                87.1352, 
+                90.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "teeth_upper_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_lower_bind|face_mid_bind|teeth_upper_bind", 
+            "translate": [
+                0.0, 
+                -5.3504, 
+                -10.4472
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                180.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "nose_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_lower_bind|face_mid_bind|nose_bridge_bind|nose_bind", 
+            "translate": [
+                0.0, 
+                -5.1808, 
+                -0.0565
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                4.9274, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "nose_bridge_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_lower_bind|face_mid_bind|nose_bridge_bind", 
+            "translate": [
+                0.0, 
+                2.302, 
+                -10.6297
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                168.5408, 
+                0.0, 
+                -180.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "jaw_compression_driver": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_lower_bind|face_mid_bind|jaw_compression_driver", 
+            "translate": [
+                0.0, 
+                -5.648, 
+                -11.5855
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "face_mid_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_lower_bind|face_mid_bind", 
+            "translate": [
+                0.0, 
+                -2.9687, 
+                -0.1637
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "jaw_end": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_lower_bind|jaw_bind|jaw_end", 
+            "translate": [
+                -0.0, 
+                -8.1855, 
+                -11.048
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "teeth_lower_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_lower_bind|jaw_bind|teeth_lower_bind", 
+            "translate": [
+                0.0, 
+                -3.3894, 
+                -11.388
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                180.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "tongue_4_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_lower_bind|jaw_bind|tongue_0_bind|tongue_1_bind|tongue_2_bind|tongue_3_bind|tongue_4_bind", 
+            "translate": [
+                1.4567, 
+                -0.3311, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "tongue_3_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_lower_bind|jaw_bind|tongue_0_bind|tongue_1_bind|tongue_2_bind|tongue_3_bind", 
+            "translate": [
+                1.7642, 
+                -0.1855, 
+                -0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                0.0, 
+                -4.6111
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "tongue_2_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_lower_bind|jaw_bind|tongue_0_bind|tongue_1_bind|tongue_2_bind", 
+            "translate": [
+                1.8325, 
+                -0.5273, 
+                -0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                -21.1932
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "tongue_1_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_lower_bind|jaw_bind|tongue_0_bind|tongue_1_bind", 
+            "translate": [
+                2.0615, 
+                -0.8638, 
+                -0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                -0.0, 
+                -29.2916
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "tongue_0_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_lower_bind|jaw_bind|tongue_0_bind", 
+            "translate": [
+                0.0, 
+                -3.9607, 
+                -2.7812
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                90.0, 
+                43.8766, 
+                90.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "jaw_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_lower_bind|jaw_bind", 
+            "translate": [
+                0.0, 
+                -4.9298, 
+                0.7771
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "face_lower_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_lower_bind", 
+            "translate": [
+                7.8073, 
+                -0.2204, 
+                0.0089
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -87.1352, 
+                -90.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "skull_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind", 
+            "translate": [
+                3.3758, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "neck_3_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind", 
+            "translate": [
+                3.3758, 
+                0.0, 
+                -0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "neck_2_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind", 
+            "translate": [
+                3.3758, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "neck_1_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind", 
+            "translate": [
+                3.3758, 
+                -0.0042, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "neck_0_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind", 
+            "translate": [
+                3.3758, 
+                -0.0667, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                -1.6043
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "neck_base_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind", 
+            "translate": [
+                12.0702, 
+                3.971, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "ring_005_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wrist_r_bind|ring_001_r_bind|ring_002_r_bind|ring_003_r_bind|ring_004_r_bind|ring_005_r_bind", 
+            "translate": [
+                -2.368, 
+                -0.0, 
+                -0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "ring_004_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wrist_r_bind|ring_001_r_bind|ring_002_r_bind|ring_003_r_bind|ring_004_r_bind", 
+            "translate": [
+                -2.7605, 
+                -0.0, 
+                0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "ring_003_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wrist_r_bind|ring_001_r_bind|ring_002_r_bind|ring_003_r_bind", 
+            "translate": [
+                -3.8682, 
+                -0.0, 
+                -0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "ring_002_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wrist_r_bind|ring_001_r_bind|ring_002_r_bind", 
+            "translate": [
+                -5.387, 
+                0.1972, 
+                0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -7.7923, 
+                4.3545, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "ring_001_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wrist_r_bind|ring_001_r_bind", 
+            "translate": [
+                -2.188, 
+                -1.0667, 
+                -0.765
+            ], 
+            "rotate": [
+                -0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                90.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "middle_005_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wrist_r_bind|middle_001_r_bind|middle_002_r_bind|middle_003_r_bind|middle_004_r_bind|middle_005_r_bind", 
+            "translate": [
+                -2.6984, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "middle_004_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wrist_r_bind|middle_001_r_bind|middle_002_r_bind|middle_003_r_bind|middle_004_r_bind", 
+            "translate": [
+                -3.1316, 
+                0.0, 
+                -0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "middle_003_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wrist_r_bind|middle_001_r_bind|middle_002_r_bind|middle_003_r_bind", 
+            "translate": [
+                -4.3058, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "middle_002_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wrist_r_bind|middle_001_r_bind|middle_002_r_bind", 
+            "translate": [
+                -5.6544, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "middle_001_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wrist_r_bind|middle_001_r_bind", 
+            "translate": [
+                -2.188, 
+                1.4155, 
+                -0.765
+            ], 
+            "rotate": [
+                -0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                90.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "index_005_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wrist_r_bind|index_001_r_bind|index_002_r_bind|index_003_r_bind|index_004_r_bind|index_005_r_bind", 
+            "translate": [
+                -2.933, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "index_004_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wrist_r_bind|index_001_r_bind|index_002_r_bind|index_003_r_bind|index_004_r_bind", 
+            "translate": [
+                -2.6384, 
+                -0.0, 
+                0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "index_003_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wrist_r_bind|index_001_r_bind|index_002_r_bind|index_003_r_bind", 
+            "translate": [
+                -3.5555, 
+                -0.0, 
+                0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "index_002_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wrist_r_bind|index_001_r_bind|index_002_r_bind", 
+            "translate": [
+                -5.6683, 
+                0.0, 
+                -0.3124
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                8.3652, 
+                -3.7815, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "index_001_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wrist_r_bind|index_001_r_bind", 
+            "translate": [
+                -2.188, 
+                3.515, 
+                -0.547
+            ], 
+            "rotate": [
+                -0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                90.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "pinky_005_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wrist_r_bind|pinkyCup_r_bind|pinky_001_r_bind|pinky_002_r_bind|pinky_003_r_bind|pinky_004_r_bind|pinky_005_r_bind", 
+            "translate": [
+                -1.091, 
+                -0.0, 
+                -0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "pinky_004_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wrist_r_bind|pinkyCup_r_bind|pinky_001_r_bind|pinky_002_r_bind|pinky_003_r_bind|pinky_004_r_bind", 
+            "translate": [
+                -2.0866, 
+                -0.0, 
+                0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "pinky_003_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wrist_r_bind|pinkyCup_r_bind|pinky_001_r_bind|pinky_002_r_bind|pinky_003_r_bind", 
+            "translate": [
+                -3.0123, 
+                0.0, 
+                -0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "pinky_002_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wrist_r_bind|pinkyCup_r_bind|pinky_001_r_bind|pinky_002_r_bind", 
+            "translate": [
+                -5.9986, 
+                0.2787, 
+                0.6712
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -14.9378, 
+                6.1291, 
+                -2.4055
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "pinky_001_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wrist_r_bind|pinkyCup_r_bind|pinky_001_r_bind", 
+            "translate": [
+                0.8587, 
+                -2.4498, 
+                -0.3998
+            ], 
+            "rotate": [
+                -0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                89.9676, 
+                -90.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "pinkyCup_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wrist_r_bind|pinkyCup_r_bind", 
+            "translate": [
+                -0.8928, 
+                -0.1444, 
+                0.0946
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                90.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "thumb_004_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wrist_r_bind|thumbCup_r_bind|thumb_001_r_bind|thumb_002_r_bind|thumb_003_r_bind|thumb_004_r_bind", 
+            "translate": [
+                -3.3061, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "thumb_003_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wrist_r_bind|thumbCup_r_bind|thumb_001_r_bind|thumb_002_r_bind|thumb_003_r_bind", 
+            "translate": [
+                -3.2016, 
+                -0.0, 
+                0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                -6.1847
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "thumb_002_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wrist_r_bind|thumbCup_r_bind|thumb_001_r_bind|thumb_002_r_bind", 
+            "translate": [
+                -2.4116, 
+                0.2675, 
+                0.3754
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                27.4309, 
+                10.3722, 
+                -1.0206
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "thumb_001_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wrist_r_bind|thumbCup_r_bind|thumb_001_r_bind", 
+            "translate": [
+                -1.4609, 
+                4.3073, 
+                0.6717
+            ], 
+            "rotate": [
+                -0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                6.0367, 
+                25.3394, 
+                -87.6496
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "thumbCup_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wrist_r_bind|thumbCup_r_bind", 
+            "translate": [
+                -0.841, 
+                0.198, 
+                0.0946
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                96.9309, 
+                -60.4967, 
+                -92.6874
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "wrist_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wrist_r_bind", 
+            "translate": [
+                -25.2149, 
+                -0.0, 
+                0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 1, 
+            "jointOrient": [
+                -4.2399, 
+                0.0, 
+                2.619
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 1
+        }, 
+        "wristSwing_r_driver": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wristTwist_r_bind|wristSwing_r_driver", 
+            "translate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                -0.0044, 
+                -0.1936, 
+                2.6118
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "wristTwist_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wristTwist_r_bind", 
+            "translate": [
+                -25.2149, 
+                -0.0, 
+                0.0
+            ], 
+            "rotate": [
+                -4.2399, 
+                -0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 1, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 1
+        }, 
+        "wristTwist_r_driver": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|wristTwist_r_driver", 
+            "translate": [
+                -25.2149, 
+                -0.0, 
+                0.0
+            ], 
+            "rotate": [
+                -4.2399, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "elbow_r_driver": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|elbowTwist_r_bind|elbow_r_driver", 
+            "translate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                -2.619
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "elbowTwist_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind|elbowTwist_r_bind", 
+            "translate": [
+                -0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                -0.0, 
+                2.619
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                -90.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "elbow_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind|elbow_r_bind", 
+            "translate": [
+                -29.001, 
+                -0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                0.0, 
+                -2.619
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                -90.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "shoulder_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_bind", 
+            "translate": [
+                -16.8552, 
+                -0.9282, 
+                1.5914
+            ], 
+            "rotate": [
+                -0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "shoulderNoTwist_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulderNoTwist_r_bind", 
+            "translate": [
+                -16.8552, 
+                -0.9282, 
+                1.5914
+            ], 
+            "rotate": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "clavicle_trans_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|clavicle_trans_r_bind", 
+            "translate": [
+                -16.8552, 
+                -0.9282, 
+                1.5914
+            ], 
+            "rotate": [
+                94.0813, 
+                -3.5278, 
+                5.1477
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -94.2399, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "shoulder_r_twist_driver": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_driver|shoulder_r_twist_driver", 
+            "translate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "shoulder_r_driver": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind|shoulder_r_driver", 
+            "translate": [
+                -16.8552, 
+                -0.9282, 
+                1.5914
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "clavicle_r_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_r_bind", 
+            "translate": [
+                14.1032, 
+                2.8541, 
+                0.3882
+            ], 
+            "rotate": [
+                -0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -175.7601, 
+                90.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "chest_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind", 
+            "translate": [
+                7.1984, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 1
+        }, 
+        "spine_5_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind", 
+            "translate": [
+                6.1155, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "spine_4_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind", 
+            "translate": [
+                6.1155, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "spine_3_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind", 
+            "translate": [
+                6.1155, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "spine_2_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind", 
+            "translate": [
+                6.1155, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "spine_1_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind", 
+            "translate": [
+                6.115, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "spine_0_bind": {
+            "dagPath": "|bind|hips_bind|spine_0_bind", 
+            "translate": [
+                -2.2591, 
+                -1.1679, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe_l_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind|ankle_l_bind|ball_l_bind|toe_l_bind", 
+            "translate": [
+                0.0, 
+                6.8188, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe1_004_l_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind|ankle_l_bind|ball_l_bind|toe1_001_l_bind|toe1_002_l_bind|toe1_003_l_bind|toe1_004_l_bind", 
+            "translate": [
+                1.8051, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                90.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe1_003_l_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind|ankle_l_bind|ball_l_bind|toe1_001_l_bind|toe1_002_l_bind|toe1_003_l_bind", 
+            "translate": [
+                1.5832, 
+                -0.5851, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe1_002_l_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind|ankle_l_bind|ball_l_bind|toe1_001_l_bind|toe1_002_l_bind", 
+            "translate": [
+                5.6782, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe1_001_l_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind|ankle_l_bind|ball_l_bind|toe1_001_l_bind", 
+            "translate": [
+                -0.4198, 
+                -2.6524, 
+                3.3643
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                89.9999
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe2_004_l_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind|ankle_l_bind|ball_l_bind|toe2_001_l_bind|toe2_002_l_bind|toe2_003_l_bind|toe2_004_l_bind", 
+            "translate": [
+                1.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                90.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe2_003_l_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind|ankle_l_bind|ball_l_bind|toe2_001_l_bind|toe2_002_l_bind|toe2_003_l_bind", 
+            "translate": [
+                1.4831, 
+                -0.8342, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe2_002_l_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind|ankle_l_bind|ball_l_bind|toe2_001_l_bind|toe2_002_l_bind", 
+            "translate": [
+                5.9776, 
+                0.297, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe2_001_l_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind|ankle_l_bind|ball_l_bind|toe2_001_l_bind", 
+            "translate": [
+                -0.4198, 
+                -2.4162, 
+                0.6361
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                89.9999
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe3_004_l_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind|ankle_l_bind|ball_l_bind|toe3_001_l_bind|toe3_002_l_bind|toe3_003_l_bind|toe3_004_l_bind", 
+            "translate": [
+                1.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                90.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe3_003_l_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind|ankle_l_bind|ball_l_bind|toe3_001_l_bind|toe3_002_l_bind|toe3_003_l_bind", 
+            "translate": [
+                1.507, 
+                -0.6815, 
+                -0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe3_002_l_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind|ankle_l_bind|ball_l_bind|toe3_001_l_bind|toe3_002_l_bind", 
+            "translate": [
+                5.5668, 
+                0.2662, 
+                -0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe3_001_l_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind|ankle_l_bind|ball_l_bind|toe3_001_l_bind", 
+            "translate": [
+                -0.1986, 
+                -2.227, 
+                -1.5437
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                89.9999
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe4_004_l_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind|ankle_l_bind|ball_l_bind|toe4_001_l_bind|toe4_002_l_bind|toe4_003_l_bind|toe4_004_l_bind", 
+            "translate": [
+                1.0, 
+                0.0, 
+                -0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                90.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe4_003_l_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind|ankle_l_bind|ball_l_bind|toe4_001_l_bind|toe4_002_l_bind|toe4_003_l_bind", 
+            "translate": [
+                1.2178, 
+                -0.5151, 
+                -0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe4_002_l_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind|ankle_l_bind|ball_l_bind|toe4_001_l_bind|toe4_002_l_bind", 
+            "translate": [
+                5.4138, 
+                0.026, 
+                -0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe4_001_l_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind|ankle_l_bind|ball_l_bind|toe4_001_l_bind", 
+            "translate": [
+                -0.1726, 
+                -2.4212, 
+                -3.4323
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                89.9999
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe5_004_l_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind|ankle_l_bind|ball_l_bind|toe5_001_l_bind|toe5_002_l_bind|toe5_003_l_bind|toe5_004_l_bind", 
+            "translate": [
+                1.0, 
+                0.0, 
+                -0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                90.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe5_003_l_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind|ankle_l_bind|ball_l_bind|toe5_001_l_bind|toe5_002_l_bind|toe5_003_l_bind", 
+            "translate": [
+                1.0478, 
+                -0.6234, 
+                -0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe5_002_l_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind|ankle_l_bind|ball_l_bind|toe5_001_l_bind|toe5_002_l_bind", 
+            "translate": [
+                5.2389, 
+                0.0, 
+                -0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe5_001_l_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind|ankle_l_bind|ball_l_bind|toe5_001_l_bind", 
+            "translate": [
+                -0.0158, 
+                -2.6524, 
+                -5.1914
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                89.9999
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "ball_l_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind|ankle_l_bind|ball_l_bind", 
+            "translate": [
+                5.4106, 
+                14.0647, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe_l_driver": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind|ankle_l_bind|toe_l_driver", 
+            "translate": [
+                5.4106, 
+                14.0647, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                90.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "ankle_l_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind|ankle_l_bind", 
+            "translate": [
+                40.3566, 
+                0.6934, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                2.1399
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "ankleSwing_l_driver": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind|ankleTwist_l_bind|ankleSwing_l_driver", 
+            "translate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                2.1399
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "ankleTwist_l_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind|ankleTwist_l_bind", 
+            "translate": [
+                40.3566, 
+                0.6934, 
+                0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "ankleTwist_l_driver": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind|ankleTwist_l_driver", 
+            "translate": [
+                40.3566, 
+                0.6934, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "knee_l_driver": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind|kneeTwist_l_bind|knee_l_driver", 
+            "translate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                -3.3248
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "kneeTwist_l_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind|kneeTwist_l_bind", 
+            "translate": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                -0.0, 
+                3.3248
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                -90.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "knee_l_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind|knee_l_bind", 
+            "translate": [
+                39.8585, 
+                -0.5846, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                0.0, 
+                -4.1651
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                -90.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "thigh_l_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_bind", 
+            "translate": [
+                0.0, 
+                0.0, 
+                -9.0158
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "thighNoTwist_l_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thighNoTwist_l_bind", 
+            "translate": [
+                0.0, 
+                0.0, 
+                -9.0158
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                -0.8403
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "thigh_l_driver": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_driver", 
+            "translate": [
+                0.0, 
+                0.0, 
+                -9.0158
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "pelvis_l_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind", 
+            "translate": [
+                -0.0014, 
+                0.0012, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                180.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe_r_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind|ankle_r_bind|ball_r_bind|toe_r_bind", 
+            "translate": [
+                -0.0, 
+                -6.8188, 
+                0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe1_004_r_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind|ankle_r_bind|ball_r_bind|toe1_001_r_bind|toe1_002_r_bind|toe1_003_r_bind|toe1_004_r_bind", 
+            "translate": [
+                -1.8051, 
+                -0.0, 
+                -0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                90.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe1_003_r_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind|ankle_r_bind|ball_r_bind|toe1_001_r_bind|toe1_002_r_bind|toe1_003_r_bind", 
+            "translate": [
+                -1.5832, 
+                0.5851, 
+                0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe1_002_r_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind|ankle_r_bind|ball_r_bind|toe1_001_r_bind|toe1_002_r_bind", 
+            "translate": [
+                -5.6782, 
+                -0.0, 
+                0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe1_001_r_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind|ankle_r_bind|ball_r_bind|toe1_001_r_bind", 
+            "translate": [
+                0.4198, 
+                2.6524, 
+                -3.3643
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                -0.0, 
+                89.9999
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe2_004_r_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind|ankle_r_bind|ball_r_bind|toe2_001_r_bind|toe2_002_r_bind|toe2_003_r_bind|toe2_004_r_bind", 
+            "translate": [
+                -1.0, 
+                -0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                90.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe2_003_r_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind|ankle_r_bind|ball_r_bind|toe2_001_r_bind|toe2_002_r_bind|toe2_003_r_bind", 
+            "translate": [
+                -1.4831, 
+                0.8342, 
+                0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe2_002_r_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind|ankle_r_bind|ball_r_bind|toe2_001_r_bind|toe2_002_r_bind", 
+            "translate": [
+                -5.9776, 
+                -0.297, 
+                0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe2_001_r_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind|ankle_r_bind|ball_r_bind|toe2_001_r_bind", 
+            "translate": [
+                0.4198, 
+                2.4162, 
+                -0.6361
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                -0.0, 
+                89.9999
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe3_004_r_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind|ankle_r_bind|ball_r_bind|toe3_001_r_bind|toe3_002_r_bind|toe3_003_r_bind|toe3_004_r_bind", 
+            "translate": [
+                -1.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                90.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe3_003_r_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind|ankle_r_bind|ball_r_bind|toe3_001_r_bind|toe3_002_r_bind|toe3_003_r_bind", 
+            "translate": [
+                -1.507, 
+                0.6815, 
+                0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe3_002_r_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind|ankle_r_bind|ball_r_bind|toe3_001_r_bind|toe3_002_r_bind", 
+            "translate": [
+                -5.5668, 
+                -0.2662, 
+                0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe3_001_r_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind|ankle_r_bind|ball_r_bind|toe3_001_r_bind", 
+            "translate": [
+                0.1986, 
+                2.227, 
+                1.5437
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                -0.0, 
+                89.9999
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe4_004_r_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind|ankle_r_bind|ball_r_bind|toe4_001_r_bind|toe4_002_r_bind|toe4_003_r_bind|toe4_004_r_bind", 
+            "translate": [
+                -1.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                90.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe4_003_r_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind|ankle_r_bind|ball_r_bind|toe4_001_r_bind|toe4_002_r_bind|toe4_003_r_bind", 
+            "translate": [
+                -1.2178, 
+                0.5151, 
+                0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe4_002_r_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind|ankle_r_bind|ball_r_bind|toe4_001_r_bind|toe4_002_r_bind", 
+            "translate": [
+                -5.4138, 
+                -0.026, 
+                0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe4_001_r_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind|ankle_r_bind|ball_r_bind|toe4_001_r_bind", 
+            "translate": [
+                0.1726, 
+                2.4212, 
+                3.4323
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                -0.0, 
+                89.9999
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe5_004_r_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind|ankle_r_bind|ball_r_bind|toe5_001_r_bind|toe5_002_r_bind|toe5_003_r_bind|toe5_004_r_bind", 
+            "translate": [
+                -1.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                90.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe5_003_r_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind|ankle_r_bind|ball_r_bind|toe5_001_r_bind|toe5_002_r_bind|toe5_003_r_bind", 
+            "translate": [
+                -1.0478, 
+                0.6234, 
+                0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe5_002_r_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind|ankle_r_bind|ball_r_bind|toe5_001_r_bind|toe5_002_r_bind", 
+            "translate": [
+                -5.2389, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe5_001_r_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind|ankle_r_bind|ball_r_bind|toe5_001_r_bind", 
+            "translate": [
+                0.0158, 
+                2.6524, 
+                5.1914
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -0.0, 
+                -0.0, 
+                89.9999
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "ball_r_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind|ankle_r_bind|ball_r_bind", 
+            "translate": [
+                -5.4106, 
+                -14.0647, 
+                0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe_r_driver": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind|ankle_r_bind|toe_r_driver", 
+            "translate": [
+                -5.4106, 
+                -14.0647, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                90.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "ankle_r_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind|ankle_r_bind", 
+            "translate": [
+                -40.3566, 
+                -0.6934, 
+                -0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                2.1399
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "ankleSwing_r_driver": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind|ankleTwist_r_bind|ankleSwing_r_driver", 
+            "translate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                2.1399
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "ankleTwist_r_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind|ankleTwist_r_bind", 
+            "translate": [
+                -40.3566, 
+                -0.6934, 
+                -0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "ankleTwist_r_driver": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind|ankleTwist_r_driver", 
+            "translate": [
+                -40.3566, 
+                -0.6934, 
+                -0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "knee_r_driver": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind|kneeTwist_r_bind|knee_r_driver", 
+            "translate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                -3.3248
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "kneeTwist_r_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind|kneeTwist_r_bind", 
+            "translate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                -0.0, 
+                3.3248
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                -90.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "knee_r_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind|knee_r_bind", 
+            "translate": [
+                -39.8585, 
+                0.5846, 
+                -0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                -0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                -4.1651
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                -90.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "thigh_r_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_bind", 
+            "translate": [
+                0.0, 
+                0.0, 
+                9.0158
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "thighNoTwist_r_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thighNoTwist_r_bind", 
+            "translate": [
+                0.0, 
+                0.0, 
+                9.0158
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                -0.8403
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "thigh_r_driver": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_driver", 
+            "translate": [
+                0.0, 
+                0.0, 
+                9.0158
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "pelvis_r_bind": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind", 
+            "translate": [
+                -0.0014, 
+                0.0012, 
+                -0.0
+            ], 
+            "rotate": [
+                -0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "hips_bind": {
+            "dagPath": "|bind|hips_bind", 
+            "translate": [
+                0.0, 
+                87.6469, 
+                1.0668
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -90.0, 
+                -0.0, 
+                90.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 1
+        }, 
+        "ankle_l_pivot": {
+            "dagPath": "|ankle_l_pivot", 
+            "translate": [
+                9.0158, 
+                7.4866, 
+                -1.7585
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "ankle_r_pivot": {
+            "dagPath": "|ankle_r_pivot", 
+            "translate": [
+                -9.0158, 
+                7.4866, 
+                -1.7585
+            ], 
+            "rotate": [
+                -0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                -180.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "ballRoll_l_pivot": {
+            "dagPath": "|ankle_l_pivot|bankIn_l_pivot|bankOut_l_pivot|heel_l_pivot|ball_l_pivot|toe_l_pivot|ballRoll_l_pivot", 
+            "translate": [
+                0.0001, 
+                1.2908, 
+                -5.3164
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "ballRoll_r_pivot": {
+            "dagPath": "|ankle_r_pivot|bankIn_r_pivot|bankOut_r_pivot|heel_r_pivot|ball_r_pivot|toe_r_pivot|ballRoll_r_pivot", 
+            "translate": [
+                -0.0001, 
+                -1.2908, 
+                5.3164
+            ], 
+            "rotate": [
+                -0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "ball_l_pivot": {
+            "dagPath": "|ankle_l_pivot|bankIn_l_pivot|bankOut_l_pivot|heel_l_pivot|ball_l_pivot", 
+            "translate": [
+                0.0001, 
+                1.6825, 
+                18.5711
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "ball_r_pivot": {
+            "dagPath": "|ankle_r_pivot|bankIn_r_pivot|bankOut_r_pivot|heel_r_pivot|ball_r_pivot", 
+            "translate": [
+                -0.0001, 
+                -1.6825, 
+                -18.5711
+            ], 
+            "rotate": [
+                -0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "bankIn_l_pivot": {
+            "dagPath": "|ankle_l_pivot|bankIn_l_pivot", 
+            "translate": [
+                -5.2921, 
+                -7.5867, 
+                11.2235
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "bankIn_r_pivot": {
+            "dagPath": "|ankle_r_pivot|bankIn_r_pivot", 
+            "translate": [
+                5.2921, 
+                7.5867, 
+                -11.2235
+            ], 
+            "rotate": [
+                -0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "bankOut_l_pivot": {
+            "dagPath": "|ankle_l_pivot|bankIn_l_pivot|bankOut_l_pivot", 
+            "translate": [
+                11.7132, 
+                0.0, 
+                -0.1273
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "bankOut_r_pivot": {
+            "dagPath": "|ankle_r_pivot|bankIn_r_pivot|bankOut_r_pivot", 
+            "translate": [
+                -11.7132, 
+                0.0, 
+                0.1273
+            ], 
+            "rotate": [
+                -0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "heel_l_pivot": {
+            "dagPath": "|ankle_l_pivot|bankIn_l_pivot|bankOut_l_pivot|heel_l_pivot", 
+            "translate": [
+                -6.4212, 
+                0.0, 
+                -15.8027
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "heel_r_pivot": {
+            "dagPath": "|ankle_r_pivot|bankIn_r_pivot|bankOut_r_pivot|heel_r_pivot", 
+            "translate": [
+                6.4212, 
+                0.0, 
+                15.8027
+            ], 
+            "rotate": [
+                -0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                -0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toeBend_l_pivot": {
+            "dagPath": "|ankle_l_pivot|bankIn_l_pivot|bankOut_l_pivot|heel_l_pivot|ball_l_pivot|toe_l_pivot|toeBend_l_pivot", 
+            "translate": [
+                0.0001, 
+                1.2908, 
+                -5.3164
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toeBend_r_pivot": {
+            "dagPath": "|ankle_r_pivot|bankIn_r_pivot|bankOut_r_pivot|heel_r_pivot|ball_r_pivot|toe_r_pivot|toeBend_r_pivot", 
+            "translate": [
+                -0.0001, 
+                -1.2908, 
+                5.3164
+            ], 
+            "rotate": [
+                -0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe_l_pivot": {
+            "dagPath": "|ankle_l_pivot|bankIn_l_pivot|bankOut_l_pivot|heel_l_pivot|ball_l_pivot|toe_l_pivot", 
+            "translate": [
+                -0.0001, 
+                -1.2908, 
+                5.3164
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "toe_r_pivot": {
+            "dagPath": "|ankle_r_pivot|bankIn_r_pivot|bankOut_r_pivot|heel_r_pivot|ball_r_pivot|toe_r_pivot", 
+            "translate": [
+                0.0001, 
+                1.2908, 
+                -5.3164
+            ], 
+            "rotate": [
+                -0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                -0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "thigh_l_twist_driver": {
+            "dagPath": "|bind|hips_bind|pelvis_l_bind|thigh_l_driver|thigh_l_twist_driver", 
+            "translate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                -0.8403
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }, 
+        "thigh_r_twist_driver": {
+            "dagPath": "|bind|hips_bind|pelvis_r_bind|thigh_r_driver|thigh_r_twist_driver", 
+            "translate": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotate": [
+                0.0, 
+                0.0, 
+                -0.8403
+            ], 
+            "scale": [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "selectHandle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "rotateOrder": 0, 
+            "jointOrient": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "preferredAngle": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "drawStyle": 0
+        }
+    }
+}

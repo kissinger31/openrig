@@ -1,0 +1,133 @@
+{
+    "version": "1.16", 
+    "alias": "run_sim", 
+    "color": "#0052aa", 
+    "mute": false, 
+    "solo": false, 
+    "nodes": {
+        "/run_sim": {
+            "child_order": [
+                "create_run_scene", 
+                "run_and_cache", 
+                "output"
+            ], 
+            "attrs": {
+                "namespace": {
+                    "type": "str", 
+                    "value": "''"
+                }, 
+                "save_sim_cache": {
+                    "type": "bool", 
+                    "value": "True"
+                }, 
+                "sim_cache_dir": {}, 
+                "sim_end_frame": {}, 
+                "sim_start_frame": {}, 
+                "source_scene_file": {}, 
+                "target_anim_file": {}, 
+                "target_cache_file": {}, 
+                "target_scene_file": {}
+            }
+        }, 
+        "/run_sim/create_run_scene": {
+            "code": [
+                "# open source file", 
+                "source_scene_file = self.source_scene_file", 
+                "if source_scene_file is not None:", 
+                "    mc.file(source_scene_file, open=True)", 
+                "", 
+                "# save target file", 
+                "target_scene_file = self.target_scene_file", 
+                "if target_scene_file is not None:", 
+                "    mc.file(rename=target_scene_file)", 
+                "    mc.file(save=True)"
+            ]
+        }, 
+        "/run_sim/output": {
+            "child_order": [
+                "save_changes", 
+                "export_anim", 
+                "export_cache"
+            ]
+        }, 
+        "/run_sim/output/export_anim": {
+            "code": [
+                "target_anim_file = self.target_anim_file", 
+                "if target_anim_file is not None:", 
+                "    showtools.simlib.cacheManager.exportAnim(namespace=${namespace},", 
+                "                                             filePath=target_anim_file,", 
+                "                                             startFrame=${sim_start_frame},", 
+                "                                             endFrame=${sim_end_frame},", 
+                "                                             usdFilePath=None)"
+            ]
+        }, 
+        "/run_sim/output/export_cache": {
+            "code": [
+                "target_cache_file = self.target_cache_file", 
+                "if target_cache_file is not None:", 
+                "    showtools.simlib.cacheManager.exportModel(namespace=${namespace},", 
+                "                                              filePath=target_cache_file,", 
+                "                                              startFrame=${sim_start_frame},", 
+                "                                              endFrame=${sim_end_frame},", 
+                "                                              cleanupOut=True,", 
+                "                                              reopenScene=True,", 
+                "                                              usdFilePath=None)"
+            ]
+        }, 
+        "/run_sim/output/save_changes": {
+            "code": [
+                "mc.file(save=True)"
+            ]
+        }, 
+        "/run_sim/run_and_cache": {
+            "code": [
+                "# get nCloth objects or nHair systems", 
+                "sim_objects = list()", 
+                "for obj in mc.ls(type=('nCloth', 'hairSystem')):", 
+                "    for namespace in ${namespaces}:", 
+                "        if obj.startswith(namespace):", 
+                "            sim_objects.append(obj)", 
+                "            ", 
+                "# get framerange", 
+                "sim_start_frame = self.sim_start_frame", 
+                "if sim_start_frame is None:", 
+                "    sim_start_frame = mc.playbackOptions(q=True, min=True)", 
+                "", 
+                "sim_end_frame = self.sim_end_frame", 
+                "if sim_end_frame is None:", 
+                "    sim_end_frame = mc.playbackOptions(q=True, max=True)", 
+                "", 
+                "# run and cache", 
+                "if ${save_sim_cache}:", 
+                "    # get cache directory", 
+                "    sim_cache_dir = self.sim_cache_dir", 
+                "    if sim_cache_dir is None:", 
+                "        current_workspace = mc.workspace(q=True, fullName=True)", 
+                "        sim_cache_dir = os.path.join(os.path.dirname(current_workspace), 'sim_cache')", 
+                "    ", 
+                "    # clear cache dir", 
+                "    #if os.path.exists(simCacheDir):", 
+                "    #    cacheFiles = os.listdir(simCacheDir)", 
+                "    #    for cacheFile in cacheFiles:", 
+                "    #        for simObject in simObjects:", 
+                "    #            fileName = simObject.replace(':', '_')", 
+                "    #            if fileName in cacheFile:", 
+                "    #                cacheFilePath = os.path.join(simCacheDir, cacheFile)", 
+                "    #                os.remove(cacheFilePath)", 
+                "    ", 
+                "    # run and cache", 
+                "    mc.select(sim_objects, r=True)", 
+                "    sim_cache_dir = os.path.normpath(sim_cache_dir).replace('\\\\', '/')", 
+                "    print 'Simulating and saving cache.'", 
+                "    mm.eval('doCreateNclothCache 5 { \"2\", \"1\", \"10\", \"OneFile\", \"1\", \"%s\",\"1\",\"\",\"0\", \"add\", \"0\", \"1\", \"1\",\"0\",\"1\",\"mcx\" };' % simCacheDir)", 
+                "    mc.select(cl=True)", 
+                "else:", 
+                "    print 'Simulating without cache.'", 
+                "    time = sim_start_frame", 
+                "    while time <= sim_end_frame:", 
+                "        mc.currentTime(time, e=True)", 
+                "        time += 1"
+            ]
+        }
+    }
+}

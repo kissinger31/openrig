@@ -1,0 +1,1637 @@
+{
+    "version": "1.16", 
+    "alias": "cloth_rig", 
+    "color": "#119B77", 
+    "mute": false, 
+    "solo": false, 
+    "references": [
+        "cloth_utils.nxt", 
+        "../../../base/sim_steps.nxt", 
+        "../../../base/utils.nxt"
+    ], 
+    "meta_data": {
+        "positions": {
+            "/apply_cloth_data": [
+                488.2488409009228, 
+                928.2755740585443
+            ], 
+            "/beep": [
+                2591.5747852597924, 
+                227.80020618071518
+            ], 
+            "/build_collision": [
+                1545.0168305955794, 
+                -68.10241687616505
+            ], 
+            "/build_garment_groups": [
+                -388.02450743674353, 
+                394.5038101881802
+            ], 
+            "/build_garment_groups_pasted": [
+                -400.84130849566714, 
+                360.93855380379085
+            ], 
+            "/build_pasted": [
+                157.97759054671053, 
+                -24.448912822705196
+            ], 
+            "/cleanup": [
+                2204.792187416183, 
+                -47.14684946606355
+            ], 
+            "/cluster_control": [
+                -2576.804226475279, 
+                -799.3088782562465
+            ], 
+            "/code_globals": [
+                -1353.6070876166436, 
+                645.8310519795059
+            ], 
+            "/collider1": [
+                1279.3327841733396, 
+                341.0027554595894
+            ], 
+            "/collider_data": [
+                1443.5535937372736, 
+                479.9534815090864
+            ], 
+            "/collisions": [
+                1543.9998937630464, 
+                -147.17863126682067
+            ], 
+            "/collison_build": [
+                1079.3187123722196, 
+                370.9353092639609
+            ], 
+            "/connect_sim": [
+                -382.6094333502864, 
+                385.90566668154594
+            ], 
+            "/connect_sim_mesh": [
+                -398.54147081998724, 
+                515.5100610166643
+            ], 
+            "/constraint_type": [
+                2074.590351838997, 
+                -44.114556791387656
+            ], 
+            "/constraints": [
+                2070.8818209131127, 
+                -141.24744850114897
+            ], 
+            "/control": [
+                -1675.3390819424576, 
+                752.4404702176455
+            ], 
+            "/costume": [
+                927.5045073417805, 
+                -150.52280742628963
+            ], 
+            "/costume/belt/build_cloth_node/sim_mesh/import_sim_mesh": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "/costume_pasted": [
+                944.012841383357, 
+                -187.26341690485071
+            ], 
+            "/create_solver": [
+                483.9889423220368, 
+                -143.85949958290743
+            ], 
+            "/create_solver_pasted": [
+                452.66054488095676, 
+                -194.73108765979796
+            ], 
+            "/data": [
+                1092.843766811124, 
+                636.6216354355996
+            ], 
+            "/element_info_pasted1": [
+                219.28763570863828, 
+                -10.610692050417981
+            ], 
+            "/export": [
+                1684.2086691336108, 
+                636.150265984306
+            ], 
+            "/exporters_pasted": [
+                245.27583809407218, 
+                817.9577222163425
+            ], 
+            "/frame_camera_pasted": [
+                2669.7894547979813, 
+                55.899947496861955
+            ], 
+            "/garment": [
+                540.0, 
+                220.0
+            ], 
+            "/garment1": [
+                897.9704406723075, 
+                -7.839121058351623
+            ], 
+            "/garment_pasted": [
+                60.1667826206301, 
+                303.1480201270209
+            ], 
+            "/import_carbon": [
+                21.221763133977333, 
+                388.35826535178506
+            ], 
+            "/import_carbonData": [
+                -570.3793408157194, 
+                530.3652226440096
+            ], 
+            "/import_char_model_pasted": [
+                104.03959263326988, 
+                740.5747387146934
+            ], 
+            "/import_maya_pasted": [
+                327.23929470390027, 
+                1.8806856017465527
+            ], 
+            "/import_psd": [
+                -1717.2316914013807, 
+                957.9183818229233
+            ], 
+            "/import_test": [
+                883.7540535451528, 
+                811.7239425978989
+            ], 
+            "/import_weight_directory": [
+                -1467.5509395798385, 
+                303.0945828465723
+            ], 
+            "/imports": [
+                39.19388615754684, 
+                -148.44773946675903
+            ], 
+            "/imports/import_char_model": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "/init": [
+                -553.5463232514767, 
+                -160.9754467840468
+            ], 
+            "/initalize_solve": [
+                2511.8299025903075, 
+                -139.71353675113474
+            ], 
+            "/load_collision": [
+                638.8303158891164, 
+                -106.45833670073782
+            ], 
+            "/load_curve_data": [
+                -1812.7123649416792, 
+                -79.12938274936278
+            ], 
+            "/load_deformer_order_data": [
+                -1385.2735102080953, 
+                -92.40908193208213
+            ], 
+            "/load_file_pasted": [
+                72.40510244653149, 
+                996.7769103472508
+            ], 
+            "/load_joint_data": [
+                -1444.9865889636203, 
+                440.2271739488083
+            ], 
+            "/load_maya_file": [
+                -390.6828506816286, 
+                226.88260703112604
+            ], 
+            "/load_node_data": [
+                -1965.5171109862822, 
+                368.0847718672645
+            ], 
+            "/load_sdk_data": [
+                -2250.6728468899523, 
+                -552.353680344111
+            ], 
+            "/mesh": [
+                -207.59093356794756, 
+                538.3723684379405
+            ], 
+            "/meshes": [
+                -188.897393611814, 
+                541.923703031267
+            ], 
+            "/publish": [
+                2929.3004086967835, 
+                -149.97470369088433
+            ], 
+            "/reveal_in_outliner_pasted": [
+                2615.878666069902, 
+                145.22819947036697
+            ], 
+            "/sim": [
+                2478.1621834803414, 
+                -178.6346680195507
+            ], 
+            "/space_switch": [
+                -2007.2733199841762, 
+                606.5488547153612
+            ], 
+            "/wrap": [
+                -366.6971986535807, 
+                540.4361260977223
+            ], 
+            "/wrap_pasted": [
+                -384.51745430353594, 
+                549.5697578017518
+            ]
+        }, 
+        "collapse": {
+            "/build/garment/build_carbon_node/cleanup_input_mesh": true, 
+            "/build/garment/build_carbon_node/cleanup_mesh": false, 
+            "/build/garment/build_carbon_node/goal_mesh": false, 
+            "/build/garment/build_carbon_node/initial_state_mesh": false, 
+            "/build/garment/build_carbon_node/input_mesh": false, 
+            "/build/garment/build_carbon_node/output_mesh": false, 
+            "/build/garment/build_carbon_node/reference_mesh": false, 
+            "/build/garment/build_carbon_node/sim_mesh": false, 
+            "/build/garment/build_cloth_node": false, 
+            "/build/garment/build_cloth_node/cleanup_input_mesh": true, 
+            "/build/garment/build_cloth_node/cleanup_input_mesh/build_cleanup_input_grp": true, 
+            "/build/garment/build_cloth_node/cleanup_input_mesh/import_cleanup_input": true, 
+            "/build/garment/build_cloth_node/cleanup_mesh": true, 
+            "/build/garment/build_cloth_node/cleanup_mesh/build_cleanup_grp": true, 
+            "/build/garment/build_cloth_node/cleanup_mesh/build_wrap": true, 
+            "/build/garment/build_cloth_node/cleanup_mesh/build_wrap/wrap_deform": false, 
+            "/build/garment/build_cloth_node/cleanup_mesh/import_cleanup_mesh": true, 
+            "/build/garment/build_cloth_node/goal_mesh": true, 
+            "/build/garment/build_cloth_node/goal_mesh/build_goal_grp": true, 
+            "/build/garment/build_cloth_node/goal_mesh/build_wrap": true, 
+            "/build/garment/build_cloth_node/goal_mesh/connect_goal": false, 
+            "/build/garment/build_cloth_node/goal_mesh/import_goal_mesh": true, 
+            "/build/garment/build_cloth_node/initial_state_mesh": true, 
+            "/build/garment/build_cloth_node/initial_state_mesh/build_intial_grp": true, 
+            "/build/garment/build_cloth_node/initial_state_mesh/build_intial_grp/connect_grp": false, 
+            "/build/garment/build_cloth_node/initial_state_mesh/import_initial_state": true, 
+            "/build/garment/build_cloth_node/input_mesh": true, 
+            "/build/garment/build_cloth_node/input_mesh/build_input_grp": true, 
+            "/build/garment/build_cloth_node/input_mesh/import_input_mesh": true, 
+            "/build/garment/build_cloth_node/output_mesh": true, 
+            "/build/garment/build_cloth_node/output_mesh/build_output_grp": true, 
+            "/build/garment/build_cloth_node/output_mesh/build_wrap": true, 
+            "/build/garment/build_cloth_node/output_mesh/import_output_mesh": true, 
+            "/build/garment/build_cloth_node/reference_mesh": true, 
+            "/build/garment/build_cloth_node/reference_mesh/build_reference_grp": true, 
+            "/build/garment/build_cloth_node/reference_mesh/connect_reference": false, 
+            "/build/garment/build_cloth_node/reference_mesh/import_reference": true, 
+            "/build/garment/build_cloth_node/sim_mesh": true, 
+            "/build/garment/build_cloth_node/sim_mesh/build_sim_grp": true, 
+            "/build/garment/build_cloth_node/sim_mesh/build_sim_grp/connect_grp": false, 
+            "/build/garment/build_cloth_node/sim_mesh/import_sim_mesh": true, 
+            "/build/garment/build_cloth_node/wrap": false, 
+            "/build/garment/build_cloth_node/wrap/input_to_goal": false, 
+            "/build/garment/build_cloth_node/wrap/sim_to_cleanup": false, 
+            "/build_collision": true, 
+            "/build_collision/collider": true, 
+            "/build_garment_groups": false, 
+            "/collisions": true, 
+            "/collisions/build_collison": false, 
+            "/collisions/collider_instance": true, 
+            "/collisions/collider_instance/build_collider_node": false, 
+            "/connect_sim": false, 
+            "/connect_sim_mesh": false, 
+            "/constraint_type": true, 
+            "/constraints": true, 
+            "/costume": false, 
+            "/costume/belt/build_cloth_node": false, 
+            "/costume/belt/build_cloth_node/cleanup_input_mesh": true, 
+            "/costume/belt/build_cloth_node/cleanup_input_mesh/build_cleanup_input_grp": true, 
+            "/costume/belt/build_cloth_node/cleanup_mesh": true, 
+            "/costume/belt/build_cloth_node/cleanup_mesh/build_cleanup_grp": true, 
+            "/costume/belt/build_cloth_node/cleanup_mesh/build_wrap": true, 
+            "/costume/belt/build_cloth_node/cleanup_mesh/build_wrap/wrap_deform": false, 
+            "/costume/belt/build_cloth_node/cleanup_mesh/import_cleanup_mesh": true, 
+            "/costume/belt/build_cloth_node/goal_mesh": true, 
+            "/costume/belt/build_cloth_node/goal_mesh/build_wrap": false, 
+            "/costume/belt/build_cloth_node/goal_mesh/build_wrap/wrap_deform": false, 
+            "/costume/belt/build_cloth_node/initial_state_mesh": true, 
+            "/costume/belt/build_cloth_node/initial_state_mesh/import_initial_state": true, 
+            "/costume/belt/build_cloth_node/input_mesh": true, 
+            "/costume/belt/build_cloth_node/input_mesh/import_input_mesh": true, 
+            "/costume/belt/build_cloth_node/output_mesh": true, 
+            "/costume/belt/build_cloth_node/output_mesh/build_output_grp": true, 
+            "/costume/belt/build_cloth_node/output_mesh/build_wrap": true, 
+            "/costume/belt/build_cloth_node/output_mesh/import_output_mesh": true, 
+            "/costume/belt/build_cloth_node/reference_mesh": true, 
+            "/costume/belt/build_cloth_node/reference_mesh/build_reference_grp": true, 
+            "/costume/belt/build_cloth_node/reference_mesh/build_reference_grp/connect_grp": false, 
+            "/costume/belt/build_cloth_node/reference_mesh/import_reference": true, 
+            "/costume/belt/build_cloth_node/sim_mesh": true, 
+            "/costume/belt/build_cloth_node/sim_mesh/build_sim_grp": true, 
+            "/costume/belt/build_cloth_node/sim_mesh/build_sim_grp/connect_grp": false, 
+            "/costume/belt/build_cloth_node/sim_mesh/import_sim_mesh": true, 
+            "/costume/belt/node/sim_mesh": true, 
+            "/costume/belt/node/sim_mesh/build_sim_grp": true, 
+            "/costume/belt/node/sim_mesh/import_sim_mesh": true, 
+            "/costume/garment_instance/build_carbon_node": true, 
+            "/costume/garment_instance/build_carbon_node/cleanup_input_mesh": true, 
+            "/costume/garment_instance/build_carbon_node/cleanup_mesh": true, 
+            "/costume/garment_instance/build_carbon_node/goal_mesh": true, 
+            "/costume/garment_instance/build_carbon_node/initial_state_mesh": true, 
+            "/costume/garment_instance/build_carbon_node/input_mesh": true, 
+            "/costume/garment_instance/build_carbon_node/output_mesh": true, 
+            "/costume/garment_instance/build_carbon_node/reference_mesh": true, 
+            "/costume/garment_instance/build_carbon_node/sim_mesh": true, 
+            "/costume/garment_instance1": true, 
+            "/costume/garment_instance2": true, 
+            "/costume/tunic/build_cloth_node": false, 
+            "/costume/tunic/build_cloth_node/cleanup_input_mesh": true, 
+            "/costume/tunic/build_cloth_node/cleanup_input_mesh/build_cleanup_input_grp": true, 
+            "/costume/tunic/build_cloth_node/cleanup_input_mesh/import_cleanup_input": true, 
+            "/costume/tunic/build_cloth_node/cleanup_mesh": true, 
+            "/costume/tunic/build_cloth_node/cleanup_mesh/build_cleanup_grp": true, 
+            "/costume/tunic/build_cloth_node/cleanup_mesh/build_wrap": true, 
+            "/costume/tunic/build_cloth_node/cleanup_mesh/build_wrap/wrap_deform": false, 
+            "/costume/tunic/build_cloth_node/cleanup_mesh/import_cleanup_mesh": true, 
+            "/costume/tunic/build_cloth_node/cleanup_mesh/sim_to_cleanup": true, 
+            "/costume/tunic/build_cloth_node/goal_mesh": true, 
+            "/costume/tunic/build_cloth_node/goal_mesh/build_goal_grp": true, 
+            "/costume/tunic/build_cloth_node/goal_mesh/build_wrap": true, 
+            "/costume/tunic/build_cloth_node/goal_mesh/import_goal_mesh": true, 
+            "/costume/tunic/build_cloth_node/goal_mesh/input_to_goal": false, 
+            "/costume/tunic/build_cloth_node/initial_state_mesh": true, 
+            "/costume/tunic/build_cloth_node/initial_state_mesh/build_intial_grp": true, 
+            "/costume/tunic/build_cloth_node/initial_state_mesh/import_initial_state": true, 
+            "/costume/tunic/build_cloth_node/input_mesh": true, 
+            "/costume/tunic/build_cloth_node/input_mesh/build_input_grp": true, 
+            "/costume/tunic/build_cloth_node/input_mesh/import_input_mesh": true, 
+            "/costume/tunic/build_cloth_node/output_mesh": true, 
+            "/costume/tunic/build_cloth_node/output_mesh/build_output_grp": true, 
+            "/costume/tunic/build_cloth_node/output_mesh/cleanup_to_output": true, 
+            "/costume/tunic/build_cloth_node/output_mesh/import_output_mesh": true, 
+            "/costume/tunic/build_cloth_node/reference_mesh": false, 
+            "/costume/tunic/build_cloth_node/reference_mesh/build_reference_grp": false, 
+            "/costume/tunic/build_cloth_node/reference_mesh/build_reference_grp/connect_grp": false, 
+            "/costume/tunic/build_cloth_node/reference_mesh/import_reference": true, 
+            "/costume/tunic/build_cloth_node/sim_mesh": true, 
+            "/costume/tunic/build_cloth_node/sim_mesh/build_sim_grp": true, 
+            "/costume/tunic/build_cloth_node/sim_mesh/import_sim_mesh": true, 
+            "/costume_/garment_instance": true, 
+            "/costume_/garment_instance/build_carbon_node": true, 
+            "/costume_/garment_instance1": true, 
+            "/costume_/garment_instance1/build_carbon_node": true, 
+            "/costume_/garment_instance2": true, 
+            "/costume_/garment_instance2/build_carbon_node": true, 
+            "/costume_pasted": false, 
+            "/costume_pasted/garment_instance": true, 
+            "/costume_pasted/garment_instance1": true, 
+            "/costume_pasted/garment_instance1/build_carbon_node": true, 
+            "/costume_pasted/garment_instance2": true, 
+            "/create_solver": false, 
+            "/create_solver/build_cloth_grp": false, 
+            "/data": false, 
+            "/garment": false, 
+            "/garment/input_mesh": false, 
+            "/garment/input_mesh/input_mesh_setup": false, 
+            "/garment/sim_mesh": false, 
+            "/garment/sim_mesh/sim_mesh_setup": false, 
+            "/imports": false, 
+            "/imports/import_char_model": false, 
+            "/init": false, 
+            "/initalize_solve": true, 
+            "/load_maya_file": true, 
+            "/mesh": false, 
+            "/meshes": false, 
+            "/meshes/load_meshes": false, 
+            "/meshes/load_meshes/load_cleanup_mesh": true, 
+            "/meshes/load_meshes/load_goal_mesh": false, 
+            "/meshes/load_meshes/load_output_mesh": true, 
+            "/meshes/load_meshes/load_sim_mesh": false, 
+            "/publish": false, 
+            "/wrap": false, 
+            "/wrap/wrap_deform": false
+        }
+    }, 
+    "nodes": {
+        "/": {
+            "child_order": [
+                "build_collision", 
+                "collisions", 
+                "constraint_type", 
+                "constraints", 
+                "costume", 
+                "create_solver", 
+                "data", 
+                "export", 
+                "imports", 
+                "init", 
+                "initalize_solve", 
+                "publish", 
+                "garment"
+            ], 
+            "attrs": {
+                "asset": {
+                    "type": "raw", 
+                    "value": "bipded"
+                }, 
+                "model_group": {
+                    "type": "str", 
+                    "value": "'model'"
+                }, 
+                "rig_group": {
+                    "type": "str", 
+                    "value": "'cloth'"
+                }, 
+                "solver": {
+                    "type": "str", 
+                    "value": "'carbonSolver'"
+                }, 
+                "variant": {
+                    "type": "raw", 
+                    "value": "base"
+                }
+            }
+        }, 
+        "/build_collision": {
+            "child_order": [
+                "collider"
+            ], 
+            "enabled": true
+        }, 
+        "/build_collision/collider": {
+            "child_order": [
+                "build_collider_node"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "collider": {
+                    "type": "raw", 
+                    "value": "${geo}_${variant}"
+                }, 
+                "geo": {
+                    "type": "raw", 
+                    "value": "body_geo"
+                }, 
+                "variant": {
+                    "type": "raw", 
+                    "value": "collider"
+                }
+            }, 
+            "code": [
+                "'''", 
+                "Specify collider geometry and collider node", 
+                "'''"
+            ]
+        }, 
+        "/build_collision/collider/build_collider_node": {
+            "enabled": true, 
+            "code": [
+                "'''", 
+                "Builds collider node and assigns it a group", 
+                "'''", 
+                "if not mc.objExists('${variant}_grp'):", 
+                "    collider_grp = mc.group(em=True, n='${variant}_grp')", 
+                "    ", 
+                "mc.parent(collider_grp,'${rig_group}_rig')", 
+                "", 
+                "colliderNode = carbon.carbonCreateNode('Collider', ${solver})", 
+                "node = mc.listRelatives(colliderNode, allParents=True)", 
+                "mc.parent(node,collider_grp)", 
+                "mc.rename(node, '${collider}')", 
+                "carbon.carbonMeshChanged('${collider}', 'mesh', '${geo}')", 
+                ""
+            ]
+        }, 
+        "/collisions": {
+            "execute_in": "/costume", 
+            "child_order": [
+                "collider_instance"
+            ], 
+            "enabled": true
+        }, 
+        "/collisions/collider_instance": {
+            "instance": "/build_collision/collider", 
+            "child_order": [
+                "build_collider_node"
+            ], 
+            "enabled": true
+        }, 
+        "/constraint_type": {
+            "child_order": [
+                "binding", 
+                "weld"
+            ], 
+            "enabled": false
+        }, 
+        "/constraint_type/binding": {
+            "enabled": true
+        }, 
+        "/constraint_type/weld": {
+            "enabled": true
+        }, 
+        "/constraints": {
+            "execute_in": "/collisions", 
+            "enabled": false
+        }, 
+        "/costume": {
+            "execute_in": "/create_solver", 
+            "enabled": true
+        }, 
+        "/create_solver": {
+            "execute_in": "/imports", 
+            "child_order": [
+                "build_cloth_grp", 
+                "build_solver", 
+                "build_solver_grp"
+            ], 
+            "enabled": true, 
+            "code": [
+                "'''", 
+                "#Creates solver if it doesn't already exist and groups it.", 
+                "'''", 
+                "", 
+                "    ", 
+                "", 
+                "    ", 
+                "", 
+                ""
+            ]
+        }, 
+        "/create_solver/build_cloth_grp": {
+            "enabled": true, 
+            "code": [
+                "parent = 'trs_aux'", 
+                "rig_grp = '${rig_group}_rig'", 
+                "# If cloth rig group doesn't exist, build it and group it.", 
+                "if not mc.objExists(rig_grp):", 
+                "    rig_grp = mc.group(em=True, n = rig_grp)", 
+                "    mc.parent(rig_grp, parent)", 
+                "#If it does exist, group it.    ", 
+                "else:", 
+                "    mc.parent(rig_grp, parent)", 
+                "        ", 
+                ""
+            ]
+        }, 
+        "/create_solver/build_solver": {
+            "enabled": true, 
+            "attrs": {
+                "reset_frame": {
+                    "type": "int", 
+                    "value": "1"
+                }, 
+                "start_frame": {
+                    "type": "int", 
+                    "value": "30"
+                }
+            }, 
+            "code": [
+                "start_frame = ${start_frame}", 
+                "", 
+                "if mc.objExists(${solver}):", 
+                "    print \"Solver Already Exists! Grouping\"", 
+                "    ", 
+                "else:", 
+                "    carbon_node = carbon.carbonCreateNode(\"Simulation\", '${element}')", 
+                "    carbon_transform = mc.listRelatives(carbon_node, p=True)", 
+                "    carbon_transform = mc.rename(carbon_transform, ${solver})    ", 
+                "    mc.setAttr(${solver}+'Shape.startFrame', start_frame)", 
+                "    mc.setAttr(${solver}+'Shape.resetFrame', ${reset_frame})"
+            ]
+        }, 
+        "/create_solver/build_solver_grp": {
+            "enabled": true, 
+            "code": [
+                "name = 'solver_node_grp'", 
+                "rig_grp = '${rig_group}_rig'", 
+                "solver = ${solver}", 
+                "# If solver node group doesn't exist, build it and group it.", 
+                "if not mc.objExists(name):", 
+                "    solver_grp = mc.group(em=True, n = name)", 
+                "    mc.parent(solver, solver_grp)", 
+                "    mc.parent(solver_grp, rig_grp)", 
+                "# If it does exist, group it.   ", 
+                "else:", 
+                "    solver_grp = name", 
+                "    mc.parent(solver, solver_grp)", 
+                "    mc.parent(solver_grp, rig_grp)", 
+                "        "
+            ]
+        }, 
+        "/data": {
+            "child_order": [
+                "solver_settings", 
+                "cloth_settings", 
+                "collider_settings"
+            ], 
+            "enabled": true
+        }, 
+        "/data/cloth_settings": {
+            "enabled": true, 
+            "attrs": {
+                "filepath": {
+                    "type": "raw", 
+                    "value": "${file::build}/base/"
+                }, 
+                "save": {
+                    "type": "bool", 
+                    "value": "True"
+                }
+            }, 
+            "code": [
+                "save = ${save}", 
+                "path = r'C:/PyCharmProjects/rig/biped/cloth/build/base/'", 
+                "node = '${garment}_'+${rig_group}+'Shape'", 
+                "file = '${garment}'+'_preset'", 
+                "", 
+                "import showtools.maya.core.attr", 
+                "from showtools.maya.core.data import nodeData", 
+                "", 
+                "reload(nodeData)", 
+                "nd = nodeData.AttrData()", 
+                "", 
+                "if not os.path.exists(path):", 
+                "    raise Exception('File path not found: \"%s\"' % path)", 
+                "    ", 
+                "        ", 
+                "file = file+'.data'", 
+                "    ", 
+                "filepath = os.path.join(path, file)", 
+                "", 
+                "if save:", 
+                "    nodes = showtools.maya.core.attr.KEYABLE(node)", 
+                "    customAttrs = [", 
+                "    'thickness',", 
+                "    'selfCollide',", 
+                "    ]", 
+                "    nodes.extend(customAttrs)", 
+                "    ", 
+                "    nodes = [node+'.'+n for n in nodes]", 
+                "        ", 
+                "    nd.setData(nodes)", 
+                "    nd.save(filepath)", 
+                "else:", 
+                "    if os.path.isfile(filepath):", 
+                "        nd = nodeData.AttrData()", 
+                "        nd.load(filepath)", 
+                "        print nd.data", 
+                "        nd.applyAttrs()", 
+                "    else:", 
+                "        print(filepath + \"does not exist, skipping\")"
+            ]
+        }, 
+        "/data/collider_settings": {
+            "enabled": true, 
+            "attrs": {
+                "collider": {
+                    "type": "raw", 
+                    "value": "${geo}_${variant}"
+                }, 
+                "save": {
+                    "type": "bool", 
+                    "value": "True"
+                }
+            }, 
+            "code": [
+                "save = ${save}", 
+                "path = r'C:/PyCharmProjects/rig/biped/cloth/build/base/'", 
+                "node = '${collider}Shape'", 
+                "file = '${geo}'+'_${variant}'", 
+                "", 
+                "import showtools.maya.core.attr", 
+                "from showtools.maya.core.data import nodeData", 
+                "", 
+                "reload(nodeData)", 
+                "nd = nodeData.AttrData()", 
+                "", 
+                "if not os.path.exists(path):", 
+                "    raise Exception('File path not found: \"%s\"' % path)", 
+                "    ", 
+                "        ", 
+                "file = file+'.data'", 
+                "    ", 
+                "filepath = os.path.join(path, file)", 
+                "", 
+                "if save:", 
+                "    nodes = showtools.maya.core.attr.KEYABLE(node)", 
+                "    customAttrs = [", 
+                "    'thickness',", 
+                "    'filteringGap',", 
+                "    ]", 
+                "    nodes.extend(customAttrs)", 
+                "    ", 
+                "    nodes = [node+'.'+n for n in nodes]", 
+                "        ", 
+                "    nd.setData(nodes)", 
+                "    nd.save(filepath)", 
+                "else:", 
+                "    if os.path.isfile(filepath):", 
+                "        nd = nodeData.AttrData()", 
+                "        nd.load(filepath)", 
+                "        print nd.data", 
+                "        nd.applyAttrs()", 
+                "    else:", 
+                "        print(filepath + \"does not exist, skipping\")"
+            ]
+        }, 
+        "/data/solver_settings": {
+            "enabled": true, 
+            "attrs": {
+                "filepath": {
+                    "type": "raw", 
+                    "value": "${file::build}/base/"
+                }, 
+                "save": {
+                    "type": "bool", 
+                    "value": "True"
+                }
+            }, 
+            "code": [
+                "save = ${save}", 
+                "path = r'C:/PyCharmProjects/rig/biped/cloth/build/base/'", 
+                "node = ${solver}+'Shape'", 
+                "file = ${solver}+'_Node'", 
+                "", 
+                "import showtools.maya.core.attr", 
+                "from showtools.maya.core.data import nodeData", 
+                "", 
+                "reload(nodeData)", 
+                "nd = nodeData.AttrData()", 
+                "", 
+                "if not os.path.exists(path):", 
+                "    raise Exception('File path not found: \"%s\"' % path)", 
+                "    ", 
+                "        ", 
+                "file = file+'.data'", 
+                "    ", 
+                "filepath = os.path.join(path, file)", 
+                "", 
+                "if save:", 
+                "    nodes = showtools.maya.core.attr.KEYABLE(node)", 
+                "    customAttrs = [", 
+                "    'maxLinearMotion',", 
+                "    'panicTime',", 
+                "    'renderScale',", 
+                "    'leadDuration',", 
+                "    'resetFrame',", 
+                "    'startFrame'", 
+                "    ]", 
+                "    nodes.extend(customAttrs)", 
+                "    ", 
+                "    nodes = [node+'.'+n for n in nodes]", 
+                "        ", 
+                "    nd.setData(nodes)", 
+                "    nd.save(filepath)", 
+                "else:", 
+                "    if os.path.isfile(filepath):", 
+                "        nd = nodeData.AttrData()", 
+                "        nd.load(filepath)", 
+                "        print nd.data", 
+                "        nd.applyAttrs()", 
+                "    else:", 
+                "        print(filepath + \"does not exist, skipping\")"
+            ]
+        }, 
+        "/export": {
+            "enabled": true, 
+            "attrs": {
+                "attr": {
+                    "type": "NoneType"
+                }
+            }
+        }, 
+        "/garment": {
+            "child_order": [
+                "build_cloth_node"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "garment": {
+                    "type": "NoneType"
+                }
+            }, 
+            "code": [
+                "'''", 
+                "#input > sim > cleanup > output", 
+                "#build empty cloth object", 
+                "'''"
+            ]
+        }, 
+        "/garment/build_cloth_node": {
+            "child_order": [
+                "sim_mesh", 
+                "cleanup_mesh", 
+                "output_mesh", 
+                "input_mesh", 
+                "goal_mesh", 
+                "reference_mesh", 
+                "cleanup_input_mesh", 
+                "initial_state_mesh"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "cleanup_input_mesh": {
+                    "type": "raw", 
+                    "value": "${garment}_input_mesh"
+                }, 
+                "cleanup_mesh": {
+                    "type": "raw", 
+                    "value": "${garment}_cleanup"
+                }, 
+                "cloth_node": {
+                    "type": "raw", 
+                    "value": "${garment}_${rig_group}"
+                }, 
+                "goal_mesh": {
+                    "type": "raw", 
+                    "value": "${garment}_goal"
+                }, 
+                "initial_state_mesh": {
+                    "type": "raw", 
+                    "value": "${garment}_initial"
+                }, 
+                "input_mesh": {
+                    "type": "raw", 
+                    "value": "${garment}_geo_input"
+                }, 
+                "output_mesh": {
+                    "type": "raw", 
+                    "value": "${garment}_geo_out"
+                }, 
+                "reference_mesh": {
+                    "type": "raw", 
+                    "value": "${garment}_reference"
+                }, 
+                "sim_mesh": {
+                    "type": "raw", 
+                    "value": "${garment}_sim"
+                }
+            }, 
+            "code": [
+                "'''", 
+                "builds carbon object ", 
+                "connects to specified solver", 
+                "names it", 
+                "##naming convention??##", 
+                "'''", 
+                "if not mc.objExists('${rig_group}_grp'):", 
+                "    cloth_grp = mc.group(em=True, n='${rig_group}_grp')", 
+                "    mc.parent(cloth_grp,'${rig_group}_rig')", 
+                "    ", 
+                "clothNode = carbon.carbonCreateNode('Cloth', ${solver})", 
+                "node = mc.listRelatives(clothNode, allParents=True)", 
+                "mc.parent(node, cloth_grp)", 
+                "mc.rename(node,'${garment}_${rig_group}')", 
+                ""
+            ]
+        }, 
+        "/garment/build_cloth_node/cleanup_input_mesh": {
+            "child_order": [
+                "import_cleanup_input", 
+                "build_cleanup_input_grp"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "geometry": {
+                    "type": "str", 
+                    "value": "'${garment}_${type}'"
+                }, 
+                "type": {
+                    "type": "raw", 
+                    "value": "cleanup_input"
+                }
+            }, 
+            "code": [
+                "'''", 
+                "blendshape attached to input mesh", 
+                "'''", 
+                ""
+            ]
+        }, 
+        "/garment/build_cloth_node/cleanup_input_mesh/build_cleanup_input_grp": {
+            "instance": "/build_garment_groups", 
+            "child_order": [
+                "connect_grp"
+            ], 
+            "enabled": true, 
+            "code": [
+                ""
+            ]
+        }, 
+        "/garment/build_cloth_node/cleanup_input_mesh/import_cleanup_input": {
+            "instance": "/load_meshes", 
+            "child_order": [
+                "import_meshes"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "filepath": {
+                    "type": "raw", 
+                    "value": "${file::build}/base/garment/${garment}_${type}.abc"
+                }, 
+                "load": {
+                    "type": "bool", 
+                    "value": "False"
+                }
+            }, 
+            "code": [
+                ""
+            ]
+        }, 
+        "/garment/build_cloth_node/cleanup_mesh": {
+            "child_order": [
+                "import_cleanup_mesh", 
+                "build_cleanup_grp", 
+                "build_wrap"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "geometry": {
+                    "type": "str", 
+                    "value": "'${garment}_${type}'"
+                }, 
+                "type": {
+                    "type": "raw", 
+                    "value": "cleanup"
+                }
+            }, 
+            "code": [
+                "'''", 
+                "tech anim interaction", 
+                "simplified single sided mesh that lives between the sim mesh and output mesh", 
+                "", 
+                "post sim output", 
+                "wrapped to triangle sim mesh", 
+                "_before_ thickening", 
+                "", 
+                "designed for sculpting, doesn't necessarily match output mesh", 
+                "", 
+                "'''", 
+                "", 
+                "", 
+                ""
+            ]
+        }, 
+        "/garment/build_cloth_node/cleanup_mesh/build_cleanup_grp": {
+            "instance": "/build_garment_groups", 
+            "child_order": [
+                "connect_grp"
+            ], 
+            "enabled": true, 
+            "code": [
+                ""
+            ]
+        }, 
+        "/garment/build_cloth_node/cleanup_mesh/build_wrap": {
+            "instance": "/wrap", 
+            "child_order": [
+                "wrap_deform"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "source": {
+                    "type": "raw", 
+                    "value": "${sim_mesh}"
+                }, 
+                "target": {
+                    "type": "raw", 
+                    "value": "${cleanup_mesh}"
+                }
+            }, 
+            "code": [
+                ""
+            ]
+        }, 
+        "/garment/build_cloth_node/cleanup_mesh/import_cleanup_mesh": {
+            "instance": "/load_meshes", 
+            "child_order": [
+                "import_meshes"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "filepath": {
+                    "type": "raw", 
+                    "value": "${file::build}/base/garment/${garment}_${type}.abc"
+                }, 
+                "load": {
+                    "type": "bool", 
+                    "value": "False"
+                }
+            }, 
+            "code": [
+                ""
+            ]
+        }, 
+        "/garment/build_cloth_node/goal_mesh": {
+            "child_order": [
+                "import_goal_mesh", 
+                "build_goal_grp", 
+                "build_wrap", 
+                "connect_goal"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "geometry": {
+                    "type": "str", 
+                    "value": "'${garment}_${type}'"
+                }, 
+                "type": {
+                    "type": "raw", 
+                    "value": "goal"
+                }
+            }, 
+            "code": [
+                "'''", 
+                "copy of the sim mesh that is skinned to input mesh", 
+                "", 
+                "uv space wrap", 
+                "", 
+                "'''", 
+                ""
+            ]
+        }, 
+        "/garment/build_cloth_node/goal_mesh/build_goal_grp": {
+            "instance": "/build_garment_groups", 
+            "child_order": [
+                "connect_grp"
+            ], 
+            "enabled": true, 
+            "code": [
+                ""
+            ]
+        }, 
+        "/garment/build_cloth_node/goal_mesh/build_wrap": {
+            "instance": "/wrap", 
+            "child_order": [
+                "wrap_deform"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "source": {
+                    "type": "raw", 
+                    "value": "${input_mesh}"
+                }, 
+                "target": {
+                    "type": "raw", 
+                    "value": "${goal_mesh}"
+                }
+            }, 
+            "code": [
+                ""
+            ]
+        }, 
+        "/garment/build_cloth_node/goal_mesh/connect_goal": {
+            "enabled": true, 
+            "code": [
+                "goal_mesh = '${goal_mesh}'", 
+                "if mc.objExists(goal_mesh):", 
+                "    carbon.carbonMeshChanged('${cloth_node}Shape','goalMesh',goal_mesh+'Shape')", 
+                "    mc.setAttr('${cloth_node}Shape.enableGoalPose', 0)", 
+                "", 
+                "else:", 
+                "    if goal_mesh == None:", 
+                "        pass"
+            ]
+        }, 
+        "/garment/build_cloth_node/goal_mesh/import_goal_mesh": {
+            "instance": "/load_meshes", 
+            "child_order": [
+                "import_meshes"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "filepath": {
+                    "type": "raw", 
+                    "value": "${file::build}/base/garment/${garment}_${type}.abc"
+                }, 
+                "load": {
+                    "type": "bool", 
+                    "value": "False"
+                }
+            }, 
+            "code": [
+                ""
+            ]
+        }, 
+        "/garment/build_cloth_node/initial_state_mesh": {
+            "child_order": [
+                "import_initial_state", 
+                "build_intial_grp"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "geometry": {
+                    "type": "str", 
+                    "value": "'${garment}_${type}'"
+                }, 
+                "type": {
+                    "type": "raw", 
+                    "value": "initial"
+                }
+            }, 
+            "code": [
+                "'''", 
+                "settled sim mesh", 
+                "", 
+                "relaxed state the garment", 
+                "", 
+                "all the forces are only new forces from this point forward", 
+                "'''", 
+                ""
+            ]
+        }, 
+        "/garment/build_cloth_node/initial_state_mesh/build_intial_grp": {
+            "instance": "/build_garment_groups", 
+            "child_order": [
+                "connect_grp"
+            ], 
+            "enabled": true, 
+            "code": [
+                ""
+            ]
+        }, 
+        "/garment/build_cloth_node/initial_state_mesh/import_initial_state": {
+            "instance": "/load_meshes", 
+            "child_order": [
+                "import_meshes"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "filepath": {
+                    "type": "raw", 
+                    "value": "${file::build}/base/garment/${garment}_${type}.abc"
+                }, 
+                "load": {
+                    "type": "bool", 
+                    "value": "False"
+                }
+            }, 
+            "code": [
+                ""
+            ]
+        }, 
+        "/garment/build_cloth_node/input_mesh": {
+            "child_order": [
+                "import_input_mesh", 
+                "build_input_grp", 
+                "generate_bind"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "geometry": {
+                    "type": "str", 
+                    "value": "'${garment}_${type}'"
+                }, 
+                "type": {
+                    "type": "raw", 
+                    "value": "geo_input"
+                }
+            }, 
+            "code": [
+                "'''", 
+                "what is being drivn by the animators in the anim rig", 
+                "exact copy of a mesh in the model", 
+                "goal mesh will be skinned/connected to this", 
+                "(depending on carbon architecture)", 
+                "", 
+                "exact copy", 
+                "", 
+                "drives two other meshes goal mesh", 
+                "copy of cleanup mesh", 
+                "", 
+                "'''", 
+                "", 
+                ""
+            ]
+        }, 
+        "/garment/build_cloth_node/input_mesh/build_input_grp": {
+            "instance": "/build_garment_groups", 
+            "child_order": [
+                "connect_grp"
+            ], 
+            "enabled": true, 
+            "code": [
+                ""
+            ]
+        }, 
+        "/garment/build_cloth_node/input_mesh/generate_bind": {
+            "enabled": false
+        }, 
+        "/garment/build_cloth_node/input_mesh/import_input_mesh": {
+            "instance": "/load_meshes", 
+            "child_order": [
+                "import_meshes"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "filepath": {
+                    "type": "raw", 
+                    "value": "${file::build}/base/garment/${garment}_${type}.abc"
+                }, 
+                "load": {
+                    "type": "bool", 
+                    "value": "False"
+                }
+            }, 
+            "code": [
+                ""
+            ]
+        }, 
+        "/garment/build_cloth_node/output_mesh": {
+            "child_order": [
+                "import_output_mesh", 
+                "build_output_grp", 
+                "build_wrap"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "geometry": {
+                    "type": "str", 
+                    "value": "'${garment}_${type}'"
+                }, 
+                "type": {
+                    "type": "raw", 
+                    "value": "geo_out"
+                }
+            }, 
+            "code": [
+                "", 
+                ""
+            ]
+        }, 
+        "/garment/build_cloth_node/output_mesh/build_output_grp": {
+            "instance": "/build_garment_groups", 
+            "child_order": [
+                "connect_grp"
+            ], 
+            "enabled": true, 
+            "code": [
+                ""
+            ]
+        }, 
+        "/garment/build_cloth_node/output_mesh/build_wrap": {
+            "instance": "/wrap", 
+            "child_order": [
+                "wrap_deform"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "source": {
+                    "type": "raw", 
+                    "value": "${cleanup_mesh}"
+                }, 
+                "target": {
+                    "type": "raw", 
+                    "value": "${output_mesh}"
+                }
+            }, 
+            "code": [
+                ""
+            ]
+        }, 
+        "/garment/build_cloth_node/output_mesh/import_output_mesh": {
+            "instance": "/load_meshes", 
+            "child_order": [
+                "import_meshes"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "filepath": {
+                    "type": "raw", 
+                    "value": "${file::build}/base/garment/${garment}_${type}.abc"
+                }, 
+                "load": {
+                    "type": "bool", 
+                    "value": "False"
+                }
+            }, 
+            "code": [
+                ""
+            ]
+        }, 
+        "/garment/build_cloth_node/reference_mesh": {
+            "child_order": [
+                "import_reference", 
+                "build_reference_grp", 
+                "connect_reference"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "geometry": {
+                    "type": "str", 
+                    "value": "'${garment}_${type}'"
+                }, 
+                "type": {
+                    "type": "raw", 
+                    "value": "reference"
+                }
+            }, 
+            "code": [
+                "'''", 
+                "flattened mesh based on uv's", 
+                "reference_mesh = rest_legnth_mesh", 
+                "", 
+                "'''", 
+                "", 
+                ""
+            ]
+        }, 
+        "/garment/build_cloth_node/reference_mesh/build_reference_grp": {
+            "instance": "/build_garment_groups", 
+            "child_order": [
+                "connect_grp"
+            ], 
+            "enabled": true, 
+            "code": [
+                ""
+            ]
+        }, 
+        "/garment/build_cloth_node/reference_mesh/connect_reference": {
+            "enabled": true, 
+            "code": [
+                "reference_mesh = '${reference_mesh}'", 
+                "if mc.objExists(reference_mesh):", 
+                "    carbon.carbonMeshChanged('${cloth_node}Shape','referenceMesh',reference_mesh+'Shape')", 
+                "else:", 
+                "    if reference_mesh == None:", 
+                "        pass"
+            ]
+        }, 
+        "/garment/build_cloth_node/reference_mesh/import_reference": {
+            "instance": "/load_meshes", 
+            "child_order": [
+                "import_meshes"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "filepath": {
+                    "type": "raw", 
+                    "value": "${file::build}/base/garment/${garment}_${type}.abc"
+                }, 
+                "load": {
+                    "type": "bool", 
+                    "value": "False"
+                }
+            }, 
+            "code": [
+                ""
+            ]
+        }, 
+        "/garment/build_cloth_node/sim_mesh": {
+            "child_order": [
+                "import_sim_mesh", 
+                "build_sim_grp", 
+                "connect_to_cloth"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "geometry": {
+                    "type": "str", 
+                    "value": "'${garment}_${type}'"
+                }, 
+                "type": {
+                    "type": "raw", 
+                    "value": "sim"
+                }
+            }, 
+            "code": [
+                "'''", 
+                "triangle mesh from marvelous", 
+                "'''", 
+                ""
+            ]
+        }, 
+        "/garment/build_cloth_node/sim_mesh/build_sim_grp": {
+            "instance": "/build_garment_groups", 
+            "child_order": [
+                "connect_grp"
+            ], 
+            "enabled": true, 
+            "code": [
+                ""
+            ]
+        }, 
+        "/garment/build_cloth_node/sim_mesh/connect_to_cloth": {
+            "enabled": true, 
+            "code": [
+                "'''", 
+                "save data", 
+                "save maps", 
+                "reference mesh connections", 
+                "##check if it exists!##", 
+                "'''", 
+                "sim_mesh = '${sim_mesh}'", 
+                "cloth_node = '${cloth_node}' ", 
+                "", 
+                "if sim_mesh and cloth_node:", 
+                "    carbon.carbonMeshChanged(cloth_node+'Shape', 'startMesh', sim_mesh+'Shape')", 
+                "", 
+                ""
+            ]
+        }, 
+        "/garment/build_cloth_node/sim_mesh/import_sim_mesh": {
+            "instance": "/load_meshes", 
+            "child_order": [
+                "import_meshes"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "load": {
+                    "type": "bool", 
+                    "value": "True"
+                }
+            }, 
+            "code": [
+                "", 
+                "        ", 
+                ""
+            ]
+        }, 
+        "/imports": {
+            "execute_in": "/init", 
+            "child_order": [
+                "import_char_model"
+            ], 
+            "enabled": true
+        }, 
+        "/imports/import_char_model": {
+            "instance": "/load_maya_file", 
+            "enabled": true, 
+            "attrs": {
+                "filepath": {
+                    "type": "raw", 
+                    "value": "${file::../model/biped_${variant}_model.fbx}"
+                }
+            }
+        }, 
+        "/init": {
+            "start_point": true, 
+            "child_order": [
+                "code_imports", 
+                "load_plugins", 
+                "new_scene", 
+                "scene_state"
+            ], 
+            "enabled": true
+        }, 
+        "/init/code_imports": {
+            "enabled": true, 
+            "code": [
+                "import sys", 
+                "global mc", 
+                "global mm", 
+                "global carbon", 
+                "import maya.cmds as mc", 
+                "import maya.mel as mm", 
+                "import carbonUtils as carbon", 
+                "from showtools.maya.core.data import nodeData", 
+                "from showtools.maya.core import wrap", 
+                "import showtools.maya.core.attr", 
+                "reload(wrap)"
+            ]
+        }, 
+        "/init/load_plugins": {
+            "enabled": true, 
+            "attrs": {
+                "plugins": {
+                    "type": "list", 
+                    "value": "['gameFbxExporter','Carbon.mll']"
+                }
+            }, 
+            "code": [
+                "plugins = ${plugins}", 
+                "", 
+                "if not isinstance(plugins, list): plugins = [plugins]", 
+                "", 
+                "for plugin in plugins:", 
+                "    mc.loadPlugin(plugin, qt=True)"
+            ]
+        }, 
+        "/init/new_scene": {
+            "enabled": true, 
+            "code": [
+                "mc.file(new=True, f=True)", 
+                "mc.setAttr('hardwareRenderingGlobals.multiSampleEnable', 1)", 
+                ""
+            ]
+        }, 
+        "/init/scene_state": {
+            "enabled": true, 
+            "code": [
+                "mc.evaluator(name='cache', enable=0)", 
+                "", 
+                ""
+            ]
+        }, 
+        "/initalize_solve": {
+            "execute_in": "/constraints", 
+            "child_order": [
+                "set_solver", 
+                "frame_camera", 
+                "reveal_in_outliner", 
+                "beep"
+            ], 
+            "enabled": true
+        }, 
+        "/initalize_solve/beep": {
+            "enabled": true, 
+            "code": [
+                "import winsound", 
+                "frequency = 100  # Set Frequency To 2500 Hertz", 
+                "duration = 1000  # Set Duration To 1000 ms == 1 second", 
+                "cmd = 'import winsound; winsound.Beep({}, {})'.format(frequency, duration)", 
+                "mc.evalDeferred(cmd)"
+            ]
+        }, 
+        "/initalize_solve/frame_camera": {
+            "enabled": true, 
+            "attrs": {
+                "selection": {
+                    "type": "str", 
+                    "value": "'body_geo'"
+                }
+            }, 
+            "code": [
+                "sel = ${selection}", 
+                "", 
+                "if sel is not None:", 
+                "    try:", 
+                "        mc.select(sel, r=True)", 
+                "    except:", 
+                "        mc.warning ('Object not found ' + sel)", 
+                "else: ", 
+                "    mc.select(cl=True)", 
+                "", 
+                "mc.viewFit(\"persp\")"
+            ]
+        }, 
+        "/initalize_solve/reveal_in_outliner": {
+            "enabled": true, 
+            "attrs": {
+                "children": {
+                    "type": "bool", 
+                    "value": "True"
+                }, 
+                "select": {
+                    "type": "str", 
+                    "value": "'sim_grp'"
+                }
+            }, 
+            "code": [
+                "children = ${children}", 
+                "selection = ${select}", 
+                "", 
+                "if children:", 
+                "    selection = mc.listRelatives(selection, children=True)", 
+                "    ", 
+                "mc.select(selection, replace=True)", 
+                "", 
+                "outlinerPanel = mc.getPanel(typ='outlinerPanel')", 
+                "visiblePanels = mc.getPanel(vis=True)", 
+                "", 
+                "outliners = [p for p in outlinerPanel if p in visiblePanels]", 
+                "", 
+                "if outliners:", 
+                "    for outliner in outliners:", 
+                "        mc.outlinerEditor(outliner, e=True, sc=True)", 
+                "        mc.evalDeferred('import maya.cmds as mc; mc.outlinerEditor(\"{}\", e=True, sc=True);'.format(str(outliner)) )", 
+                "        ", 
+                "    mc.evalDeferred('import maya.cmds as mc; mc.select(clear=True);')", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "'''", 
+                "if children:", 
+                "    selection = mc.listRelatives(selection, children=True)", 
+                "    ", 
+                "mc.select(selection, replace=True)", 
+                "", 
+                "outlinerPanel = mc.getPanel(typ='outlinerPanel')[0]", 
+                "visiblePanels = mc.getPanel(vis=True)", 
+                "if [i for i in visiblePanels if i.startswith('outliner')]:", 
+                "    print 'show'", 
+                "    mc.evalDeferred('import maya.cmds as mc; mc.outlinerEditor(\"{}\", e=True, sc=True);mc.select(clear=True)'.format(str(outlinerPanel)) )", 
+                "", 
+                "'''"
+            ]
+        }, 
+        "/initalize_solve/set_solver": {
+            "enabled": true, 
+            "code": [
+                "'''", 
+                "check for start frame if settings arent there", 
+                "'''"
+            ]
+        }, 
+        "/publish": {
+            "child_order": [
+                "cleanup"
+            ], 
+            "enabled": false
+        }, 
+        "/publish/cleanup": {
+            "enabled": true
+        }
+    }
+}

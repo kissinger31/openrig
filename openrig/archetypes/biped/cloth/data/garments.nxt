@@ -1,0 +1,361 @@
+{
+    "version": "0.41.0", 
+    "alias": "garments", 
+    "color": "#991c24", 
+    "references": [
+        {
+            "path": "./cloth_rig.nxt"
+        }
+    ], 
+    "solo": false, 
+    "mute": false, 
+    "data": {
+        "position_data": {
+            "/load_curve_data": [
+                -1812.7123649416792, 
+                -79.12938274936278
+            ], 
+            "/load_maya_file": [
+                -1007.9890302682946, 
+                174.8644517871017
+            ], 
+            "/load_joint_data": [
+                -1444.9865889636203, 
+                440.2271739488083
+            ], 
+            "/data": [
+                2237.699075374044, 
+                605.6447181101558
+            ], 
+            "/import_psd": [
+                -1717.2316914013807, 
+                957.9183818229233
+            ], 
+            "/code_globals": [
+                -1353.6070876166436, 
+                645.8310519795059
+            ], 
+            "/collisions": [
+                1588.3803958905726, 
+                -146.35337113471113
+            ], 
+            "/initalize_solve": [
+                2511.8299025903075, 
+                -139.71353675113474
+            ], 
+            "/import_weight_directory": [
+                -1467.5509395798385, 
+                303.0945828465723
+            ], 
+            "/create_solver": [
+                611.9341612367717, 
+                -160.26273277710425
+            ], 
+            "/control": [
+                -1675.3390819424576, 
+                752.4404702176455
+            ], 
+            "/load_sdk_data": [
+                -2250.6728468899523, 
+                -552.353680344111
+            ], 
+            "/load_meshes": [
+                -768.2014541893353, 
+                367.79246898942023
+            ], 
+            "/export": [
+                2294.4087619898187, 
+                496.5864858870747
+            ], 
+            "/cluster_control": [
+                -2576.804226475279, 
+                -799.3088782562465
+            ], 
+            "/costume": [
+                1047.3127914333138, 
+                -157.08410070396837
+            ], 
+            "/constraint_type": [
+                1461.7798938597161, 
+                298.1042703918469
+            ], 
+            "/space_switch": [
+                -2007.2733199841762, 
+                606.5488547153612
+            ], 
+            "/element_info": [
+                205.630249350589, 
+                -686.1891887221157
+            ], 
+            "/wrap": [
+                -733.1781288895766, 
+                747.6100192601433
+            ], 
+            "/build_collision": [
+                1186.542581298309, 
+                592.5732576886494
+            ], 
+            "/constraints": [
+                2070.8818209131127, 
+                -141.24744850114897
+            ], 
+            "/load_node_data": [
+                -1965.5171109862822, 
+                368.0847718672645
+            ], 
+            "/build": [
+                163.2560637344415, 
+                182.0629679176203
+            ], 
+            "/build_garment_groups": [
+                -736.6139196345868, 
+                568.0891107796695
+            ], 
+            "/imports": [
+                62.80612185434859, 
+                -161.939878132677
+            ], 
+            "/publish": [
+                2929.3004086967835, 
+                -149.97470369088433
+            ], 
+            "/init": [
+                -560.0444905933723, 
+                -160.9754467840468
+            ], 
+            "/load_deformer_order_data": [
+                -1385.2735102080953, 
+                -92.40908193208213
+            ]
+        }, 
+        "collapse_data": {
+            "/build/garment/build_cloth_node/cleanup_mesh/build_cleanup_grp": true, 
+            "/build/garment/build_cloth_node/reference_mesh/import_reference": true, 
+            "/build_collision": true, 
+            "/costume/tunic/node/sim_mesh": true, 
+            "/costume/node/build_cloth_node/cleanup_mesh/build_wrap/wrap_deform": false, 
+            "/costume/belt/build_cloth_node/input_mesh": true, 
+            "/costume/belt/build_cloth_node/cleanup_input_mesh/build_cleanup_input_grp": true, 
+            "/costume/tunic/node/cleanup_input_mesh/import_cleanup_input": true, 
+            "/build/garment/build_cloth_node/cleanup_input_mesh/build_cleanup_input_grp": true, 
+            "/costume/belt/build_cloth_node/input_mesh/import_input_mesh": true, 
+            "/costume/tunic/build_cloth_node/cleanup_input_mesh": true, 
+            "/load_meshes": false, 
+            "/build/garment/build_cloth_node/goal_mesh/build_wrap": true, 
+            "/costume/belt/build_cloth_node/output_mesh": true, 
+            "/costume/belt/build_cloth_node/sim_mesh/import_sim_mesh": true, 
+            "/costume/tunic/build_cloth_node/sim_mesh/import_sim_mesh/import": false, 
+            "/costume/tunic/node/goal_mesh/build_wrap": true, 
+            "/costume/tunic/node/output_mesh/import_output_mesh": true, 
+            "/costume/belt/build_cloth_node/reference_mesh/import_reference": false, 
+            "/costume/belt/build_cloth_node/goal_mesh/build_wrap": true, 
+            "/build_garment_groups": false, 
+            "/costume/tunic/build_cloth_node/sim_mesh": true, 
+            "/costume/tunic/node/cleanup_mesh/build_wrap": true, 
+            "/costume/belt/build_cloth_node/cleanup_mesh/build_wrap": true, 
+            "/costume/belt/build_cloth_node/sim_mesh/build_sim_grp": true, 
+            "/data": false, 
+            "/costume/tunic/build_cloth_node/sim_mesh/build_sim_grp/connect_grp": false, 
+            "/costume/belt/build_cloth_node/sim_mesh": true, 
+            "/costume/belt/build_cloth_node/reference_mesh/build_reference_grp": false, 
+            "/build/garment/build_cloth_node/goal_mesh": true, 
+            "/costume/node/build_cloth_node/cleanup_mesh": false, 
+            "/load_maya_file": true, 
+            "/costume/belt/build_cloth_node/cleanup_input_mesh": true, 
+            "/costume/belt/build_cloth_node/cleanup_input_mesh/import_cleanup_input": true, 
+            "/costume/tunic/node/initial_state_mesh/import_initial_state": true, 
+            "/costume/tunic/build_cloth_node/goal_mesh": true, 
+            "/costume/tunic/build_cloth_node/input_mesh": true, 
+            "/build/garment/build_cloth_node/initial_state_mesh/build_intial_grp": true, 
+            "/costume/belt": true, 
+            "/build/garment/build_cloth_node/goal_mesh/import_goal_mesh": true, 
+            "/costume/tunic/node/cleanup_mesh": true, 
+            "/build/garment/build_cloth_node/cleanup_mesh/build_wrap": true, 
+            "/costume/belt/build_cloth_node/cleanup_mesh": true, 
+            "/build/garment/build_cloth_node/input_mesh": true, 
+            "/costume": false, 
+            "/build/garment/build_cloth_node/sim_mesh": false, 
+            "/costume/tunic/node/initial_state_mesh/build_intial_grp": true, 
+            "/build_collision/collider": true, 
+            "/costume/belt/build_cloth_node/goal_mesh/build_goal_grp": false, 
+            "/costume/belt/build_cloth_node": true, 
+            "/costume/tunic/node/cleanup_input_mesh/build_cleanup_input_grp": true, 
+            "/wrap": true, 
+            "/costume/tunic/build_cloth_node/sim_mesh/build_sim_grp": true, 
+            "/costume/tunic/build_cloth_node/cleanup_mesh/build_cleanup_grp": false, 
+            "/costume/tunic/node/cleanup_input_mesh": true, 
+            "/costume/tunic/build_cloth_node/cleanup_mesh": true, 
+            "/costume/tunic/node/goal_mesh": true, 
+            "/costume/tunic/node/goal_mesh/import_goal_mesh": true, 
+            "/costume/tunic/build_cloth_node/reference_mesh/import_reference": true, 
+            "/build/garment/build_cloth_node/input_mesh/import_input_mesh": true, 
+            "/build/garment/build_cloth_node/initial_state_mesh/import_initial_state": true, 
+            "/costume/tunic/node/reference_mesh": true, 
+            "/costume/tunic": true, 
+            "/imports/import_char_model": false, 
+            "/build/garment/build_cloth_node/cleanup_mesh/import_cleanup_mesh": false, 
+            "/costume/tunic/node/input_mesh": true, 
+            "/costume/tunic/node/goal_mesh/build_goal_grp": true, 
+            "/build/garment/build_cloth_node": false, 
+            "/costume/belt/build_cloth_node/goal_mesh/import_goal_mesh": true, 
+            "/costume/belt/build_cloth_node/initial_state_mesh/build_intial_grp": true, 
+            "/costume/belt/build_cloth_node/reference_mesh": true, 
+            "/costume/tunic/build_cloth_node/cleanup_mesh/build_wrap": true, 
+            "/build/garment/build_cloth_node/output_mesh/import_output_mesh": true, 
+            "/costume/belt/build_cloth_node/initial_state_mesh/import_initial_state": true, 
+            "/build/garment/build_cloth_node/reference_mesh": true, 
+            "/build/garment/build_cloth_node/cleanup_mesh": false, 
+            "/costume/tunic/build_cloth_node/cleanup_input_mesh/build_cleanup_input_grp": true, 
+            "/costume/tunic/node/initial_state_mesh": true, 
+            "/costume/tunic/build_cloth_node/cleanup_mesh/import_cleanup_mesh": true, 
+            "/build/garment/build_cloth_node/output_mesh/build_wrap": true, 
+            "/costume/tunic/build_cloth_node": true, 
+            "/costume/node/build_cloth_node": false, 
+            "/costume/tunic/build_cloth_node/output_mesh": true, 
+            "/costume/tunic/node/input_mesh/build_input_grp": true, 
+            "/build/garment/build_cloth_node/reference_mesh/build_reference_grp": true, 
+            "/costume/tunic/build_cloth_node/sim_mesh/import_sim_mesh": true, 
+            "/build/garment/build_cloth_node/input_mesh/build_input_grp": true, 
+            "/costume/tunic/node/output_mesh": true, 
+            "/costume/belt/build_cloth_node/initial_state_mesh": true, 
+            "/costume/tunic/node/reference_mesh/build_reference_grp": true, 
+            "/costume/belt/build_cloth_node/cleanup_mesh/import_cleanup_mesh": true, 
+            "/costume/tunic/build_cloth_node/cleanup_input_mesh/import_cleanup_input": true, 
+            "/costume/belt/build_cloth_node/input_mesh/build_input_grp": true, 
+            "/costume/tunic/node/output_mesh/build_wrap": true, 
+            "/build/garment/build_cloth_node/cleanup_input_mesh/import_cleanup_input": true, 
+            "/costume/tunic/build_cloth_node/reference_mesh/build_reference_grp": true, 
+            "/costume/tunic/build_cloth_node/reference_mesh": true, 
+            "/build/garment/build_cloth_node/cleanup_input_mesh": true, 
+            "/costume/tunic/node/cleanup_mesh/import_cleanup_mesh": true, 
+            "/constraint_type": true, 
+            "/costume/tunic/node/output_mesh/build_output_grp": true, 
+            "/build/garment/build_cloth_node/initial_state_mesh": true, 
+            "/costume/tunic/build_cloth_node/initial_state_mesh": true, 
+            "/build/garment/build_cloth_node/output_mesh": true, 
+            "/costume/belt/build_cloth_node/cleanup_mesh/build_cleanup_grp": true, 
+            "/costume/tunic/node/cleanup_mesh/build_cleanup_grp": true, 
+            "/costume/tunic/node/input_mesh/import_input_mesh": true, 
+            "/costume/tunic/node/reference_mesh/import_reference": true, 
+            "/costume/belt/build_cloth_node/goal_mesh": true, 
+            "/build/garment/build_cloth_node/sim_mesh/import_sim_mesh": false, 
+            "/build/garment/build_cloth_node/goal_mesh/build_goal_grp": true, 
+            "/costume/node/build_cloth_node/cleanup_mesh/build_wrap": false, 
+            "/build/garment/build_cloth_node/sim_mesh/build_sim_grp": true, 
+            "/build/garment/build_cloth_node/output_mesh/build_output_grp": true
+        }
+    }, 
+    "children": [
+        {
+            "name": "costume", 
+            "data": {
+                "enabled": true
+            }, 
+            "execute_order": [
+                "tunic", 
+                "belt"
+            ], 
+            "children": [
+                {
+                    "name": "belt", 
+                    "data": {
+                        "instance": "/build/garment", 
+                        "enabled": true, 
+                        "attributes": {
+                            "garment": {
+                                "type": "raw", 
+                                "value": "belt"
+                            }
+                        }
+                    }, 
+                    "execute_order": [
+                        "build_cloth_node"
+                    ], 
+                    "children": [
+                        {
+                            "name": "build_cloth_node", 
+                            "data": {
+                                "instance": "/build/garment/build_cloth_node", 
+                                "enabled": true
+                            }, 
+                            "execute_order": [
+                                "sim_mesh", 
+                                "cleanup_mesh", 
+                                "output_mesh", 
+                                "input_mesh", 
+                                "goal_mesh", 
+                                "reference_mesh", 
+                                "cleanup_input_mesh", 
+                                "initial_state_mesh"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "tunic", 
+                    "data": {
+                        "instance": "/build/garment", 
+                        "enabled": true, 
+                        "attributes": {
+                            "garment": {
+                                "type": "raw", 
+                                "value": "tunic"
+                            }
+                        }
+                    }, 
+                    "execute_order": [
+                        "build_cloth_node"
+                    ], 
+                    "children": [
+                        {
+                            "name": "build_cloth_node", 
+                            "data": {
+                                "instance": "/build/garment/build_cloth_node", 
+                                "enabled": true
+                            }, 
+                            "execute_order": [
+                                "sim_mesh", 
+                                "cleanup_mesh", 
+                                "output_mesh", 
+                                "input_mesh", 
+                                "goal_mesh", 
+                                "reference_mesh", 
+                                "cleanup_input_mesh", 
+                                "initial_state_mesh"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "element_info", 
+            "data": {
+                "enabled": true, 
+                "attributes": {
+                    "element": {
+                        "type": "raw", 
+                        "value": "david"
+                    }, 
+                    "model_group": {
+                        "type": "str", 
+                        "value": "'model'"
+                    }, 
+                    "rig_group": {
+                        "type": "raw", 
+                        "value": "cloth"
+                    }, 
+                    "solver": {
+                        "type": "str", 
+                        "value": "'carbonSolver'"
+                    }, 
+                    "variant": {
+                        "type": "raw", 
+                        "value": "base"
+                    }
+                }
+            }, 
+            "execute_order": []
+        }
+    ]
+}

@@ -1,0 +1,92 @@
+{
+    "version": "1.16", 
+    "alias": "sim_steps", 
+    "color": "#aa55ff", 
+    "mute": false, 
+    "solo": false, 
+    "references": [
+        "run_sim.nxt", 
+        "sim_install.nxt", 
+        "create_preroll.nxt"
+    ], 
+    "nodes": {
+        "/": {
+            "child_order": [
+                "sim_install", 
+                "run_sim", 
+                "create_preroll"
+            ], 
+            "attrs": {
+                "anim_end_frame": {
+                    "type": "int", 
+                    "value": "200"
+                }, 
+                "anim_start_frame": {
+                    "type": "int", 
+                    "value": "0"
+                }, 
+                "preroll_blend_frame": {
+                    "type": "int", 
+                    "value": "-25"
+                }, 
+                "preroll_end_frame": {
+                    "type": "int", 
+                    "value": "-5"
+                }, 
+                "preroll_start_frame": {
+                    "type": "int", 
+                    "value": "-30"
+                }
+            }
+        }, 
+        "/create_preroll": {
+            "attrs": {
+                "anim_end": {
+                    "type": "raw", 
+                    "value": "${anim_end_frame}"
+                }, 
+                "anim_start": {
+                    "type": "raw", 
+                    "value": "${anim_start_frame}"
+                }, 
+                "preroll_blend": {
+                    "value": "${preroll_blend_frame}"
+                }, 
+                "preroll_end": {
+                    "value": "${preroll_end_frame}"
+                }, 
+                "preroll_start": {
+                    "value": "${preroll_start_frame}"
+                }
+            }
+        }, 
+        "/run_sim": {
+            "attrs": {
+                "sim_end_frame": {
+                    "type": "raw", 
+                    "value": "${anim_end_frame}"
+                }, 
+                "sim_start_frame": {
+                    "type": "raw", 
+                    "value": "${preroll_start_frame}"
+                }
+            }
+        }, 
+        "/sim_install": {
+            "attrs": {
+                "sim_blend_frame": {
+                    "type": "raw", 
+                    "value": "${preroll_blend_frame}"
+                }, 
+                "sim_end_frame": {
+                    "type": "raw", 
+                    "value": "${anim_end_frame}"
+                }, 
+                "sim_start_frame": {
+                    "type": "raw", 
+                    "value": "${preroll_start_frame}"
+                }
+            }
+        }
+    }
+}

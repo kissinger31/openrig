@@ -1,0 +1,745 @@
+{
+    "type": "DeformerOrderData", 
+    "user": "Matt", 
+    "time": "2020-10-18 12:04:36", 
+    "data": {
+        "blinkLower_l_bindmesh": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|blink_l|blink_l_grp|blinkLower_l_bindmesh", 
+            "deformerOrder": [
+                "blinkLower_l_bindmesh__blinkLower_l_cluster", 
+                "tweak49"
+            ]
+        }, 
+        "blinkLower_r_bindmesh": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|blink_r|blink_r_grp|blinkLower_r_bindmesh", 
+            "deformerOrder": [
+                "blinkLower_r_bindmesh__blinkLower_r_cluster", 
+                "tweak67"
+            ]
+        }, 
+        "blinkUpper_l_bindmesh": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|blink_l|blink_l_grp|blinkUpper_l_bindmesh", 
+            "deformerOrder": [
+                "blinkUpper_l_bindmesh__blinkUpper_l_cluster", 
+                "tweak46"
+            ]
+        }, 
+        "blinkUpper_r_bindmesh": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|blink_r|blink_r_grp|blinkUpper_r_bindmesh", 
+            "deformerOrder": [
+                "blinkUpper_r_bindmesh__blinkUpper_r_cluster", 
+                "tweak64"
+            ]
+        }, 
+        "body_geo": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|model|nude_mod|body_mod|body_geo", 
+            "deformerOrder": [
+                "head_wire", 
+                "head_low_wire", 
+                "head_low_cluster", 
+                "lip_wire", 
+                "lip_main_wire", 
+                "lid_r_curve_wire", 
+                "lid_l_curve_wire", 
+                "brow_l_curve_wire", 
+                "brow_r_curve_wire", 
+                "cheekPuff_r_cluster", 
+                "cheekPuff_l_cluster", 
+                "cheekLift_l_cluster", 
+                "cheekLift_r_cluster", 
+                "cheek_l_cluster", 
+                "cheek_r_cluster", 
+                "socketStretch_r_cluster", 
+                "socketStretch_l_cluster", 
+                "brow_corrugator_r_cluster", 
+                "brow_corrugator_l_cluster", 
+                "ear_r_cluster", 
+                "ear_l_cluster", 
+                "sneer_r_cluster", 
+                "sneer_l_cluster", 
+                "mouthMain_cluster", 
+                "lip_upper_translate_cluster", 
+                "lip_upper_cluster", 
+                "lip_lower_translate_cluster", 
+                "lip_lower_cluster", 
+                "socketLift_r_cluster", 
+                "socketLift_l_cluster", 
+                "lip_upper_l_cluster", 
+                "lip_upper_r_cluster", 
+                "lid_squash_r_cluster", 
+                "lid_squash_l_cluster", 
+                "lip_lower_r_cluster", 
+                "lip_lower_l_cluster", 
+                "leg_r_curve_wire", 
+                "leg_l_curve_wire", 
+                "arm_r_curve_wire", 
+                "arm_l_curve_wire", 
+                "spine_curve_wire", 
+                "body_geo_skinCluster", 
+                "blinkLower_l_curve_wire", 
+                "blinkUpper_l_curve_wire", 
+                "blinkLower_r_curve_wire", 
+                "blinkUpper_r_curve_wire", 
+                "blinkUpper_l_cluster", 
+                "blinkUpper_r_cluster", 
+                "blinkLower_l_cluster", 
+                "blinkLower_r_cluster", 
+                "skin_psd", 
+                "tweak1"
+            ]
+        }, 
+        "brow_bend_l_bindmesh": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|brow_bend_l_grp|brow_bend_l_bindmesh", 
+            "deformerOrder": [
+                "brow_bend_l_bindmesh_skinCluster", 
+                "tweak71"
+            ]
+        }, 
+        "brow_bend_r_bindmesh": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|brow_bend_r_grp|brow_bend_r_bindmesh", 
+            "deformerOrder": [
+                "brow_bend_r_bindmesh_skinCluster", 
+                "tweak72"
+            ]
+        }, 
+        "head_wire_bindmesh": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|head_wire_grp|head_wire_bindmesh", 
+            "deformerOrder": [
+                "head_wire_bindmesh_skinCluster", 
+                "tweak31"
+            ]
+        }, 
+        "l_arm_bend_bindmesh": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|l_arm|l_arm_bend|l_arm_bend_bindmesh", 
+            "deformerOrder": [
+                "l_arm_bend_bindmesh_skinCluster", 
+                "tweak10"
+            ]
+        }, 
+        "l_leg_bend_bindmesh": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|l_leg|l_leg_bend|l_leg_bend_bindmesh", 
+            "deformerOrder": [
+                "l_leg_bend_bindmesh_skinCluster", 
+                "tweak17"
+            ]
+        }, 
+        "lid_l_bindmesh": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|lid_l_grp|lid_l_bindmesh", 
+            "deformerOrder": [
+                "lid_l_bindmesh__socketStretch_l_cluster", 
+                "lid_l_bindmesh_skinCluster", 
+                "blinkLower_l_curve_wire", 
+                "blinkUpper_l_curve_wire", 
+                "lid_l_bindmesh__blinkUpper_l_cluster", 
+                "lid_l_bindmesh__blinkLower_l_cluster", 
+                "tweak51"
+            ]
+        }, 
+        "lid_r_bindmesh": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|lid_r_grp|lid_r_bindmesh", 
+            "deformerOrder": [
+                "lid_r_bindmesh__socketStretch_r_cluster", 
+                "lid_r_bindmesh_skinCluster", 
+                "blinkLower_r_curve_wire", 
+                "blinkUpper_r_curve_wire", 
+                "lid_r_bindmesh__blinkLower_r_cluster", 
+                "lid_r_bindmesh__blinkUpper_r_cluster", 
+                "tweak69"
+            ]
+        }, 
+        "lip_bindmesh": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|mouth|lip_grp|lip_bindmesh", 
+            "deformerOrder": [
+                "lip_main_wire", 
+                "lip_bindmesh_mouthMain_cluster", 
+                "lip_bindmesh__lip_upper_translate_cluster", 
+                "lip_bindmesh__lip_upper_cluster", 
+                "lip_bindmesh__lip_lower_translate_cluster", 
+                "lip_bindmesh__lip_lower_cluster", 
+                "lip_bindmesh__lip_lower_r_cluster", 
+                "lip_bindmesh__lip_lower_l_cluster", 
+                "lip_bindmesh__lip_upper_r_cluster", 
+                "lip_bindmesh__lip_upper_l_cluster", 
+                "lip_bindmesh_skinCluster", 
+                "tweak11"
+            ]
+        }, 
+        "lip_main_bindmesh": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|mouth|lip_main_grp|lip_main_bindmesh", 
+            "deformerOrder": [
+                "lip_main_bindmesh_mouthMain_cluster", 
+                "lip_main_bindmesh_skinCluster", 
+                "tweak14"
+            ]
+        }, 
+        "mouth_corner_bindmesh": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|mouth|mouth_corner_bindmesh", 
+            "deformerOrder": [
+                "mouth_corner_bindmesh_mouthMain_cluster", 
+                "mouth_corner_bindmesh_skinCluster", 
+                "tweak15"
+            ]
+        }, 
+        "numericPSD_geo": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|psd_grp|numericPSD_geo", 
+            "deformerOrder": [
+                "numeric_psd", 
+                "tweak37"
+            ]
+        }, 
+        "r_arm_bend_bindmesh": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|r_arm|r_arm_bend|r_arm_bend_bindmesh", 
+            "deformerOrder": [
+                "r_arm_bend_bindmesh_skinCluster", 
+                "tweak14"
+            ]
+        }, 
+        "r_leg_bend_bindmesh": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|r_leg|r_leg_bend|r_leg_bend_bindmesh", 
+            "deformerOrder": [
+                "r_leg_bend_bindmesh_skinCluster", 
+                "tweak20"
+            ]
+        }, 
+        "spine_bend_bindmesh": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|spine|spine_bend_grp|spine_bend_bindmesh", 
+            "deformerOrder": [
+                "spine_bend_bindmesh_skinCluster", 
+                "tweak5"
+            ]
+        }, 
+        "tongue_geo": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|model|nude_mod|body_mod|face_mod|mouth_mod|tongue_geo", 
+            "deformerOrder": [
+                "head_wire", 
+                "head_low_wire", 
+                "head_low_cluster", 
+                "tongue_geo_skinCluster", 
+                "tweak19"
+            ]
+        }, 
+        "blinkLower_l_curveBaseWire": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|blink_l|lidLower_curves|blinkLower_l_curveBaseWire", 
+            "deformerOrder": [
+                "blinkLower_l_curveBaseWire_skinCluster", 
+                "tweak48"
+            ]
+        }, 
+        "blinkLower_r_curve": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|blink_l|lidLower_curves|blinkLower_r_curve", 
+            "deformerOrder": [
+                "blinkLower_r_curve_skinCluster", 
+                "eyeDrag_lower_r_cluster", 
+                "tweak65"
+            ]
+        }, 
+        "blinkLower_r_curveBaseWire": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|blink_l|lidLower_curves|blinkLower_r_curveBaseWire", 
+            "deformerOrder": [
+                "blinkLower_r_curveBaseWire_skinCluster", 
+                "tweak66"
+            ]
+        }, 
+        "blinkLower_l_curve": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|blink_l|lidLower_curves|blinkLower_l_curve", 
+            "deformerOrder": [
+                "blinkLower_l_curve_skinCluster", 
+                "eyeDrag_lower_l_cluster", 
+                "tweak47"
+            ]
+        }, 
+        "blinkUpper_l_curveBaseWire": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|blink_l|lidUpper_curves|blinkUpper_l_curveBaseWire", 
+            "deformerOrder": [
+                "blinkUpper_l_curveBaseWire_skinCluster", 
+                "tweak44"
+            ]
+        }, 
+        "blinkUpper_l_curve": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|blink_l|lidUpper_curves|blinkUpper_l_curve", 
+            "deformerOrder": [
+                "blinkUpper_l_curve_skinCluster", 
+                "eyeDrag_upper_l_cluster", 
+                "tweak43"
+            ]
+        }, 
+        "blinkUpper_r_curveBaseWire": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|blink_l|lidUpper_curves|blinkUpper_r_curveBaseWire", 
+            "deformerOrder": [
+                "blinkUpper_r_curveBaseWire_skinCluster", 
+                "tweak62"
+            ]
+        }, 
+        "blinkUpper_r_curve": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|blink_l|lidUpper_curves|blinkUpper_r_curve", 
+            "deformerOrder": [
+                "blinkUpper_r_curve_skinCluster", 
+                "eyeDrag_upper_r_cluster", 
+                "tweak61"
+            ]
+        }, 
+        "brow_l_curveBaseWire": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|brow_bend_l_grp|brow_l_curveBaseWire", 
+            "deformerOrder": [
+                "brow_l_curveBaseWire_skinCluster", 
+                "tweak42"
+            ]
+        }, 
+        "brow_l_curve": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|brow_bend_l_grp|brow_l_curve", 
+            "deformerOrder": [
+                "brow_l_curve_skinCluster", 
+                "tweak41"
+            ]
+        }, 
+        "brow_r_curveBaseWire": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|brow_bend_r_grp|brow_r_curveBaseWire", 
+            "deformerOrder": [
+                "brow_r_curveBaseWire_skinCluster", 
+                "tweak60"
+            ]
+        }, 
+        "brow_r_curve": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|brow_bend_r_grp|brow_r_curve", 
+            "deformerOrder": [
+                "brow_r_curve_skinCluster", 
+                "tweak59"
+            ]
+        }, 
+        "head_curveBaseWire": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|head_wire_grp|head_curveBaseWire", 
+            "deformerOrder": [
+                "head_curveBaseWire_skinCluster", 
+                "tweak30"
+            ]
+        }, 
+        "head_curve": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|head_wire_grp|head_curve", 
+            "deformerOrder": [
+                "head_curve_skinCluster", 
+                "tweak29"
+            ]
+        }, 
+        "l_arm_curveBaseWire": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|l_arm|l_arm_curveBaseWire", 
+            "deformerOrder": [
+                "l_arm_curveBaseWire_skinCluster", 
+                "tweak9"
+            ]
+        }, 
+        "l_arm_curve": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|l_arm|l_arm_curve", 
+            "deformerOrder": [
+                "l_arm_curve_skinCluster", 
+                "tweak8"
+            ]
+        }, 
+        "l_leg_curveBaseWire": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|l_leg|l_leg_curveBaseWire", 
+            "deformerOrder": [
+                "l_leg_curveBaseWire_skinCluster", 
+                "tweak16"
+            ]
+        }, 
+        "l_leg_curve": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|l_leg|l_leg_curve", 
+            "deformerOrder": [
+                "l_leg_curve_skinCluster", 
+                "tweak15"
+            ]
+        }, 
+        "lid_l_curveBaseWire": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|lid_l_grp|lid_l_curveBaseWire", 
+            "deformerOrder": [
+                "lid_l_curveBaseWire_skinCluster", 
+                "tweak52"
+            ]
+        }, 
+        "lid_l_curve": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|lid_l_grp|lid_l_curve", 
+            "deformerOrder": [
+                "lid_l_curve_skinCluster", 
+                "tweak50"
+            ]
+        }, 
+        "lid_r_curveBaseWire": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|lid_r_grp|lid_r_curveBaseWire", 
+            "deformerOrder": [
+                "lid_r_curveBaseWire_skinCluster", 
+                "tweak70"
+            ]
+        }, 
+        "lid_r_curve": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|lid_r_grp|lid_r_curve", 
+            "deformerOrder": [
+                "lid_r_curve_skinCluster", 
+                "tweak68"
+            ]
+        }, 
+        "lip_curveBaseWire": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|mouth|lip_grp|lip_curveBaseWire", 
+            "deformerOrder": [
+                "lip_curveBaseWire_skinCluster", 
+                "tweak13"
+            ]
+        }, 
+        "lip_curve": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|mouth|lip_grp|lip_curve", 
+            "deformerOrder": [
+                "lip_curve_skinCluster", 
+                "tweak10"
+            ]
+        }, 
+        "lip_main_curveBaseWire": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|mouth|lip_main_grp|lip_main_curveBaseWire", 
+            "deformerOrder": [
+                "lip_main_curveBaseWire_skinCluster", 
+                "tweak12"
+            ]
+        }, 
+        "lip_main_curve": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|mouth|lip_main_grp|lip_main_curve", 
+            "deformerOrder": [
+                "lip_main_curve_skinCluster", 
+                "tweak9"
+            ]
+        }, 
+        "neckIk_curve": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|neck_grp|neck_nul|neck_ort|neck|neckIk_grp|neckIk_curve", 
+            "deformerOrder": [
+                "neckIk_cluster_3", 
+                "neckIk_cluster_2", 
+                "neckIk_cluster_1", 
+                "neckIk_cluster_0", 
+                "tweak7"
+            ]
+        }, 
+        "r_arm_curveBaseWire": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|r_arm|r_arm_curveBaseWire", 
+            "deformerOrder": [
+                "r_arm_curveBaseWire_skinCluster", 
+                "tweak13"
+            ]
+        }, 
+        "r_arm_curve": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|r_arm|r_arm_curve", 
+            "deformerOrder": [
+                "r_arm_curve_skinCluster", 
+                "tweak12"
+            ]
+        }, 
+        "r_leg_curveBaseWire": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|r_leg|r_leg_curveBaseWire", 
+            "deformerOrder": [
+                "r_leg_curveBaseWire_skinCluster", 
+                "tweak19"
+            ]
+        }, 
+        "r_leg_curve": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|r_leg|r_leg_curve", 
+            "deformerOrder": [
+                "r_leg_curve_skinCluster", 
+                "tweak18"
+            ]
+        }, 
+        "spineIk_curve": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|spine|hipsPivot_nul|hipsPivot_grp|hips_nul|hips|hips_gimbal_nul|hips_gimbal|spineIk_grp|spineIk_curve", 
+            "deformerOrder": [
+                "spineIk_cluster_3", 
+                "spineIk_cluster_2", 
+                "spineIk_cluster_1", 
+                "spineIk_cluster_0", 
+                "tweak2", 
+                "spineIk_length_scale_cluster"
+            ]
+        }, 
+        "spineIk_length": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|spine|spineIk_length", 
+            "deformerOrder": [
+                "spineIk_length_no_rotate_cluster_3", 
+                "spineIk_length_no_rotate_cluster_2", 
+                "tweak6"
+            ]
+        }, 
+        "spine_curveBaseWire": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|spine|spine_curveBaseWire", 
+            "deformerOrder": [
+                "spine_curveBaseWire_skinCluster", 
+                "tweak4"
+            ]
+        }, 
+        "spine_curve": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|spine|spine_curve", 
+            "deformerOrder": [
+                "spine_curve_skinCluster", 
+                "tweak3"
+            ]
+        }, 
+        "tongueIk_curve": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|tongue|tongue_base_nul|tongue_base|tongueIk_grp|tongueIk_curve", 
+            "deformerOrder": [
+                "tongueIk_cluster_3", 
+                "tongueIk_cluster_2", 
+                "tongueIk_cluster_1", 
+                "tongueIk_cluster_0", 
+                "tweak21"
+            ]
+        }, 
+        "arm_l_bend_bindmesh": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|arm_l_bend_grp|arm_l_bend_bindmesh", 
+            "deformerOrder": [
+                "arm_l_bend_bindmesh_skinCluster", 
+                "tweak36"
+            ]
+        }, 
+        "arm_r_bend_bindmesh": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|arm_r_bend_grp|arm_r_bend_bindmesh", 
+            "deformerOrder": [
+                "arm_r_bend_bindmesh_skinCluster", 
+                "tweak55"
+            ]
+        }, 
+        "leg_l_bend_bindmesh": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|leg_l_bend_grp|leg_l_bend_bindmesh", 
+            "deformerOrder": [
+                "leg_l_bend_bindmesh_skinCluster", 
+                "tweak40"
+            ]
+        }, 
+        "leg_r_bend_bindmesh": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|leg_r_bend_grp|leg_r_bend_bindmesh", 
+            "deformerOrder": [
+                "leg_r_bend_bindmesh_skinCluster", 
+                "tweak58"
+            ]
+        }, 
+        "arm_l_curveBaseWire": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|arm_l_bend_grp|arm_l_curveBaseWire", 
+            "deformerOrder": [
+                "arm_l_curveBaseWire_skinCluster", 
+                "tweak35"
+            ]
+        }, 
+        "arm_l_curve": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|arm_l_bend_grp|arm_l_curve", 
+            "deformerOrder": [
+                "arm_l_curve_skinCluster", 
+                "tweak34"
+            ]
+        }, 
+        "arm_r_curveBaseWire": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|arm_r_bend_grp|arm_r_curveBaseWire", 
+            "deformerOrder": [
+                "arm_r_curveBaseWire_skinCluster", 
+                "tweak54"
+            ]
+        }, 
+        "arm_r_curve": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|arm_r_bend_grp|arm_r_curve", 
+            "deformerOrder": [
+                "arm_r_curve_skinCluster", 
+                "tweak53"
+            ]
+        }, 
+        "head_low_curveBaseWire": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|head_wire_grp|head_low_curveBaseWire", 
+            "deformerOrder": [
+                "head_low_curveBaseWire_skinCluster", 
+                "tweak33"
+            ]
+        }, 
+        "head_low_curve": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|head_wire_grp|head_low_curve", 
+            "deformerOrder": [
+                "head_low_curve_skinCluster", 
+                "tweak32"
+            ]
+        }, 
+        "leg_l_curveBaseWire": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|leg_l_bend_grp|leg_l_curveBaseWire", 
+            "deformerOrder": [
+                "leg_l_curveBaseWire_skinCluster", 
+                "tweak39"
+            ]
+        }, 
+        "leg_l_curve": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|leg_l_bend_grp|leg_l_curve", 
+            "deformerOrder": [
+                "leg_l_curve_skinCluster", 
+                "tweak38"
+            ]
+        }, 
+        "leg_r_curveBaseWire": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|leg_r_bend_grp|leg_r_curveBaseWire", 
+            "deformerOrder": [
+                "leg_r_curveBaseWire_skinCluster", 
+                "tweak57"
+            ]
+        }, 
+        "leg_r_curve": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|leg_r_bend_grp|leg_r_curve", 
+            "deformerOrder": [
+                "leg_r_curve_skinCluster", 
+                "tweak56"
+            ]
+        }, 
+        "tongueIK_curve": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|tongue|tongue_base_nul|tongue_base|tongueIK_grp|tongueIK_curve", 
+            "deformerOrder": [
+                "tongueIK_cluster_3", 
+                "tongueIK_cluster_2", 
+                "tongueIK_cluster_1", 
+                "tongueIK_cluster_0", 
+                "tweak8"
+            ]
+        }, 
+        "brow_l_proxy": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|model|hair_mod|brow_l_proxy", 
+            "deformerOrder": [
+                "head_wire", 
+                "brow_l_proxy_skinCluster", 
+                "tweak18"
+            ]
+        }, 
+        "brow_r_proxy": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|model|hair_mod|brow_r_proxy", 
+            "deformerOrder": [
+                "head_wire", 
+                "brow_r_proxy_skinCluster", 
+                "tweak17"
+            ]
+        }, 
+        "gums_lower_geo": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|model|nude_mod|body_mod|face_mod|mouth_mod|gums_lower_geo", 
+            "deformerOrder": [
+                "head_wire", 
+                "head_low_wire", 
+                "head_low_cluster", 
+                "gums_lower_geo_skinCluster", 
+                "tweak23"
+            ]
+        }, 
+        "gums_upper_geo": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|model|nude_mod|body_mod|face_mod|mouth_mod|gums_upper_geo", 
+            "deformerOrder": [
+                "head_wire", 
+                "head_low_wire", 
+                "head_low_cluster", 
+                "gums_upper_geo_skinCluster", 
+                "tweak21"
+            ]
+        }, 
+        "hair_proxy": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|model|hair_mod|hair_proxy", 
+            "deformerOrder": [
+                "head_wire", 
+                "hair_proxy_skinCluster", 
+                "tweak28"
+            ]
+        }, 
+        "lash_upper_l_proxy": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|model|hair_mod|lash_upper_l_proxy", 
+            "deformerOrder": [
+                "head_wire", 
+                "lid_l_curve_wire", 
+                "socketStretch_l_cluster", 
+                "lid_squash_l_cluster", 
+                "lash_upper_l_proxy_skinCluster", 
+                "blinkUpper_l_curve_wire", 
+                "blinkUpper_l_cluster", 
+                "tweak18"
+            ]
+        }, 
+        "lash_upper_r_proxy": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|model|hair_mod|lash_upper_r_proxy", 
+            "deformerOrder": [
+                "head_wire", 
+                "lid_r_curve_wire", 
+                "socketStretch_r_cluster", 
+                "lid_squash_r_cluster", 
+                "lash_upper_r_proxy_skinCluster", 
+                "blinkUpper_r_curve_wire", 
+                "blinkUpper_r_cluster", 
+                "tweak20"
+            ]
+        }, 
+        "sclera_l_geo": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|model|nude_mod|body_mod|face_mod|eyes_mod|sclera_l_geo", 
+            "deformerOrder": [
+                "head_wire", 
+                "socketStretch_l_cluster", 
+                "sclera_l_geo_skinCluster", 
+                "tweak24"
+            ]
+        }, 
+        "sclera_r_geo": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|model|nude_mod|body_mod|face_mod|eyes_mod|sclera_r_geo", 
+            "deformerOrder": [
+                "head_wire", 
+                "socketStretch_r_cluster", 
+                "sclera_r_geo_skinCluster", 
+                "tweak26"
+            ]
+        }, 
+        "teeth_lower_geo": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|model|nude_mod|body_mod|face_mod|mouth_mod|teeth_lower_geo", 
+            "deformerOrder": [
+                "head_wire", 
+                "head_low_wire", 
+                "head_low_cluster", 
+                "teeth_lower_geo_skinCluster", 
+                "tweak22"
+            ]
+        }, 
+        "teeth_upper_geo": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|model|nude_mod|body_mod|face_mod|mouth_mod|teeth_upper_geo", 
+            "deformerOrder": [
+                "head_wire", 
+                "head_low_wire", 
+                "head_low_cluster", 
+                "teeth_upper_geo_skinCluster", 
+                "tweak20"
+            ]
+        }, 
+        "cornea_l_geo": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|model|nude_mod|body_mod|face_mod|eyes_mod|cornea_l_geo", 
+            "deformerOrder": [
+                "head_wire", 
+                "socketStretch_l_cluster", 
+                "tweak25"
+            ]
+        }, 
+        "cornea_r_geo": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|model|nude_mod|body_mod|face_mod|eyes_mod|cornea_r_geo", 
+            "deformerOrder": [
+                "head_wire", 
+                "socketStretch_r_cluster", 
+                "tweak27"
+            ]
+        }, 
+        "lash_lower_l_proxy": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|model|hair_mod|lash_lower_l_proxy", 
+            "deformerOrder": [
+                "head_wire", 
+                "lid_l_curve_wire", 
+                "lid_squash_l_cluster", 
+                "lash_lower_l_proxy_skinCluster", 
+                "blinkLower_l_curve_wire", 
+                "blinkLower_l_cluster", 
+                "tweak19"
+            ]
+        }, 
+        "lash_lower_r_proxy": {
+            "dagPath": "|biped|trs_master|trs_shot|trs_aux|model|hair_mod|lash_lower_r_proxy", 
+            "deformerOrder": [
+                "head_wire", 
+                "lid_r_curve_wire", 
+                "lid_squash_r_cluster", 
+                "lash_lower_r_proxy_skinCluster", 
+                "blinkLower_r_curve_wire", 
+                "blinkLower_r_cluster", 
+                "tweak21"
+            ]
+        }
+    }
+}

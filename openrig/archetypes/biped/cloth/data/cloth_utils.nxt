@@ -1,0 +1,141 @@
+{
+    "version": "1.16", 
+    "alias": "cloth_utils", 
+    "color": "#00aaff", 
+    "mute": false, 
+    "solo": false, 
+    "meta_data": {
+        "positions": {
+            "/build_garment_groups": [
+                143.28716457537425, 
+                402.6550700725707
+            ], 
+            "/wrap": [
+                -16.323854192131243, 
+                221.27891238222352
+            ]
+        }, 
+        "collapse": {
+            "/costume": false, 
+            "/costume/tunic": false, 
+            "/costume/tunic/build_cloth_node": false, 
+            "/costume/tunic/build_cloth_node/cleanup_input_mesh": false, 
+            "/costume/tunic/build_cloth_node/cleanup_input_mesh/build_cleanup_input_grp": false, 
+            "/costume/tunic/build_cloth_node/sim_mesh": false, 
+            "/costume/tunic/build_cloth_node/sim_mesh/build_sim_grp": false, 
+            "/costume/tunic/build_cloth_node/sim_mesh/build_sim_grp/connect_grp": false
+        }
+    }, 
+    "nodes": {
+        "/build_garment_groups": {
+            "child_order": [
+                "connect_grp"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "geometry": {
+                    "type": "NoneType"
+                }, 
+                "hide": {
+                    "type": "NoneType"
+                }, 
+                "show": {
+                    "type": "NoneType"
+                }
+            }
+        }, 
+        "/build_garment_groups/connect_grp": {
+            "enabled": true, 
+            "code": [
+                "geo = ${geometry}", 
+                "", 
+                "if mc.objExists(geo):", 
+                "    if not mc.objExists('${type}_grp'):", 
+                "       garment_grp = mc.group(em=True, n ='${type}_grp')", 
+                "       mc.parent(garment_grp,'${rig_group}_rig')", 
+                "       mc.parent(geo, garment_grp)", 
+                "", 
+                "", 
+                "    else:", 
+                "        if mc.objExists('${type}_grp'):", 
+                "            garment_grp = '${type}_grp'", 
+                "            mc.parent(geo, garment_grp)", 
+                "else:", 
+                "    print \"doesn't exist\"", 
+                "        ", 
+                "", 
+                ""
+            ]
+        }, 
+        "/load_meshes": {
+            "child_order": [
+                "import_meshes"
+            ], 
+            "enabled": "/", 
+            "attrs": {
+                "filepath": {
+                    "type": "raw", 
+                    "value": "${file::build}/base/garment/${garment}_${type}.abc"
+                }, 
+                "load": {}
+            }
+        }, 
+        "/load_meshes/import_meshes": {
+            "enabled": true, 
+            "code": [
+                "mc.undoInfo(openChunk=1)", 
+                "filepath = r\"${filepath}\"", 
+                "load = ${load}", 
+                "", 
+                "if load:", 
+                "    try:", 
+                "        if os.path.isfile(filepath):", 
+                "            mc.file(filepath, i=True, force=True)", 
+                "    except:", 
+                "        traceback.print_exc()       ", 
+                "else:", 
+                "    if os.path.isfile(filepath):", 
+                "        mc.file(filepath, i=True, force=True)", 
+                "    else:", 
+                "        pass", 
+                "mc.undoInfo(closeChunk=1)", 
+                ""
+            ]
+        }, 
+        "/wrap": {
+            "child_order": [
+                "wrap_deform"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "source": {
+                    "type": "NoneType"
+                }, 
+                "target": {
+                    "type": "NoneType"
+                }
+            }
+        }, 
+        "/wrap/wrap_deform": {
+            "enabled": true, 
+            "code": [
+                "source_geo = '${source}'", 
+                "target_geo = '${target}'", 
+                "", 
+                "shapes = mc.listRelatives(source_geo,s=True, f=True, pa=True)", 
+                "if shapes:", 
+                "    output_cloth = [i for i in shapes if 'outputClothShape' in i] # trap for error if it doesn't hit", 
+                "    print output_cloth", 
+                "    # look for a cleaner way without mel and selection", 
+                "    if output_cloth:", 
+                "        # mc.select([cleanup_mesh, output_cloth[0]],replace=True)", 
+                "        wrap_node = showtools.maya.core.wrap.createWrapDeformer(output_cloth[0], target_geo, name=target_geo+'_wrap')", 
+                "     ", 
+                "    else:", 
+                "        wrap_node = showtools.maya.core.wrap.createWrapDeformer(source_geo, target_geo, name=target_geo+'_wrap')", 
+                "        ", 
+                "        "
+            ]
+        }
+    }
+}

@@ -1,0 +1,200 @@
+{
+    "version": "1.16", 
+    "alias": "create_preroll", 
+    "color": "#c91781", 
+    "mute": false, 
+    "solo": false, 
+    "nodes": {
+        "/create_preroll": {
+            "child_order": [
+                "create_preroll_scene", 
+                "bake_anim", 
+                "blend_anim_cache", 
+                "preroll_animation", 
+                "output", 
+                "create_cache_scene"
+            ], 
+            "attrs": {
+                "anim_end": {
+                    "type": "int", 
+                    "value": "200"
+                }, 
+                "anim_start": {
+                    "type": "int", 
+                    "value": "0"
+                }, 
+                "bake_anim": {
+                    "type": "bool", 
+                    "value": "True"
+                }, 
+                "blend_anim_cache": {}, 
+                "namespace": {
+                    "type": "NoneType"
+                }, 
+                "preroll_blend": {
+                    "type": "int", 
+                    "value": "-25"
+                }, 
+                "preroll_end": {
+                    "type": "int", 
+                    "value": "-5"
+                }, 
+                "preroll_start": {
+                    "type": "int", 
+                    "value": "-30"
+                }, 
+                "source_cache_file": {
+                    "type": "raw"
+                }, 
+                "source_scene_file": {
+                    "type": "raw"
+                }, 
+                "target_anim_file": {
+                    "type": "raw"
+                }, 
+                "target_cache_file": {
+                    "type": "raw"
+                }, 
+                "target_cache_scene_file": {
+                    "type": "raw"
+                }, 
+                "target_scene_file": {
+                    "type": "raw"
+                }
+            }
+        }, 
+        "/create_preroll/bake_anim": {
+            "code": [
+                "if bake_anim:", 
+                "    # Todo: replace with new controls logic", 
+                "    controls = [c.split('.')[0] for c in mc.ls('${namespace}' + ':*.ctrID')]", 
+                "    mc.bakeResults(controls, t=(${anim_start}, ${anim_end}), preserveOutsideKeys=False)"
+            ]
+        }, 
+        "/create_preroll/blend_anim_cache": {
+            "code": [
+                "# Todo: this is where we need to write the cache blending", 
+                "pass"
+            ]
+        }, 
+        "/create_preroll/create_cache_scene": {
+            "code": [
+                "target_cache_scene_file = self.target_cache_scene_file", 
+                "target_cache_file = self.target_cache_file", 
+                "target_anim_file = self.target_anim_file", 
+                "if all(x is not None for x in [target_cache_scene_file, targetCacheFile, targetAnimFile]):", 
+                "    # new scene", 
+                "    mc.file(new=True, f=True)", 
+                "    mc.playbackOptions(min=${preroll_start}, max=${anim_end}, ast=${preroll_start}, aet=${anim_end})", 
+                "    ", 
+                "    ", 
+                "    # Todo: replace with correct cache format (usdc?)", 
+                "    # Todo: replace with correct sun_da call", 
+                "    # import cache", 
+                "    showtools.simlib.cacheManager.importModel(namespace='${namespace}',", 
+                "                                              filePath=target_cache_file,", 
+                "                                              gpu=False)", 
+                "    # import anim", 
+                "    # Todo: probably remove since anim will be baked into the usdc cache and we don't", 
+                "    # Todo: need the anim rig to apply the anim to...", 
+                "    showtools.simlib.cacheManager.importAnim(namespace='${namespace}',", 
+                "                                             filePath=target_anim_file)", 
+                "    ", 
+                "    # save file", 
+                "    mc.file(rename=target_cache_scene_file)    ", 
+                "    mc.file(save=True)"
+            ]
+        }, 
+        "/create_preroll/create_preroll_scene": {
+            "code": [
+                "# open source file", 
+                "source_scene_file = self.source_scene_file", 
+                "if source_scene_file is not None:", 
+                "    mc.file(source_scene_file, open=True)", 
+                "", 
+                "# set timeline", 
+                "mc.playbackOptions(min=${preroll_start}, max=${anim_end}, ast=${preroll_start}, aet=${anim_end})", 
+                "", 
+                "# save target file", 
+                "target_scene_file = self.target_scene_file", 
+                "if target_scene_file is not None:", 
+                "    mc.file(rename=target_scene_file)", 
+                "    mc.file(save=True)"
+            ]
+        }, 
+        "/create_preroll/output": {
+            "child_order": [
+                "save_changes", 
+                "export_anim", 
+                "export_cache"
+            ]
+        }, 
+        "/create_preroll/output/export_anim": {
+            "code": [
+                "target_anim_file = self.target_anim_file", 
+                "if target_anim_file is not None:", 
+                "    showtools.simlib.cacheManager.exportAnim(namespace='${namespace}',", 
+                "                                             filePath=target_anim_file,", 
+                "                                             startFrame=${preroll_start},", 
+                "                                             endFrame=${anim_end},", 
+                "                                             usdFilePath=None)"
+            ]
+        }, 
+        "/create_preroll/output/export_cache": {
+            "code": [
+                "target_cache_file = self.target_cache_file", 
+                "if target_cache_file is not None:", 
+                "    showtools.simlib.cacheManager.exportModel(namespace='${namespace}',", 
+                "                                              filePath=target_cache_file,", 
+                "                                              startFrame=${preroll_start},", 
+                "                                              endFrame=${anim_end},", 
+                "                                              usdFilePath=None)"
+            ]
+        }, 
+        "/create_preroll/output/save_changes": {
+            "code": [
+                "mc.file(save=True)"
+            ]
+        }, 
+        "/create_preroll/preroll_animation": {
+            "code": [
+                "# turn off infinity", 
+                "anim_curves = [c for c in mc.ls(type='animCurve') if not c.startswith(${namespace} + ':')]", 
+                "for anim_curve in anim_curves:", 
+                "    mc.setAttr(anim_curve + '.preInfinity', 0)", 
+                "    mc.setAttr(anim_curve + '.postInfinity', 0)", 
+                "", 
+                "# get controls", 
+                "# Todo: replace with new controls logic", 
+                "controls = [c.split('.')[0] for c in mc.ls('' + ':*.ctrID')]", 
+                "", 
+                "# preroll end key", 
+                "mc.currentTime(${preroll_end})", 
+                "mc.setKeyframe(controls, t=(${preroll_end}, ${preroll_end}))", 
+                "", 
+                "# set sim start pose", 
+                "# Todo: use pose parameter", 
+                "# Todo: euler filter?", 
+                "# Todo: support 360 rotations", 
+                "for control in controls:", 
+                "    if control.endswith('_Info'):", 
+                "        for attr in mc.listAttr(control, k=True):", 
+                "            plug = control + '.' + attr", 
+                "            if plug.endswith('FK') or plug.endswith('Mul'):", 
+                "                mc.setAttr(plug, 1)", 
+                "    elif control.endswith('_trs'):", 
+                "        continue", 
+                "    else:", 
+                "        for attr in mc.listAttr(control, k=True) or []:", 
+                "            default = mc.attributeQuery(attr, node=control, listDefault=True)[0]", 
+                "            plug = control + '.' + attr", 
+                "            if mc.getAttr(plug, settable=True) and attr != 'Space':", 
+                "                mc.setAttr(plug, default)", 
+                "        ", 
+                "# preroll blend key", 
+                "mc.currentTime(${preroll_blend}, update=False)", 
+                "mc.setKeyframe(controls, t=(${preroll_blend}, ${preroll_blend}))"
+            ]
+        }
+    }
+}

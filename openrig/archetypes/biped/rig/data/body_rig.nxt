@@ -1,0 +1,1211 @@
+{
+    "version": "1.16", 
+    "alias": "body_rig", 
+    "color": "#ffaa00", 
+    "mute": false, 
+    "solo": false, 
+    "references": [
+        "../../../base/anim_rig.nxt"
+    ], 
+    "meta_data": {
+        "positions": {
+            "/apply": [
+                2300.0, 
+                -1760.0
+            ], 
+            "/apply/controls/control_defaults": [
+                0.0, 
+                0.0
+            ], 
+            "/center": [
+                560.0, 
+                -1760.0
+            ], 
+            "/delivery": [
+                2660.0, 
+                -1760.0
+            ], 
+            "/delivery/convert_to_skinclusters/body_wire_skincluster": [
+                0.0, 
+                0.0
+            ], 
+            "/export_data": [
+                -3720.0, 
+                -960.0
+            ], 
+            "/init": [
+                -880.0, 
+                -1760.0
+            ], 
+            "/left": [
+                1060.0, 
+                -1760.0
+            ], 
+            "/load_data": [
+                -3720.0, 
+                -380.0
+            ], 
+            "/load_joint_data": [
+                -3280.0, 
+                -100.0
+            ], 
+            "/load_maya_file": [
+                -1520.0, 
+                -1400.0
+            ], 
+            "/mirror_orients": [
+                -2340.0, 
+                -300.0
+            ], 
+            "/post_build": [
+                1960.0, 
+                -1760.0
+            ], 
+            "/post_build/control_visibility/body": [
+                0.0, 
+                0.0
+            ], 
+            "/post_build/pick_walking/body": [
+                0.0, 
+                0.0
+            ], 
+            "/psd_mirror_deltas": [
+                -1640.0, 
+                -1140.0
+            ], 
+            "/right": [
+                1540.0, 
+                -1760.0
+            ], 
+            "/select_sdks": [
+                -1980.0, 
+                -1340.0
+            ]
+        }, 
+        "collapse": {
+            "/apply": true, 
+            "/center": true, 
+            "/delivery": true, 
+            "/init": true, 
+            "/left": true, 
+            "/left/brow": false, 
+            "/left/brow/brow_main": false, 
+            "/left/brow/brow_main/connect": false, 
+            "/load": true, 
+            "/mirror_orients": true, 
+            "/post_build": true, 
+            "/prebuild": true, 
+            "/psd_mirror_deltas": true, 
+            "/right": true, 
+            "/select_sdks": true, 
+            "/spine": true, 
+            "/spine/controls": false, 
+            "/spine/controls/fk": false
+        }
+    }, 
+    "nodes": {
+        "/": {
+            "child_order": [
+                "apply", 
+                "center", 
+                "delivery", 
+                "left", 
+                "load", 
+                "post_build"
+            ], 
+            "attrs": {
+                "body_geo": {
+                    "comment": "Name of the geometry that will be used for the body geometry", 
+                    "type": "str", 
+                    "value": "'body_geo'"
+                }
+            }
+        }, 
+        "/apply": {
+            "child_order": [
+                "controls", 
+                "deformers", 
+                "deformer_order", 
+                "sdk", 
+                "control_defaults", 
+                "sets", 
+                "freeze_wire"
+            ]
+        }, 
+        "/apply/control_defaults": {
+            "enabled": true, 
+            "comment": "This node and it's hierarchy should be reserved for setting the default positions for controls.", 
+            "attrs": {
+                "arm_control_list": {
+                    "comment": "List of controls for the arm", 
+                    "type": "list", 
+                    "value": "['shoulderSwing_?', 'shoulder_fk_?', 'elbow_fk_?', 'wrist_fk_?', 'arm_ik_?', 'arm_pv_?']"
+                }, 
+                "arm_param_list": {
+                    "comment": "List of the parameters for the arm. These are nodes where we store data and attributes for the arms during the build.", 
+                    "type": "raw", 
+                    "value": "${/post_build/switch_expression.arm_param_list}"
+                }, 
+                "leg_param_list": {
+                    "comment": "List of the parameters for the Leg. These are nodes where we store data and attributes for the legs during the build.", 
+                    "type": "raw", 
+                    "value": "${/post_build/switch_expression.leg_param_list}"
+                }
+            }, 
+            "code": [
+                "# swap the arm to FK", 
+                "for ctrl in mc.ls(${arm_param_list}):", 
+                "    mc.setAttr(\"{}.ikfk\".format(ctrl), 1)", 
+                "    mc.setAttr(\"{}.stretch\".format(ctrl), 1)", 
+                "    mc.setAttr(\"{}.softStretch\".format(ctrl), .2)", 
+                "    mm.eval('python(\"armSwitch(\\'{}\\', 0)\")'.format(ctrl))", 
+                "    for attr in ['stretchBottom', 'stretchTop']:", 
+                "        attr_value = mc.getAttr('{}.{}'.format(ctrl, attr))", 
+                "        if mc.objExists('{}_{}_pma'.format(ctrl, attr)):", 
+                "            mc.setAttr('{}_{}_pma.input1D[1]'.format(ctrl, attr), 1-attr_value)", 
+                "        mc.setAttr('{}.{}'.format(ctrl, attr), 1)", 
+                "    #mm.eval('python(\"armSwitch(\\'{}\\', 1)\")'.format(ctrl))", 
+                "    mc.setAttr(\"{}.ikfk\".format(ctrl), 1)", 
+                "    ", 
+                "# swap the legs to IK", 
+                "for ctrl in mc.ls(${leg_param_list}):", 
+                "    mc.setAttr(\"{}.ikfk\".format(ctrl), 1)", 
+                "    mc.setAttr(\"{}.stretch\".format(ctrl), 1)", 
+                "    mc.setAttr(\"{}.softStretch\".format(ctrl), .2)", 
+                "    mm.eval('python(\"legSwitch(\\'{}\\', 0)\")'.format(ctrl))", 
+                "    for attr in ['stretchBottom', 'stretchTop']:", 
+                "        attr_value = mc.getAttr('{}.{}'.format(ctrl, attr))", 
+                "        if mc.objExists('{}_{}_pma'.format(ctrl, attr)):", 
+                "            mc.setAttr('{}_{}_pma.input1D[1]'.format(ctrl, attr), 1-attr_value)", 
+                "        mc.setAttr('{}.{}'.format(ctrl, attr), 1)", 
+                "", 
+                "# Auto Clav", 
+                "for ctrl in mc.ls(['clavicle_?']):", 
+                "    offset = '{}_auto_offset'.format(ctrl)", 
+                "    offset_matrix = mc.xform(offset, q=1, ws=1, matrix=1)", 
+                "    temp_transform = mc.createNode('transform', p=offset, n='{}_temp_offset'.format(ctrl))", 
+                "    # Turn on auto clav", 
+                "    mc.setAttr('{}.autoClav'.format(ctrl), 1)", 
+                "    # Offset its affect in bind pose", 
+                "    mc.xform(temp_transform, ws=1, matrix=offset_matrix)", 
+                "    pb = '{}_auto_offset_pb'.format(ctrl)", 
+                "    value = mc.getAttr('{}.r'.format(temp_transform))[0]", 
+                "    mc.setAttr('{}.inRotateX2'.format(pb), value[0])", 
+                "    mc.setAttr('{}.inRotateY2'.format(pb), value[1])", 
+                "    mc.setAttr('{}.inRotateZ2'.format(pb), value[2])", 
+                "    mc.delete(temp_transform)", 
+                "", 
+                "# get all of the controls and make sure the we set the zero pose", 
+                "control_list = rig_control.getControls()", 
+                "rig_control.setPoseAttr(control_list, 0)", 
+                "", 
+                "# set rotations for the arm controls to zero", 
+                "for ctrl in mc.ls(${arm_control_list}):", 
+                "    if '_ik_' in ctrl or '_pv_' in ctrl:", 
+                "        mc.setAttr('{}.t'.format(ctrl), 0, 0, 0)", 
+                "        if '_pv_' in ctrl:", 
+                "            continue", 
+                "    mc.setAttr(\"{}.r\".format(ctrl), 0, 0, 0)", 
+                "", 
+                "", 
+                "# get all of the controls and make sure the we set the one pose", 
+                "rig_control.setPoseAttr(control_list, 1)"
+            ]
+        }, 
+        "/apply/controls": {
+            "instance": "", 
+            "child_order": [
+                "control_orients", 
+                "control_positions"
+            ], 
+            "enabled": true
+        }, 
+        "/apply/deformers/bindmesh/auto_weight": {
+            "attrs": {
+                "source": {
+                    "value": "${body_geo}"
+                }
+            }
+        }, 
+        "/apply/freeze_wire": {
+            "attrs": {
+                "wire_list": {
+                    "type": "raw", 
+                    "value": "mc.ls(mc.listHistory(${body_geo}), type=\"wire\")"
+                }
+            }
+        }, 
+        "/center": {
+            "child_order": [
+                "spine", 
+                "neck"
+            ], 
+            "enabled": true
+        }, 
+        "/center/neck": {
+            "instance": "/neck", 
+            "child_order": [
+                "create_spline", 
+                "controls", 
+                "head_pivot_connect", 
+                "spaces"
+            ], 
+            "enabled": true
+        }, 
+        "/center/spine": {
+            "instance": "/spine", 
+            "child_order": [
+                "create_spline", 
+                "controls", 
+                "preserve_length"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "geometry": {
+                    "type": "raw", 
+                    "value": "${body_geo}"
+                }
+            }
+        }, 
+        "/delivery": {
+            "child_order": [
+                "unique_deformers", 
+                "convert_to_skinclusters", 
+                "remove_nodes", 
+                "localize", 
+                "lock_nodes", 
+                "hide_history", 
+                "model_override", 
+                "delete_rig_sets"
+            ]
+        }, 
+        "/delivery/convert_to_skinclusters": {
+            "child_order": [
+                "body_wire_skincluster"
+            ]
+        }, 
+        "/delivery/convert_to_skinclusters/body_wire_skincluster": {
+            "instance": "/wire_to_skincluster", 
+            "attrs": {
+                "deformer_name": {
+                    "type": "str", 
+                    "value": "'body_wire_sc'"
+                }, 
+                "keep_wires": {
+                    "comment": "Whether or not keep the wirers", 
+                    "type": "bool", 
+                    "value": "False"
+                }, 
+                "root_parent": {
+                    "type": "raw", 
+                    "value": "${rig_group}"
+                }, 
+                "root_pre_matrix": {
+                    "type": "str", 
+                    "value": "'trs_aux'"
+                }, 
+                "target_geometry": {
+                    "type": "raw", 
+                    "value": "${body_geo}"
+                }, 
+                "wire_list": {
+                    "type": "raw", 
+                    "value": "mc.ls([\"*leg*\", \"*arm*\", \"*spine*\"], type=\"wire\")"
+                }
+            }
+        }, 
+        "/left": {
+            "child_order": [
+                "arm", 
+                "leg"
+            ], 
+            "enabled": true
+        }, 
+        "/left/arm": {
+            "instance": "/arm", 
+            "child_order": [
+                "clavicle", 
+                "limb", 
+                "hand"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "mirror_swing": {
+                    "value": "True"
+                }
+            }
+        }, 
+        "/left/leg": {
+            "instance": "/leg", 
+            "child_order": [
+                "pelvis", 
+                "limb", 
+                "foot"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "mirror_swing": {
+                    "value": "True"
+                }
+            }
+        }, 
+        "/load": {
+            "child_order": [
+                "model", 
+                "joints", 
+                "curves", 
+                "psd_deltas"
+            ], 
+            "enabled": true
+        }, 
+        "/load/joints": {
+            "child_order": [
+                "load_file", 
+                "load_positions", 
+                "connect_twist", 
+                "mirror_labels", 
+                "hide_joints"
+            ]
+        }, 
+        "/load/joints/connect_twist": {
+            "child_order": [
+                "left", 
+                "right"
+            ], 
+            "attrs": {
+                "attr": {}
+            }
+        }, 
+        "/load/joints/connect_twist/left": {
+            "child_order": [
+                "arm", 
+                "leg"
+            ], 
+            "attrs": {
+                "SIDE": {
+                    "type": "raw", 
+                    "value": "L"
+                }, 
+                "side": {
+                    "type": "raw", 
+                    "value": "l"
+                }
+            }
+        }, 
+        "/load/joints/connect_twist/left/arm": {
+            "child_order": [
+                "upper_no_twist", 
+                "lower_twist", 
+                "tip_twist", 
+                "clavicle_tranlate", 
+                "upper_swing_driver", 
+                "upper_twist_driver", 
+                "lower_swing_driver", 
+                "tip_swing_driver", 
+                "tip_twist_driver"
+            ], 
+            "attrs": {
+                "joint_list": {
+                    "type": "raw", 
+                    "value": "${/left/arm/limb.joint_list}"
+                }
+            }
+        }, 
+        "/load/joints/connect_twist/left/arm/clavicle_tranlate": {
+            "attrs": {
+                "aim_vector": {
+                    "comment": "vector we want to use for aiming", 
+                    "type": "tuple", 
+                    "value": "(-1,0,0)"
+                }, 
+                "clavicle_joint": {
+                    "comment": "The clavicle joint", 
+                    "type": "str", 
+                    "value": "'clavicle_${side}_bind'"
+                }, 
+                "clavicle_translate_joint": {
+                    "comment": "The name of the clavicle translate bind joint", 
+                    "type": "str", 
+                    "value": "'clavicle_trans_${side}_bind'"
+                }
+            }, 
+            "code": [
+                "mc.createNode('joint', name=${clavicle_translate_joint})", 
+                "mc.xform(${clavicle_translate_joint}, ws=True, matrix=mc.xform(${joint_list}[0], q=True, ws=True, matrix=True))", 
+                "mc.parent(${clavicle_translate_joint}, ${clavicle_joint})", 
+                "mc.connectAttr('{}.t'.format(${joint_list}[0]), '{}.t'.format(${clavicle_translate_joint}), f=True)", 
+                "mc.aimConstraint(${clavicle_joint}, ${clavicle_translate_joint}, mo=False, weight=1, aimVector=${aim_vector}, upVector=(0, 0, 0), worldUpType='none')", 
+                "mc.setAttr('{}.v'.format(${clavicle_translate_joint}), 0)"
+            ]
+        }, 
+        "/load/joints/connect_twist/left/arm/lower_swing_driver": {
+            "code": [
+                "upper_joint, lower_joint, tip_joint = ${joint_list}", 
+                "name_split = lower_joint.split('_${side}_')", 
+                "twist_joint = '{}Twist_${side}_{}'.format(name_split[0], name_split[1])", 
+                "swing_driver = '{}_${side}_driver'.format(name_split[0])", 
+                "", 
+                "mc.createNode('joint', n=swing_driver, p=twist_joint)", 
+                "mc.orientConstraint(lower_joint, swing_driver)", 
+                "mc.hide(swing_driver)"
+            ]
+        }, 
+        "/load/joints/connect_twist/left/arm/lower_twist": {
+            "code": [
+                "# TWIST JOINTS ------------------------------------------------------------", 
+                "# FIRSY JOINT twist setup", 
+                "joint = ${joint_list}[1]", 
+                "target = ${joint_list}[0]", 
+                "name_split = joint.split('_${side}_')", 
+                "STAGE.aim_vector = [value * -1 for value in STAGE.aim_vector]", 
+                "elbow_twist_joint = '{}Twist_${side}_{}'.format(name_split[0], name_split[1])", 
+                "", 
+                "# if the joint doesn't exists, which it shouldn't... create it and parent it.", 
+                "mc.duplicate(joint, po=True, rr=True, name=elbow_twist_joint)", 
+                "mc.parent(elbow_twist_joint, joint)", 
+                "mc.setAttr('{}.v'.format(elbow_twist_joint), 0)", 
+                "    ", 
+                "mc.aimConstraint(target, elbow_twist_joint, mo=False, weight=1, ", 
+                "                        aimVector=STAGE.aim_vector, upVector=(0, 0, 0), worldUpType='none')"
+            ]
+        }, 
+        "/load/joints/connect_twist/left/arm/tip_swing_driver": {
+            "code": [
+                "upper_joint, lower_joint, tip_joint = ${joint_list} ", 
+                "name_split = tip_joint.split('_${side}_')", 
+                "twist_joint = '{}Twist_${side}_{}'.format(name_split[0], name_split[1])", 
+                "swing_driver = '{}Swing_${side}_driver'.format(name_split[0])", 
+                "", 
+                "mc.createNode('joint', n=swing_driver, p=twist_joint)", 
+                "mc.orientConstraint(tip_joint, swing_driver)", 
+                "mc.hide(swing_driver)"
+            ]
+        }, 
+        "/load/joints/connect_twist/left/arm/tip_twist": {
+            "code": [
+                "# LAST JOINT twist setup", 
+                "joint = ${joint_list}[-1]", 
+                "name_split = joint.split('_${side}_')", 
+                "twist_joint = '{}Twist_${side}_{}'.format(name_split[0], name_split[1])", 
+                "", 
+                "# if the joint doesn't exists, which it shouldn't... create it and parent it.", 
+                "mc.duplicate(joint, po=True, rr=True, name=twist_joint)", 
+                "mc.setAttr('{}.v'.format(twist_joint), 0)", 
+                "mc.connectAttr('{}.t'.format(joint), '{}.t'.format(twist_joint), f=True)", 
+                "mc.setAttr('{}.jo'.format(twist_joint), 0,0,0)", 
+                "    ", 
+                "if \"-\" in STAGE.aim_attr:", 
+                "    decomp_aim_attr = STAGE.aim_attr.strip(\"-\")", 
+                "else:", 
+                "    decomp_aim_attr = \"-{}\".format(STAGE.aim_attr)", 
+                "    ", 
+                "rig_transform.decomposeRotation(joint, twistAxis=decomp_aim_attr)", 
+                "", 
+                "mc.connectAttr('{}.decomposeTwist'.format(joint), ", 
+                "                '{}.r{}'.format(twist_joint, STAGE.aim_attr.strip(\"-\")), f=1)"
+            ]
+        }, 
+        "/load/joints/connect_twist/left/arm/tip_twist_driver": {
+            "code": [
+                "upper_joint, lower_joint, tip_joint = ${joint_list}", 
+                "name_split = tip_joint.split('_${side}_')", 
+                "twist_joint = '{}Twist_${side}_{}'.format(name_split[0], name_split[1])", 
+                "twist_driver = '{}Twist_${side}_driver'.format(name_split[0])", 
+                "", 
+                "mc.createNode('joint', n=twist_driver, p=tip_joint)", 
+                "mc.parent(twist_driver, lower_joint)", 
+                "mc.orientConstraint(twist_joint, twist_driver)", 
+                "mc.connectAttr('{}.t'.format(twist_joint), '{}.t'.format(twist_driver))", 
+                "mc.connectAttr('{}.jo'.format(twist_joint), '{}.jo'.format(twist_driver))", 
+                "mc.hide(twist_driver)"
+            ]
+        }, 
+        "/load/joints/connect_twist/left/arm/upper_no_twist": {
+            "code": [
+                "# NO TWIST JOINT", 
+                "joint_list = ${joint_list}", 
+                "name_split = joint_list[0].split('_${side}_')", 
+                "no_twist = '{}NoTwist_${side}_{}'.format(name_split[0], name_split[1])", 
+                "target = joint_list[1]", 
+                "STAGE.aim_distance = mc.getAttr(\"{}.t\".format(joint_list[1]))[0]", 
+                "STAGE.aim_attr, STAGE.aim_vector = rig_transform.getDistanceVector(STAGE.aim_distance)", 
+                "# if the joint doesn't exists, which it shouldn't... create it and parent it.", 
+                "mc.duplicate(joint_list[0], po=True, rr=True, name=no_twist)", 
+                "mc.setAttr('{}.v'.format(no_twist), 0)", 
+                "mc.connectAttr('{}.jo'.format(${joint_list}[0]), '{}.jo'.format(no_twist), f=True)", 
+                "    ", 
+                "mc.aimConstraint(target, no_twist, mo=False, weight=1, ", 
+                "                    aimVector=STAGE.aim_vector, upVector=(0, 0, 0), worldUpType='none')            ", 
+                "mc.connectAttr('{}.t'.format(joint_list[0]), '{}.t'.format(no_twist), f=True)", 
+                "mc.connectAttr('{}.s'.format(joint_list[0]), '{}.s'.format(no_twist), f=True)", 
+                "mc.connectAttr('{}.rotateOrder'.format(joint_list[0]), '{}.rotateOrder'.format(no_twist), f=True)"
+            ]
+        }, 
+        "/load/joints/connect_twist/left/arm/upper_swing_driver": {
+            "enabled": true, 
+            "code": [
+                "upper_joint, lower_joint, tip_joint = ${joint_list}", 
+                "parent_joint = mc.listRelatives(upper_joint, p=1)", 
+                "name_split = upper_joint.split('_${side}_')", 
+                "twist_joint = '{}Twist_${side}_{}'.format(name_split[0], name_split[1])", 
+                "swing_driver = '{}_${side}_driver'.format(name_split[0])", 
+                "", 
+                "mc.createNode('joint', n=swing_driver, p=upper_joint)", 
+                "mc.parent(swing_driver, parent_joint)", 
+                "mc.orientConstraint(upper_joint, swing_driver)", 
+                "mc.connectAttr('{}.t'.format(upper_joint), '{}.t'.format(swing_driver))", 
+                "mc.connectAttr('{}.jo'.format(upper_joint), '{}.jo'.format(swing_driver))", 
+                "mc.hide(swing_driver)"
+            ]
+        }, 
+        "/load/joints/connect_twist/left/arm/upper_twist_driver": {
+            "code": [
+                "upper_joint, lower_joint, tip_joint = ${joint_list}", 
+                "name_split = upper_joint.split('_${side}_')", 
+                "no_twist_joint = '{}NoTwist_${side}_{}'.format(name_split[0], name_split[1])", 
+                "swing_driver = '{}_${side}_driver'.format(name_split[0])", 
+                "twist_driver = '{}_${side}_twist_driver'.format(name_split[0])", 
+                "", 
+                "mc.createNode('joint', n=twist_driver, p=swing_driver)", 
+                "mc.orientConstraint(no_twist_joint, twist_driver)", 
+                "mc.hide(twist_driver)"
+            ]
+        }, 
+        "/load/joints/connect_twist/left/leg": {
+            "instance": "../arm", 
+            "child_order": [
+                "clavicle_tranlate", 
+                "toe_swing_driver"
+            ], 
+            "attrs": {
+                "joint_list": {
+                    "value": "${/left/leg/limb.joint_list}"
+                }
+            }
+        }, 
+        "/load/joints/connect_twist/left/leg/clavicle_tranlate": {
+            "enabled": false
+        }, 
+        "/load/joints/connect_twist/left/leg/toe_swing_driver": {
+            "code": [
+                "ankle_bind = 'ankle_${side}_bind'", 
+                "ball_bind = 'ball_${side}_bind'", 
+                "swing_driver = 'toe_${side}_driver'", 
+                "", 
+                "mc.createNode('joint', n=swing_driver, p=ball_bind)", 
+                "mc.parent(swing_driver, ankle_bind)", 
+                "con = mc.orientConstraint(ball_bind, swing_driver, offset=(0,0,90))", 
+                "mc.delete(con)", 
+                "mc.makeIdentity(swing_driver, apply=True, t=0, r=1, s=0, n=0)", 
+                "mc.select(swing_driver)", 
+                "con = mc.orientConstraint(ball_bind, swing_driver, mo=1)", 
+                "mc.connectAttr('{}.t'.format(ball_bind), '{}.t'.format(swing_driver))", 
+                "", 
+                "mc.hide(swing_driver)"
+            ]
+        }, 
+        "/load/joints/connect_twist/right": {
+            "instance": "../left", 
+            "child_order": [
+                "arm", 
+                "leg"
+            ], 
+            "attrs": {
+                "SIDE": {
+                    "value": "R"
+                }, 
+                "side": {
+                    "value": "r"
+                }
+            }
+        }, 
+        "/load/joints/connect_twist/right/arm": {
+            "child_order": [
+                "clavicle_tranlate"
+            ], 
+            "attrs": {
+                "joint_list": {
+                    "value": "${/right/arm/limb.joint_list}"
+                }
+            }
+        }, 
+        "/load/joints/connect_twist/right/arm/clavicle_tranlate": {
+            "attrs": {
+                "aim_vector": {
+                    "value": "(1,0,0)"
+                }
+            }
+        }, 
+        "/load/joints/connect_twist/right/leg": {
+            "attrs": {
+                "joint_list": {
+                    "value": "${/right/leg/limb.joint_list}"
+                }
+            }
+        }, 
+        "/load/psd_deltas": {
+            "enabled": true, 
+            "attrs": {
+                "psd_name_list": {
+                    "type": "list", 
+                    "value": "['blinks', 'skin']"
+                }
+            }
+        }, 
+        "/post_build": {
+            "child_order": [
+                "breathing", 
+                "tag_controllers", 
+                "switch_expression", 
+                "frame_camera", 
+                "pick_walking", 
+                "control_visibility", 
+                "lock_hidden_attrs"
+            ], 
+            "enabled": true
+        }, 
+        "/post_build/breathing": {
+            "instance": "", 
+            "enabled": true, 
+            "attrs": {
+                "breath_attribute_control": {
+                    "type": "raw", 
+                    "value": "${/center/spine.chest_control}"
+                }, 
+                "breath_attribute_name": {
+                    "type": "str", 
+                    "value": "'breathing'"
+                }, 
+                "breath_psd": {
+                    "type": "str", 
+                    "value": "'skin_psd'"
+                }, 
+                "left_multiplier": {
+                    "type": "raw", 
+                    "value": "${/left.side_multiplier}"
+                }, 
+                "left_side": {
+                    "type": "raw", 
+                    "value": "${/left.side}"
+                }, 
+                "right_multiplier": {
+                    "type": "raw", 
+                    "value": "${/right.side_multiplier}"
+                }, 
+                "right_side": {
+                    "type": "raw", 
+                    "value": "${/right.side}"
+                }
+            }, 
+            "code": [
+                "node = ${breath_attribute_control}", 
+                "if mc.objExists(node):", 
+                "    # Divider attribute", 
+                "    if not mc.objExists('{}.{}'.format(node, ${breath_attribute_name})):", 
+                "        mc.addAttr(node, ln=${breath_attribute_name}, nn=\"---------\", at=\"enum\", keyable=False, enumName=\"Breathing\")", 
+                "        mc.setAttr('{}.{}'.format(node, ${breath_attribute_name}), l=True, cb=True)", 
+                "    # Chest ", 
+                "    attr = 'Chest'", 
+                "    if not mc.objExists('{}.{}'.format(node, attr)):", 
+                "        driven = '{}.breathing_chest'.format(${breath_psd})", 
+                "        driver = '{}.{}'.format(node, attr)", 
+                "        if mc.objExists(driven):", 
+                "            mc.addAttr(node, ln=attr, at='double', dv=0, k=True) ", 
+                "            mc.setDrivenKeyframe(driven, cd=driver, value=0, dv=0, itt=\"spline\", ott=\"spline\")", 
+                "            mc.setDrivenKeyframe(driven, cd=driver, value=1, dv=10, itt=\"spline\", ott=\"spline\")", 
+                "            mc.setInfinity(driven, pri='linear', poi='linear')", 
+                "        else:", 
+                "            print('missing {}.breathing_chest blendshape target'.format(${breath_psd}))", 
+                "            ", 
+                "    # Belly ", 
+                "    attr = 'Belly'", 
+                "    if not mc.objExists('{}.{}'.format(node, attr)):", 
+                "        driven = '{}.breathing_belly'.format(${breath_psd})", 
+                "        driver = node+'.'+attr", 
+                "        if mc.objExists(driven):", 
+                "            mc.addAttr(node, ln=attr, at='double', dv=0, k=True) ", 
+                "            mc.setDrivenKeyframe(driven, cd=driver, value=0, dv=0, itt=\"spline\", ott=\"spline\")", 
+                "            mc.setDrivenKeyframe(driven, cd=driver, value=1, dv=10, itt=\"spline\", ott=\"spline\")", 
+                "            mc.setInfinity(driven, pri='linear', poi='linear')", 
+                "        else:", 
+                "            print('missing {}.breathing_belly blendshape target'.format(${breath_psd}))", 
+                "        ", 
+                "    # Shoulders ", 
+                "    attr = 'Shoulders'", 
+                "    if not mc.objExists('{}.{}'.format(node, attr)):", 
+                "        mc.addAttr(node, ln=attr, at='double', dv=0, k=True) ", 
+                "        driver = '{}.{}'.format(node, attr)", 
+                "        side_mul = ${left_multiplier}", 
+                "        for side in ['${left_side}', '${right_side}']:", 
+                "            if side == 'r':", 
+                "                side_mul = ${right_multiplier}", 
+                "                ", 
+                "            driven = 'shoulderSwing_'+side+'_mirror_ort.tx'", 
+                "            mc.setDrivenKeyframe(driven, cd=driver, value=0, dv=0, itt=\"spline\", ott=\"spline\")", 
+                "            mc.setDrivenKeyframe(driven, cd=driver, value=.2*side_mul, dv=10, itt=\"spline\", ott=\"spline\")", 
+                "            mc.setInfinity(driven, pri='linear', poi='linear')", 
+                "            ", 
+                "            driven = 'shoulderSwing_{}_mirror_ort.tz'.format(side)", 
+                "            mc.setDrivenKeyframe(driven, cd=driver, value=0, dv=0, itt=\"spline\", ott=\"spline\")", 
+                "            mc.setDrivenKeyframe(driven, cd=driver, value=.5*side_mul, dv=10, itt=\"spline\", ott=\"spline\")", 
+                "            mc.setInfinity(driven, pri='linear', poi='linear')"
+            ]
+        }, 
+        "/post_build/control_visibility": {
+            "instance": "", 
+            "child_order": [
+                "body"
+            ], 
+            "enabled": true
+        }, 
+        "/post_build/control_visibility/body": {
+            "enabled": true, 
+            "code": [
+                "# Control Visibility switches", 
+                "control_list = ${control_list}", 
+                "node = ${node}", 
+                "", 
+                "if mc.objExists(node):", 
+                "    # Bendbow control_list", 
+                "    attr = 'BendBows'", 
+                "    target_list = list()", 
+                "    for ctrl in control_list:", 
+                "        if 'bend' in ctrl and mc.objExists('{}.__body_control__'.format(ctrl)):", 
+                "            shape_list = mc.listRelatives(ctrl, s=True) or list()", 
+                "            target_list += shape_list", 
+                "            target_list.append(ctrl)", 
+                "    if not mc.objExists('{}.{}'.format(node,attr)):", 
+                "        mc.addAttr(node, ln=attr, at='bool', dv=1, k=False) ", 
+                "        mc.setAttr('{}.{}'.format(node,attr), cb=True) ", 
+                "    for target in target_list:", 
+                "        if mc.objExists('{}.displayHandle'.format(target)):", 
+                "            mc.connectAttr('{}.{}'.format(node,attr), '{}.displayHandle'.format(target), f=True)", 
+                "        else:", 
+                "            mc.connectAttr('{}.{}'.format(node,attr), '{}.v'.format(target), f=True)", 
+                "", 
+                "    # Gimbal controls", 
+                "    attr = 'Gimbals'", 
+                "    target_list = list()", 
+                "    for ctrl in control_list:", 
+                "        if 'gimbal' in ctrl:", 
+                "            shape_list = mc.listRelatives(ctrl, s=1) or list()", 
+                "            target_list += shape_list", 
+                "    if not mc.objExists('{}.{}'.format(node,attr)):", 
+                "        mc.addAttr(node, ln=attr, at='bool', dv=1, k=False) ", 
+                "        mc.setAttr('{}.{}'.format(node,attr), cb=True) ", 
+                "    for target in target_list:", 
+                "        mc.connectAttr('{}.{}'.format(node,attr), '{}.v'.format(target), f=True)", 
+                "            ", 
+                "    # Hips Movable Pivot", 
+                "    attr = 'HipsMovablePivot'", 
+                "    target = 'hipsPivotShape.v'", 
+                "    if mc.objExists(target):", 
+                "        if not mc.objExists('{}.{}'.format(node,attr)):", 
+                "            mc.addAttr(node, ln=attr, at='bool', dv=1, k=False) ", 
+                "            mc.setAttr('{}.{}'.format(node,attr), cb=True) ", 
+                "        mc.connectAttr('{}.{}'.format(node,attr), target, f=True)", 
+                ""
+            ]
+        }, 
+        "/post_build/pick_walking": {
+            "child_order": [
+                "body"
+            ], 
+            "enabled": true
+        }, 
+        "/post_build/pick_walking/body": {
+            "enabled": true, 
+            "comment": "All of the body pickwalking can be stored on this node or it's children", 
+            "code": [
+                "", 
+                "# --------------------------------------------------", 
+                "# Pickwalking", 
+                "# --------------------------------------------------", 
+                "", 
+                "pickwalk = [", 
+                "", 
+                "# Hands", 
+                "['thumbCup_l',   'thumb_001_l',  'thumb_002_l',  'thumb_003_l'],", 
+                "['index_001_l',  'index_002_l',  'index_003_l',  'index_004_l'],", 
+                "['middle_001_l', 'middle_002_l', 'middle_003_l', 'middle_004_l'],", 
+                "['ring_001_l',   'ring_002_l',   'ring_003_l',   'ring_004_l'],", 
+                "['pinky_001_l',  'pinky_002_l',  'pinky_003_l', 'pinky_004_l'],", 
+                "['wrist_fk_gimbal_l', ['thumbCup_l', 'index_001_l', 'middle_001_l', 'ring_001_l', 'pinky_001_l']],", 
+                "", 
+                "['thumbCup_r',   'thumb_001_r',  'thumb_002_r',  'thumb_003_r'],", 
+                "['index_001_r',  'index_002_r',  'index_003_r',  'index_004_r'],", 
+                "['middle_001_r', 'middle_002_r', 'middle_003_r', 'middle_004_r'],", 
+                "['ring_001_r',   'ring_002_r',   'ring_003_r',   'ring_004_r'],", 
+                "['pinky_001_r',  'pinky_002_r',  'pinky_003_r', 'pinky_004_r'],", 
+                "['wrist_fk_gimbal_r', ['thumbCup_r', 'index_001_r', 'middle_001_r', 'ring_001_r', 'pinky_001_r']],", 
+                "", 
+                "# Arms", 
+                "['clavicle_l', 'shoulderSwing_l', 'shoulder_fk_l', 'elbow_fk_l', 'wrist_fk_l', 'wrist_fk_gimbal_l'],", 
+                "['clavicle_r', 'shoulderSwing_r', 'shoulder_fk_r', 'elbow_fk_r', 'wrist_fk_r', 'wrist_fk_gimbal_r'],", 
+                "", 
+                "# Arm Bend bows", 
+                "['arm_bend_0_l', 'arm_bend_1_l', 'arm_bend_2_l', 'arm_bend_3_l', 'arm_bend_4_l'],", 
+                "['arm_bend_0_r', 'arm_bend_1_r', 'arm_bend_2_r', 'arm_bend_3_r', 'arm_bend_4_r'],", 
+                "", 
+                "# Legs", 
+                "[ 'thighSwing_l', 'leg_pv_l', 'leg_ik_l', 'leg_ik_gimbal_l', 'heel_l', 'ballRoll_l', 'ball_l_fk', 'toe_l'],", 
+                "[ 'thighSwing_r', 'leg_pv_r', 'leg_ik_r', 'leg_ik_gimbal_r', 'heel_r', 'ballRoll_r', 'ball_r_fk', 'toe_r'],", 
+                "", 
+                "# Leg bendbows", 
+                "['leg_bend_0_l', 'leg_bend_1_l', 'leg_bend_2_l', 'leg_bend_3_l', 'leg_bend_4_l'],", 
+                "['leg_bend_0_r', 'leg_bend_1_r', 'leg_bend_2_r', 'leg_bend_3_r', 'leg_bend_4_r'],", 
+                "", 
+                "# Spine", 
+                "['head', 'neck', 'chest_top', 'chest', 'torso', 'hip_swivel', 'hips'],", 
+                "", 
+                "# Clavs to chest", 
+                "['chest', ['clavicle_r', 'clavicle_l']],", 
+                "", 
+                "# pelvis to hips", 
+                "['hips', ['thighSwing_r', 'thighSwing_l']],", 
+                "", 
+                "]", 
+                "", 
+                "for data in pickwalk:", 
+                "    if not isinstance(data[0], str): ", 
+                "        for i in range(len(data)):", 
+                "            if i < len(data)-1:", 
+                "                parent = data[i]", 
+                "                child = data[i+1]  ", 
+                "                if mc.objExists(parent):", 
+                "                    mc.select(mc.ls(children), parent)", 
+                "                    mm.eval('TagAsControllerParent')", 
+                "    else:", 
+                "        parent = data[0]", 
+                "        children = data[1]", 
+                "        if mc.objExists(parent):", 
+                "            mc.select(mc.ls(children), parent)", 
+                "            mm.eval('TagAsControllerParent')"
+            ]
+        }, 
+        "/post_build/switch_expression": {
+            "instance": "", 
+            "enabled": true, 
+            "attrs": {
+                "arm_param_list": {
+                    "comment": "List of the parameters for the arm. These are nodes where we store data and attributes for the arms during the build.", 
+                    "type": "list", 
+                    "value": "['${/left/arm.param_node}', '${/right/arm.param_node}']"
+                }, 
+                "leg_param_list": {
+                    "comment": "List of the parameters for the Leg. These are nodes where we store data and attributes for the legs during the build.", 
+                    "type": "list", 
+                    "value": "['${/left/leg.param_node}', '${/right/leg.param_node}']"
+                }, 
+                "recursive_attempts": {
+                    "comment": "This is the amount of time we will recursively iterate during the switch to match the automation of the clavicle if there is any automation.", 
+                    "type": "int", 
+                    "value": "200"
+                }, 
+                "recursive_step": {
+                    "type": "float", 
+                    "value": ".001"
+                }, 
+                "recursive_threshold": {
+                    "comment": "This is the distance we will move as we try to get closer to the correct stretch range value to match the arm.", 
+                    "type": "float", 
+                    "value": ".001"
+                }
+            }, 
+            "code": [
+                "cmd=\"\"\"", 
+                "# this is the switch command that should be made into a script node", 
+                "import maya.cmds as mc", 
+                "import maya.api.OpenMaya as om", 
+                "import traceback", 
+                "", 
+                "def getDistanceVector(distance):", 
+                "        '''", 
+                "        '''", 
+                "        distanceValue = max(distance, key=abs)", 
+                "        index = distance.index(distanceValue)", 
+                "        attr = [\"x\",\"y\",\"z\"][index]", 
+                "        value = round(distance[index], 4)", 
+                "        if attr == \"x\":", 
+                "            if value < 0:", 
+                "                attr = \"-x\"", 
+                "                vector = [-1,0,0]", 
+                "            else:", 
+                "                vector = [1,0,0]", 
+                "        elif attr == \"y\":", 
+                "            if value < 0:", 
+                "                attr = \"-y\"", 
+                "                vector = [0,-1,0]", 
+                "            else:", 
+                "                vector = [0,1,0]", 
+                "        elif attr == \"z\":", 
+                "            if value < 0:", 
+                "                attr = \"-z\"", 
+                "                vector = [0,0,-1]", 
+                "            else:", 
+                "                vector = [0,0,1]", 
+                "", 
+                "        return (attr, vector)", 
+                "", 
+                "def switch(paramNode, value):", 
+                "    ", 
+                "    namespace=\"\"", 
+                "    namespaceSplit = paramNode.split(\":\")", 
+                "", 
+                "    if namespaceSplit > 1:", 
+                "        namespace = \":\".join(namespaceSplit[:-1]) ", 
+                "        namespace = \"%s:\" % (namespace)", 
+                "", 
+                "    autoClavValue = 1.0", 
+                "    clavicleCtrl = None", 
+                "    if mc.objExists(\"%s.autoClav\" % paramNode):", 
+                "        clavicleCtrl = \"%s%s\" % (namespace, mc.getAttr(\"%s.clavicleCtrl\" % paramNode))", 
+                "        clavicleValue = mc.xform(clavicleCtrl, q=True, ws=True, matrix=True)", 
+                "", 
+                "    # To fk", 
+                "    if value == 1:", 
+                "", 
+                "        # Get transforms", 
+                "        fkControls = eval(mc.getAttr(paramNode + '.fkControls'))", 
+                "        ikMatchTransforms = eval(mc.getAttr(paramNode + '.ikMatchTransforms'))", 
+                "        ", 
+                "        aimAttr, vector= getDistanceVector(mc.getAttr(\"%s%s.t\" % (namespace,fkControls[1]))[0])", 
+                "        scaleValues = [mc.getAttr('%s%s.s%s' % (namespace,ctrl,aimAttr.strip(\"-\"))) for ctrl in (ikMatchTransforms[0],ikMatchTransforms[1])]", 
+                "        wristGimbal = \"%s%s\" % (namespace,fkControls.pop(-1))", 
+                "        rotationList = list()", 
+                "        ", 
+                "        # Query transforms", 
+                "        for ctrl in ikMatchTransforms:", 
+                "            rotationList.append(mc.xform(\"%s%s\" % (namespace, ctrl), q=True, ws=True, rotation=True))", 
+                "", 
+                "        mc.setAttr(\"%s.pvPin\" % (paramNode), 0)", 
+                "        mc.setAttr(\"%s.twist\" % (paramNode), 0)", 
+                "        mc.setAttr(\"%s.ikfk\" % (paramNode), 1)", 
+                "        mc.getAttr(\"%s.ikfk\" % (paramNode))", 
+                "        mc.setAttr(\"%s.ikfk\" % (paramNode), 1)", 
+                "        mc.setAttr(wristGimbal + '.r',0, 0, 0)", 
+                "        ", 
+                "        # Match limb", 
+                "        for rotation, ctrl in zip(rotationList,fkControls):", 
+                "            mc.xform(\"%s%s\" % (namespace, ctrl), ws=True, rotation=rotation)", 
+                "    ", 
+                "        attrList = ('stretchTop', 'stretchBottom')", 
+                "        for scaleValue, attr in zip(scaleValues, attrList):", 
+                "            mc.setAttr(paramNode + '.' + attr, scaleValue)", 
+                "", 
+                "        # Auto clav requires itterative matching because I am dumb - schiller", 
+                "        if mc.objExists(\"%s.autoClav\" % paramNode):", 
+                "            for i in xrange(20):", 
+                "                # limb", 
+                "                for rotation, ctrl in zip(rotationList,fkControls):", 
+                "                    mc.xform(\"%s%s\" % (namespace, ctrl), ws=True, rotation=rotation) ", 
+                "                # clav    ", 
+                "                mc.xform(clavicleCtrl, ws=True, matrix=clavicleValue)        ", 
+                "    ", 
+                "    # To ik", 
+                "    elif value == 0:", 
+                "", 
+                "        # get the ik controls", 
+                "        ikControls = eval(mc.getAttr(paramNode + '.ikControls'))", 
+                "        fkControls = eval(mc.getAttr(paramNode + '.fkControls'))", 
+                "", 
+                "        # Pivot ctrl", 
+                "        mc.setAttr(\"%s%s.r\" % (namespace, ikControls[3]), 0,0,0)", 
+                "        mc.setAttr(\"%s%s.t\" % (namespace, ikControls[3]), 0,0,0)", 
+                "", 
+                "        ikMatchTransforms = eval(mc.getAttr(paramNode + '.ikMatchTransforms'))", 
+                "        # get the fk transforms", 
+                "        fkMatchTransforms = eval(mc.getAttr(paramNode + '.fkMatchTransforms'))", 
+                "        aimAttr, vector= getDistanceVector(mc.getAttr(\"%s%s.t\" % (namespace,fkMatchTransforms[1]))[0])", 
+                "        # get the match node for the pole vector node", 
+                "        matchNode = mc.getAttr(paramNode + '.pvMatch')", 
+                "        # get the current distance between the joints", 
+                "        currentDistance = mc.getAttr(\"%s%s.t%s\" % (namespace, fkMatchTransforms[1], aimAttr.strip(\"-\"))) + mc.getAttr(\"%s%s.t%s\" % (namespace, fkMatchTransforms[2], aimAttr.strip(\"-\")))", 
+                "            ", 
+                "        newPvPos = mc.xform(\"%s%s\" % (namespace, matchNode), q=True, ws=True, t=True)", 
+                "        endJntMatrix = mc.xform(\"%s%s\" % (namespace,fkMatchTransforms[2]), q=True, ws=True, matrix=True)", 
+                "        mc.setAttr(\"%s.ikfk\" % (paramNode), 0)", 
+                "        mc.getAttr(\"%s.ikfk\" % (paramNode))", 
+                "        mc.setAttr(\"%s.ikfk\" % (paramNode), 0)", 
+                "        ", 
+                "        mc.xform(\"%s%s\" % (namespace, ikControls[1]), ws=True, matrix=endJntMatrix)", 
+                "        mc.xform(\"%s%s\" % (namespace, ikControls[0]), ws=True, t=newPvPos)", 
+                "        # Gimbal ctrl", 
+                "        mc.setAttr(\"%s%s.r\" % (namespace, ikControls[2]), 0,0,0)", 
+                "", 
+                "        # Match Clav ", 
+                "        if mc.objExists(\"%s.autoClav\" % paramNode):", 
+                "            #mc.setAttr(\"%s.autoClav\" % paramNode, autoClavValue)", 
+                "            if clavicleCtrl:", 
+                "                mc.xform(clavicleCtrl, ws=True, matrix=clavicleValue)     ", 
+                "        ", 
+                "        # get the vector for the fk and ik middle match transforms", 
+                "        fkVector = om.MVector(*mc.xform(\"%s%s\" % (namespace,fkControls[1]), q=True, ws=True, t=True))", 
+                "        ikVector = om.MVector(*mc.xform(\"%s%s\" % (namespace,ikMatchTransforms[1]), q=True, ws=True, t=True))", 
+                "", 
+                "        # get the difference between the two vectors.", 
+                "        vector = fkVector - ikVector", 
+                "", 
+                "        # if the magnitude is not within the threshold passed by the user, then we will recursively", 
+                "        # go through and try to get as close as possible.", 
+                "        if not vector.length() <= ${recursive_threshold}:", 
+                "            recursiveMatch(paramNode, fkVector, \"%s%s\" % (namespace,ikMatchTransforms[1]), ${recursive_threshold}, ${recursive_attempts}, step=${recursive_step})", 
+                "", 
+                "def recursiveMatch(paramNode, fkVector, ikMiddleJoint, threshold, attempts=5, direction=True, step=.001, originalMagnitude=1):", 
+                "    '''", 
+                "    This will recursively go through and try to match", 
+                "    the top and bottom stretch attributes to get the elbow", 
+                "    to be within a threshold.", 
+                "", 
+                "    :param paramNode: Node that holds the top/bottom attributes", 
+                "    :type paramNode: str", 
+                "", 
+                "    :param fkVector: fk original position we're trying to match", 
+                "    :type fkVector: MVector", 
+                "", 
+                "    :param ikMiddleJoint: ik joint", 
+                "    :type ikMiddleJoint: str", 
+                "", 
+                "    :param threshold: If we land within this distance, we will return", 
+                "    :type threshold: float", 
+                "", 
+                "    :param attempts: Number of time you want to try to match", 
+                "    :type attempts: int", 
+                "    '''", 
+                "    # first check and see if we need to return", 
+                "    if not mc.objExists(paramNode) or attempts == 0:", 
+                "        return", 
+                "", 
+                "    # get the new ikVector position.", 
+                "    ikVector = om.MVector(*mc.xform(ikMiddleJoint, q=True, ws=True, t=True))", 
+                "", 
+                "", 
+                "    # get the difference between the two vector's to be able to get the magnitude.", 
+                "    vector = fkVector - ikVector", 
+                "    magnitude = vector.length()", 
+                "    ", 
+                "    # if the magnitude is within a threshold, we will return", 
+                "    if magnitude <= threshold:", 
+                "        return", 
+                "    ", 
+                "    # if the magnitude is larger then we will subtract by .001", 
+                "    # NOTE:: We may want a user when building be able to pass this number in.", 
+                "    if direction:", 
+                "        mc.setAttr(\"%s.stretchTop\" % paramNode, mc.getAttr(\"%s.stretchTop\" % paramNode) + step)", 
+                "        mc.setAttr(\"%s.stretchBottom\" % paramNode, mc.getAttr(\"%s.stretchBottom\" % paramNode) + step)", 
+                "    else:", 
+                "        mc.setAttr(\"%s.stretchTop\" % paramNode, mc.getAttr(\"%s.stretchTop\" % paramNode) - step)", 
+                "        mc.setAttr(\"%s.stretchBottom\" % paramNode, mc.getAttr(\"%s.stretchBottom\" % paramNode) - step)", 
+                "    ", 
+                "    # # get the new ikVector position.", 
+                "    ikVector = om.MVector(*mc.xform(ikMiddleJoint, q=True, ws=True, t=True))", 
+                "", 
+                "", 
+                "    # get the difference between the two vector's to be able to get the magnitude.", 
+                "    vector = fkVector - ikVector", 
+                "    newMagnitude = vector.length()", 
+                "    if newMagnitude > magnitude:", 
+                "        direction=not direction", 
+                "    if originalMagnitude == newMagnitude:", 
+                "        step /= 2", 
+                "    # return the recursive function that we're currently in.", 
+                "    return recursiveMatch(paramNode, fkVector, ikMiddleJoint, threshold, attempts=attempts-1, direction=direction, step=step, originalMagnitude=magnitude)", 
+                "", 
+                "", 
+                "def armSwitch(paramNode, value):", 
+                "    '''", 
+                "    '''", 
+                "    mc.undoInfo(openChunk=1)", 
+                "    try:", 
+                "        print 'armSwitch(paramNode=\"%s\", value=%s)' % (paramNode, value)", 
+                "        switch(paramNode, value)", 
+                "    except:", 
+                "        traceback.print_exc()", 
+                "    mc.undoInfo(closeChunk=1)", 
+                "    ", 
+                "def legSwitch(paramNode, value):", 
+                "    '''", 
+                "    '''", 
+                "    mc.undoInfo(openChunk=1)", 
+                "    try:", 
+                "        namespace=\"\"", 
+                "        namespaceSplit = paramNode.split(\":\")", 
+                "", 
+                "        if len(namespaceSplit) > 1:", 
+                "            namespace = \":\".join(namespaceSplit[:-1]) ", 
+                "            namespace = \"%s:\" % (namespace)", 
+                "", 
+                "        print 'legSwitch(paramNode=\"%s\", value=%s)' % (paramNode, value)", 
+                "        if value == 1:", 
+                "            fkControl = eval(mc.getAttr(\"%s.footFkControl\" % (paramNode)))", 
+                "            fkControlPos = mc.xform(\"%s%s\" % (namespace, fkControl), q=True, ws=True, matrix=True)", 
+                "            switch(paramNode, value)", 
+                "            mc.xform(\"%s%s\" % (namespace, fkControl), ws=True, matrix=fkControlPos)", 
+                "        elif value == 0:", 
+                "            footIkControls = eval(mc.getAttr(paramNode + '.footIkControls'))", 
+                "            for ctrl in footIkControls:", 
+                "                attrs = mc.listAttr(\"%s%s\" % (namespace, ctrl), ud=False, keyable=True)", 
+                "                for attr in attrs:", 
+                "                    try:", 
+                "                        mc.setAttr(\"%s%s.%s\" % (namespace,ctrl, attr), 0.0)", 
+                "                    except:", 
+                "                        pass", 
+                "", 
+                "            switch(paramNode, value)", 
+                "    except:", 
+                "        traceback.print_exc()", 
+                "    mc.undoInfo(closeChunk=1)", 
+                "    ", 
+                "def rig_reset_foot(param):  ", 
+                "    # Get namespace", 
+                "    namespace=\"\"", 
+                "    namespaceSplit = param.split(\":\")", 
+                "", 
+                "    if namespaceSplit > 1:", 
+                "        namespace = \":\".join(namespaceSplit[:-1]) ", 
+                "        namespace = \"%s:\" % (namespace)", 
+                "        ", 
+                "    # Get data from param", 
+                "    ik_foot_controls = eval(mc.getAttr(param + '.footIkControls'))", 
+                "    ik_bank, ik_heel, ik_toe, ik_ball, toeBend = ik_foot_controls", 
+                "    ", 
+                "    ik_controls = eval(mc.getAttr(param + '.ikControls'))", 
+                "    ik_pv, ik_ankle, ik_ankle_gimbal, ik_mpivot = ik_controls", 
+                "    ", 
+                "    fk_ball = eval(mc.getAttr(param + '.footFkControl'))", 
+                "    ik_handle = mc.listConnections(\"%s.twist\" % (param), scn=True)[0]    ", 
+                "    ", 
+                "    # Get matrices", 
+                "    fk_ball_matrix = mc.xform(\"%s%s\" % (namespace,fk_ball), q=True, ws=True, matrix=True)", 
+                "    ik_ankle_matrix = mc.xform(ik_handle, q=True, ws=True, matrix=True)", 
+                "    ", 
+                "    # zero ik controls", 
+                "    mc.setAttr(\"%s%s%s\" % (namespace, ik_heel, '.r'), 0, 0, 0)", 
+                "    mc.setAttr(\"%s%s%s\" % (namespace, ik_ball, '.r'), 0, 0, 0)", 
+                "    mc.setAttr(\"%s%s%s\" % (namespace, ik_toe, '.r'), 0, 0, 0)", 
+                "    mc.setAttr(\"%s%s%s\" % (namespace, ik_mpivot, '.r'), 0, 0, 0)", 
+                "    mc.setAttr(\"%s%s%s\" % (namespace, ik_bank, '.tx'), 0)", 
+                "    mc.setAttr(\"%s%s%s\" % (namespace, ik_bank, '.tz'), 0)", 
+                "    mc.setAttr(\"%s%s%s\" % (namespace, ik_ankle_gimbal, '.r'), 0, 0, 0)", 
+                "    mc.setAttr(\"%s%s%s\" % (namespace, ik_ankle_gimbal, '.t'), 0, 0, 0)", 
+                "    ", 
+                "    # Set matrices", 
+                "    mc.xform(\"%s%s\" % (namespace, ik_ankle), ws=True, matrix=ik_ankle_matrix)", 
+                "    mc.xform(\"%s%s\" % (namespace, fk_ball), ws=True, matrix=fk_ball_matrix)", 
+                "    ", 
+                "\"\"\"", 
+                "scriptNode = mc.scriptNode(st=1, sourceType=\"python\", bs=cmd, n='ikfkSwitch')", 
+                "#mc.evalDeferred(\"import maya.cmds as mc; mc.scriptNode('%s', eb=True)\" % scriptNode)", 
+                "mc.scriptNode(scriptNode, eb=True)"
+            ]
+        }, 
+        "/rig_workflow/workflow/joints/mirror_joints/mirror": {
+            "attrs": {
+                "node_list": {
+                    "type": "raw", 
+                    "value": "mc.ls(['*_bind','*_pivot'], type='joint')"
+                }
+            }
+        }
+    }
+}

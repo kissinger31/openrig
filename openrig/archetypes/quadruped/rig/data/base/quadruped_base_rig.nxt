@@ -1,0 +1,16 @@
+{
+    "version": "0.45.18", 
+    "alias": "quadruped", 
+    "color": "#991c24", 
+    "references": [
+        {
+            "path": "C:/Users/walte/Documents/shows/SUN/collections/rig/base/anim_rig.nxt"
+        }
+    ], 
+    "solo": false, 
+    "mute": false, 
+    "data": {
+        "position_data": {}
+    }, 
+    "children": []
+}

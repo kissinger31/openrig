@@ -1,0 +1,1823 @@
+{
+    "version": "1.16", 
+    "alias": "biped_base_rig", 
+    "color": "#769b70", 
+    "mute": false, 
+    "solo": false, 
+    "references": [
+        "../face_rig.nxt", 
+        "../body_rig.nxt"
+    ], 
+    "meta_data": {
+        "positions": {
+            "/": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "/apply": [
+                2460.0, 
+                -1780.0
+            ], 
+            "/apply/controls/control_defaults": [
+                0.0, 
+                0.0
+            ], 
+            "/apply/deformers/clusters/transfer_blink_clusters": [
+                0.0, 
+                0.0
+            ], 
+            "/apply/deformers/clusters/transfer_lid_clusters": [
+                0.0, 
+                0.0
+            ], 
+            "/apply/deformers/clusters/transfer_lip_cluster": [
+                0.0, 
+                0.0
+            ], 
+            "/arm": [
+                -1440.0, 
+                160.0
+            ], 
+            "/auto_parent": [
+                -1440.0, 
+                20.0
+            ], 
+            "/blink": [
+                -2600.0, 
+                20.0
+            ], 
+            "/blink/blink_rig_setup/upper/socket": [
+                0.0, 
+                0.0
+            ], 
+            "/blink/create": [
+                0.0, 
+                0.0
+            ], 
+            "/blink/create/blink_clusters/lower": [
+                0.0, 
+                0.0
+            ], 
+            "/blink/create/blink_clusters/upper": [
+                0.0, 
+                0.0
+            ], 
+            "/blink/create/blink_collision": [
+                0.0, 
+                0.0
+            ], 
+            "/blink/create/blink_collision/lid_squash": [
+                0.0, 
+                0.0
+            ], 
+            "/blink/create/blink_collision/lid_squash/connect": [
+                0.0, 
+                0.0
+            ], 
+            "/blink/create/blink_rig_setup": [
+                0.0, 
+                0.0
+            ], 
+            "/blink/create/blink_rig_setup/lid_wire": [
+                0.0, 
+                0.0
+            ], 
+            "/blink/create/blink_rig_setup/lid_wire/rename_controls": [
+                0.0, 
+                0.0
+            ], 
+            "/blink/create/blink_rig_setup/upper/cluster_rig": [
+                0.0, 
+                0.0
+            ], 
+            "/blink/create/blink_rig_setup/upper/curve_rig": [
+                0.0, 
+                0.0
+            ], 
+            "/blink/create/controls": [
+                0.0, 
+                0.0
+            ], 
+            "/blink/create/controls/eye_socket/control/connect": [
+                0.0, 
+                0.0
+            ], 
+            "/blink/create/controls/eye_socket/control/selection_handle": [
+                0.0, 
+                0.0
+            ], 
+            "/blink/create/controls/lower_lid/control": [
+                0.0, 
+                0.0
+            ], 
+            "/blink/create/controls/lower_lid/control/node": [
+                0.0, 
+                0.0
+            ], 
+            "/blink/create/controls/lower_lid/drivers": [
+                0.0, 
+                0.0
+            ], 
+            "/blink/create/controls/upper_lid": [
+                0.0, 
+                0.0
+            ], 
+            "/blink/create/controls/upper_lid/control/driver": [
+                0.0, 
+                0.0
+            ], 
+            "/blink/create/controls/upper_lid/node": [
+                0.0, 
+                0.0
+            ], 
+            "/blink/create/eye_drag": [
+                0.0, 
+                0.0
+            ], 
+            "/blink/create/eye_socket": [
+                0.0, 
+                0.0
+            ], 
+            "/blink/create/eye_socket/control": [
+                0.0, 
+                0.0
+            ], 
+            "/blink/create/node2": [
+                0.0, 
+                0.0
+            ], 
+            "/blink/create/scale_compensate": [
+                0.0, 
+                0.0
+            ], 
+            "/breathing": [
+                1904.0688387142586, 
+                -1374.0822165915083
+            ], 
+            "/breathing1": [
+                49.432609470607076, 
+                -618.2506571979636
+            ], 
+            "/brow": [
+                -1820.0, 
+                160.0
+            ], 
+            "/brow/brow_inner": [
+                0.0, 
+                0.0
+            ], 
+            "/brow/brow_main": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "/brow/brow_main/aling_orientation": [
+                0.0, 
+                0.0
+            ], 
+            "/brow/brow_main/connect": [
+                0.0, 
+                0.0
+            ], 
+            "/brow/brow_main/control": [
+                0.0, 
+                0.0
+            ], 
+            "/brow/brow_main/create/align_orientation": [
+                0.0, 
+                0.0
+            ], 
+            "/brow/brow_main/node": [
+                0.0, 
+                0.0
+            ], 
+            "/brow/brow_peak": [
+                0.0, 
+                0.0
+            ], 
+            "/brow/corrugator": [
+                0.0, 
+                0.0
+            ], 
+            "/brow/create": [
+                0.0, 
+                0.0
+            ], 
+            "/brow/curve_rig": [
+                0.0, 
+                0.0
+            ], 
+            "/brow/curve_rig/create": [
+                0.0, 
+                0.0
+            ], 
+            "/brow/curve_rig/wire_deformer": [
+                0.0, 
+                0.0
+            ], 
+            "/brow2": [
+                -1392.6360982427084, 
+                161.51937172232903
+            ], 
+            "/button": [
+                -1240.0, 
+                -920.0
+            ], 
+            "/center": [
+                620.0, 
+                -1780.0
+            ], 
+            "/center/brows": [
+                0.0, 
+                0.0
+            ], 
+            "/center/face_upper/face_mid/lip_upper/lip_upper_side": [
+                0.0, 
+                0.0
+            ], 
+            "/center/face_upper/node": [
+                0.0, 
+                0.0
+            ], 
+            "/center/head_wire": [
+                0.0, 
+                0.0
+            ], 
+            "/center/mouth/mouth_main_to_bindmesh": [
+                0.0, 
+                0.0
+            ], 
+            "/check_scene": [
+                -4020.0, 
+                -1380.0
+            ], 
+            "/checkbox": [
+                -1240.0, 
+                -860.0
+            ], 
+            "/cluster_control": [
+                -2820.0, 
+                -1080.0
+            ], 
+            "/cluster_control/create": [
+                0.0, 
+                0.0
+            ], 
+            "/cluster_to_skincluster": [
+                -3200.0, 
+                -940.0
+            ], 
+            "/clusters_pasted": [
+                -1147.7049250169346, 
+                -690.7886106578001
+            ], 
+            "/clusters_pasted1": [
+                -1873.2118354564147, 
+                -1202.210580964565
+            ], 
+            "/clusters_pasted11": [
+                1331.9951982618302, 
+                -654.9785070393234
+            ], 
+            "/code_globals": [
+                -2460.0, 
+                -1180.0
+            ], 
+            "/component": [
+                -2274.952877992889, 
+                -407.37095689324815
+            ], 
+            "/control": [
+                -3200.0, 
+                -1060.0
+            ], 
+            "/control2": [
+                -2692.632401497651, 
+                658.9052191923134
+            ], 
+            "/delivery": [
+                2916.095841164867, 
+                -1783.442892266635
+            ], 
+            "/delivery/convert_to_skinclusters": [
+                0.0, 
+                0.0
+            ], 
+            "/delivery/convert_to_skinclusters/blink_cluster_skincluster": [
+                0.0, 
+                0.0
+            ], 
+            "/delivery/convert_to_skinclusters/body_wire_skincluster": [
+                0.0, 
+                0.0
+            ], 
+            "/delivery/convert_to_skinclusters/face_cluster_skincluster": [
+                0.0, 
+                0.0
+            ], 
+            "/delivery/convert_to_skinclusters/face_post_wire_skincluster": [
+                0.0, 
+                0.0
+            ], 
+            "/delivery/convert_to_skinclusters/face_pre_cluster_skincluster": [
+                0.0, 
+                0.0
+            ], 
+            "/delivery/convert_to_skinclusters/face_wire_skincluster": [
+                0.0, 
+                0.0
+            ], 
+            "/delivery/convert_to_skinclusters/lip_bindmesh_post_skincluster": [
+                0.0, 
+                0.0
+            ], 
+            "/delivery/convert_to_skinclusters/lip_cluster_skincluster": [
+                0.0, 
+                0.0
+            ], 
+            "/delivery/localize/node": [
+                0.0, 
+                0.0
+            ], 
+            "/delivery/lock_nodes": [
+                0.0, 
+                0.0
+            ], 
+            "/dropDownMenu": [
+                -1240.0, 
+                -800.0
+            ], 
+            "/element_info": [
+                690.2231423386862, 
+                -2317.7631415073856
+            ], 
+            "/export_cluster": [
+                -2460.0, 
+                -1440.0
+            ], 
+            "/export_control_curve_data": [
+                -3580.0, 
+                -1060.0
+            ], 
+            "/export_control_orients": [
+                -3580.0, 
+                -1520.0
+            ], 
+            "/export_curve_data": [
+                -3580.0, 
+                -1240.0
+            ], 
+            "/export_data": [
+                -4020.0, 
+                -1260.0
+            ], 
+            "/export_deformer": [
+                -2820.0, 
+                -1400.0
+            ], 
+            "/export_deformer_order_data": [
+                -3580.0, 
+                -1420.0
+            ], 
+            "/export_joint_position_data": [
+                -3580.0, 
+                -1160.0
+            ], 
+            "/export_psd": [
+                -3200.0, 
+                -1460.0
+            ], 
+            "/export_sdk_data": [
+                -3580.0, 
+                -1320.0
+            ], 
+            "/export_sets_data": [
+                -3580.0, 
+                -1600.0
+            ], 
+            "/export_skincluster": [
+                -3200.0, 
+                -1340.0
+            ], 
+            "/export_wire": [
+                -2460.0, 
+                -1360.0
+            ], 
+            "/face_cluster_control": [
+                -2040.0, 
+                -1160.0
+            ], 
+            "/flip_deformer_map": [
+                -2040.0, 
+                -1000.0
+            ], 
+            "/foot": [
+                -2600.0, 
+                160.0
+            ], 
+            "/freeze": [
+                2582.5384979144146, 
+                -1117.3685973872814
+            ], 
+            "/gridLayout": [
+                -1240.0, 
+                -980.0
+            ], 
+            "/import_psd": [
+                -2820.0, 
+                -1180.0
+            ], 
+            "/import_psd1": [
+                -1556.3976257035335, 
+                -1156.4401359599094
+            ], 
+            "/import_sets": [
+                -3580.0, 
+                -520.0
+            ], 
+            "/import_weight_directory": [
+                -2460.0, 
+                -940.0
+            ], 
+            "/init": [
+                -820.0, 
+                -1780.0
+            ], 
+            "/itemSelector": [
+                -1240.0, 
+                -680.0
+            ], 
+            "/left": [
+                1100.0, 
+                -1780.0
+            ], 
+            "/left/blink": [
+                0.0, 
+                0.0
+            ], 
+            "/left/brow": [
+                0.0, 
+                0.0
+            ], 
+            "/left/cheek2": [
+                0.0, 
+                0.0
+            ], 
+            "/left/cheeks": [
+                0.0, 
+                0.0
+            ], 
+            "/left/cheeks/cheek_lift": [
+                0.0, 
+                0.0
+            ], 
+            "/left/cheeks/cheek_puff": [
+                0.0, 
+                0.0
+            ], 
+            "/left/cheeks/mouth_corner_distance": [
+                0.0, 
+                0.0
+            ], 
+            "/left/ear": [
+                0.0, 
+                0.0
+            ], 
+            "/left/lip_lower": [
+                0.0, 
+                0.0
+            ], 
+            "/left/lip_upper": [
+                0.0, 
+                0.0
+            ], 
+            "/leg": [
+                -2220.0, 
+                20.0
+            ], 
+            "/leg/limb": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "/leg/limb/create/ik/spaces": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "/limb": [
+                -2600.0, 
+                300.0
+            ], 
+            "/load": [
+                -360.0, 
+                -1780.0
+            ], 
+            "/load/joints/hide_joints": [
+                0.0, 
+                0.0
+            ], 
+            "/load/model/normal_per_vertex": [
+                0.0, 
+                0.0
+            ], 
+            "/load_curve_data": [
+                -3580.0, 
+                -760.0
+            ], 
+            "/load_data": [
+                -4020.0, 
+                -820.0
+            ], 
+            "/load_deformer_order_data": [
+                -3580.0, 
+                -600.0
+            ], 
+            "/load_joint_data": [
+                -3580.0, 
+                -920.0
+            ], 
+            "/load_joint_data/node": [
+                0.0, 
+                0.0
+            ], 
+            "/load_maya_file": [
+                -2460.0, 
+                -1080.0
+            ], 
+            "/load_node_data": [
+                -3580.0, 
+                -840.0
+            ], 
+            "/load_sdk_data": [
+                -3580.0, 
+                -680.0
+            ], 
+            "/look__at": [
+                -2553.2207781468983, 
+                -164.86265552324159
+            ], 
+            "/look_at": [
+                -1820.0, 
+                300.0
+            ], 
+            "/look_at/create/space_switch": [
+                0.0, 
+                0.0
+            ], 
+            "/menuItem": [
+                -1240.0, 
+                -740.0
+            ], 
+            "/mirror_cluster": [
+                -2460.0, 
+                -1600.0
+            ], 
+            "/mirror_control_curves": [
+                -2100.0, 
+                -1760.0
+            ], 
+            "/mirror_curves": [
+                -2460.0, 
+                -1760.0
+            ], 
+            "/mirror_deformer": [
+                -2820.0, 
+                -1620.0
+            ], 
+            "/mirror_face_wires": [
+                -2820.0, 
+                -1760.0
+            ], 
+            "/mirror_joints": [
+                -3200.0, 
+                -1560.0
+            ], 
+            "/mirror_lid_orients": [
+                -120.0, 
+                -960.0
+            ], 
+            "/mirror_lip_orients": [
+                -120.0, 
+                -960.0
+            ], 
+            "/mirror_orients": [
+                -2460.0, 
+                -1280.0
+            ], 
+            "/mirror_sdk": [
+                -3200.0, 
+                -1660.0
+            ], 
+            "/mirror_skincluster": [
+                -2820.0, 
+                -1520.0
+            ], 
+            "/mirror_transforms": [
+                -2820.0, 
+                -1280.0
+            ], 
+            "/mirror_wire": [
+                -2460.0, 
+                -1680.0
+            ], 
+            "/mouth": [
+                -1820.0, 
+                20.0
+            ], 
+            "/mouth/bind_geometry": [
+                0.0, 
+                0.0
+            ], 
+            "/mouth/bind_geometry/mouth_main_cluster": [
+                0.0, 
+                0.0
+            ], 
+            "/mouth/lip/bindmesh_bind": [
+                0.0, 
+                0.0
+            ], 
+            "/mouth/lip/wire_deformer": [
+                0.0, 
+                0.0
+            ], 
+            "/mouth/lip_main/bindmesh_bind": [
+                0.0, 
+                0.0
+            ], 
+            "/mouth/lip_main/controls": [
+                0.0, 
+                0.0
+            ], 
+            "/neck": [
+                -1440.0, 
+                300.0
+            ], 
+            "/node": [
+                -1560.0, 
+                -1560.0
+            ], 
+            "/node/node": [
+                0.0, 
+                0.0
+            ], 
+            "/orients": [
+                -180.0, 
+                -1020.0
+            ], 
+            "/panel": [
+                -1240.0, 
+                -1040.0
+            ], 
+            "/post_build": [
+                2020.0, 
+                -1780.0
+            ], 
+            "/post_build/control_visibility": [
+                0.0, 
+                0.0
+            ], 
+            "/post_build/control_visibility/body": [
+                0.0, 
+                0.0
+            ], 
+            "/post_build/pick_walking": [
+                0.0, 
+                0.0
+            ], 
+            "/post_build/pick_walking/body": [
+                0.0, 
+                0.0
+            ], 
+            "/post_build/pick_walking/face": [
+                0.0, 
+                0.0
+            ], 
+            "/post_build/tag_controllers": [
+                0.0, 
+                0.0
+            ], 
+            "/prebuild": [
+                160.0, 
+                -1780.0
+            ], 
+            "/psd_actions": [
+                -2060.0, 
+                -1580.0
+            ], 
+            "/psd_add_pose": [
+                -1720.0, 
+                -1660.0
+            ], 
+            "/psd_delete_deltas": [
+                -1720.0, 
+                -1500.0
+            ], 
+            "/psd_mirror_actions": [
+                -2060.0, 
+                -1300.0
+            ], 
+            "/psd_mirror_deltas": [
+                -1700.0, 
+                -1340.0
+            ], 
+            "/psd_mirror_system": [
+                -1700.0, 
+                -1260.0
+            ], 
+            "/psd_update_pose": [
+                -1720.0, 
+                -1580.0
+            ], 
+            "/rig_workflow": [
+                -740.0, 
+                -1160.0
+            ], 
+            "/rig_workflow/file_io/exporters/cluster": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/exporters/control_curve_positions": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/exporters/control_curve_positions/export": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/exporters/curve_positions/export": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/exporters/deformer_order": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/exporters/deformer_order/export": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/exporters/deformer_order/export_selected": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/exporters/deformer_order/export_selected/export": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/exporters/joint_positions/export": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/exporters/joint_positions/export_selected": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/exporters/joint_positions/export_selected/export": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/exporters/psd": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/exporters/sdk": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/exporters/sdk/export": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/exporters/skincluster": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/exporters/skincluster/export": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/exporters/skincluster/export_selected": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/exporters/skincluster/export_selected/export": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/exporters/wire": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/importers/curve_importers": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/importers/curves": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/importers/curves/curve_file": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/importers/curves/curve_positions": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/importers/curves/curve_positions/import": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/importers/curves/import": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/importers/joint_importers": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/importers/joints/import": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/importers/model": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/importers/model/import": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/importers/skeleton/import": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/importers/skincluster": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/file_io/importers/skincluster/import": [
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/workflow/curves/mirror_face_curves": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "/rig_workflow/workflow/curves/mirror_face_curves/mirror": [
+                0.0, 
+                0.0, 
+                0.0
+            ], 
+            "/right": [
+                1560.0, 
+                -1780.0
+            ], 
+            "/sapce_switch": [
+                -2261.8606527576967, 
+                -585.0721383346884
+            ], 
+            "/select_sdks": [
+                -1720.0, 
+                -1760.0
+            ], 
+            "/space_switch": [
+                -2820.0, 
+                -940.0
+            ], 
+            "/spine": [
+                -2220.0, 
+                300.0
+            ], 
+            "/spline": [
+                -1526.9315628933919, 
+                -412.5710534344443
+            ], 
+            "/tab": [
+                -1240.0, 
+                -1100.0
+            ], 
+            "/temp_button": [
+                -890.2228762617118, 
+                -989.1643709129478
+            ], 
+            "/tongue": [
+                -2220.0, 
+                160.0
+            ], 
+            "/window": [
+                -1240.0, 
+                -1160.0
+            ], 
+            "/wire_to_skincluster": [
+                -3200.0, 
+                -820.0
+            ], 
+            "/yank_cluster": [
+                -1720.0, 
+                -1840.0
+            ], 
+            "/yank_skincluster": [
+                -1720.0, 
+                -1900.0
+            ]
+        }, 
+        "collapse": {
+            "/apply": true, 
+            "/apply/control_defaults": false, 
+            "/apply/controls": true, 
+            "/apply/controls/control_defaults": false, 
+            "/apply/controls/control_orients": false, 
+            "/apply/controls/control_positions": false, 
+            "/apply/deformer_order": false, 
+            "/apply/deformers": true, 
+            "/apply/deformers/bindmesh": false, 
+            "/apply/deformers/bindmesh/auto_weight": false, 
+            "/apply/deformers/bindmesh/load": false, 
+            "/apply/deformers/clusters": false, 
+            "/apply/deformers/clusters/transfer_blink_clusters": false, 
+            "/apply/deformers/clusters/transfer_lid_clusters": false, 
+            "/apply/deformers/clusters/transfer_lip_cluster": false, 
+            "/apply/deformers/psd": false, 
+            "/apply/deformers/skincluster": false, 
+            "/apply/deformers/skincluster/non_rigid_transformation": false, 
+            "/apply/deformers/wire": false, 
+            "/apply/freeze_wire": false, 
+            "/apply/freeze_wire/freeze_wire_expression": true, 
+            "/apply/sdk": false, 
+            "/apply/sdk/import": false, 
+            "/arm": true, 
+            "/arm/clavicle": false, 
+            "/arm/clavicle/control": false, 
+            "/arm/clavicle/control/create": false, 
+            "/arm/hand": false, 
+            "/arm/hand/create": false, 
+            "/arm/limb": false, 
+            "/arm/limb/auto_clav": false, 
+            "/arm/limb/auto_clav/connect": false, 
+            "/arm/limb/auto_clav/duplicate_chain": false, 
+            "/arm/limb/auto_clav/param_node": false, 
+            "/arm/limb/auto_clav/psd": false, 
+            "/arm/limb/auto_clav/psd/connect": false, 
+            "/arm/limb/auto_clav/psd/poses": false, 
+            "/arm/limb/auto_clav/psd/remove_extra_neutrals": false, 
+            "/arm/limb/auto_clav_world_space": false, 
+            "/arm/limb/clavicle_connect": false, 
+            "/arm/limb/create": false, 
+            "/arm/limb/create/bendy_limb": false, 
+            "/arm/limb/create/connect": false, 
+            "/arm/limb/create/fk": false, 
+            "/arm/limb/create/fk/controls": false, 
+            "/arm/limb/create/ik": false, 
+            "/arm/limb/create/ik/controls": false, 
+            "/arm/limb/create/ik/controls/visibility": false, 
+            "/arm/limb/create/ik/offset": false, 
+            "/arm/limb/create/param": false, 
+            "/arm/limb/create/param/match_attributes": false, 
+            "/arm/limb/create/param/proxy_attributes": false, 
+            "/arm/limb/create/param/stretch": false, 
+            "/arm/limb/fk_spaces": false, 
+            "/arm/limb/ik_spaces": false, 
+            "/arm/limb/spaces_pv": false, 
+            "/arm/limb/swing": false, 
+            "/arm/limb/swing/control": false, 
+            "/arm/limb/swing/control/create": false, 
+            "/arm/limb/swing/control/mirror_swing": false, 
+            "/arm/limb/swing/control/pv_aim_node": false, 
+            "/arm/limb/world_orient": false, 
+            "/auto_parent": true, 
+            "/auto_parent/duplicate_chain": false, 
+            "/blink": true, 
+            "/blink/blink_collision": false, 
+            "/blink/blink_rig_setup": false, 
+            "/blink/blink_rig_setup/lid_wire": false, 
+            "/blink/blink_rig_setup/lower": true, 
+            "/blink/blink_rig_setup/upper": true, 
+            "/blink/controls": true, 
+            "/blink/controls/eye_socket": false, 
+            "/blink/controls/eye_socket/connect": true, 
+            "/blink/controls/eye_socket/create": true, 
+            "/blink/controls/lower_lid": true, 
+            "/blink/controls/lower_lid/create": true, 
+            "/blink/controls/lower_lid/driver": true, 
+            "/blink/controls/lower_lid/selection_handle": true, 
+            "/blink/controls/upper_lid": true, 
+            "/blink/controls/upper_lid/create": true, 
+            "/blink/controls/upper_lid/driver": true, 
+            "/blink/controls/upper_lid/selection_handle": true, 
+            "/blink/create": false, 
+            "/blink/create/blink_collision/lid_squash": false, 
+            "/blink/create/blink_collision/lid_squash/connect": false, 
+            "/blink/create/blink_collision/lid_squash/create": false, 
+            "/blink/create/blink_rig_setup/lid_wire": false, 
+            "/blink/create/blink_rig_setup/lid_wire/rename_controls": false, 
+            "/blink/create/blink_rig_setup/lower": false, 
+            "/blink/create/blink_rig_setup/lower/cluster_rig": false, 
+            "/blink/create/blink_rig_setup/lower/curve_rig": false, 
+            "/blink/create/blink_rig_setup/upper": false, 
+            "/blink/create/blink_rig_setup/upper/cluster_rig": false, 
+            "/blink/create/blink_rig_setup/upper/curve_rig": false, 
+            "/blink/create/controls/control": false, 
+            "/blink/create/controls/control2": false, 
+            "/blink/create/controls/eye_socket": false, 
+            "/blink/create/controls/eye_socket/connect": false, 
+            "/blink/create/controls/eye_socket/create": false, 
+            "/blink/create/controls/eye_socket2": true, 
+            "/blink/create/controls/lower_lid": true, 
+            "/blink/create/controls/lower_lid/create": false, 
+            "/blink/create/controls/lower_lid/driver": false, 
+            "/blink/create/controls/lower_lid/selection_handle": false, 
+            "/blink/create/controls/upper_lid": true, 
+            "/blink/create/controls/upper_lid/create": false, 
+            "/blink/create/controls/upper_lid/driver": false, 
+            "/blink/create/controls/upper_lid/selection_handle": false, 
+            "/blink/scale_compensate": false, 
+            "/brow": true, 
+            "/brow/brow_inner": true, 
+            "/brow/brow_main": true, 
+            "/brow/brow_peak": true, 
+            "/brow/corrugator": true, 
+            "/brow/curve_rig": false, 
+            "/brow/node": true, 
+            "/center": true, 
+            "/center/face_lower": true, 
+            "/center/face_lower/jaw": false, 
+            "/center/face_lower/jaw/lip_lower": false, 
+            "/center/face_lower/jaw/teeth_lower": false, 
+            "/center/face_lower/jaw/tongue": false, 
+            "/center/face_lower/jaw/tongue/controls": false, 
+            "/center/face_lower/jaw/tongue/create": false, 
+            "/center/face_lower/mouth_main": false, 
+            "/center/face_upper/face_mid": false, 
+            "/center/face_upper/face_mid/lip_upper": true, 
+            "/center/face_upper/face_mid/lip_upper/create": false, 
+            "/center/face_upper/face_mid/teeth_upper": true, 
+            "/center/face_upper/head_tip": false, 
+            "/center/face_upper/head_tip/connect": false, 
+            "/center/face_upper/head_tip/create": false, 
+            "/center/face_upper/nose_bridge/nose": true, 
+            "/center/face_upper/teeth_upper": false, 
+            "/center/head_wire": true, 
+            "/center/head_wire/head_wire_cluster": true, 
+            "/center/head_wire/head_wire_cluster/connect": true, 
+            "/center/head_wire/head_wire_cluster/create": true, 
+            "/center/look_at": true, 
+            "/center/look_at/create": true, 
+            "/center/look_at/create/look_at_rot": true, 
+            "/center/look_at/create/look_at_rot/connect": true, 
+            "/center/look_at/create/look_at_rot/create": true, 
+            "/center/look_at/create/look_at_rot/position": true, 
+            "/center/look_at/create/look_at_trs": false, 
+            "/center/look_at/create/look_at_trs/create": true, 
+            "/center/look_at/create/look_at_trs/position": false, 
+            "/center/look_at/create/space_switch": true, 
+            "/center/mouth": true, 
+            "/center/mouth/bind_geometry": false, 
+            "/center/mouth/create": false, 
+            "/center/mouth/lip": true, 
+            "/center/mouth/lip/bindmesh_bind": false, 
+            "/center/mouth/lip/controls": false, 
+            "/center/mouth/lip/create": false, 
+            "/center/mouth/lip/create/rename_controls": false, 
+            "/center/mouth/lip/tweak_controls": false, 
+            "/center/mouth/lip_main": false, 
+            "/center/mouth/lip_main/control_names": false, 
+            "/center/mouth/lip_main/controls": false, 
+            "/center/mouth/lip_main/create": false, 
+            "/center/mouth/lip_main/load_orient_file": false, 
+            "/center/mouth/lip_main/pinning": false, 
+            "/center/mouth/lip_main/setup_sdk": false, 
+            "/center/mouth/mouth_main_to_bindmesh": false, 
+            "/center/mouth/rig_sets": false, 
+            "/center/neck": true, 
+            "/center/neck/controls": false, 
+            "/center/neck/controls/head": true, 
+            "/center/neck/controls/head/create": true, 
+            "/center/neck/controls/head/poition_head": true, 
+            "/center/neck/controls/head_gimbal": false, 
+            "/center/neck/controls/head_gimbal/connect": true, 
+            "/center/neck/controls/head_gimbal/create": true, 
+            "/center/neck/controls/neck": true, 
+            "/center/neck/controls/neck/connect": true, 
+            "/center/neck/controls/neck/create": true, 
+            "/center/neck/create_spline": true, 
+            "/center/neck/head_pivot_connect": false, 
+            "/center/neck/spaces": true, 
+            "/center/neck/spaces/head_spaces": true, 
+            "/center/neck/spaces/neck_spaces": true, 
+            "/center/node/controls/fk": true, 
+            "/center/node/controls/ik": true, 
+            "/center/spine": true, 
+            "/center/spine/controls": false, 
+            "/center/spine/controls/bendy_spine": true, 
+            "/center/spine/controls/fk": true, 
+            "/center/spine/controls/fk/chest": true, 
+            "/center/spine/controls/fk/chest/create": true, 
+            "/center/spine/controls/fk/hips": true, 
+            "/center/spine/controls/fk/hips/create": true, 
+            "/center/spine/controls/fk/hips_gimbal": true, 
+            "/center/spine/controls/fk/hips_gimbal/create": true, 
+            "/center/spine/controls/fk/torso": true, 
+            "/center/spine/controls/fk/torso/create": true, 
+            "/center/spine/controls/fk/torso/position": true, 
+            "/center/spine/controls/ik": false, 
+            "/center/spine/controls/ik/chest": true, 
+            "/center/spine/controls/ik/chest/connect": true, 
+            "/center/spine/controls/ik/chest/create": true, 
+            "/center/spine/controls/ik/chest_pivot": true, 
+            "/center/spine/controls/ik/chest_top": true, 
+            "/center/spine/controls/ik/chest_top/connect": true, 
+            "/center/spine/controls/ik/chest_top/create": true, 
+            "/center/spine/controls/ik/hip_pivot": false, 
+            "/center/spine/controls/ik/hip_swivel": true, 
+            "/center/spine/controls/ik/hip_swivel/connect": true, 
+            "/center/spine/controls/ik/hip_swivel/create": true, 
+            "/center/spine/controls/movable_pivot": true, 
+            "/center/spine/create_spline": true, 
+            "/center/spine/preserve_length": true, 
+            "/center/spine/psd_drivers": false, 
+            "/check_scene": false, 
+            "/cluster_control": true, 
+            "/cluster_control/create": false, 
+            "/code_globals": false, 
+            "/control": true, 
+            "/delivery": true, 
+            "/delivery/convert_to_skinclusters": true, 
+            "/delivery/convert_to_skinclusters/body_wire_skincluster": false, 
+            "/delivery/delete_rig_sets": false, 
+            "/delivery/hide_history": false, 
+            "/delivery/localize": false, 
+            "/delivery/lock_nodes": false, 
+            "/delivery/model_override": false, 
+            "/delivery/remove_nodes": false, 
+            "/delivery/unique_deformers": false, 
+            "/export": false, 
+            "/export_cluster": true, 
+            "/export_control_curve_data": true, 
+            "/export_control_curves": true, 
+            "/export_control_orients": true, 
+            "/export_ctrl_curves": true, 
+            "/export_curve_data": true, 
+            "/export_curves": true, 
+            "/export_data": true, 
+            "/export_data/check_scene": false, 
+            "/export_data/export_data": false, 
+            "/export_deformer": true, 
+            "/export_deformer_order_data": true, 
+            "/export_joint_position_data": true, 
+            "/export_joint_positions": true, 
+            "/export_psd": true, 
+            "/export_sdk_data": true, 
+            "/export_sets_data": true, 
+            "/export_skincluster": true, 
+            "/export_skincluster/export_data": true, 
+            "/export_wire": true, 
+            "/face_cluster_control": true, 
+            "/foot": true, 
+            "/foot/create": true, 
+            "/foot/create/fk": true, 
+            "/foot/create/ik": true, 
+            "/foot/create/param": true, 
+            "/import": false, 
+            "/import_psd": false, 
+            "/import_weight_directory": true, 
+            "/init": true, 
+            "/init/code_globals": false, 
+            "/init/load_plugins": true, 
+            "/init/new_scene": true, 
+            "/left": true, 
+            "/left/arm": true, 
+            "/left/arm/clavicle": false, 
+            "/left/arm/clavicle/control": false, 
+            "/left/arm/clavicle/control/create": false, 
+            "/left/arm/hand": false, 
+            "/left/arm/hand/create": false, 
+            "/left/arm/limb": true, 
+            "/left/arm/limb/auto_clav": false, 
+            "/left/arm/limb/auto_clav/connect": false, 
+            "/left/arm/limb/auto_clav/duplicate_chain": false, 
+            "/left/arm/limb/auto_clav/param_node": false, 
+            "/left/arm/limb/auto_clav/psd": false, 
+            "/left/arm/limb/auto_clav/psd/connect": false, 
+            "/left/arm/limb/auto_clav/psd/poses": false, 
+            "/left/arm/limb/auto_clav/psd/remove_extra_neutrals": false, 
+            "/left/arm/limb/auto_clav/psd_connect": true, 
+            "/left/arm/limb/auto_clav_world_space": false, 
+            "/left/arm/limb/auto_clave_world_space": true, 
+            "/left/arm/limb/clavicle_connect": true, 
+            "/left/arm/limb/create": false, 
+            "/left/arm/limb/create/bendy_limb": false, 
+            "/left/arm/limb/create/connect": false, 
+            "/left/arm/limb/create/connect/twist_joint_setup": true, 
+            "/left/arm/limb/create/fk": false, 
+            "/left/arm/limb/create/fk/controls": false, 
+            "/left/arm/limb/create/ik": false, 
+            "/left/arm/limb/create/ik/controls": false, 
+            "/left/arm/limb/create/ik/controls/visibility": false, 
+            "/left/arm/limb/create/ik/offset": false, 
+            "/left/arm/limb/create/param": false, 
+            "/left/arm/limb/create/param/match_attributes": false, 
+            "/left/arm/limb/create/param/proxy_attributes": false, 
+            "/left/arm/limb/create/param/stretch": false, 
+            "/left/arm/limb/fk_spaces": false, 
+            "/left/arm/limb/ik_spaces": false, 
+            "/left/arm/limb/spaces_pv": false, 
+            "/left/arm/limb/swing": false, 
+            "/left/arm/limb/swing/control": false, 
+            "/left/arm/limb/swing/control/create": false, 
+            "/left/arm/limb/swing/control/mirror_swing": false, 
+            "/left/arm/limb/swing/control/pv_aim_node": false, 
+            "/left/arm/limb/world_orient": false, 
+            "/left/blink": true, 
+            "/left/blink/blink_collision": true, 
+            "/left/blink/blink_collision/lid_squash": true, 
+            "/left/blink/blink_collision/lid_squash/connect": true, 
+            "/left/blink/blink_collision/lid_squash/create": true, 
+            "/left/blink/blink_rig_setup": false, 
+            "/left/blink/blink_rig_setup/lid_wire": false, 
+            "/left/blink/blink_rig_setup/lid_wire/rename_controls": false, 
+            "/left/blink/blink_rig_setup/lower": true, 
+            "/left/blink/blink_rig_setup/lower/cluster_rig": true, 
+            "/left/blink/blink_rig_setup/lower/curve_rig": true, 
+            "/left/blink/blink_rig_setup/socket": false, 
+            "/left/blink/blink_rig_setup/upper": true, 
+            "/left/blink/blink_rig_setup/upper/cluster_rig": false, 
+            "/left/blink/blink_rig_setup/upper/curve_rig": false, 
+            "/left/blink/controls": true, 
+            "/left/blink/controls/eye_socket": true, 
+            "/left/blink/controls/eye_socket/connect": true, 
+            "/left/blink/controls/eye_socket/create": true, 
+            "/left/blink/controls/lower_lid": true, 
+            "/left/blink/controls/lower_lid/create": true, 
+            "/left/blink/controls/lower_lid/driver": true, 
+            "/left/blink/controls/lower_lid/selection_handle": true, 
+            "/left/blink/controls/upper_lid": true, 
+            "/left/blink/controls/upper_lid/create": true, 
+            "/left/blink/controls/upper_lid/driver": true, 
+            "/left/blink/controls/upper_lid/selection_handle": true, 
+            "/left/blink/create": false, 
+            "/left/blink/create/blink_collision": false, 
+            "/left/blink/create/blink_collision/lid_squash": true, 
+            "/left/blink/create/blink_collision/lid_squash/connect": true, 
+            "/left/blink/create/blink_collision/lid_squash/create": true, 
+            "/left/blink/create/blink_rig_setup": false, 
+            "/left/blink/create/blink_rig_setup/lid_wire": true, 
+            "/left/blink/create/blink_rig_setup/lid_wire/rename_controls": true, 
+            "/left/blink/create/blink_rig_setup/lower": true, 
+            "/left/blink/create/blink_rig_setup/lower/cluster_rig": true, 
+            "/left/blink/create/blink_rig_setup/lower/curve_rig": true, 
+            "/left/blink/create/blink_rig_setup/upper": false, 
+            "/left/blink/create/blink_rig_setup/upper/cluster_rig": false, 
+            "/left/blink/create/blink_rig_setup/upper/curve_rig": true, 
+            "/left/blink/create/controls": true, 
+            "/left/blink/create/controls/eye_socket": true, 
+            "/left/blink/create/controls/eye_socket/connect": true, 
+            "/left/blink/create/controls/eye_socket/create": true, 
+            "/left/blink/create/controls/lower_lid": true, 
+            "/left/blink/create/controls/lower_lid/create": true, 
+            "/left/blink/create/controls/lower_lid/driver": true, 
+            "/left/blink/create/controls/lower_lid/selection_handle": true, 
+            "/left/blink/create/controls/upper_lid": true, 
+            "/left/blink/create/controls/upper_lid/create": true, 
+            "/left/blink/create/controls/upper_lid/driver": true, 
+            "/left/blink/create/controls/upper_lid/selection_handle": true, 
+            "/left/blink/create/scale_compensate": true, 
+            "/left/blink/eye_drag": true, 
+            "/left/blink/scale_compensate": true, 
+            "/left/brow": true, 
+            "/left/brow/brow_inner": false, 
+            "/left/brow/brow_inner/align_orientation": false, 
+            "/left/brow/brow_inner/aling_orientation": true, 
+            "/left/brow/brow_inner/connect": false, 
+            "/left/brow/brow_inner/create": false, 
+            "/left/brow/brow_main": true, 
+            "/left/brow/brow_main/align_orientation": false, 
+            "/left/brow/brow_main/aling_orientation": true, 
+            "/left/brow/brow_main/connect": true, 
+            "/left/brow/brow_main/create": false, 
+            "/left/brow/brow_peak": false, 
+            "/left/brow/brow_peak/align_orientation": false, 
+            "/left/brow/brow_peak/aling_orientation": true, 
+            "/left/brow/brow_peak/connect": false, 
+            "/left/brow/brow_peak/create": false, 
+            "/left/brow/corrugator": false, 
+            "/left/brow/corrugator/create": false, 
+            "/left/brow/create": false, 
+            "/left/brow/curve_rig": true, 
+            "/left/brow/curve_rig/create": true, 
+            "/left/brow/curve_rig/wire_deformer": false, 
+            "/left/cheek": true, 
+            "/left/cheeks": true, 
+            "/left/cheeks/cheek": true, 
+            "/left/cheeks/cheek/create": true, 
+            "/left/cheeks/cheek2": true, 
+            "/left/cheeks/cheek_lift": true, 
+            "/left/cheeks/cheek_lift/create": true, 
+            "/left/cheeks/cheek_puff": true, 
+            "/left/cheeks/cheek_puff/create": true, 
+            "/left/cheeks/mouth_corner_distance": true, 
+            "/left/ear": true, 
+            "/left/ear/create": true, 
+            "/left/leg": true, 
+            "/left/leg/foot": true, 
+            "/left/leg/foot/create": true, 
+            "/left/leg/foot/create/connect": false, 
+            "/left/leg/foot/create/fk": true, 
+            "/left/leg/foot/create/fk/controls": true, 
+            "/left/leg/foot/create/fk/controls/ball": false, 
+            "/left/leg/foot/create/fk/controls/toes": false, 
+            "/left/leg/foot/create/ik": true, 
+            "/left/leg/foot/create/ik/controls": false, 
+            "/left/leg/foot/create/ik/controls/bank": false, 
+            "/left/leg/foot/create/param": false, 
+            "/left/leg/foot/create/param/match_attributes": false, 
+            "/left/leg/foot/create/scale": false, 
+            "/left/leg/foot/visibility": false, 
+            "/left/leg/limb": true, 
+            "/left/leg/limb/auto_clav": false, 
+            "/left/leg/limb/auto_clav/connect": false, 
+            "/left/leg/limb/auto_clav/duplicate_chain": false, 
+            "/left/leg/limb/auto_clav/param_node": false, 
+            "/left/leg/limb/auto_clav/psd": false, 
+            "/left/leg/limb/auto_clav/psd/connect": false, 
+            "/left/leg/limb/auto_clav/psd/poses": false, 
+            "/left/leg/limb/auto_clav/psd/remove_extra_neutrals": false, 
+            "/left/leg/limb/auto_clav/psd_connect": true, 
+            "/left/leg/limb/auto_clav_world_space": true, 
+            "/left/leg/limb/auto_clave_world_space": false, 
+            "/left/leg/limb/clavicle_connect": false, 
+            "/left/leg/limb/create": false, 
+            "/left/leg/limb/create/bendy_limb": false, 
+            "/left/leg/limb/create/connect": false, 
+            "/left/leg/limb/create/connect/twist_joint_setup": true, 
+            "/left/leg/limb/create/fk": false, 
+            "/left/leg/limb/create/fk/controls": false, 
+            "/left/leg/limb/create/ik": false, 
+            "/left/leg/limb/create/ik/controls": false, 
+            "/left/leg/limb/create/ik/controls/visibility": false, 
+            "/left/leg/limb/create/ik/offset": false, 
+            "/left/leg/limb/create/ik/offset/zero_control": false, 
+            "/left/leg/limb/create/param": false, 
+            "/left/leg/limb/create/param/match_attributes": false, 
+            "/left/leg/limb/create/param/proxy_attributes": false, 
+            "/left/leg/limb/create/param/stretch": false, 
+            "/left/leg/limb/fk_spaces": false, 
+            "/left/leg/limb/ik_spaces": false, 
+            "/left/leg/limb/spaces_pv": false, 
+            "/left/leg/limb/swing": false, 
+            "/left/leg/limb/swing/control": false, 
+            "/left/leg/limb/swing/control/create": false, 
+            "/left/leg/limb/swing/control/mirror_swing": false, 
+            "/left/leg/limb/swing/control/pv_aim_node": false, 
+            "/left/leg/limb/world_orient": false, 
+            "/left/leg/pelvis": false, 
+            "/left/leg/pelvis/control": false, 
+            "/left/leg/pelvis/control/create": false, 
+            "/left/lip_lower": true, 
+            "/left/lip_lower/create": true, 
+            "/left/lip_upper": true, 
+            "/left/lip_upper/create": true, 
+            "/left/node": false, 
+            "/left/sneer": true, 
+            "/left/sneer/create": true, 
+            "/leg": true, 
+            "/leg/foot": true, 
+            "/leg/limb": false, 
+            "/leg/limb/auto_clav": true, 
+            "/leg/limb/auto_clav_world_space": false, 
+            "/leg/limb/clavicle_connect": false, 
+            "/leg/limb/create": false, 
+            "/leg/limb/create/connect": false, 
+            "/leg/limb/create/fk": false, 
+            "/leg/limb/create/ik": false, 
+            "/leg/limb/create/ik/controls": false, 
+            "/leg/limb/create/param": false, 
+            "/leg/limb/ik_spaces": false, 
+            "/leg/limb/swing": true, 
+            "/leg/limb/swing/control": true, 
+            "/leg/limb/swing/control/pv_aim_node": false, 
+            "/leg/pelvis": false, 
+            "/leg/pelvis/control": false, 
+            "/limb": true, 
+            "/limb/create": false, 
+            "/limb/create/connect": true, 
+            "/limb/create/fk": false, 
+            "/limb/create/ik": true, 
+            "/limb/create/ik/controls": false, 
+            "/limb/create/param": false, 
+            "/limb/create/param/match_attributes": false, 
+            "/load": true, 
+            "/load/curves": false, 
+            "/load/curves/load_file": false, 
+            "/load/curves/load_positions": false, 
+            "/load/joints": true, 
+            "/load/joints/connect_twist": true, 
+            "/load/joints/connect_twist/left": true, 
+            "/load/joints/connect_twist/left/arm": true, 
+            "/load/joints/connect_twist/left/arm/clavicle_tranlate": false, 
+            "/load/joints/connect_twist/left/arm/lower_swing_driver": true, 
+            "/load/joints/connect_twist/left/arm/lower_twist": false, 
+            "/load/joints/connect_twist/left/arm/lower_twist_driver": true, 
+            "/load/joints/connect_twist/left/arm/mid_swing_driver": true, 
+            "/load/joints/connect_twist/left/arm/tip_twist": false, 
+            "/load/joints/connect_twist/left/arm/upper_no_twist": false, 
+            "/load/joints/connect_twist/left/leg": false, 
+            "/load/joints/connect_twist/left/leg/clavicle_tranlate": false, 
+            "/load/joints/connect_twist/left/leg/lower_swing_driver": true, 
+            "/load/joints/connect_twist/left/leg/lower_twist": false, 
+            "/load/joints/connect_twist/left/leg/lower_twist_driver": true, 
+            "/load/joints/connect_twist/left/leg/mid_swing_driver": true, 
+            "/load/joints/connect_twist/left/leg/tip_twist": false, 
+            "/load/joints/connect_twist/left/leg/upper_no_twist": false, 
+            "/load/joints/connect_twist/right": false, 
+            "/load/joints/connect_twist/right/arm": false, 
+            "/load/joints/connect_twist/right/arm/clavicle_tranlate": false, 
+            "/load/joints/connect_twist/right/arm/lower_swing_driver": true, 
+            "/load/joints/connect_twist/right/arm/lower_twist": false, 
+            "/load/joints/connect_twist/right/arm/lower_twist_driver": true, 
+            "/load/joints/connect_twist/right/arm/mid_swing_driver": true, 
+            "/load/joints/connect_twist/right/arm/tip_twist": false, 
+            "/load/joints/connect_twist/right/arm/upper_no_twist": false, 
+            "/load/joints/connect_twist/right/leg": false, 
+            "/load/joints/connect_twist/right/leg/clavicle_tranlate": false, 
+            "/load/joints/connect_twist/right/leg/lower_swing_driver": true, 
+            "/load/joints/connect_twist/right/leg/lower_twist": false, 
+            "/load/joints/connect_twist/right/leg/lower_twist_driver": true, 
+            "/load/joints/connect_twist/right/leg/mid_swing_driver": true, 
+            "/load/joints/connect_twist/right/leg/tip_twist": false, 
+            "/load/joints/connect_twist/right/leg/upper_no_twist": false, 
+            "/load/joints/hide_joints": false, 
+            "/load/joints/load_file": false, 
+            "/load/joints/load_file/unhide_joint_orients": true, 
+            "/load/joints/load_positions": true, 
+            "/load/joints/mirror_labels": true, 
+            "/load/model": true, 
+            "/load/model/load_file": true, 
+            "/load/model/normal_per_vertex": true, 
+            "/load/psd_deltas": false, 
+            "/load_curve_data": false, 
+            "/load_deformer_order_data": false, 
+            "/load_joint_data": false, 
+            "/load_maya_file": false, 
+            "/load_node_data": false, 
+            "/load_sdk_data": false, 
+            "/look_at": true, 
+            "/look_at/create": false, 
+            "/look_at/create/look_at_rot": false, 
+            "/look_at/create/look_at_trs": false, 
+            "/look_at/look_at_rot": true, 
+            "/look_at/look_at_trs": true, 
+            "/mirror_orients": false, 
+            "/mouth": true, 
+            "/mouth/lip": false, 
+            "/mouth/lip_main": false, 
+            "/mouth/lip_main/controls": false, 
+            "/neck": true, 
+            "/neck/controls": true, 
+            "/neck/controls/head": false, 
+            "/neck/controls/head/create": false, 
+            "/neck/controls/head/poition_head": false, 
+            "/neck/controls/head_gimbal": false, 
+            "/neck/controls/head_gimbal/connect": false, 
+            "/neck/controls/head_gimbal/create": false, 
+            "/neck/controls/neck": false, 
+            "/neck/controls/neck/connect": false, 
+            "/neck/controls/neck/create": false, 
+            "/neck/create_spline": false, 
+            "/neck/head_pivot_connect": false, 
+            "/neck/spaces": false, 
+            "/neck/spaces/head_spaces": false, 
+            "/neck/spaces/neck_spaces": false, 
+            "/node/controls": false, 
+            "/node/controls/fk": true, 
+            "/node/controls/ik": true, 
+            "/post_build": true, 
+            "/post_build/control_visibility": false, 
+            "/post_build/frame_camera": false, 
+            "/post_build/pick_walking": false, 
+            "/post_build/pick_walking/body": false, 
+            "/post_build/tag_controllers": false, 
+            "/prebuild": true, 
+            "/prebuild/connect_geo_attrs": true, 
+            "/prebuild/top_nodes": false, 
+            "/prebuild/top_nodes/tag_trs_nodes": true, 
+            "/rig_workflow": true, 
+            "/rig_workflow/file_io": false, 
+            "/rig_workflow/file_io/exporters": true, 
+            "/rig_workflow/file_io/exporters/cluster": true, 
+            "/rig_workflow/file_io/exporters/cluster/export_cluster": true, 
+            "/rig_workflow/file_io/exporters/control_curve_positions": true, 
+            "/rig_workflow/file_io/exporters/control_curve_positions/export": true, 
+            "/rig_workflow/file_io/exporters/control_curve_positions/export/check_scene": false, 
+            "/rig_workflow/file_io/exporters/control_curve_positions/export/export_data": false, 
+            "/rig_workflow/file_io/exporters/control_curve_positions/export/get_data": false, 
+            "/rig_workflow/file_io/exporters/control_orients": true, 
+            "/rig_workflow/file_io/exporters/curve_positions": true, 
+            "/rig_workflow/file_io/exporters/curve_positions/export": true, 
+            "/rig_workflow/file_io/exporters/curve_positions/export/check_scene": false, 
+            "/rig_workflow/file_io/exporters/curve_positions/export/export_data": false, 
+            "/rig_workflow/file_io/exporters/curve_positions/export/get_data": false, 
+            "/rig_workflow/file_io/exporters/deformer_order": true, 
+            "/rig_workflow/file_io/exporters/deformer_order/export": true, 
+            "/rig_workflow/file_io/exporters/deformer_order/export/check_scene": false, 
+            "/rig_workflow/file_io/exporters/deformer_order/export/export_data": false, 
+            "/rig_workflow/file_io/exporters/deformer_order/export/get_data": false, 
+            "/rig_workflow/file_io/exporters/deformer_order/export_selected": false, 
+            "/rig_workflow/file_io/exporters/deformer_order/export_selected/export": false, 
+            "/rig_workflow/file_io/exporters/deformer_order/export_selected/export/check_scene": false, 
+            "/rig_workflow/file_io/exporters/deformer_order/export_selected/export/export_data": false, 
+            "/rig_workflow/file_io/exporters/deformer_order/export_selected/export/get_data": false, 
+            "/rig_workflow/file_io/exporters/joint_positions": true, 
+            "/rig_workflow/file_io/exporters/joint_positions/export": true, 
+            "/rig_workflow/file_io/exporters/joint_positions/export/check_scene": false, 
+            "/rig_workflow/file_io/exporters/joint_positions/export/export_data": false, 
+            "/rig_workflow/file_io/exporters/joint_positions/export/get_data": false, 
+            "/rig_workflow/file_io/exporters/joint_positions/export_selected": false, 
+            "/rig_workflow/file_io/exporters/joint_positions/export_selected/export": false, 
+            "/rig_workflow/file_io/exporters/joint_positions/export_selected/export/check_scene": false, 
+            "/rig_workflow/file_io/exporters/joint_positions/export_selected/export/export_data": false, 
+            "/rig_workflow/file_io/exporters/joint_positions/export_selected/export/get_data": false, 
+            "/rig_workflow/file_io/exporters/joint_positions/node": false, 
+            "/rig_workflow/file_io/exporters/psd": true, 
+            "/rig_workflow/file_io/exporters/sdk": true, 
+            "/rig_workflow/file_io/exporters/sdk/export": true, 
+            "/rig_workflow/file_io/exporters/sdk/export/check_scene": false, 
+            "/rig_workflow/file_io/exporters/sdk/export/export_data": false, 
+            "/rig_workflow/file_io/exporters/sdk/export/get_data": false, 
+            "/rig_workflow/file_io/exporters/skincluster": true, 
+            "/rig_workflow/file_io/exporters/skincluster/export": false, 
+            "/rig_workflow/file_io/exporters/skincluster/export_selected": true, 
+            "/rig_workflow/file_io/exporters/skincluster/export_selected/export": false, 
+            "/rig_workflow/file_io/exporters/wire": true, 
+            "/rig_workflow/file_io/exporters/wire/export/export_data": true, 
+            "/rig_workflow/file_io/importers": false, 
+            "/rig_workflow/file_io/importers/curve_importers": true, 
+            "/rig_workflow/file_io/importers/curve_importers/curve_layout": true, 
+            "/rig_workflow/file_io/importers/curve_importers/curve_layout/curve_file": true, 
+            "/rig_workflow/file_io/importers/curve_importers/curve_layout/curve_file/import": false, 
+            "/rig_workflow/file_io/importers/curve_importers/curve_layout/curve_positions": false, 
+            "/rig_workflow/file_io/importers/curve_importers/curve_layout/curve_positions/import": true, 
+            "/rig_workflow/file_io/importers/curve_importers/curves": false, 
+            "/rig_workflow/file_io/importers/curves/curve_file_": true, 
+            "/rig_workflow/file_io/importers/joint_importers": true, 
+            "/rig_workflow/file_io/importers/joint_importers/joints_layout": true, 
+            "/rig_workflow/file_io/importers/joint_importers/joints_layout/joint_positions": true, 
+            "/rig_workflow/file_io/importers/joint_importers/joints_layout/joint_positions/import": true, 
+            "/rig_workflow/file_io/importers/joint_importers/joints_layout/skeleton": true, 
+            "/rig_workflow/file_io/importers/joint_importers/joints_layout/skeleton/import": false, 
+            "/rig_workflow/file_io/importers/joint_importers/joints_layout/skeleton/joint_positions": false, 
+            "/rig_workflow/file_io/importers/joints/skeleton": false, 
+            "/rig_workflow/file_io/importers/model": true, 
+            "/rig_workflow/file_io/importers/model/import": true, 
+            "/rig_workflow/file_io/importers/model/import_clean": true, 
+            "/rig_workflow/file_io/importers/model/import_clean/import": true, 
+            "/rig_workflow/file_io/importers/model/import_clean/new_scene": true, 
+            "/rig_workflow/file_io/importers/skeleton/node": true, 
+            "/rig_workflow/file_io/importers/skincluster/import": true, 
+            "/rig_workflow/file_io/importers/skincluster/import/non_rigid_transformation": true, 
+            "/rig_workflow/file_io/importers/weights": true, 
+            "/rig_workflow/file_io/importers/weights/skincluster": true, 
+            "/rig_workflow/sculpting": true, 
+            "/rig_workflow/workflow": false, 
+            "/rig_workflow/workflow/clusters": true, 
+            "/rig_workflow/workflow/clusters/mirror_cluster": true, 
+            "/rig_workflow/workflow/clusters/mirror_cluster/mirror": true, 
+            "/rig_workflow/workflow/curves": true, 
+            "/rig_workflow/workflow/curves/mirror_control_curves": true, 
+            "/rig_workflow/workflow/curves/mirror_control_curves/mirror": true, 
+            "/rig_workflow/workflow/curves/mirror_curves": true, 
+            "/rig_workflow/workflow/curves/mirror_curves/mirror": true, 
+            "/rig_workflow/workflow/curves/mirror_face_curves": true, 
+            "/rig_workflow/workflow/joints": true, 
+            "/rig_workflow/workflow/joints/mirror_joints": true, 
+            "/rig_workflow/workflow/joints/mirror_joints/mirror": true, 
+            "/rig_workflow/workflow/joints/zero_joints": true, 
+            "/rig_workflow/workflow/joints/zero_joints/zero": true, 
+            "/rig_workflow/workflow/joints/zero_joints/zero_selcted_joints": true, 
+            "/rig_workflow/workflow/orients": true, 
+            "/rig_workflow/workflow/orients/mirror_lid_orients/mirror": true, 
+            "/rig_workflow/workflow/orients/mirror_lids": false, 
+            "/rig_workflow/workflow/orients/mirror_lip_orients/mirror": true, 
+            "/rig_workflow/workflow/orients/mirror_lips": true, 
+            "/rig_workflow/workflow/orients/node": true, 
+            "/rig_workflow/workflow/psd": true, 
+            "/rig_workflow/workflow/sdk": true, 
+            "/rig_workflow/workflow/sdk/mirror_sdk": true, 
+            "/rig_workflow/workflow/sdk/mirror_sdk/mirror": true, 
+            "/rig_workflow/workflow/skincluster": true, 
+            "/rig_workflow/workflow/skincluster/mirror_skincluster": true, 
+            "/rig_workflow/workflow/skincluster/mirror_skincluster/mirror": true, 
+            "/rig_workflow/workflow/wires": true, 
+            "/rig_workflow/workflow/wires/mirror_wire": true, 
+            "/rig_workflow/workflow/wires/mirror_wire/mirror": true, 
+            "/right": true, 
+            "/right/arm": true, 
+            "/right/arm/clavicle": true, 
+            "/right/arm/clavicle/control": true, 
+            "/right/arm/clavicle/control/create": true, 
+            "/right/arm/hand": true, 
+            "/right/arm/hand/create": true, 
+            "/right/arm/limb": true, 
+            "/right/arm/limb/auto_clav": true, 
+            "/right/arm/limb/auto_clav/connect": true, 
+            "/right/arm/limb/auto_clav/duplicate_chain": true, 
+            "/right/arm/limb/auto_clav/param_node": true, 
+            "/right/arm/limb/auto_clav/psd": true, 
+            "/right/arm/limb/auto_clav/psd/connect": true, 
+            "/right/arm/limb/auto_clav/psd/poses": true, 
+            "/right/arm/limb/auto_clav/psd/remove_extra_neutrals": true, 
+            "/right/arm/limb/auto_clav/psd_connect": true, 
+            "/right/arm/limb/auto_clav_world_space": true, 
+            "/right/arm/limb/auto_clave_world_space": true, 
+            "/right/arm/limb/clavicle_connect": true, 
+            "/right/arm/limb/create": true, 
+            "/right/arm/limb/create/bendy_limb": true, 
+            "/right/arm/limb/create/connect": true, 
+            "/right/arm/limb/create/connect/twist_joint_setup": true, 
+            "/right/arm/limb/create/fk": true, 
+            "/right/arm/limb/create/fk/controls": true, 
+            "/right/arm/limb/create/ik": true, 
+            "/right/arm/limb/create/ik/controls": true, 
+            "/right/arm/limb/create/ik/controls/visibility": true, 
+            "/right/arm/limb/create/ik/offset": true, 
+            "/right/arm/limb/create/param": true, 
+            "/right/arm/limb/create/param/match_attributes": true, 
+            "/right/arm/limb/create/param/proxy_attributes": true, 
+            "/right/arm/limb/create/param/stretch": true, 
+            "/right/arm/limb/fk_spaces": true, 
+            "/right/arm/limb/ik_spaces": true, 
+            "/right/arm/limb/spaces_pv": true, 
+            "/right/arm/limb/swing": true, 
+            "/right/arm/limb/swing/control": true, 
+            "/right/arm/limb/swing/control/create": true, 
+            "/right/arm/limb/swing/control/mirror_swing": true, 
+            "/right/arm/limb/swing/control/pv_aim_node": true, 
+            "/right/arm/limb/world_orient": true, 
+            "/right/blink": true, 
+            "/right/blink/blink_collision": true, 
+            "/right/blink/blink_collision/lid_squash": true, 
+            "/right/blink/blink_collision/lid_squash/connect": true, 
+            "/right/blink/blink_collision/lid_squash/create": true, 
+            "/right/blink/blink_rig_setup": true, 
+            "/right/blink/blink_rig_setup/lid_wire": true, 
+            "/right/blink/blink_rig_setup/lid_wire/rename_controls": true, 
+            "/right/blink/blink_rig_setup/lower": true, 
+            "/right/blink/blink_rig_setup/lower/cluster_rig": true, 
+            "/right/blink/blink_rig_setup/lower/curve_rig": true, 
+            "/right/blink/blink_rig_setup/socket": true, 
+            "/right/blink/blink_rig_setup/upper": true, 
+            "/right/blink/blink_rig_setup/upper/cluster_rig": true, 
+            "/right/blink/blink_rig_setup/upper/curve_rig": true, 
+            "/right/blink/controls": true, 
+            "/right/blink/controls/eye_socket": true, 
+            "/right/blink/controls/eye_socket/connect": true, 
+            "/right/blink/controls/eye_socket/create": true, 
+            "/right/blink/controls/lower_lid": true, 
+            "/right/blink/controls/lower_lid/create": true, 
+            "/right/blink/controls/lower_lid/driver": true, 
+            "/right/blink/controls/lower_lid/selection_handle": true, 
+            "/right/blink/controls/upper_lid": true, 
+            "/right/blink/controls/upper_lid/create": true, 
+            "/right/blink/controls/upper_lid/driver": true, 
+            "/right/blink/controls/upper_lid/selection_handle": true, 
+            "/right/blink/create": true, 
+            "/right/blink/create/blink_collision": true, 
+            "/right/blink/create/blink_rig_setup": true, 
+            "/right/blink/create/controls": true, 
+            "/right/blink/eye_drag": true, 
+            "/right/blink/scale_compensate": true, 
+            "/right/brow": true, 
+            "/right/brow/brow_inner": true, 
+            "/right/brow/brow_inner/align_orientation": true, 
+            "/right/brow/brow_inner/aling_orientation": true, 
+            "/right/brow/brow_inner/connect": true, 
+            "/right/brow/brow_inner/create": true, 
+            "/right/brow/brow_main": true, 
+            "/right/brow/brow_main/align_orientation": true, 
+            "/right/brow/brow_main/aling_orientation": true, 
+            "/right/brow/brow_main/connect": true, 
+            "/right/brow/brow_main/create": true, 
+            "/right/brow/brow_peak": true, 
+            "/right/brow/brow_peak/align_orientation": true, 
+            "/right/brow/brow_peak/aling_orientation": true, 
+            "/right/brow/brow_peak/connect": true, 
+            "/right/brow/brow_peak/create": true, 
+            "/right/brow/corrugator": true, 
+            "/right/brow/corrugator/create": true, 
+            "/right/brow/create": true, 
+            "/right/brow/curve_rig": true, 
+            "/right/brow/curve_rig/create": true, 
+            "/right/brow/curve_rig/wire_deformer": true, 
+            "/right/cheeks": true, 
+            "/right/cheeks/cheek": true, 
+            "/right/cheeks/cheek/create": true, 
+            "/right/cheeks/cheek_lift": true, 
+            "/right/cheeks/cheek_lift/create": true, 
+            "/right/cheeks/cheek_puff": true, 
+            "/right/cheeks/cheek_puff/create": true, 
+            "/right/cheeks/mouth_corner_distance": true, 
+            "/right/ear": true, 
+            "/right/ear/create": true, 
+            "/right/leg": true, 
+            "/right/leg/foot": true, 
+            "/right/leg/foot/create": true, 
+            "/right/leg/foot/create/connect": true, 
+            "/right/leg/foot/create/fk": true, 
+            "/right/leg/foot/create/fk/controls": true, 
+            "/right/leg/foot/create/fk/controls/ball": true, 
+            "/right/leg/foot/create/fk/controls/toes": true, 
+            "/right/leg/foot/create/ik": true, 
+            "/right/leg/foot/create/ik/controls": true, 
+            "/right/leg/foot/create/ik/controls/bank": true, 
+            "/right/leg/foot/create/param": true, 
+            "/right/leg/foot/create/param/match_attributes": true, 
+            "/right/leg/foot/create/scale": true, 
+            "/right/leg/foot/visibility": true, 
+            "/right/leg/limb": true, 
+            "/right/leg/limb/auto_clav": true, 
+            "/right/leg/limb/auto_clav/connect": true, 
+            "/right/leg/limb/auto_clav/duplicate_chain": true, 
+            "/right/leg/limb/auto_clav/param_node": true, 
+            "/right/leg/limb/auto_clav/psd": true, 
+            "/right/leg/limb/auto_clav/psd/connect": true, 
+            "/right/leg/limb/auto_clav/psd/poses": true, 
+            "/right/leg/limb/auto_clav/psd/remove_extra_neutrals": true, 
+            "/right/leg/limb/auto_clav/psd_connect": true, 
+            "/right/leg/limb/auto_clav_world_space": true, 
+            "/right/leg/limb/auto_clave_world_space": true, 
+            "/right/leg/limb/clavicle_connect": true, 
+            "/right/leg/limb/create": true, 
+            "/right/leg/limb/create/bendy_limb": true, 
+            "/right/leg/limb/create/connect": true, 
+            "/right/leg/limb/create/connect/twist_joint_setup": true, 
+            "/right/leg/limb/create/fk": true, 
+            "/right/leg/limb/create/fk/controls": true, 
+            "/right/leg/limb/create/ik": true, 
+            "/right/leg/limb/create/ik/controls": true, 
+            "/right/leg/limb/create/ik/controls/visibility": true, 
+            "/right/leg/limb/create/ik/offset": true, 
+            "/right/leg/limb/create/ik/offset/zero_control": true, 
+            "/right/leg/limb/create/param": true, 
+            "/right/leg/limb/create/param/match_attributes": true, 
+            "/right/leg/limb/create/param/proxy_attributes": true, 
+            "/right/leg/limb/create/param/stretch": true, 
+            "/right/leg/limb/fk_spaces": true, 
+            "/right/leg/limb/ik_spaces": true, 
+            "/right/leg/limb/spaces_pv": true, 
+            "/right/leg/limb/swing": true, 
+            "/right/leg/limb/swing/control": true, 
+            "/right/leg/limb/swing/control/create": true, 
+            "/right/leg/limb/swing/control/mirror_swing": true, 
+            "/right/leg/limb/swing/control/pv_aim_node": true, 
+            "/right/leg/limb/world_orient": true, 
+            "/right/leg/pelvis": true, 
+            "/right/leg/pelvis/control": true, 
+            "/right/leg/pelvis/control/create": true, 
+            "/right/lip_lower": true, 
+            "/right/lip_lower/create": true, 
+            "/right/lip_upper": true, 
+            "/right/lip_upper/create": true, 
+            "/right/sneer": true, 
+            "/right/sneer/create": true, 
+            "/spine": true, 
+            "/spine/controls": false, 
+            "/spine/controls/fk": false, 
+            "/spine/controls/fk/hips": true, 
+            "/spine/controls/fk/hips_gimbal": true, 
+            "/spine/controls/ik": true, 
+            "/spine/controls/ik/chest": true, 
+            "/spine/controls/ik/chest_top": true, 
+            "/spine/controls/ik/hip_swivel": true, 
+            "/spline": false, 
+            "/spline/controls": true, 
+            "/spline/controls/fk": false, 
+            "/spline/controls/fk/chest": false, 
+            "/spline/controls/fk/hip_swivel": false, 
+            "/spline/controls/fk/hips": true, 
+            "/spline/controls/fk/hips_gimbal": true, 
+            "/spline/controls/fk/torso": true, 
+            "/spline/controls/ik": false, 
+            "/spline/controls/ik/chest": false, 
+            "/spline/controls/ik/chest_top": false, 
+            "/tongue": true, 
+            "/wire_to_skincluster": false
+        }
+    }, 
+    "nodes": {
+        "/": {
+            "attrs": {
+                "element": {
+                    "type": "raw", 
+                    "value": "biped"
+                }, 
+                "variant": {
+                    "type": "raw", 
+                    "value": "base"
+                }
+            }
+        }
+    }
+}

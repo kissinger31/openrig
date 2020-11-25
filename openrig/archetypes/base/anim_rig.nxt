@@ -1,0 +1,1197 @@
+{
+    "version": "1.17", 
+    "alias": "anim_rig", 
+    "color": "#aa0000", 
+    "mute": false, 
+    "solo": false, 
+    "references": [
+        "delivery.nxt", 
+        "rig_components.nxt", 
+        "workflow_rig.nxt"
+    ], 
+    "meta_data": {
+        "positions": {
+            "/apply": [
+                2224.15129307662, 
+                -1724.9566907873248
+            ], 
+            "/center": [
+                650.0450019535442, 
+                -1762.7869943557344
+            ], 
+            "/freeze": [
+                2826.1627910429706, 
+                -1438.4363744242528
+            ], 
+            "/init": [
+                -858.9579976979962, 
+                -1758.898062159237
+            ], 
+            "/left": [
+                1137.7042158191473, 
+                -1759.0619871173676
+            ], 
+            "/load": [
+                -353.41584423077245, 
+                -1764.1164166270466
+            ], 
+            "/load/joints/hide_joints": [
+                0.0, 
+                0.0
+            ], 
+            "/load/model/normal_per_vertex": [
+                0.0, 
+                0.0
+            ], 
+            "/mirror_orients": [
+                -1933.4776624349522, 
+                -1266.1340698289666
+            ], 
+            "/post_build": [
+                2009.6890859944713, 
+                -1764.6050511170965
+            ], 
+            "/post_build/control_visibility": [
+                0.0, 
+                0.0
+            ], 
+            "/post_build/pick_walking": [
+                0.0, 
+                0.0
+            ], 
+            "/post_build/tag_controllers": [
+                0.0, 
+                0.0
+            ], 
+            "/prebuild": [
+                150.10484339139492, 
+                -1763.4900239905041
+            ], 
+            "/right": [
+                1933.6917287338529, 
+                -1780.1505783809
+            ], 
+            "/spline": [
+                -1556.098113167494, 
+                -365.17540923902845
+            ]
+        }, 
+        "collapse": {
+            "/apply": false, 
+            "/apply/sdk": false, 
+            "/apply/sdk/import": false, 
+            "/left": false, 
+            "/left/leg": false, 
+            "/left/leg/foot": false, 
+            "/left/leg/foot/create": false, 
+            "/left/leg/foot/create/fk": false, 
+            "/left/leg/foot/create/fk/controls": false, 
+            "/left/leg/foot/create/ik": false
+        }
+    }, 
+    "nodes": {
+        "/": {
+            "child_order": [
+                "export_data", 
+                "export_skincluster", 
+                "apply", 
+                "center", 
+                "delivery", 
+                "init", 
+                "left", 
+                "load", 
+                "post_build", 
+                "prebuild", 
+                "rig_workflow", 
+                "right", 
+                "export_wire", 
+                "export_cluster", 
+                "export_psd", 
+                "mirror_orients"
+            ], 
+            "attrs": {
+                "element": {
+                    "comment": "Element name", 
+                    "type": "raw", 
+                    "value": "biped"
+                }, 
+                "model_group": {
+                    "comment": "The group name that the geometry will live in.", 
+                    "type": "str", 
+                    "value": "'model'"
+                }, 
+                "rig_group": {
+                    "comment": "The group name that the rig will live in.", 
+                    "type": "str", 
+                    "value": "'rig'"
+                }, 
+                "variant": {
+                    "comment": "The variant for this specific element.", 
+                    "type": "raw", 
+                    "value": "base"
+                }
+            }, 
+            "code": [
+                "# maya imports", 
+                "import maya.cmds as mc", 
+                "import maya.api.OpenMaya as om", 
+                "import maya.mel as mm", 
+                "import math", 
+                "", 
+                "# python imports", 
+                "import os", 
+                "import numpy", 
+                "import traceback", 
+                "from collections import OrderedDict", 
+                "", 
+                "# showtools imports", 
+                "import showtools.riglib.spline as rig_spline", 
+                "import showtools.riglib.bindmesh as bindmesh", 
+                "import showtools.maya.psd as rig_psd", 
+                "import showtools.riglib.ikfk as rig_ikfk", 
+                "import showtools.riglib.control as rig_control", 
+                "import showtools.riglib.wire as rig_wire", 
+                "import showtools.riglib.bindmesh as rig_bindmesh", 
+                "import showtools.maya.wrap as rig_wrap", 
+                "import showtools.maya.joint as rig_joint", 
+                "import showtools.maya.cluster as rig_cluster", 
+                "import showtools.maya.skinCluster as rig_skinCluster", 
+                "import showtools.maya.weights as rig_weights", 
+                "import showtools.maya.deformer as rig_deformer", 
+                "import showtools.maya.attr as rig_attribute", 
+                "import showtools.maya.common as rig_common", 
+                "import showtools.maya.curve as rig_curve", 
+                "import showtools.maya.transform as rig_transform", 
+                "import showtools.maya.blendShape as rig_blendShape", 
+                "import showtools.maya.shape as rig_shape", 
+                "import showtools.maya.weightObject as weight_object", 
+                "", 
+                "# data modules", 
+                "import showtools.maya.data.node_data as node_data", 
+                "import showtools.maya.data.joint_data as joint_data", 
+                "import showtools.maya.data.sdk_data as sdk_data", 
+                "import showtools.maya.data.curve_data as curve_data", 
+                "import showtools.maya.data.sets_data as sets_data", 
+                "import showtools.maya.data.deformer_order_data as deformer_order_data", 
+                "import showtools.maya.data.psd_data as psd_data"
+            ]
+        }, 
+        "/apply": {
+            "execute_in": "/post_build", 
+            "child_order": [
+                "controls", 
+                "deformers", 
+                "deformer_order", 
+                "sdk", 
+                "freeze_wire", 
+                "sets"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "variant": {
+                    "type": "raw", 
+                    "value": "${/init.variant}"
+                }
+            }
+        }, 
+        "/apply/controls": {
+            "child_order": [
+                "control_orients", 
+                "control_positions"
+            ], 
+            "enabled": true
+        }, 
+        "/apply/controls/control_orients": {
+            "instance": "/load_node_data", 
+            "enabled": true, 
+            "comment": "apply the control orients", 
+            "attrs": {
+                "apply": {
+                    "comment": "Whether or not to apply the orients once the file is loaded.", 
+                    "type": "bool", 
+                    "value": "True"
+                }, 
+                "filepath": {
+                    "type": "raw", 
+                    "value": "${filelist::build/control_orients.data}"
+                }, 
+                "nodes": {
+                    "type": "raw", 
+                    "value": "mc.ls('*_ort',type='transform')"
+                }
+            }
+        }, 
+        "/apply/controls/control_positions": {
+            "instance": "/load_curve_data", 
+            "enabled": true, 
+            "comment": "Apply the control positions", 
+            "attrs": {
+                "apply": {
+                    "comment": "Whether or not to apply the data or just load it into memory.", 
+                    "type": "bool", 
+                    "value": "True"
+                }, 
+                "attributes": {
+                    "type": "list", 
+                    "value": "['cvPositions', 'rotateOrder', 'color', 'selectionHandle']"
+                }, 
+                "filepath": {
+                    "type": "raw", 
+                    "value": "${filelist::build/control_positions.data}"
+                }, 
+                "nodes": {
+                    "type": "raw", 
+                    "value": "rig_control.getControls()"
+                }
+            }
+        }, 
+        "/apply/deformer_order": {
+            "instance": "/load_deformer_order_data", 
+            "enabled": true, 
+            "attrs": {
+                "filepath": {
+                    "type": "raw", 
+                    "value": "${filelist::build/deformer_order.data}"
+                }
+            }
+        }, 
+        "/apply/deformers": {
+            "instance": "", 
+            "child_order": [
+                "skincluster", 
+                "wire", 
+                "clusters", 
+                "psd", 
+                "bindmesh"
+            ], 
+            "enabled": true, 
+            "comment": "Import the deformers"
+        }, 
+        "/apply/deformers/bindmesh": {
+            "child_order": [
+                "auto_weight", 
+                "skincluster", 
+                "cluster"
+            ], 
+            "enabled": true
+        }, 
+        "/apply/deformers/bindmesh/auto_weight": {
+            "enabled": true, 
+            "attrs": {
+                "deformer_types": {
+                    "type": "list", 
+                    "value": "['skinCluster']"
+                }, 
+                "source": {
+                    "type": "str", 
+                    "value": "''"
+                }, 
+                "surface_association": {
+                    "type": "str", 
+                    "value": "'closestPoint'"
+                }, 
+                "target_list": {
+                    "type": "list", 
+                    "value": "[]"
+                }
+            }, 
+            "code": [
+                "target_list = ${target_list}", 
+                "source = mc.ls([${source}])", 
+                "", 
+                "if target_list and source:", 
+                "    source = source[0]", 
+                "    deltaMush = mc.deltaMush(source, smoothingIterations=10,smoothingStep=1.0, pinBorderVertices=True,envelope=1, foc=True)[0]", 
+                "    mc.setAttr(deltaMush+\".displacement\", 0)", 
+                "    rig_deformer.transferDeformers(source, target_list, ${deformer_types}, ${surface_association})", 
+                "", 
+                "    for mesh in target_list:", 
+                "        deformer = \"{}_skinCluster\".format(mesh)", 
+                "        if not mc.objExists(deformer):", 
+                "            continue", 
+                "            ", 
+                "        wtObj = rig_weights.getWeights(deformer)", 
+                "        weightList = list()", 
+                "        for inf in wtObj:", 
+                "            i = 0", 
+                "            weights = wtObj.getWeights(inf)[0]", 
+                "            for wt in weights:", 
+                "                j = i", 
+                "                if j + 1 >= len(weights):", 
+                "                    break", 
+                "                wtValue = weights[j]", 
+                "                while i <= j + 3:", 
+                "                    weights[i] = wtValue", 
+                "                    i +=1", 
+                "                ", 
+                "            weightList.append(weights)", 
+                "        wtObj.setWeights(weightList)", 
+                "        rig_weights.setWeights(deformer, wtObj)", 
+                "    ", 
+                "    mc.delete(deltaMush)", 
+                "    "
+            ]
+        }, 
+        "/apply/deformers/bindmesh/cluster": {
+            "instance": "../skincluster", 
+            "attrs": {
+                "directory_path": {
+                    "type": "raw", 
+                    "value": "${filelist::build/cluster_wts}"
+                }
+            }
+        }, 
+        "/apply/deformers/bindmesh/skincluster": {
+            "instance": "/import_weight_directory", 
+            "enabled": true, 
+            "attrs": {
+                "directory_path": {
+                    "type": "raw", 
+                    "value": "${filelist::build/skin_wts}"
+                }, 
+                "include_filter": {
+                    "type": "str", 
+                    "value": "'_bindmesh'"
+                }
+            }
+        }, 
+        "/apply/deformers/clusters": {
+            "instance": "/import_weight_directory", 
+            "enabled": true, 
+            "attrs": {
+                "directory_path": {
+                    "type": "raw", 
+                    "value": "${filelist::build/cluster_wts}"
+                }, 
+                "exclude_filter": {
+                    "value": "'_bindmesh'"
+                }
+            }
+        }, 
+        "/apply/deformers/psd": {
+            "instance": "/load/psd_deltas", 
+            "enabled": true, 
+            "attrs": {
+                "load_deltas": {
+                    "type": "bool", 
+                    "value": "False"
+                }
+            }
+        }, 
+        "/apply/deformers/skincluster": {
+            "instance": "/import_weight_directory", 
+            "child_order": [
+                "non_rigid_transformation"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "directory_path": {
+                    "type": "raw", 
+                    "value": "${filelist::build/skin_wts}"
+                }, 
+                "exclude_filter": {
+                    "value": "'_bindmesh'"
+                }
+            }
+        }, 
+        "/apply/deformers/skincluster/non_rigid_transformation": {
+            "enabled": true, 
+            "code": [
+                "for skin in mc.ls(type='skinCluster'):", 
+                "    mc.setAttr('{}.dqsSupportNonRigid'.format(skin), 1)"
+            ]
+        }, 
+        "/apply/deformers/wire": {
+            "instance": "/import_weight_directory", 
+            "enabled": true, 
+            "attrs": {
+                "directory_path": {
+                    "type": "raw", 
+                    "value": "${filelist::build/wire_wts}"
+                }
+            }
+        }, 
+        "/apply/freeze_wire": {
+            "instance": "", 
+            "enabled": true, 
+            "comment": "This will freeze the wire at a specific pose that you will want to make sure works for you character.", 
+            "attrs": {
+                "refresh_wire_list": {
+                    "type": "list", 
+                    "value": "[]"
+                }, 
+                "skip_wire_list": {
+                    "comment": "List of wires you don't want to freeze", 
+                    "type": "list", 
+                    "value": "[]"
+                }, 
+                "wire_list": {
+                    "type": "raw", 
+                    "value": "mc.ls(type='wire')"
+                }
+            }, 
+            "code": [
+                "mc.undoInfo(openChunk=1)", 
+                "try:", 
+                "    controls = rig_control.getControls()", 
+                "    if controls:", 
+                "        # Got to bind pose", 
+                "        rig_control.toPoseAttr(controls, 0)", 
+                "    if mc.objExists('jaw'):", 
+                "        mc.setAttr('jaw.rx', -15)", 
+                "        ", 
+                "    if mc.objExists('skin_psd'):", 
+                "        psd_value = mc.getAttr('skin_psd.envelope')", 
+                "        mc.setAttr('skin_psd.envelope', 0)", 
+                "    ", 
+                "    for deformer in ${wire_list}:", 
+                "        if deformer in ${skip_wire_list}:", 
+                "            continue", 
+                "        mc.setAttr(\"{}.freezeGeometry\".format(deformer), 0)", 
+                "        mc.setAttr(\"{}.freezeGeometry\".format(deformer), 1)", 
+                "        ", 
+                "    # Doing lips again after because freezing other wires after seems to ", 
+                "    refresh_wire_list = mc.ls(${refresh_wire_list})", 
+                "    for deformer in refresh_wire_list:", 
+                "        mc.setAttr(\"{}.freezeGeometry\".format(deformer), 0)", 
+                "        mc.refresh()", 
+                "        mc.setAttr(\"{}.freezeGeometry\".format(deformer), 1)", 
+                "    ", 
+                "    # set poseAttr for freezing when rig is loaded.", 
+                "    rig_control.setPoseAttr(controls, 9)", 
+                "    if controls:", 
+                "        # Got to bind pose", 
+                "        rig_control.toPoseAttr(controls, 0)", 
+                "        ", 
+                "    if mc.objExists('jaw'):", 
+                "        mc.setAttr('jaw.rx', 0)", 
+                "        ", 
+                "    if mc.objExists('skin_psd'):", 
+                "        mc.setAttr('skin_psd.envelope', psd_value)", 
+                "except:", 
+                "    traceback.print_exc()", 
+                "mc.undoInfo(closeChunk=1)", 
+                ""
+            ]
+        }, 
+        "/apply/sdk": {
+            "instance": "/load_sdk_data", 
+            "enabled": true, 
+            "attrs": {
+                "apply": {
+                    "type": "bool", 
+                    "value": "True"
+                }, 
+                "filepath": {
+                    "type": "raw", 
+                    "value": "${filelist::build/sdk.data}"
+                }, 
+                "nodes": {
+                    "type": "raw", 
+                    "value": "mc.ls(type=[\"animCurveUU\", \"animCurveUA\", \"animCurveUL\", \"animCurveUT\"])"
+                }
+            }
+        }, 
+        "/apply/sets": {
+            "instance": "/import_sets", 
+            "attrs": {
+                "filepath": {
+                    "type": "raw", 
+                    "value": "${filelist::build/rig_sets.data}"
+                }, 
+                "nodes": {
+                    "value": "data_object.getData().keys()"
+                }
+            }
+        }, 
+        "/center": {
+            "execute_in": "/prebuild", 
+            "enabled": true
+        }, 
+        "/delivery": {
+            "execute_in": "/apply", 
+            "child_order": [
+                "unique_deformers", 
+                "convert_to_skinclusters", 
+                "remove_nodes", 
+                "localize", 
+                "lock_nodes", 
+                "hide_history", 
+                "model_override", 
+                "delete_rig_sets"
+            ]
+        }, 
+        "/export_cluster": {
+            "attrs": {
+                "dir_path": {
+                    "type": "raw", 
+                    "value": "${path::build/cluster_wts}"
+                }, 
+                "exclude_node_list": {
+                    "value": "mc.ls([\"lip_*_?_?_*\", \"lip_corner_?_cluster\", \"lip_center_*_cluster\", \"lip*bindmesh*\"],type=\"cluster\")"
+                }
+            }
+        }, 
+        "/export_data": {
+            "child_order": [
+                "check_scene", 
+                "export_data"
+            ], 
+            "attrs": {
+                "data_dir": {
+                    "type": "raw", 
+                    "value": "${file::build}"
+                }
+            }
+        }, 
+        "/export_psd": {
+            "attrs": {
+                "dir_path": {
+                    "type": "raw", 
+                    "value": "${path::build/psd}"
+                }
+            }
+        }, 
+        "/export_skincluster": {
+            "attrs": {
+                "dir_path": {
+                    "type": "raw", 
+                    "value": "${path::build/skin_wts}"
+                }
+            }
+        }, 
+        "/export_wire": {
+            "attrs": {
+                "dir_path": {
+                    "type": "raw", 
+                    "value": "${path::build/wire_wts}"
+                }
+            }
+        }, 
+        "/init": {
+            "start_point": true, 
+            "child_order": [
+                "load_plugins", 
+                "new_scene"
+            ], 
+            "enabled": true
+        }, 
+        "/init/load_plugins": {
+            "instance": "", 
+            "enabled": true, 
+            "attrs": {
+                "plugin_list": {
+                    "type": "list", 
+                    "value": "[\"matrixNodes\", \"gameFbxExporter\", 'poseInterpolator']"
+                }
+            }, 
+            "code": [
+                "for plugin in ${plugin_list}:", 
+                "    mc.loadPlugin(plugin, qt=True)"
+            ]
+        }, 
+        "/init/new_scene": {
+            "instance": "", 
+            "enabled": true, 
+            "code": [
+                "mc.file(new=True, f=True)", 
+                "mc.setAttr('perspShape.focalLength', 55)"
+            ]
+        }, 
+        "/left": {
+            "execute_in": "/center", 
+            "enabled": true, 
+            "attrs": {
+                "SIDE": {
+                    "comment": "uppercare version of the side we're on.", 
+                    "type": "raw", 
+                    "value": "L"
+                }, 
+                "side": {
+                    "comment": "lowercase version of the side we're on.", 
+                    "type": "raw", 
+                    "value": "l"
+                }, 
+                "side_multiplier": {
+                    "comment": "This is used when inverting based on sides. i.e. (multplyiing rotations and scale of controls)", 
+                    "type": "int", 
+                    "value": "1"
+                }, 
+                "side_rotate_multiplier": {
+                    "type": "int", 
+                    "value": "0"
+                }
+            }, 
+            "code": [
+                ""
+            ]
+        }, 
+        "/load": {
+            "execute_in": "/init", 
+            "child_order": [
+                "model", 
+                "joints", 
+                "curves", 
+                "psd_deltas"
+            ], 
+            "enabled": true
+        }, 
+        "/load/curves": {
+            "instance": "", 
+            "child_order": [
+                "load_file", 
+                "load_positions"
+            ], 
+            "enabled": true
+        }, 
+        "/load/curves/load_file": {
+            "instance": "/load_maya_file", 
+            "enabled": true, 
+            "attrs": {
+                "filepath": {
+                    "type": "raw", 
+                    "value": "${file::build/curves.ma}"
+                }
+            }
+        }, 
+        "/load/curves/load_positions": {
+            "instance": "/load_curve_data", 
+            "enabled": true, 
+            "attrs": {
+                "filepath": {
+                    "type": "raw", 
+                    "value": "${filelist::build/curve_positions.data}"
+                }, 
+                "nodes": {
+                    "type": "raw", 
+                    "value": "mc.ls(\"*_curve\", type=\"transform\")"
+                }
+            }
+        }, 
+        "/load/joints": {
+            "instance": "", 
+            "child_order": [
+                "load_file", 
+                "load_positions", 
+                "mirror_labels", 
+                "hide_joints"
+            ], 
+            "enabled": true
+        }, 
+        "/load/joints/hide_joints": {
+            "enabled": true, 
+            "attrs": {
+                "joint_group_list": {
+                    "type": "list", 
+                    "value": "['bind']"
+                }
+            }, 
+            "code": [
+                "# if the joint group exists, hide it.", 
+                "for group in mc.ls(${joint_group_list}):", 
+                "    mc.setAttr('{}.v'.format(group), 0)"
+            ]
+        }, 
+        "/load/joints/load_file": {
+            "instance": "/load_maya_file", 
+            "child_order": [
+                "unhide_joint_orients"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "filepath": {
+                    "type": "raw", 
+                    "value": "${file::build/skeleton.ma}"
+                }
+            }
+        }, 
+        "/load/joints/load_file/unhide_joint_orients": {
+            "comment": "This node is going to unhide joint orients from the channel box.\n", 
+            "attrs": {
+                "joint_list": {
+                    "comment": "list of joints you want to unhide the joint orient for.", 
+                    "type": "raw", 
+                    "value": "mc.ls(type='joint')"
+                }
+            }, 
+            "code": [
+                "rig_attribute.unlockAndUnhide(${joint_list}, ['jox','joy', 'joz'])"
+            ]
+        }, 
+        "/load/joints/load_positions": {
+            "instance": "/load_joint_data", 
+            "enabled": true, 
+            "attrs": {
+                "filepath": {
+                    "type": "raw", 
+                    "value": "${filelist::build/joint_positions.data}"
+                }
+            }
+        }, 
+        "/load/joints/mirror_labels": {
+            "enabled": true, 
+            "code": [
+                "mc.undoInfo(openChunk=1)", 
+                "try:", 
+                "    nodes = mc.ls('*_bind', type='joint')", 
+                "    for n in nodes:", 
+                "        if rig_common.getSideToken(n) is 'l':", 
+                "            mc.setAttr(n+'.side', 1)", 
+                "            mc.setAttr(n+'.type', 18)", 
+                "            mc.setAttr(n+'.otherType', n.split('_')[0], type='string')", 
+                "        if rig_common.getSideToken(n) is 'r':", 
+                "            mc.setAttr(n+'.side', 2)", 
+                "            mc.setAttr(n+'.type', 18)", 
+                "            mc.setAttr(n+'.otherType', n.split('_')[0], type='string')", 
+                "               ", 
+                "except:", 
+                "    traceback.print_exc()", 
+                "mc.undoInfo(closeChunk=1)", 
+                ""
+            ]
+        }, 
+        "/load/model": {
+            "instance": "", 
+            "child_order": [
+                "load_file", 
+                "normal_per_vertex", 
+                "delete_geos", 
+                "hide_geos"
+            ], 
+            "enabled": true
+        }, 
+        "/load/model/delete_geos": {
+            "attrs": {
+                "geo_list": {
+                    "type": "raw", 
+                    "value": "mc.ls([])"
+                }
+            }, 
+            "code": [
+                "geo_list = ${geo_list}", 
+                "", 
+                "if geo_list:", 
+                "    mc.delete(geo_list)"
+            ]
+        }, 
+        "/load/model/hide_geos": {
+            "attrs": {
+                "geo_list": {
+                    "type": "list", 
+                    "value": "[]"
+                }
+            }, 
+            "code": [
+                "geo_list = ${geo_list}", 
+                "", 
+                "if geo_list:", 
+                "    mc.hide(geo_list)"
+            ]
+        }, 
+        "/load/model/load_file": {
+            "instance": "/load_maya_file", 
+            "enabled": true, 
+            "attrs": {
+                "filepath": {
+                    "type": "raw", 
+                    "value": "${file::../../../model/data/${variant}/${element}_${variant}_model.fbx}"
+                }
+            }
+        }, 
+        "/load/model/normal_per_vertex": {
+            "code": [
+                "if mc.objExists(${model_group}):", 
+                "    shapes = mc.listRelatives(${model_group}, ad=1, type='mesh', f=1)", 
+                "    for shape in shapes:", 
+                "        mc.polyNormalPerVertex(shape, ufn=True)"
+            ]
+        }, 
+        "/load/psd_deltas": {
+            "instance": "/import_psd", 
+            "enabled": true, 
+            "attrs": {
+                "directory_path": {
+                    "type": "raw", 
+                    "value": "${file::build/psd}"
+                }, 
+                "load_deltas": {
+                    "type": "bool", 
+                    "value": "True"
+                }, 
+                "psd_name_list": {
+                    "type": "list", 
+                    "value": "[]"
+                }
+            }
+        }, 
+        "/mirror_orients": {
+            "instance": "/mirror_transforms", 
+            "attrs": {
+                "node_list": {
+                    "comment": "Node list of orients", 
+                    "value": "mc.ls([\"*_l_ort\"]"
+                }
+            }
+        }, 
+        "/post_build": {
+            "execute_in": "/right", 
+            "child_order": [
+                "frame_camera", 
+                "tag_controllers", 
+                "pick_walking", 
+                "control_visibility", 
+                "lock_hidden_attrs"
+            ], 
+            "enabled": true
+        }, 
+        "/post_build/control_visibility": {
+            "enabled": true, 
+            "comment": "This node and it's children should be used to set up control visibility.", 
+            "attrs": {
+                "control_list": {
+                    "comment": "List of controls to be used when creating the visibility attributes", 
+                    "type": "raw", 
+                    "value": "rig_control.getControls()"
+                }, 
+                "node": {
+                    "comment": "Node where we will put the attributes for the visibility of the controls", 
+                    "type": "raw", 
+                    "value": "${/prebuild.trs_node_list}[1]"
+                }
+            }, 
+            "code": [
+                "# Control Visibility switches", 
+                "control_list = ${control_list}", 
+                "node = ${node}", 
+                "", 
+                "if mc.objExists(node):", 
+                "    # Divider attribute", 
+                "    if not mc.objExists('{}.CtrlVis'.format(node)):", 
+                "        mc.addAttr(node, ln=\"CtrlVis\", nn=\"Control Vis\", at=\"enum\", keyable=False, enumName=\"--------\")", 
+                "        mc.setAttr('{}.CtrlVis'.format(node), l=True, cb=True)", 
+                "", 
+                "    # All Controls", 
+                "    attr = 'All'", 
+                "    if not mc.objExists('{}.{}'.format(node,attr)):", 
+                "        mc.addAttr(node, ln=attr, at='bool', dv=True, k=False) ", 
+                "        mc.setAttr('{}.{}'.format(node,attr), cb=True) ", 
+                "    mc.connectAttr('{}.{}'.format(node,attr), '{}.v'.format(${rig_group}), f=True)", 
+                ""
+            ]
+        }, 
+        "/post_build/frame_camera": {
+            "instance": "", 
+            "enabled": true, 
+            "code": [
+                "mc.select(cl=1)", 
+                "mc.viewFit(\"persp\")"
+            ]
+        }, 
+        "/post_build/lock_hidden_attrs": {
+            "comment": "When anim controls are created the hidden attributes are not locked so they can be connected to later. Here we lock those attributes that are hidden.", 
+            "code": [
+                "control_list = rig_control.getControls()", 
+                "", 
+                "attr_list = ['v', 'tx', 'ty', 'tz', 'rx', 'ry', 'rz', 'sx', 'sy', 'sz']", 
+                "", 
+                "for control in control_list:", 
+                "    for attr in attr_list:", 
+                "        if not mc.objExists('{}.{}'.format(control, attr)):", 
+                "            continue", 
+                "        if not mc.getAttr('{}.{}'.format(control, attr), keyable=1):", 
+                "            if not mc.getAttr('{}.{}'.format(control, attr), lock=1):", 
+                "                mc.setAttr('{}.{}'.format(control, attr), lock=1)", 
+                "          ", 
+                "        ", 
+                ""
+            ]
+        }, 
+        "/post_build/pick_walking": {
+            "instance": "", 
+            "enabled": true, 
+            "comment": "This nodes hierarchy should be used to setup the pickwalking of the controls"
+        }, 
+        "/post_build/tag_controllers": {
+            "instance": "", 
+            "enabled": true, 
+            "comment": "This node and it's hierarchy is reserved for tagging of the controls.", 
+            "code": [
+                "controls = rig_control.getControls()", 
+                "", 
+                "mc.select(controls)", 
+                "mm.eval('TagAsController')"
+            ]
+        }, 
+        "/prebuild": {
+            "execute_in": "/load", 
+            "child_order": [
+                "top_nodes", 
+                "setup_model_override"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "geometry_group": {
+                    "type": "str", 
+                    "value": "'model'"
+                }, 
+                "skeleton_group": {
+                    "type": "str", 
+                    "value": "'bind'"
+                }, 
+                "trs_node_list": {
+                    "type": "list", 
+                    "value": "['trs_master', 'trs_shot', 'trs_aux']"
+                }
+            }
+        }, 
+        "/prebuild/setup_model_override": {
+            "instance": "", 
+            "enabled": true, 
+            "code": [
+                "# set the geometry group to have an override on the display", 
+                "if not mc.objExists(\"{}.overrideModel\".format(${geometry_group})):", 
+                "    mc.addAttr(${geometry_group}, ln=\"overrideModel\", at=\"bool\", keyable=True, dv=0)", 
+                "mc.setAttr(\"{}.overrideEnabled\".format(${geometry_group}), 1)", 
+                "model_override_choice = mc.createNode(\"choice\", n=\"model_override_choice\")", 
+                "mc.addAttr(model_override_choice, ln = \"on\", at=\"byte\",dv=2)", 
+                "mc.addAttr(model_override_choice, ln = \"off\", at=\"byte\",dv=0)", 
+                "mc.connectAttr(\"{}.on\".format(model_override_choice),\"{}.input[1]\".format(model_override_choice), f=True)", 
+                "mc.connectAttr(\"{}.off\".format(model_override_choice), \"{}.input[0]\".format(model_override_choice), f=True)", 
+                "mc.connectAttr(\"{}.overrideModel\".format(${geometry_group}), \"{}.selector\".format(model_override_choice), f=True)", 
+                "mc.connectAttr(\"{}.output\".format(model_override_choice),\"{}.overrideDisplayType\".format(${geometry_group}), f=True)"
+            ]
+        }, 
+        "/prebuild/top_nodes": {
+            "instance": "", 
+            "child_order": [
+                "tag_trs_nodes"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "parent": {
+                    "type": "str", 
+                    "value": "'${element}'"
+                }
+            }, 
+            "code": [
+                "# declare parent first and re-assign the variable as we go through", 
+                "# the loop.", 
+                "parent = ${parent}", 
+                "", 
+                "trs_child_group_list = [${rig_group}, ${geometry_group}]", 
+                "# create the trs node hierarchy if it doesn't exist.", 
+                "for node in ${trs_node_list} + trs_child_group_list:", 
+                "    # if the node doesn't exist, then we will create it and parent it.", 
+                "    if not mc.objExists(node):", 
+                "        mc.createNode('transform', name=node)", 
+                "    mc.setAttr('{}.rotateOrder'.format(node), 2)", 
+                "    # if the parent exist and the node isn't in the hierarchy, then we will parent it.", 
+                "    descendants = mc.listRelatives(parent, ad=True) or []", 
+                "    if mc.objExists(parent) and not node in descendants:", 
+                "        mc.parent(node, parent)", 
+                "    if node in trs_child_group_list:", 
+                "        continue", 
+                "    # change the parent to the current node.", 
+                "    parent = node", 
+                "", 
+                "# Create the skeleton group if it doesn't exist.", 
+                "if not mc.objExists(${skeleton_group}):", 
+                "    mc.createNode('transform', name=${skeleton_group})", 
+                "", 
+                "# check to make sure the skeleton group isn't a child of the rig group.", 
+                "descendants =  mc.listRelatives(${rig_group}, ad=True) or []", 
+                "if not ${skeleton_group} in descendants:", 
+                "    mc.parent(${skeleton_group}, ${rig_group})"
+            ]
+        }, 
+        "/prebuild/top_nodes/tag_trs_nodes": {
+            "enabled": true, 
+            "attrs": {
+                "curve_node": {
+                    "type": "str", 
+                    "value": "'trs_shot'"
+                }
+            }, 
+            "code": [
+                "# we're going to tag the top trs nodes as controls.", 
+                "rig_control.tagAsControl(${trs_node_list})"
+            ]
+        }, 
+        "/rig_workflow": {
+            "child_order": [
+                "file_io", 
+                "workflow"
+            ]
+        }, 
+        "/rig_workflow/file_io": {
+            "child_order": [
+                "importers", 
+                "exporters"
+            ]
+        }, 
+        "/rig_workflow/file_io/importers": {
+            "child_order": [
+                "model", 
+                "skeleton", 
+                "skincluster", 
+                "curve_file"
+            ]
+        }, 
+        "/rig_workflow/file_io/importers/curve_file": {
+            "child_order": [
+                "import", 
+                "load_curve_positions"
+            ], 
+            "attrs": {
+                "button_color": {
+                    "value": "rgba(0, 116, 178, 1)"
+                }
+            }
+        }, 
+        "/rig_workflow/file_io/importers/curve_file/import": {
+            "instance": "/load/curves/load_file"
+        }, 
+        "/rig_workflow/file_io/importers/curve_file/load_curve_positions": {
+            "instance": "/menuItem", 
+            "child_order": [
+                "import"
+            ], 
+            "attrs": {
+                "text": {
+                    "value": "load curve positions"
+                }
+            }
+        }, 
+        "/rig_workflow/file_io/importers/curve_file/load_curve_positions/import": {
+            "instance": "/load/curves/load_positions"
+        }, 
+        "/rig_workflow/file_io/importers/model": {
+            "child_order": [
+                "import"
+            ]
+        }, 
+        "/rig_workflow/file_io/importers/model/import": {
+            "instance": "/load/model/load_file"
+        }, 
+        "/rig_workflow/file_io/importers/rig_sets/import": {
+            "instance": "/apply/sets"
+        }, 
+        "/rig_workflow/file_io/importers/skeleton": {
+            "child_order": [
+                "import", 
+                "import_clean", 
+                "load_skeleton_file"
+            ]
+        }, 
+        "/rig_workflow/file_io/importers/skeleton/import": {
+            "instance": "/load/joints", 
+            "child_order": [
+                "hide_joints"
+            ]
+        }, 
+        "/rig_workflow/file_io/importers/skeleton/import/hide_joints": {
+            "enabled": false
+        }, 
+        "/rig_workflow/file_io/importers/skeleton/joint_positions/import": {
+            "instance": "/load/joints/load_positions"
+        }, 
+        "/rig_workflow/file_io/importers/skeleton/load_skeleton_file": {
+            "instance": "/menuItem", 
+            "child_order": [
+                "import", 
+                "load_joint_positions"
+            ], 
+            "enabled": true, 
+            "attrs": {
+                "text": {
+                    "value": "only skeleton file"
+                }
+            }
+        }, 
+        "/rig_workflow/file_io/importers/skeleton/load_skeleton_file/import": {
+            "instance": "../../import/load_file", 
+            "child_order": [
+                "unhide_joint_orients"
+            ], 
+            "enabled": true, 
+            "code": [
+                "mc.undoInfo(openChunk=1) ", 
+                "filepath = r\"${filepath}\"", 
+                "try: ", 
+                "    if os.path.isfile(filepath):", 
+                "        mc.file(filepath, i=True, force=True)", 
+                "except:", 
+                "    traceback.print_exc()", 
+                "mc.undoInfo(closeChunk=1) ", 
+                ""
+            ]
+        }, 
+        "/rig_workflow/file_io/importers/skeleton/load_skeleton_file/load_joint_positions": {
+            "instance": "../../import/load_positions", 
+            "enabled": true
+        }, 
+        "/rig_workflow/file_io/importers/skincluster/import": {
+            "instance": "/apply/deformers/skincluster"
+        }, 
+        "/rig_workflow/workflow": {
+            "child_order": [
+                "bind_pose"
+            ]
+        }, 
+        "/rig_workflow/workflow/bind_pose": {
+            "instance": "/button", 
+            "child_order": [
+                "bind_pose_selected"
+            ], 
+            "attrs": {
+                "button_color": {
+                    "value": "rgba(0, 116, 178, 1)"
+                }
+            }, 
+            "code": [
+                "rig_control.toPoseAttr(rig_control.getControls(''), 0)"
+            ]
+        }, 
+        "/rig_workflow/workflow/bind_pose/bind_pose_selected": {
+            "instance": "/menuItem", 
+            "code": [
+                "rig_control.toPoseAttr(mc.ls(sl=True), 0)"
+            ]
+        }, 
+        "/rig_workflow/workflow/controls/orients/load_positions/load": {
+            "attrs": {
+                "filepath": {
+                    "value": "${filelist::${variant}/control_orients.data}"
+                }
+            }
+        }, 
+        "/rig_workflow/workflow/freeze_wires/freeze": {
+            "instance": "/apply/freeze_wire"
+        }, 
+        "/right": {
+            "instance": "/left", 
+            "execute_in": "/left", 
+            "enabled": true, 
+            "attrs": {
+                "SIDE": {
+                    "comment": "uppercare version of the side we're on.", 
+                    "type": "raw", 
+                    "value": "R"
+                }, 
+                "side": {
+                    "comment": "lowercase version of the side we're on.", 
+                    "type": "raw", 
+                    "value": "r"
+                }, 
+                "side_multiplier": {
+                    "type": "int", 
+                    "value": "-1"
+                }, 
+                "side_rotate_multiplier": {
+                    "type": "int", 
+                    "value": "-180"
+                }
+            }
+        }
+    }
+}

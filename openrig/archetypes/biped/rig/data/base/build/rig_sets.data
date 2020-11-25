@@ -1,0 +1,1094 @@
+{
+    "type": "SetsData", 
+    "user": "walte", 
+    "time": "2020-10-08 18:44:40", 
+    "data": {
+        "RigSets": {
+            "dagPath": "RigSets", 
+            "type": "objectSet", 
+            "parent": "", 
+            "members": [
+                "bindmesh", 
+                "curves", 
+                "controls", 
+                "Mouth", 
+                "MouthDist", 
+                "sdk", 
+                "orients", 
+                "drivers"
+            ]
+        }, 
+        "orients": {
+            "dagPath": "orients", 
+            "type": "objectSet", 
+            "parent": "RigSets", 
+            "members": [
+                "orients_ear", 
+                "orients_lids", 
+                "orients_mouth", 
+                "orients_socket", 
+                "orients_leg", 
+                "orients_arm", 
+                "orients_cheek"
+            ]
+        }, 
+        "orients_ear": {
+            "dagPath": "orients_ear", 
+            "type": "objectSet", 
+            "parent": "orients", 
+            "members": [
+                "ear_l_ort", 
+                "ear_r_ort"
+            ]
+        }, 
+        "orients_mouth": {
+            "dagPath": "orients_mouth", 
+            "type": "objectSet", 
+            "parent": "orients", 
+            "members": [
+                "mouthMain_ort", 
+                "orients_lipMain", 
+                "orients_mouthCorner", 
+                "orients_lip_lower", 
+                "orients_lip_upper", 
+                "orients_lip"
+            ]
+        }, 
+        "orients_lip_lower": {
+            "dagPath": "orients_lip_lower", 
+            "type": "objectSet", 
+            "parent": "orients_mouth", 
+            "members": [
+                "lip_lower_r_ort", 
+                "lip_lower_translate_ort", 
+                "lip_lower_ort", 
+                "lip_lower_l_ort"
+            ]
+        }, 
+        "orients_lip_upper": {
+            "dagPath": "orients_lip_upper", 
+            "type": "objectSet", 
+            "parent": "orients_mouth", 
+            "members": [
+                "lip_upper_r_ort", 
+                "lip_upper_ort", 
+                "lip_upper_translate_ort", 
+                "lip_upper_l_ort"
+            ]
+        }, 
+        "orients_mouthCorner": {
+            "dagPath": "orients_mouthCorner", 
+            "type": "objectSet", 
+            "parent": "orients_mouth", 
+            "members": [
+                "mouth_corner_l_ort", 
+                "mouth_corner_r_ort"
+            ]
+        }, 
+        "orients_lip": {
+            "dagPath": "orients_lip", 
+            "type": "objectSet", 
+            "parent": "orients_mouth", 
+            "members": [
+                "lip_low_1_r_ort", 
+                "lip_low_2_r_ort", 
+                "lip_center_low_ort", 
+                "lip_low_2_l_ort", 
+                "lip_low_1_l_ort", 
+                "lip_low_0_l_ort", 
+                "lip_corner_l_ort", 
+                "lip_up_0_l_ort", 
+                "lip_up_1_l_ort", 
+                "lip_up_2_l_ort", 
+                "lip_center_up_ort", 
+                "lip_up_2_r_ort", 
+                "lip_up_1_r_ort", 
+                "lip_up_0_r_ort", 
+                "lip_low_0_r_ort", 
+                "lip_corner_r_ort"
+            ]
+        }, 
+        "orients_lipMain": {
+            "dagPath": "orients_lipMain", 
+            "type": "objectSet", 
+            "parent": "orients_mouth", 
+            "members": [
+                "lipMain_up_1_l_ort", 
+                "lipMain_low_2_r_ort", 
+                "lipMain_center_low_ort", 
+                "lipMain_low_2_l_ort", 
+                "lipMain_low_1_l_ort", 
+                "lipMain_low_0_l_ort", 
+                "lipMain_corner_l_ort", 
+                "lipMain_up_0_l_ort", 
+                "lipMain_up_2_l_ort", 
+                "lipMain_center_up_ort", 
+                "lipMain_up_2_r_ort", 
+                "lipMain_up_1_r_ort", 
+                "lipMain_up_0_r_ort", 
+                "lipMain_corner_r_ort", 
+                "lipMain_low_1_r_ort", 
+                "lipMain_low_0_r_ort"
+            ]
+        }, 
+        "orients_lids": {
+            "dagPath": "orients_lids", 
+            "type": "objectSet", 
+            "parent": "orients", 
+            "members": [
+                "orients_lids_L", 
+                "orients_lids_R"
+            ]
+        }, 
+        "orients_lids_R": {
+            "dagPath": "orients_lids_R", 
+            "type": "objectSet", 
+            "parent": "orients_lids", 
+            "members": [
+                "lid_low_4_r_ort", 
+                "lid_up_4_r_ort", 
+                "lid_corner_outer_r_ort", 
+                "lid_up_3_r_ort", 
+                "lid_up_2_r_ort", 
+                "lid_up_1_r_ort", 
+                "lid_corner_inner_r_ort", 
+                "lid_up_0_r_ort", 
+                "lid_low_1_r_ort", 
+                "lid_low_0_r_ort", 
+                "lid_low_2_r_ort", 
+                "lid_low_3_r_ort"
+            ]
+        }, 
+        "orients_lids_L": {
+            "dagPath": "orients_lids_L", 
+            "type": "objectSet", 
+            "parent": "orients_lids", 
+            "members": [
+                "lid_low_4_l_ort", 
+                "lid_corner_outer_l_ort", 
+                "lid_up_4_l_ort", 
+                "lid_up_3_l_ort", 
+                "lid_up_2_l_ort", 
+                "lid_up_1_l_ort", 
+                "lid_up_0_l_ort", 
+                "lid_corner_inner_l_ort", 
+                "lid_low_1_l_ort", 
+                "lid_low_0_l_ort", 
+                "lid_low_3_l_ort", 
+                "lid_low_2_l_ort"
+            ]
+        }, 
+        "orients_socket": {
+            "dagPath": "orients_socket", 
+            "type": "objectSet", 
+            "parent": "orients", 
+            "members": [
+                "socketLift_r_cluster_ort", 
+                "socketStretch_r_cluster_ort", 
+                "socketLift_l_cluster_ort", 
+                "socketStretch_l_cluster_ort"
+            ]
+        }, 
+        "orients_leg": {
+            "dagPath": "orients_leg", 
+            "type": "objectSet", 
+            "parent": "orients", 
+            "members": [
+                "orients_leg_R", 
+                "orients_leg_L"
+            ]
+        }, 
+        "orients_leg_R": {
+            "dagPath": "orients_leg_R", 
+            "type": "objectSet", 
+            "parent": "orients_leg", 
+            "members": [
+                "leg_bend_1_r_ort", 
+                "leg_bend_2_r_ort", 
+                "leg_bend_0_r_ort", 
+                "leg_bend_3_r_ort", 
+                "leg_bend_4_r_ort", 
+                "leg_pv_r_ort", 
+                "leg_ik_r_ort"
+            ]
+        }, 
+        "orients_leg_L": {
+            "dagPath": "orients_leg_L", 
+            "type": "objectSet", 
+            "parent": "orients_leg", 
+            "members": [
+                "leg_bend_1_l_ort", 
+                "leg_bend_2_l_ort", 
+                "leg_bend_4_l_ort", 
+                "leg_bend_0_l_ort", 
+                "leg_bend_3_l_ort", 
+                "leg_pv_l_ort", 
+                "leg_ik_l_ort"
+            ]
+        }, 
+        "orients_arm": {
+            "dagPath": "orients_arm", 
+            "type": "objectSet", 
+            "parent": "orients", 
+            "members": [
+                "orients_arm_R", 
+                "orients_arm_L"
+            ]
+        }, 
+        "orients_arm_R": {
+            "dagPath": "orients_arm_R", 
+            "type": "objectSet", 
+            "parent": "orients_arm", 
+            "members": [
+                "arm_bend_1_r_ort", 
+                "arm_bend_2_r_ort", 
+                "arm_bend_3_r_ort", 
+                "arm_bend_4_r_ort", 
+                "arm_bend_0_r_ort", 
+                "arm_pv_r_ort", 
+                "arm_ik_r_ort"
+            ]
+        }, 
+        "orients_arm_L": {
+            "dagPath": "orients_arm_L", 
+            "type": "objectSet", 
+            "parent": "orients_arm", 
+            "members": [
+                "arm_pv_l_ort", 
+                "arm_ik_l_ort", 
+                "arm_bend_1_l_ort", 
+                "arm_bend_0_l_ort", 
+                "arm_bend_4_l_ort", 
+                "arm_bend_2_l_ort", 
+                "arm_bend_3_l_ort"
+            ]
+        }, 
+        "orients_cheek": {
+            "dagPath": "orients_cheek", 
+            "type": "objectSet", 
+            "parent": "orients", 
+            "members": [
+                "cheek_l_ort", 
+                "cheekPuff_l_ort", 
+                "cheek_r_ort", 
+                "cheekPuff_r_ort", 
+                "cheekLift_r_ort", 
+                "cheekLift_l_ort"
+            ]
+        }, 
+        "sdk": {
+            "dagPath": "sdk", 
+            "type": "objectSet", 
+            "parent": "RigSets", 
+            "members": [
+                "sdk_sneer", 
+                "sdk_jaw", 
+                "sdk_brow", 
+                "sdk_eye", 
+                "sdk_nose_bridge", 
+                "sdk_mouth", 
+                "sdk_cheek", 
+                "sdk_nose", 
+                "sdk_head_wire"
+            ]
+        }, 
+        "sdk_mouth": {
+            "dagPath": "sdk_mouth", 
+            "type": "objectSet", 
+            "parent": "sdk", 
+            "members": [
+                "mouth_corner_l_auto_parentConstraint1_mouth_corner_l_neutralW0", 
+                "mouth_corner_l_auto_parentConstraint1_mouth_corner_l_headPinW1", 
+                "mouth_corner_r_auto_parentConstraint1_mouth_corner_r_headPinW1", 
+                "mouth_corner_r_auto_parentConstraint1_mouth_corner_r_neutralW0", 
+                "sdk_mouth_TY_TZ", 
+                "sdk_mouth_TX_TX", 
+                "sdk_mouth_TZ_TZ", 
+                "sdk_mouth_TY_TY", 
+                "sdk_mouth_RY"
+            ]
+        }, 
+        "sdk_mouth_TZ_TZ": {
+            "dagPath": "sdk_mouth_TZ_TZ", 
+            "type": "objectSet", 
+            "parent": "sdk_mouth", 
+            "members": [
+                "lipMain_up_1_r_def_auto_translateZ", 
+                "lipMain_up_2_l_def_auto_translateZ", 
+                "lipMain_up_2_r_def_auto_translateZ", 
+                "lipMain_up_0_r_def_auto_translateZ", 
+                "lipMain_corner_r_def_auto_translateZ", 
+                "lipMain_low_1_r_def_auto_translateZ", 
+                "lipMain_low_2_r_def_auto_translateZ", 
+                "lipMain_low_1_l_def_auto_translateZ", 
+                "lipMain_low_0_r_def_auto_translateZ", 
+                "lipMain_low_2_l_def_auto_translateZ", 
+                "lipMain_low_0_l_def_auto_translateZ", 
+                "lipMain_up_1_l_def_auto_translateZ", 
+                "lipMain_up_0_l_def_auto_translateZ", 
+                "lipMain_corner_l_def_auto_translateZ"
+            ]
+        }, 
+        "sdk_mouth_RY": {
+            "dagPath": "sdk_mouth_RY", 
+            "type": "objectSet", 
+            "parent": "sdk_mouth", 
+            "members": [
+                "lipMain_up_2_l_rot_def_auto_rotateY", 
+                "lipMain_up_2_r_rot_def_auto_rotateY", 
+                "lipMain_up_1_r_rot_def_auto_rotateY", 
+                "lipMain_up_0_r_rot_def_auto_rotateY", 
+                "lipMain_low_1_r_rot_def_auto_rotateY", 
+                "lipMain_low_2_r_rot_def_auto_rotateY", 
+                "lipMain_low_0_r_rot_def_auto_rotateY", 
+                "lipMain_up_0_l_rot_def_auto_rotateY", 
+                "lipMain_low_1_l_rot_def_auto_rotateY", 
+                "lipMain_low_0_l_rot_def_auto_rotateY", 
+                "lipMain_low_2_l_rot_def_auto_rotateY", 
+                "lipMain_corner_r_rot_def_auto_rotateY", 
+                "lipMain_up_1_l_rot_def_auto_rotateY", 
+                "lipMain_corner_l_rot_def_auto_rotateY"
+            ]
+        }, 
+        "sdk_mouth_TY_TY": {
+            "dagPath": "sdk_mouth_TY_TY", 
+            "type": "objectSet", 
+            "parent": "sdk_mouth", 
+            "members": [
+                "lipMain_low_1_r_def_auto_translateY", 
+                "lipMain_up_2_l_def_auto_translateY", 
+                "lipMain_corner_r_def_auto_translateY", 
+                "lipMain_up_1_r_def_auto_translateY", 
+                "lipMain_up_2_r_def_auto_translateY", 
+                "lipMain_up_0_r_def_auto_translateY", 
+                "lipMain_low_0_r_def_auto_translateY", 
+                "lipMain_low_0_l_def_auto_translateY", 
+                "lipMain_corner_l_def_auto_translateY", 
+                "lipMain_low_2_r_def_auto_translateY", 
+                "lipMain_up_1_l_def_auto_translateY", 
+                "lipMain_up_0_l_def_auto_translateY", 
+                "lipMain_low_1_l_def_auto_translateY", 
+                "lipMain_low_2_l_def_auto_translateY"
+            ]
+        }, 
+        "sdk_mouth_TY_TZ": {
+            "dagPath": "sdk_mouth_TY_TZ", 
+            "type": "objectSet", 
+            "parent": "sdk_mouth", 
+            "members": [
+                "mouth_corner_r_driver_TY__lipMain_corner_r_def_auto_TZ", 
+                "mouth_corner_r_driver_TY__lipMain_up_0_r_def_auto_TZ", 
+                "mouth_corner_l_driver_TY__lipMain_up_2_l_def_auto_TZ", 
+                "mouth_corner_r_driver_TY__lipMain_up_1_r_def_auto_TZ", 
+                "mouth_corner_r_driver_TY__lipMain_up_2_r_def_auto_TZ", 
+                "mouth_corner_r_driver_TY__lipMain_low_0_r_def_auto_TZ", 
+                "mouth_corner_l_driver_TY__lipMain_low_1_l_def_auto_TZ", 
+                "mouth_corner_l_driver_TY__lipMain_low_0_l_def_auto_TZ", 
+                "mouth_corner_l_driver_TY__lipMain_low_2_l_def_auto_TZ", 
+                "mouth_corner_l_driver_TY__lipMain_up_0_l_def_auto_TZ", 
+                "mouth_corner_l_driver_TY__lipMain_up_1_l_def_auto_TZ", 
+                "mouth_corner_l_driver_TY__lipMain_corner_l_def_auto_TZ", 
+                "mouth_corner_r_driver_TY__lipMain_low_1_r_def_auto_TZ", 
+                "mouth_corner_r_driver_TY__lipMain_low_2_r_def_auto_TZ"
+            ]
+        }, 
+        "sdk_mouth_TX_TX": {
+            "dagPath": "sdk_mouth_TX_TX", 
+            "type": "objectSet", 
+            "parent": "sdk_mouth", 
+            "members": [
+                "lipMain_up_2_l_def_auto_translateX", 
+                "lipMain_up_2_r_def_auto_translateX", 
+                "lipMain_up_1_r_def_auto_translateX", 
+                "lipMain_low_0_l_def_auto_translateX", 
+                "lipMain_low_2_r_def_auto_translateX", 
+                "lipMain_up_0_l_def_auto_translateX", 
+                "lipMain_up_1_l_def_auto_translateX", 
+                "lipMain_corner_r_def_auto_translateX", 
+                "lipMain_low_2_l_def_auto_translateX", 
+                "lipMain_low_1_l_def_auto_translateX", 
+                "lipMain_up_0_r_def_auto_translateX", 
+                "lipMain_low_0_r_def_auto_translateX", 
+                "lipMain_low_1_r_def_auto_translateX", 
+                "lipMain_corner_l_def_auto_translateX"
+            ]
+        }, 
+        "sdk_eye": {
+            "dagPath": "sdk_eye", 
+            "type": "objectSet", 
+            "parent": "sdk", 
+            "members": [
+                "sdk_blink_R", 
+                "sdk_blink_L", 
+                "sdk_socket_R", 
+                "sdk_socket_L"
+            ]
+        }, 
+        "sdk_blink_L": {
+            "dagPath": "sdk_blink_L", 
+            "type": "objectSet", 
+            "parent": "sdk_eye", 
+            "members": [
+                "blinkLower_l_cluster_def_auto_rotateX", 
+                "blinkUpper_l_cluster_def_auto_rotateX"
+            ]
+        }, 
+        "sdk_blink_R": {
+            "dagPath": "sdk_blink_R", 
+            "type": "objectSet", 
+            "parent": "sdk_eye", 
+            "members": [
+                "blinkUpper_r_cluster_def_auto_rotateX", 
+                "blinkLower_r_cluster_def_auto_rotateX"
+            ]
+        }, 
+        "sdk_socket_R": {
+            "dagPath": "sdk_socket_R", 
+            "type": "objectSet", 
+            "parent": "sdk_eye", 
+            "members": [
+                "socketLift_r_cluster_def_auto_scaleY", 
+                "socketStretch_r_cluster_def_auto_scaleY"
+            ]
+        }, 
+        "sdk_socket_L": {
+            "dagPath": "sdk_socket_L", 
+            "type": "objectSet", 
+            "parent": "sdk_eye", 
+            "members": [
+                "socketLift_l_cluster_def_auto_scaleY", 
+                "socketStretch_l_cluster_def_auto_scaleY"
+            ]
+        }, 
+        "sdk_cheek": {
+            "dagPath": "sdk_cheek", 
+            "type": "objectSet", 
+            "parent": "sdk", 
+            "members": [
+                "sdk_cheek_R", 
+                "sdk_cheek_L"
+            ]
+        }, 
+        "sdk_cheek_R": {
+            "dagPath": "sdk_cheek_R", 
+            "type": "objectSet", 
+            "parent": "sdk_cheek", 
+            "members": [
+                "cheek_r_def_auto_translateY", 
+                "cheekLift_r_def_auto_rotateX", 
+                "cheekLift_r_rotateX"
+            ]
+        }, 
+        "sdk_cheek_L": {
+            "dagPath": "sdk_cheek_L", 
+            "type": "objectSet", 
+            "parent": "sdk_cheek", 
+            "members": [
+                "cheekLift_l_rotateX", 
+                "cheekLift_l_def_auto_rotateX", 
+                "cheek_l_def_auto_translateY"
+            ]
+        }, 
+        "sdk_nose": {
+            "dagPath": "sdk_nose", 
+            "type": "objectSet", 
+            "parent": "sdk", 
+            "members": [
+                "nose_def_auto_translateX", 
+                "nose_def_auto_translateY", 
+                "nose_def_auto_rotateX", 
+                "nose_def_auto_translateZ", 
+                "nose_def_auto_rotateZ"
+            ]
+        }, 
+        "sdk_nose_bridge": {
+            "dagPath": "sdk_nose_bridge", 
+            "type": "objectSet", 
+            "parent": "sdk", 
+            "members": [
+                "nose_bridge_rot_def_auto_scaleY", 
+                "nose_bridge_rot_def_auto_rotateX", 
+                "nose_bridge_rot_def_auto_translateZ", 
+                "nose_bridge_rot_def_auto_translateY", 
+                "nose_bridge_def_auto_rotateX", 
+                "nose_bridge_def_auto_rotateZ"
+            ]
+        }, 
+        "sdk_sneer": {
+            "dagPath": "sdk_sneer", 
+            "type": "objectSet", 
+            "parent": "sdk", 
+            "members": []
+        }, 
+        "sdk_brow": {
+            "dagPath": "sdk_brow", 
+            "type": "objectSet", 
+            "parent": "sdk", 
+            "members": [
+                "sdk_brow_R", 
+                "sdk_brow_L"
+            ]
+        }, 
+        "sdk_brow_R": {
+            "dagPath": "sdk_brow_R", 
+            "type": "objectSet", 
+            "parent": "sdk_brow", 
+            "members": [
+                "brow_inner_r_sdk_rot_def_auto_rotateX", 
+                "brow_main_r_sdk_rot_def_auto_rotateZ", 
+                "brow_main_r_sdk_rot_def_auto_rotateY", 
+                "brow_peak_r_sdk_def_auto_translateX", 
+                "brow_peak_r_sdk_rot_def_auto_rotateX", 
+                "brow_main_r_sdk_def_auto_translateZ", 
+                "brow_peak_r_sdk_rot_def_auto_rotateY", 
+                "brow_peak_r_sdk_def_auto_translateZ", 
+                "brow_inner_r_sdk_rot_def_auto_rotateZ", 
+                "brow_peak_r_sdk_def_auto_translateY", 
+                "brow_inner_r_sdk_def_auto_translateZ", 
+                "brow_inner_r_sdk_rot_def_auto_rotateY", 
+                "brow_inner_r_sdk_def_auto_translateX", 
+                "brow_peak_r_sdk_rot_def_auto_rotateZ", 
+                "brow_inner_r_sdk_def_auto_translateY", 
+                "brow_main_r_sdk_rot_def_auto_rotateX", 
+                "brow_main_r_sdk_def_auto_translateY", 
+                "brow_main_r_sdk_def_auto_translateX"
+            ]
+        }, 
+        "sdk_brow_L": {
+            "dagPath": "sdk_brow_L", 
+            "type": "objectSet", 
+            "parent": "sdk_brow", 
+            "members": [
+                "brow_main_l_sdk_rot_def_auto_rotateY", 
+                "brow_inner_l_sdk_def_auto_translateZ", 
+                "brow_peak_l_sdk_def_auto_translateX", 
+                "brow_inner_l_sdk_def_auto_translateX", 
+                "brow_main_l_sdk_rot_def_auto_rotateZ", 
+                "brow_peak_l_sdk_def_auto_translateZ", 
+                "brow_inner_l_sdk_rot_def_auto_rotateZ", 
+                "brow_peak_l_sdk_def_auto_translateY", 
+                "brow_inner_l_sdk_rot_def_auto_rotateX", 
+                "brow_main_l_sdk_def_auto_translateY", 
+                "brow_main_l_sdk_def_auto_translateX", 
+                "brow_main_l_sdk_rot_def_auto_rotateX", 
+                "brow_inner_l_sdk_def_auto_translateY", 
+                "brow_inner_l_sdk_rot_def_auto_rotateY", 
+                "brow_main_l_sdk_def_auto_translateZ", 
+                "brow_peak_l_sdk_rot_def_auto_rotateX", 
+                "brow_peak_l_sdk_rot_def_auto_rotateY", 
+                "brow_peak_l_sdk_rot_def_auto_rotateZ"
+            ]
+        }, 
+        "sdk_jaw": {
+            "dagPath": "sdk_jaw", 
+            "type": "objectSet", 
+            "parent": "sdk", 
+            "members": [
+                "jaw_def_auto_translateZ"
+            ]
+        }, 
+        "bindmesh": {
+            "dagPath": "bindmesh", 
+            "type": "objectSet", 
+            "parent": "RigSets", 
+            "members": [
+                "bindmesh_eye", 
+                "spine_bindmesh", 
+                "bindmesh_head", 
+                "bindmesh_arm", 
+                "bindmesh_mouth", 
+                "bindmesh_leg"
+            ]
+        }, 
+        "bindmesh_eye": {
+            "dagPath": "bindmesh_eye", 
+            "type": "objectSet", 
+            "parent": "bindmesh", 
+            "members": [
+                "lid_l_bindmesh", 
+                "blinkUpper_l_bindmesh", 
+                "blinkLower_r_bindmesh", 
+                "lid_r_bindmesh", 
+                "blinkUpper_r_bindmesh", 
+                "blinkLower_l_bindmesh"
+            ]
+        }, 
+        "bindmesh_arm": {
+            "dagPath": "bindmesh_arm", 
+            "type": "objectSet", 
+            "parent": "bindmesh", 
+            "members": [
+                "arm_r_bend_bindmesh", 
+                "arm_l_bend_bindmesh"
+            ]
+        }, 
+        "bindmesh_mouth": {
+            "dagPath": "bindmesh_mouth", 
+            "type": "objectSet", 
+            "parent": "bindmesh", 
+            "members": [
+                "lip_bindmesh", 
+                "lip_main_bindmesh"
+            ]
+        }, 
+        "bindmesh_leg": {
+            "dagPath": "bindmesh_leg", 
+            "type": "objectSet", 
+            "parent": "bindmesh", 
+            "members": [
+                "leg_r_bend_bindmesh", 
+                "leg_l_bend_bindmesh"
+            ]
+        }, 
+        "spine_bindmesh": {
+            "dagPath": "spine_bindmesh", 
+            "type": "objectSet", 
+            "parent": "bindmesh", 
+            "members": [
+                "spine_bend_bindmesh"
+            ]
+        }, 
+        "bindmesh_head": {
+            "dagPath": "bindmesh_head", 
+            "type": "objectSet", 
+            "parent": "bindmesh", 
+            "members": [
+                "head_wire_bindmesh"
+            ]
+        }, 
+        "curves": {
+            "dagPath": "curves", 
+            "type": "objectSet", 
+            "parent": "RigSets", 
+            "members": [
+                "curves_mouth", 
+                "curves_eye", 
+                "curves_spine"
+            ]
+        }, 
+        "curves_eye": {
+            "dagPath": "curves_eye", 
+            "type": "objectSet", 
+            "parent": "curves", 
+            "members": [
+                "blinkLower_l_curve", 
+                "blinkLower_r_curve", 
+                "lid_l_curve", 
+                "blinkUpper_l_curve", 
+                "blinkUpper_r_curve", 
+                "lid_r_curve"
+            ]
+        }, 
+        "curves_spine": {
+            "dagPath": "curves_spine", 
+            "type": "objectSet", 
+            "parent": "curves", 
+            "members": [
+                "spine_curve"
+            ]
+        }, 
+        "curves_mouth": {
+            "dagPath": "curves_mouth", 
+            "type": "objectSet", 
+            "parent": "curves", 
+            "members": [
+                "lip_main_curve", 
+                "lip_curve"
+            ]
+        }, 
+        "controls": {
+            "dagPath": "controls", 
+            "type": "objectSet", 
+            "parent": "RigSets", 
+            "members": [
+                "controls_eye", 
+                "controls_mouth"
+            ]
+        }, 
+        "controls_mouth": {
+            "dagPath": "controls_mouth", 
+            "type": "objectSet", 
+            "parent": "controls", 
+            "members": [
+                "mouth_corner_l", 
+                "mouth_corner_r", 
+                "lip_low_1_r", 
+                "lip_low_2_r", 
+                "lip_center_low", 
+                "lip_low_2_l", 
+                "lip_low_1_l", 
+                "lip_low_0_l", 
+                "lip_corner_l", 
+                "lip_up_0_l", 
+                "lip_up_1_l", 
+                "lip_up_2_l", 
+                "lip_up_2_r", 
+                "lip_center_up", 
+                "lip_up_1_r", 
+                "lip_up_0_r", 
+                "lip_low_0_r", 
+                "lip_corner_r"
+            ]
+        }, 
+        "controls_eye": {
+            "dagPath": "controls_eye", 
+            "type": "objectSet", 
+            "parent": "controls", 
+            "members": [
+                "lookAt_trs", 
+                "lookAt_rot", 
+                "eye_l", 
+                "eye_r", 
+                "controls_eye_L", 
+                "controls_eye_R"
+            ]
+        }, 
+        "controls_eye_L": {
+            "dagPath": "controls_eye_L", 
+            "type": "objectSet", 
+            "parent": "controls_eye", 
+            "members": [
+                "eyeSocket_l", 
+                "lidLower_l", 
+                "lidUpper_l", 
+                "eye_l", 
+                "controls_lids_L"
+            ]
+        }, 
+        "controls_lids_L": {
+            "dagPath": "controls_lids_L", 
+            "type": "objectSet", 
+            "parent": "controls_eye_L", 
+            "members": [
+                "lid_low_4_l", 
+                "lid_up_4_l", 
+                "lid_corner_outer_l", 
+                "lid_up_2_l", 
+                "lid_up_3_l", 
+                "lid_up_0_l", 
+                "lid_up_1_l", 
+                "lid_corner_inner_l", 
+                "lid_low_1_l", 
+                "lid_low_0_l", 
+                "lid_low_2_l", 
+                "lid_low_3_l"
+            ]
+        }, 
+        "controls_eye_R": {
+            "dagPath": "controls_eye_R", 
+            "type": "objectSet", 
+            "parent": "controls_eye", 
+            "members": [
+                "lidLower_r", 
+                "lidUpper_r", 
+                "eyeSocket_r", 
+                "eye_r", 
+                "controls_lids_R"
+            ]
+        }, 
+        "controls_lids_R": {
+            "dagPath": "controls_lids_R", 
+            "type": "objectSet", 
+            "parent": "controls_eye_R", 
+            "members": [
+                "lid_low_4_r", 
+                "lid_corner_outer_r", 
+                "lid_up_4_r", 
+                "lid_up_2_r", 
+                "lid_up_3_r", 
+                "lid_up_1_r", 
+                "lid_up_0_r", 
+                "lid_corner_inner_r", 
+                "lid_low_1_r", 
+                "lid_low_0_r", 
+                "lid_low_2_r", 
+                "lid_low_3_r"
+            ]
+        }, 
+        "drivers": {
+            "dagPath": "drivers", 
+            "type": "objectSet", 
+            "parent": "RigSets", 
+            "members": [
+                "chest_driver", 
+                "face_mid_driver", 
+                "jaw_driver", 
+                "mouth_corner_r_driver", 
+                "mouth_corner_l_driver", 
+                "brow_main_l_driver", 
+                "brow_main_l_TX_driver", 
+                "brow_peak_l_driver", 
+                "brow_main_l_TY_driver", 
+                "brow_inner_l_TX_driver", 
+                "brow_inner_l_TY_driver", 
+                "brow_inner_l_driver", 
+                "brow_peak_l_TX_driver", 
+                "brow_peak_l_TY_driver", 
+                "lidLower_l_driver", 
+                "lidUpper_l_driver", 
+                "lidLower_l_collision_driver", 
+                "lidUpper_r_driver", 
+                "blinkUpper_l_driver", 
+                "blinkLower_l_driver", 
+                "shoulder_l_twist_driver", 
+                "shoulder_l_driver", 
+                "thigh_l_twist_driver", 
+                "thigh_l_driver", 
+                "knee_l_driver", 
+                "wristTwist_l_driver", 
+                "wristSwing_l_driver", 
+                "elbow_l_driver", 
+                "shoulder_r_driver", 
+                "shoulder_r_twist_driver", 
+                "ankleSwing_l_driver", 
+                "ankleTwist_l_driver", 
+                "toe_l_driver", 
+                "knee_r_driver", 
+                "wristTwist_r_driver", 
+                "elbow_r_driver", 
+                "wristSwing_r_driver", 
+                "thigh_r_driver", 
+                "thigh_r_twist_driver", 
+                "ankleSwing_r_driver", 
+                "toe_r_driver", 
+                "ankleTwist_r_driver", 
+                "blinkUpper_r_driver", 
+                "blinkLower_r_driver", 
+                "brow_inner_r_TX_driver", 
+                "brow_inner_r_driver", 
+                "brow_peak_r_TY_driver", 
+                "brow_peak_r_TX_driver", 
+                "brow_main_r_driver", 
+                "brow_main_r_TY_driver", 
+                "brow_main_r_TX_driver", 
+                "brow_peak_r_driver", 
+                "brow_inner_r_TY_driver", 
+                "lidLower_r_driver", 
+                "lidLower_r_collision_driver", 
+                "clavicle_r_driver", 
+                "head_driver", 
+                "jaw_compression_driver", 
+                "face_upper_driver", 
+                "clavicle_l_driver"
+            ]
+        }, 
+        "MouthDist": {
+            "dagPath": "MouthDist", 
+            "type": "objectSet", 
+            "parent": "RigSets", 
+            "members": [
+                "distance_loc_r", 
+                "distance_loc_l", 
+                "MouthDist_dkeys", 
+                "mouth_corner_r_distance", 
+                "mouth_corner_l_distance"
+            ]
+        }, 
+        "MouthDist_dkeys": {
+            "dagPath": "MouthDist_dkeys", 
+            "type": "objectSet", 
+            "parent": "MouthDist", 
+            "members": [
+                "lidLower_l_def_auto_rotateX", 
+                "cheekLift_l_def_auto_rotateX", 
+                "cheek_l_def_auto_translateY", 
+                "lidLower_r_def_auto_rotateX", 
+                "cheek_r_def_auto_translateY", 
+                "cheekLift_r_def_auto_rotateX"
+            ]
+        }, 
+        "Mouth": {
+            "dagPath": "Mouth", 
+            "type": "objectSet", 
+            "parent": "RigSets", 
+            "members": [
+                "lip_bindmesh", 
+                "lip_main_bindmesh", 
+                "lip_main_curve", 
+                "lip_curve", 
+                "lip_curveBaseWire", 
+                "orients_lipTweakers", 
+                "orients_MouthCorner", 
+                "orients_lipMain", 
+                "dkeys_TX_TX", 
+                "dkeys_TY_TY", 
+                "dkeys_TY_TZ", 
+                "dkeys_RY", 
+                "anim", 
+                "dkeys_TZ_TZ", 
+                "MouthDist"
+            ]
+        }, 
+        "orients_lipTweakers": {
+            "dagPath": "orients_lipTweakers", 
+            "type": "objectSet", 
+            "parent": "Mouth", 
+            "members": [
+                "lip_low_1_r_ort", 
+                "lip_low_2_r_ort", 
+                "lip_center_low_ort", 
+                "lip_low_2_l_ort", 
+                "lip_low_1_l_ort", 
+                "lip_low_0_l_ort", 
+                "lip_corner_l_ort", 
+                "lip_up_0_l_ort", 
+                "lip_up_1_l_ort", 
+                "lip_up_2_l_ort", 
+                "lip_center_up_ort", 
+                "lip_up_2_r_ort", 
+                "lip_up_1_r_ort", 
+                "lip_up_0_r_ort", 
+                "lip_low_0_r_ort", 
+                "lip_corner_r_ort"
+            ]
+        }, 
+        "orients_MouthCorner": {
+            "dagPath": "orients_MouthCorner", 
+            "type": "objectSet", 
+            "parent": "Mouth", 
+            "members": [
+                "mouth_corner_l_ort", 
+                "mouth_corner_r_ort"
+            ]
+        }, 
+        "dkeys_TX_TX": {
+            "dagPath": "dkeys_TX_TX", 
+            "type": "objectSet", 
+            "parent": "Mouth", 
+            "members": [
+                "lipMain_up_2_l_def_auto_translateX", 
+                "lipMain_up_2_r_def_auto_translateX", 
+                "lipMain_up_1_r_def_auto_translateX", 
+                "lipMain_low_0_l_def_auto_translateX", 
+                "lipMain_low_2_r_def_auto_translateX", 
+                "lipMain_up_0_l_def_auto_translateX", 
+                "lipMain_up_1_l_def_auto_translateX", 
+                "lipMain_corner_r_def_auto_translateX", 
+                "lipMain_low_2_l_def_auto_translateX", 
+                "lipMain_low_1_l_def_auto_translateX", 
+                "lipMain_up_0_r_def_auto_translateX", 
+                "lipMain_low_0_r_def_auto_translateX", 
+                "lipMain_low_1_r_def_auto_translateX", 
+                "lipMain_corner_l_def_auto_translateX"
+            ]
+        }, 
+        "dkeys_TY_TY": {
+            "dagPath": "dkeys_TY_TY", 
+            "type": "objectSet", 
+            "parent": "Mouth", 
+            "members": [
+                "lipMain_low_1_r_def_auto_translateY", 
+                "lipMain_up_2_l_def_auto_translateY", 
+                "lipMain_corner_r_def_auto_translateY", 
+                "lipMain_up_1_r_def_auto_translateY", 
+                "lipMain_up_2_r_def_auto_translateY", 
+                "lipMain_up_0_r_def_auto_translateY", 
+                "lipMain_low_0_r_def_auto_translateY", 
+                "lipMain_low_0_l_def_auto_translateY", 
+                "lipMain_corner_l_def_auto_translateY", 
+                "lipMain_low_2_r_def_auto_translateY", 
+                "lipMain_up_1_l_def_auto_translateY", 
+                "lipMain_up_0_l_def_auto_translateY", 
+                "lipMain_low_1_l_def_auto_translateY", 
+                "lipMain_low_2_l_def_auto_translateY"
+            ]
+        }, 
+        "dkeys_TY_TZ": {
+            "dagPath": "dkeys_TY_TZ", 
+            "type": "objectSet", 
+            "parent": "Mouth", 
+            "members": [
+                "mouth_corner_r_driver_TY__lipMain_corner_r_def_auto_TZ", 
+                "mouth_corner_r_driver_TY__lipMain_up_0_r_def_auto_TZ", 
+                "mouth_corner_l_driver_TY__lipMain_up_2_l_def_auto_TZ", 
+                "mouth_corner_r_driver_TY__lipMain_up_1_r_def_auto_TZ", 
+                "mouth_corner_r_driver_TY__lipMain_up_2_r_def_auto_TZ", 
+                "mouth_corner_r_driver_TY__lipMain_low_0_r_def_auto_TZ", 
+                "mouth_corner_l_driver_TY__lipMain_low_1_l_def_auto_TZ", 
+                "mouth_corner_l_driver_TY__lipMain_low_0_l_def_auto_TZ", 
+                "mouth_corner_l_driver_TY__lipMain_low_2_l_def_auto_TZ", 
+                "mouth_corner_l_driver_TY__lipMain_up_0_l_def_auto_TZ", 
+                "mouth_corner_l_driver_TY__lipMain_up_1_l_def_auto_TZ", 
+                "mouth_corner_l_driver_TY__lipMain_corner_l_def_auto_TZ", 
+                "mouth_corner_r_driver_TY__lipMain_low_1_r_def_auto_TZ", 
+                "mouth_corner_r_driver_TY__lipMain_low_2_r_def_auto_TZ"
+            ]
+        }, 
+        "dkeys_RY": {
+            "dagPath": "dkeys_RY", 
+            "type": "objectSet", 
+            "parent": "Mouth", 
+            "members": [
+                "lipMain_up_2_l_rot_def_auto_rotateY", 
+                "lipMain_up_2_r_rot_def_auto_rotateY", 
+                "lipMain_up_1_r_rot_def_auto_rotateY", 
+                "lipMain_up_0_r_rot_def_auto_rotateY", 
+                "lipMain_low_1_r_rot_def_auto_rotateY", 
+                "lipMain_low_2_r_rot_def_auto_rotateY", 
+                "lipMain_low_0_r_rot_def_auto_rotateY", 
+                "lipMain_up_0_l_rot_def_auto_rotateY", 
+                "lipMain_low_1_l_rot_def_auto_rotateY", 
+                "lipMain_low_0_l_rot_def_auto_rotateY", 
+                "lipMain_low_2_l_rot_def_auto_rotateY", 
+                "lipMain_corner_r_rot_def_auto_rotateY", 
+                "lipMain_up_1_l_rot_def_auto_rotateY", 
+                "lipMain_corner_l_rot_def_auto_rotateY"
+            ]
+        }, 
+        "anim": {
+            "dagPath": "anim", 
+            "type": "objectSet", 
+            "parent": "Mouth", 
+            "members": [
+                "mouth_corner_l", 
+                "mouth_corner_r", 
+                "lip_low_1_r", 
+                "lip_low_2_r", 
+                "lip_center_low", 
+                "lip_low_2_l", 
+                "lip_low_1_l", 
+                "lip_low_0_l", 
+                "lip_corner_l", 
+                "lip_up_0_l", 
+                "lip_up_1_l", 
+                "lip_up_2_l", 
+                "lip_up_2_r", 
+                "lip_center_up", 
+                "lip_up_1_r", 
+                "lip_up_0_r", 
+                "lip_low_0_r", 
+                "lip_corner_r"
+            ]
+        }, 
+        "dkeys_TZ_TZ": {
+            "dagPath": "dkeys_TZ_TZ", 
+            "type": "objectSet", 
+            "parent": "Mouth", 
+            "members": [
+                "lipMain_up_1_r_def_auto_translateZ", 
+                "lipMain_up_2_l_def_auto_translateZ", 
+                "lipMain_up_2_r_def_auto_translateZ", 
+                "lipMain_up_0_r_def_auto_translateZ", 
+                "lipMain_corner_r_def_auto_translateZ", 
+                "lipMain_low_1_r_def_auto_translateZ", 
+                "lipMain_low_2_r_def_auto_translateZ", 
+                "lipMain_low_1_l_def_auto_translateZ", 
+                "lipMain_low_0_r_def_auto_translateZ", 
+                "lipMain_low_2_l_def_auto_translateZ", 
+                "lipMain_low_0_l_def_auto_translateZ", 
+                "lipMain_up_1_l_def_auto_translateZ", 
+                "lipMain_up_0_l_def_auto_translateZ", 
+                "lipMain_corner_l_def_auto_translateZ"
+            ]
+        }, 
+        "sdk_head_wire": {
+            "dagPath": "sdk_head_wire", 
+            "type": "objectSet", 
+            "parent": "sdk", 
+            "members": [
+                "head_low_squetch_pma_input3D_0__input3Dx", 
+                "head_low_squetch_pma_input3D_0__input3Dz"
+            ]
+        }
+    }
+}
