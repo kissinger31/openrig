@@ -1,4 +1,5 @@
-# openrig - General rig python libraries and NXT rig build graphs
+# openrig 
+General rig python libraries and NXT rig build graphs
 
 # Building a biped rig
 1. Add the openrig package to your python sys.path so it is available to Maya. (See env example below)
@@ -9,8 +10,9 @@ openrig/openrig/archetypes/biped/rig/data/base/biped_base_rig.nxt
 
 # NXT file roots
 For building assets layering biped from another location, please use the NXT_FILE_ROOTS environment variable.
-```python
+
 # Python env setup example
+```python
 import os, sys
 
 repo_path = 'C:/Users/{user}/Desktop/sunrise'
