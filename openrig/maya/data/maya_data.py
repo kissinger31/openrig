@@ -2,7 +2,7 @@
 This is our maya data module.
 '''
 from collections import OrderedDict
-from openrig.maya.data import abstract_data
+from openrig.shared.data import abstract_data
 import maya.cmds as mc
 
 class MayaData(abstract_data.AbstractData):

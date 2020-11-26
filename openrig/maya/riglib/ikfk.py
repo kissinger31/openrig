@@ -4,8 +4,8 @@ This module is used for everything ikfk
 
 import maya.cmds as mc
 import maya.api.OpenMaya as om2
-from openrig.shared import common
-from openrig.maya import transform
+from showtools.maya import common
+from showtools.maya import transform
 
 class IKFKBase(object):
     '''
@@ -150,7 +150,7 @@ class IKFKBase(object):
         ikfkAttr = "{0}.ikfk".format(self._group)
 
         if not mc.objExists(ikfkAttr):
-            mc.addAttr(self._group, ln='ikfk', at="double", 
+            mc.addAttr(self._group, ln='ikfk', at="double",
                 min=0, max=1, keyable=True)
 
         #loop through the joints in the given jointList, and if they exists,
@@ -161,12 +161,12 @@ class IKFKBase(object):
 
         for joint in self._jointList:
             if not mc.objExists(joint):
-                continue 
+                continue
 
             #FK
             fkJnt = "{0}_fk".format(joint)
             if not mc.objExists(fkJnt):
-                mc.duplicate(joint, po=True, rr=True, 
+                mc.duplicate(joint, po=True, rr=True,
                         name= fkJnt)[0]
                 mc.parent(fkJnt,fkParent)
 
@@ -177,10 +177,10 @@ class IKFKBase(object):
             #IK
             ikJnt = "{0}_ik".format(joint)
             if not mc.objExists(ikJnt):
-                mc.duplicate(joint, po=True, rr=True, 
+                mc.duplicate(joint, po=True, rr=True,
                         name= ikJnt)[0]
                 mc.parent(ikJnt,ikParent)
-            
+
             self._ikJointList.append(ikJnt)
 
             ikParent = ikJnt
@@ -189,7 +189,7 @@ class IKFKBase(object):
             blendJntExists = False
             blendJnt = "{0}_blend".format(joint)
             if not mc.objExists(blendJnt):
-                mc.duplicate(joint, po=True, rr=True, 
+                mc.duplicate(joint, po=True, rr=True,
                         name= blendJnt)[0]
                 mc.parent(blendJnt,blendParent)
             else:
@@ -227,13 +227,13 @@ class IKFKBase(object):
                 mc.connectAttr("{0}.scale".format(ikJnt),
                     "{0}.color2".format(scalebcn),f=True)
 
-                mc.connectAttr("{0}.output".format(rotbcn), 
+                mc.connectAttr("{0}.output".format(rotbcn),
                     "{0}.rotate".format(blendJnt), f=True)
-                mc.connectAttr("{0}.output".format(trsbcn), 
+                mc.connectAttr("{0}.output".format(trsbcn),
                     "{0}.translate".format(blendJnt), f=True)
-                mc.connectAttr("{0}.output".format(scalebcn), 
+                mc.connectAttr("{0}.output".format(scalebcn),
                     "{0}.scale".format(blendJnt), f=True)
-                
+
 class IKFKLimb(IKFKBase):
     '''
     This class is meant for creating three joint ik/fk systems using a rotate plane solver.
@@ -259,7 +259,7 @@ class IKFKLimb(IKFKBase):
     # Set
     def setJointList(self, value):
         '''
-        This will check the lenght of the value passed in and then call the parent class 
+        This will check the lenght of the value passed in and then call the parent class
         to check the type of data.
         '''
         if len(value) != 3:
@@ -268,25 +268,25 @@ class IKFKLimb(IKFKBase):
         super(IKFKLimb, self).setJointList(value)
 
     @staticmethod
-    def createStretchIK(ikHandle, grp=None):    
+    def createStretchIK(ikHandle, grp=None):
         '''
         creates a stretchy joint chain based off of influences on ikHandle
-        
+
         Example:
-    
+
         ..python:
             createStrecthIK('l_leg_ik_hdl')
-            #Return: 
-    
+            #Return:
+
         :param ikHandle: ik handle you influencing joint chain you want to stretch
         :type ikHandle: str
-        
+
         :retrun targetJnts: Joints that are used to calculate the distance
         :rtype: list
         '''
         if not grp or not mc.objExists(grp):
             grp = mc.createNode('transform', n = 'ik_stretch_grp')
-    
+
         #create attributes on grp node
         mc.addAttr(grp, ln='stretch', at='double', dv = 1, min = 0, max = 1, k=True)
         mc.addAttr(grp, ln='stretchTop', at='double', dv = 1, k=True)
@@ -296,7 +296,7 @@ class IKFKLimb(IKFKBase):
         stretchTopAttr = '{}.stretchTop'.format(grp)
         stretchBottomAttr = '{}.stretchBottom'.format(grp)
         stretchSoftAttr = '{}.softStretch'.format(grp)
-        
+
         #get joints influenced by the ikHandle
         jnts = mc.ikHandle(ikHandle, q = True, jl = True)
         jnts.append(mc.listRelatives(jnts[-1], c = True, type="joint")[0])
@@ -306,33 +306,33 @@ class IKFKLimb(IKFKBase):
         targetJnt2 = mc.createNode('joint', n = '{}_{}'.format(jnts[2], common.TARGET))
         mc.xform(targetJnt1, ws=True, t=mc.xform(jnts[0], q=True, ws=True, t=True))
         mc.xform(targetJnt2, ws=True, t=mc.xform(jnts[2], q=True, ws=True, t=True))
-        
+
         #create distance and matrix nodes
         distanceBetween = mc.createNode('distanceBetween', n = '{}_{}'.format(ikHandle, common.DISTANCEBETWEEN))
         startDecomposeMatrix = mc.createNode('decomposeMatrix', n = '{}_{}'.format(targetJnt1, common.DECOMPOSEMATRIX))
         endDecomposeMatrix = mc.createNode('decomposeMatrix', n = '{}_{}'.format(targetJnt2, common.DECOMPOSEMATRIX))
-        
+
         #create condition and multplyDivide nodes
         multiplyDivide = mc.createNode('multiplyDivide', n = '{}_{}'.format(ikHandle, common.MULTIPLYDIVIDE))
         condition = mc.createNode('condition', n = '{}_{}'.format(ikHandle, common.CONDITION))
         multiplyDivideJnt1 = mc.createNode('multiplyDivide', n = '{}_{}'.format(jnts[1], common.MULTIPLYDIVIDE))
-        
+
         blendColorStretch = mc.createNode('blendColors', n = '{}_stretch_{}'.format(grp, common.BLEND))
         multiplyStretch = mc.createNode('multiplyDivide', n = '{}_stretch_{}'.format(grp, common.MULTIPLYDIVIDE))
         plusMinusStretch = mc.createNode('plusMinusAverage', n = '{}_stretch_{}'.format(grp, common.PLUSMINUSAVERAGE))
-        
+
         #connect matrix nodes to distance between node
         mc.connectAttr('{}.worldMatrix[0]'.format(targetJnt1), '{}.inputMatrix'.format(startDecomposeMatrix), f = True)
         mc.connectAttr('{}.worldMatrix[0]'.format(targetJnt2), '{}.inputMatrix'.format(endDecomposeMatrix), f = True)
         mc.connectAttr('{}.outputTranslate'.format(startDecomposeMatrix), '{}.point1'.format(distanceBetween), f = True)
         mc.connectAttr('{}.outputTranslate'.format(endDecomposeMatrix), '{}.point2'.format(distanceBetween), f = True)
-        
+
         #connect multiplyDivide and condition nodes
         aimAxis = transform.getAimAxis(jnts[1], False)
         jnt1Distance = mc.getAttr('{}.t{}'.format(jnts[1], aimAxis))
         jnt2Distance = mc.getAttr('{}.t{}'.format(jnts[2], aimAxis))
         jntLength = jnt1Distance + jnt2Distance
-        mc.setAttr('{}.operation'.format(multiplyDivide), 2)    
+        mc.setAttr('{}.operation'.format(multiplyDivide), 2)
 
         mc.connectAttr('{}.outputX'.format(multiplyDivide), '{}.input1X'.format(multiplyDivideJnt1), f = True)
         mc.connectAttr('{}.outputX'.format(multiplyDivide), '{}.input1Y'.format(multiplyDivideJnt1), f = True)
@@ -340,7 +340,7 @@ class IKFKLimb(IKFKBase):
         mc.connectAttr('{}.outputY'.format(multiplyDivideJnt1), '{}.colorIfTrueG'.format(condition), f = True)
         mc.connectAttr('{}.outColorR'.format(condition), '{}.t{}'.format(jnts[1], aimAxis), f = True)
         mc.connectAttr('{}.outColorG'.format(condition), '{}.t{}'.format(jnts[2], aimAxis), f = True)
-    
+
         mc.connectAttr(stretchAttr, '{}.blender'.format(blendColorStretch), f=True)
         mc.connectAttr(stretchTopAttr, '{}.input1X'.format(multiplyStretch), f=True)
         mc.setAttr('{}.input2X'.format(multiplyStretch), jnt1Distance)
@@ -354,18 +354,18 @@ class IKFKLimb(IKFKBase):
         mc.connectAttr('{}.outputY'.format(multiplyStretch), '{}.colorIfFalseG'.format(condition), f=True)
         mc.connectAttr('{}.outputX'.format(multiplyStretch), '{}.input2X'.format(multiplyDivideJnt1), f=True)
         mc.connectAttr('{}.outputY'.format(multiplyStretch), '{}.input2Y'.format(multiplyDivideJnt1), f=True)
-        
+
         mc.connectAttr('{}.outColorR'.format(condition), '{}.color1R'.format(blendColorStretch), f=True)
         mc.connectAttr('{}.outputX'.format(multiplyStretch), '{}.color2R'.format(blendColorStretch), f=True)
         mc.connectAttr('{}.outColorG'.format(condition), '{}.color1G'.format(blendColorStretch), f=True)
         mc.connectAttr('{}.outputY'.format(multiplyStretch), '{}.color2G'.format(blendColorStretch), f=True)
-        
+
         mc.connectAttr('{}.outputR'.format(blendColorStretch), '{}.t{}'.format(jnts[1], aimAxis), f=True)
         mc.connectAttr('{}.outputG'.format(blendColorStretch), '{}.t{}'.format(jnts[2], aimAxis), f=True)
-        
+
         #parent ikHandle under targetJnt2
         mc.parent(ikHandle, targetJnt2)
-        
+
         #turn off visibility of targetJnts and parent under grp node
         for jnt in [targetJnt1, targetJnt2]:
             mc.setAttr('{}.drawStyle'.format(jnt), 2)
@@ -386,7 +386,7 @@ class IKFKLimb(IKFKBase):
         # shortd = maxDistance - softP * (2.71828 ** (-(actualDistance-(softDist))/softP))
 
         # get the soft distance
-        softDist = mc.createNode("plusMinusAverage", 
+        softDist = mc.createNode("plusMinusAverage",
                             name="{}_softDist_{}".format(ikHandle, common.PLUSMINUSAVERAGE))
 
         mc.connectAttr('{}.output2Dx'.format(plusMinusStretch), "{}.input1D[0]".format(softDist))
@@ -395,13 +395,13 @@ class IKFKLimb(IKFKBase):
         mc.connectAttr("{}.output1D".format(softDist), "{}.secondTerm".format(condition))
 
         # create a decompose matrix node to track the scale of the grp node.
-        scaleTrackerDcm = mc.createNode("decomposeMatrix", 
+        scaleTrackerDcm = mc.createNode("decomposeMatrix",
                             name="{}_scaleTracker_{}".format(grp, common.DECOMPOSEMATRIX))
 
         mc.connectAttr("{}.worldMatrix[0]".format(grp), "{}.inputMatrix".format(scaleTrackerDcm))
 
         # create a multiplyDivide node to divide the scale against the actual distance
-        invertScale = mc.createNode("multiplyDivide", 
+        invertScale = mc.createNode("multiplyDivide",
                             name="{}_invertScale_{}".format(grp, common.MULTIPLYDIVIDE))
 
         # set it to use divide
@@ -412,7 +412,7 @@ class IKFKLimb(IKFKBase):
         mc.connectAttr("{}.outputScaleX".format(scaleTrackerDcm), "{}.input2X".format(invertScale))
 
         # get the soft distance
-        softDistSoftP = mc.createNode("plusMinusAverage", 
+        softDistSoftP = mc.createNode("plusMinusAverage",
                             name="{}_softDist_softP_{}".format(ikHandle, common.PLUSMINUSAVERAGE))
 
         mc.connectAttr("{}.outputX".format(invertScale), "{}.input1D[0]".format(softDistSoftP))
@@ -420,7 +420,7 @@ class IKFKLimb(IKFKBase):
         mc.setAttr("{}.operation".format(softDistSoftP), 2)
 
         # divide softDistSoftP by softP
-        softPDivide = mc.createNode("multiplyDivide", 
+        softPDivide = mc.createNode("multiplyDivide",
                             name="{}_softPDivide_{}".format(ikHandle, common.MULTIPLYDIVIDE))
 
         mc.setAttr("{}.operation".format(softPDivide),2)
@@ -429,13 +429,13 @@ class IKFKLimb(IKFKBase):
         mc.connectAttr(stretchSoftAttr, "{}.input2X".format(softPDivide))
 
         # create mult double linear node and invert the softPDivide
-        softPDivideInvert = mc.createNode("multDoubleLinear", 
+        softPDivideInvert = mc.createNode("multDoubleLinear",
                                 name="{}_softPDivideInvert_mdl".format(ikHandle))
         mc.connectAttr("{}.outputX".format(softPDivide), "{}.input1".format(softPDivideInvert))
         mc.setAttr("{}.input2".format(softPDivideInvert), -1)
 
         # get the exponent base of softPDivide
-        exponent = mc.createNode("multiplyDivide", 
+        exponent = mc.createNode("multiplyDivide",
                             name="{}_exponent_{}".format(ikHandle, common.MULTIPLYDIVIDE))
 
         mc.setAttr("{}.operation".format(exponent),3)
@@ -443,14 +443,14 @@ class IKFKLimb(IKFKBase):
         mc.connectAttr("{}.output".format(softPDivideInvert), "{}.input2X".format(exponent))
 
         # scale node setup
-        scaleNode = mc.createNode("multiplyDivide", 
+        scaleNode = mc.createNode("multiplyDivide",
                             name="{}_scale_{}".format(ikHandle, common.MULTIPLYDIVIDE))
 
         mc.connectAttr(stretchSoftAttr, "{}.input1X".format(scaleNode))
         mc.connectAttr("{}.outputX".format(exponent), "{}.input2X".format(scaleNode))
 
-        # connect the plusMinus stretch to 
-        addStretch = mc.createNode("plusMinusAverage", 
+        # connect the plusMinus stretch to
+        addStretch = mc.createNode("plusMinusAverage",
                             name="{}_addStretch_{}".format(ikHandle, common.PLUSMINUSAVERAGE))
 
         # make sure you subtract the addStretch
@@ -476,7 +476,7 @@ class IKFKLimb(IKFKBase):
             mc.setAttr('{}.operation'.format(condition), 2)
 
         return [targetJnt1, targetJnt2]
-    
+
     @staticmethod
     def ikMatchFk(fkJoints, ikDriver, pvDriver, matchNode):
         if matchNode:
@@ -484,10 +484,10 @@ class IKFKLimb(IKFKBase):
         else:
             newPvPos = IKFKLimb.getPoleVectorPosition(fkJoints)
         endJntMatrix = mc.xform(fkJoints[2], q=True, ws=True, matrix=True)
-        
+
         mc.xform(pvDriver, ws=True, t=newPvPos)
         mc.xform(ikDriver, ws=True, matrix=endJntMatrix)
-        
+
     @staticmethod
     def fkMatchIk(joints, ikJoints):
         if not joints:
@@ -495,40 +495,70 @@ class IKFKLimb(IKFKBase):
                 joints = mc.ls(sl =True)
             except:
                 raise RuntimeError('Nothing selected')
-        #end if        
+        #end if
         if not isinstance(joints, list) and not isinstance(joints, tuple):
             raise RuntimeError('{} must be a list or tuple of 3 joints'.format(joints))
         #end if
         if len(joints) != 3:
             raise RuntimeError('{} must have 3 joints in the list'.format(joints))
-            
+
         for jnt, ikJnt in zip(joints, ikJoints):
             matrix = mc.xform(ikJnt, q = True, ws = True, matrix=True)
             mc.xform(jnt, ws = True, matrix = matrix)
 
     @staticmethod
-    def getPoleVectorPosition(jointList, scaler=6):
+    def getPoleVectorPosition(match_list, magnitude=10, attempts=20):
         '''
         This will return a position for the polevector
         '''
-        if len(jointList) != 3:
-            raise RuntimeError("{0} must be a lenght of three and a list.".format(jointList))
-        
+        if len(match_list) != 3:
+            raise RuntimeError("{0} must be a lenght of three and a list.".format(match_list))
+
         # getting postions to use for the vectors.
-        jnt1Pos = mc.xform(jointList[0],q=True, ws=True, t=True)
-        jnt2Pos = mc.xform(jointList[1],q=True, ws=True, t=True)
-        jnt3Pos = mc.xform(jointList[2],q=True, ws=True, t=True)
+        match1Pos = mc.xform(match_list[0], q=True, ws=True, t=True)
+        match2Pos = mc.xform(match_list[1], q=True, ws=True, t=True)
+        match3Pos = mc.xform(match_list[2], q=True, ws=True, t=True)
 
         # create vector from world space positions
-        vector1 = om2.MVector(*jnt1Pos)
-        vector2 = om2.MVector(*jnt2Pos)
-        vector3 = om2.MVector(*jnt3Pos)
+        vector1 = om2.MVector(*match1Pos)
+        vector2 = om2.MVector(*match2Pos)
+        vector3 = om2.MVector(*match3Pos)
 
         # getting the final polevector position.
-        midVector = (vector1 + vector3) / 2
-        poleVector = ((vector2 - midVector) * 5) + midVector
+        mid_vec = (vector1 + vector3) / 2
+        mid_diff_vec = vector2 - mid_vec
+        mid_diff_vec = IKFKLimb.match_magnitude(mid_diff_vec, magnitude + mid_diff_vec.length(), attempts=attempts)
+        pv_vec = mid_diff_vec + mid_vec
+        return pv_vec
 
-        return (poleVector.x, poleVector.y, poleVector.z)
+    @staticmethod
+    def isColinear(match_list, threshold=.008):
+        '''
+        Will return true if the
+        :param pv_vec:
+        :return:
+        '''
+        if len(match_list) != 3:
+            raise RuntimeError("{0} must be a lenght of three and a list.".format(match_list))
+        mid_vec = om2.MVector(*mc.xform(match_list[1], q=True, ws=True, t=True))
+        first_node_vec = om2.MVector(*mc.xform(match_list[0], q=True, ws=True, t=True))
+        last_node_vec = om2.MVector(*mc.xform(match_list[-1], q=True, ws=True, t=True))
+        pv_diff_vec = first_node_vec - mid_vec
+        last_diff_vec = first_node_vec - last_node_vec
+        if pv_diff_vec.isParallel(last_diff_vec, threshold):
+            return True
+        return False
+    @staticmethod
+    def match_magnitude(vector, magnitude, attempts=20):
+        '''
+        :param magnitude:
+        :param current_mag:
+        :return:
+        '''
+        if not vector.length() >= magnitude and attempts > 0:
+            vector = vector * 2
+            return self.match_magnitude(vector, magnitude, attempts - 1)
+        return vector
 
     @staticmethod
     def getPoleVectorFromHandle(handle, jointList):

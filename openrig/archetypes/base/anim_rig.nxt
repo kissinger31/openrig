@@ -525,7 +525,7 @@
             "attrs": {
                 "dir_path": {
                     "type": "raw", 
-                    "value": "${path::build/cluster_wts}"
+                    "value": "${path::${file::build}/cluster_wts}"
                 }, 
                 "exclude_node_list": {
                     "value": "mc.ls([\"lip_*_?_?_*\", \"lip_corner_?_cluster\", \"lip_center_*_cluster\", \"lip*bindmesh*\"],type=\"cluster\")"
@@ -548,7 +548,7 @@
             "attrs": {
                 "dir_path": {
                     "type": "raw", 
-                    "value": "${path::build/psd}"
+                    "value": "${path::${file::build}/psd}"
                 }
             }
         }, 
@@ -556,7 +556,7 @@
             "attrs": {
                 "dir_path": {
                     "type": "raw", 
-                    "value": "${path::build/skin_wts}"
+                    "value": "${path::${file::build}/skin_wts}"
                 }
             }
         }, 
@@ -564,7 +564,7 @@
             "attrs": {
                 "dir_path": {
                     "type": "raw", 
-                    "value": "${path::build/wire_wts}"
+                    "value": "${path::${file::build}/wire_wts}"
                 }
             }
         }, 
