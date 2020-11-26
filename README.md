@@ -1,5 +1,5 @@
 # openrig 
-##General rig python libraries and NXT rig build graphs
+## General rig python libraries and NXT rig build graphs
 
 # Building a biped rig
 1. Add the openrig package to your python sys.path so it is available to Maya. (See env example below)
