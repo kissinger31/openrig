@@ -292,7 +292,9 @@
                 "import_sets", 
                 "export_sets_data", 
                 "import_psd", 
-                "export_psd_new"
+                "export_psd_new", 
+                "save_maya_file", 
+                "trasnfer_data"
             ], 
             "code": [
                 "# maya imports", 
@@ -753,7 +755,7 @@
                     "type": "NoneType"
                 }, 
                 "data_type": {
-                    "comment": "The data type you will be storing. These are modules in openrig.maya.newData",
+                    "comment": "The data type you will be storing. These are modules in showtools.maya.newData", 
                     "type": "raw", 
                     "value": "node_data"
                 }, 
@@ -2284,6 +2286,86 @@
                 "        mc.setAttr('{}.{}'.format(${attribute_node}, ${space_attribute_name}), ${default_target_index})", 
                 "        ", 
                 ""
+            ]
+        }, 
+        "/trasnfer_data": {
+            "child_order": [
+                "rename", 
+                "skincluster", 
+                "node3", 
+                "node4"
+            ], 
+            "attrs": {
+                "model": {}, 
+                "prefix": {}
+            }
+        }, 
+        "/trasnfer_data/node3": {}, 
+        "/trasnfer_data/node4": {}, 
+        "/trasnfer_data/rename": {
+            "attrs": {
+                "model": {
+                    "value": "model"
+                }, 
+                "prefix": {
+                    "value": "OLD_TOPO__"
+                }
+            }, 
+            "code": [
+                "", 
+                "import maya.cmds as mc", 
+                "import rigrepo.libs.common as common", 
+                "import maya.mel as mm", 
+                "import rigrepo.libs.deformer", 
+                "import rigrepo.libs.skinCluster as skinCluster", 
+                "", 
+                "################", 
+                "# Rename Model #", 
+                "################", 
+                "", 
+                "if action == 'rename':", 
+                "    topNodes = list(set(mc.ls(assemblies=1))-set(['persp', 'top', 'front', 'side']))", 
+                "", 
+                "    for node in topNodes:", 
+                "        allDescendents = mc.listRelatives(node, ad=1, type='transform', path=1)", 
+                "        if allDescendents:", 
+                "            for child in allDescendents+[node]:", 
+                "                mc.rename(child, prefix + child.split('|')[-1])"
+            ]
+        }, 
+        "/trasnfer_data/skincluster": {
+            "attrs": {
+                "model": {
+                    "type": "str", 
+                    "value": "'model'"
+                }, 
+                "prefix": {
+                    "type": "str", 
+                    "value": "'OLD_TOPO__'"
+                }
+            }, 
+            "code": [
+                "prefix = ${prefix}", 
+                "model = ${model}", 
+                "", 
+                "# # Get geometry under the model", 
+                "if mc.objExists(prefix+model):", 
+                "    geos = mc.listRelatives(prefix+model, ad=1, type='mesh', path=1, ni=1)", 
+                "    # Get transforms of geometry", 
+                "    geos = list(set(mc.listRelatives(geos, p=1, path=1, type='transform')))", 
+                "", 
+                "for geo in geos:", 
+                "    sc = skinCluster.getSkinCluster(geo)", 
+                "    if not sc:", 
+                "        continue", 
+                "        ", 
+                "    target = geo.replace(prefix, '')", 
+                "    if not mc.objExists(target):", 
+                "        continue", 
+                "        ", 
+                "    sc = mc.rename(sc, prefix+sc)", 
+                "    rig_deformer.transferDeformers(geo, [target], ['skinCluster'], 'closestPoint')", 
+                " "
             ]
         }, 
         "/wire_to_skincluster": {

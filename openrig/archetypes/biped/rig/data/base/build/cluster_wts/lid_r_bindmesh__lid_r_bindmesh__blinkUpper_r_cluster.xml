@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<deformerWeight>
+  <headerInfo fileName="C:/Users/jx3xo/Desktop/sunrise/rig/david/rig/data/base/build/cluster_wts/lid_r_bindmesh__lid_r_bindmesh__blinkUpper_r_cluster.xml" worldMatrix="1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 "/>
+  <shape name="lid_r_bindmeshShape" group="5936" stride="3" size="48" max="48">
+    <point index="0" value=" -4.966300 167.282898 3.315000"/>
+    <point index="1" value=" -4.946300 167.282898 3.315000"/>
+    <point index="2" value=" -4.966300 167.282898 3.295000"/>
+    <point index="3" value=" -4.946300 167.282898 3.295000"/>
+    <point index="4" value=" -3.825600 167.393600 4.030100"/>
+    <point index="5" value=" -3.805600 167.393600 4.030100"/>
+    <point index="6" value=" -3.825600 167.393600 4.010100"/>
+    <point index="7" value=" -3.805600 167.393600 4.010100"/>
+    <point index="8" value=" -2.413100 166.919800 4.017700"/>
+    <point index="9" value=" -2.393100 166.919800 4.017700"/>
+    <point index="10" value=" -2.413100 166.919800 3.997700"/>
+    <point index="11" value=" -2.393100 166.919800 3.997700"/>
+    <point index="12" value=" -2.034800 165.700607 3.664000"/>
+    <point index="13" value=" -2.014800 165.700607 3.664000"/>
+    <point index="14" value=" -2.034800 165.700607 3.644000"/>
+    <point index="15" value=" -2.014800 165.700607 3.644000"/>
+    <point index="16" value=" -2.068100 165.009003 3.621100"/>
+    <point index="17" value=" -2.048100 165.009003 3.621100"/>
+    <point index="18" value=" -2.068100 165.009003 3.601100"/>
+    <point index="19" value=" -2.048100 165.009003 3.601100"/>
+    <point index="20" value=" -2.520900 164.752899 3.597800"/>
+    <point index="21" value=" -2.500900 164.752899 3.597800"/>
+    <point index="22" value=" -2.520900 164.752899 3.577800"/>
+    <point index="23" value=" -2.500900 164.752899 3.577800"/>
+    <point index="24" value=" -3.340500 164.640793 3.620000"/>
+    <point index="25" value=" -3.320500 164.640793 3.620000"/>
+    <point index="26" value=" -3.340500 164.640793 3.600000"/>
+    <point index="27" value=" -3.320500 164.640793 3.600000"/>
+    <point index="28" value=" -4.169600 164.771500 3.485700"/>
+    <point index="29" value=" -4.149600 164.771500 3.485700"/>
+    <point index="30" value=" -4.169600 164.771500 3.465700"/>
+    <point index="31" value=" -4.149600 164.771500 3.465700"/>
+    <point index="32" value=" -4.877700 165.005295 3.170000"/>
+    <point index="33" value=" -4.857700 165.005295 3.170000"/>
+    <point index="34" value=" -4.877700 165.005295 3.150000"/>
+    <point index="35" value=" -4.857700 165.005295 3.150000"/>
+    <point index="36" value=" -5.456700 165.471207 2.683000"/>
+    <point index="37" value=" -5.436700 165.471207 2.683000"/>
+    <point index="38" value=" -5.456700 165.471207 2.663000"/>
+    <point index="39" value=" -5.436700 165.471207 2.663000"/>
+    <point index="40" value=" -5.710000 166.461899 2.176000"/>
+    <point index="41" value=" -5.690000 166.461899 2.176000"/>
+    <point index="42" value=" -5.710000 166.461899 2.156000"/>
+    <point index="43" value=" -5.690000 166.461899 2.156000"/>
+    <point index="44" value=" -5.448300 166.898102 2.682500"/>
+    <point index="45" value=" -5.428300 166.898102 2.682500"/>
+    <point index="46" value=" -5.448300 166.898102 2.662500"/>
+    <point index="47" value=" -5.428300 166.898102 2.662500"/>
+  </shape>
+  <weights deformer="lid_r_bindmesh__blinkUpper_r_cluster" source="baseLayer" shape="lid_r_bindmeshShape" layer="0" defaultValue="0.000" size="24" max="47">
+    <point index="0" value="0.700"/>
+    <point index="1" value="0.700"/>
+    <point index="2" value="0.700"/>
+    <point index="3" value="0.700"/>
+    <point index="4" value="0.700"/>
+    <point index="5" value="0.700"/>
+    <point index="6" value="0.700"/>
+    <point index="7" value="0.700"/>
+    <point index="8" value="0.600"/>
+    <point index="9" value="0.600"/>
+    <point index="10" value="0.600"/>
+    <point index="11" value="0.600"/>
+    <point index="12" value="0.150"/>
+    <point index="13" value="0.150"/>
+    <point index="14" value="0.150"/>
+    <point index="15" value="0.150"/>
+    <point index="40" value="0.050"/>
+    <point index="41" value="0.050"/>
+    <point index="42" value="0.050"/>
+    <point index="43" value="0.050"/>
+    <point index="44" value="0.500"/>
+    <point index="45" value="0.500"/>
+    <point index="46" value="0.500"/>
+    <point index="47" value="0.500"/>
+  </weights>
+</deformerWeight>

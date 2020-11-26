@@ -2,6 +2,7 @@
 
 import maya.cmds as mc
 import maya.mel as mm
+from collections import OrderedDict
 # showtools Modules
 from openrig.maya import skinCluster
 from openrig.maya import cluster
@@ -195,13 +196,10 @@ def getDeformerStack(geo, ignoreTypes=['tweak']):
     :rtype: list
     """
     # list history to get all inputs in order
-    history = mc.listHistory(geo, interestLevel=1, pruneDagObjects=True)
-    
-    # find related deformers for a more concise list of deformers
-    deformers = mm.eval('findRelatedDeformer("%s")' % geo)
-    
+    history = mc.ls(mc.listHistory(geo, pdo=1, il=1), type="geometryFilter")
+
     # return history items that are in the deformers list
-    return [d for d in history if d in deformers and not mc.nodeType(d) in ignoreTypes]
+    return [d for d in history if not mc.nodeType(d) in ignoreTypes]
 
 
 def transferDeformers(source, target, deformerTypes = ["skinCluster"],
@@ -368,3 +366,73 @@ def getShape(node):
         shape = mc.listRelatives(node, s=1, ni=1)
         if shape:
             return(shape[0])
+
+
+def getDeformerSets(geo, filter_suffix='_dset'):
+    '''
+    This will take geometry and loop through the deformer stack to see if any of them are in a set.
+    We provide filter for checking a suffix for the sets you wish to look through
+
+    :: exmaple:
+        getDeformerSets("body_geo", "_dset")
+        {"_body_geo__blink_cluster_sc_dset": ["blinkLower_l_cluster", "blinkLower_r_cluster"]}
+
+    :param geo: Geometry you wish to use to for query for sets
+    :type geo: str
+
+    :param filter_suffix: Filter used to check the suffix of an object set
+    :type filter_suffix: str
+
+    :return: Return the set of deformers
+    :rtype: dict
+    '''
+    history = getDeformerStack(geo)
+    history.reverse()
+    deformer_set_dict = OrderedDict()
+
+    # loop through the deformers and check to see if any of them are in a set
+    for deformer in history:
+        deformer_set_list = getDeformerSet(deformer, filter_suffix)
+        for deformer_set in deformer_set_list:
+            if not deformer_set_dict.has_key(deformer_set):
+                deformer_set_dict[deformer_set] = [deformer]
+            else:
+                deformer_set_dict[deformer_set].append(deformer)
+
+    return deformer_set_dict
+
+def getDeformerSet(deformer, filter_suffix ='_dset'):
+    '''
+    Get the set for the deformer passed in.
+    :param deformer:
+    :return:
+    '''
+    return [set for set in mc.ls(mc.listConnections(deformer), type='objectSet') if set.endswith(filter_suffix)]
+
+def getDeformerSetHistory(geo, filter_suffix='_dset'):
+    '''
+    This will take geometry and loop through the deformer stack to see if any of them are in a set.
+    We provide filter for checking a suffix for the sets you wish to look through
+
+    :: exmaple:
+        getDeformerSetHistory("body_geo", "_dset")
+        []
+
+    :param geo: Geometry you wish to use to for query for sets
+    :type geo: str
+    '''
+    history = getDeformerStack(geo)
+    history.reverse()
+
+    deformer_set_history = list()
+    # loop through the deformers and check to see if any of them are in a set
+    for deformer in history:
+        deformer_set_list = getDeformerSet(deformer, filter_suffix)
+        if not deformer_set_list:
+            deformer_set_history.append(deformer)
+            continue
+        for deformer_set in deformer_set_list:
+            if '{}__'.format(geo) in deformer_set and deformer_set not in deformer_set_history:
+                deformer_set_history.append(deformer_set)
+
+    return deformer_set_history

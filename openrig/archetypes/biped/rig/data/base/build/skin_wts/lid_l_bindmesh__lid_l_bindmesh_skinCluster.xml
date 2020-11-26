@@ -1,0 +1,240 @@
+<?xml version="1.0"?>
+<deformerWeight>
+  <headerInfo fileName="C:/Users/jx3xo/Desktop/sunrise/rig/david/rig/data/base/build/skin_wts/lid_l_bindmesh__lid_l_bindmesh_skinCluster.xml" worldMatrix="1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 "/>
+  <shape name="lid_l_bindmeshShape" group="5948" stride="3" size="48" max="48">
+    <point index="0" value=" 4.934847 167.283051 3.325652"/>
+    <point index="1" value=" 4.954904 167.283066 3.325718"/>
+    <point index="2" value=" 4.934896 167.283066 3.305709"/>
+    <point index="3" value=" 4.954953 167.283066 3.305774"/>
+    <point index="4" value=" 3.790135 167.393631 4.033701"/>
+    <point index="5" value=" 3.810165 167.393631 4.033808"/>
+    <point index="6" value=" 3.790143 167.393631 4.013731"/>
+    <point index="7" value=" 3.810174 167.393631 4.013839"/>
+    <point index="8" value=" 2.377505 166.919693 4.013294"/>
+    <point index="9" value=" 2.397492 166.919693 4.013350"/>
+    <point index="10" value=" 2.377508 166.919693 3.993282"/>
+    <point index="11" value=" 2.397495 166.919693 3.993337"/>
+    <point index="12" value=" 2.001047 165.700363 3.656846"/>
+    <point index="13" value=" 2.021044 165.700363 3.656847"/>
+    <point index="14" value=" 2.001051 165.700363 3.636843"/>
+    <point index="15" value=" 2.021048 165.700363 3.636845"/>
+    <point index="16" value=" 2.034910 165.008621 3.613682"/>
+    <point index="17" value=" 2.054911 165.008621 3.613690"/>
+    <point index="18" value=" 2.034910 165.008621 3.593683"/>
+    <point index="19" value=" 2.054911 165.008621 3.593692"/>
+    <point index="20" value=" 2.487818 164.752213 3.592999"/>
+    <point index="21" value=" 2.507820 164.752213 3.593108"/>
+    <point index="22" value=" 2.487818 164.752213 3.573000"/>
+    <point index="23" value=" 2.507820 164.752213 3.573110"/>
+    <point index="24" value=" 3.307446 164.640015 3.620079"/>
+    <point index="25" value=" 3.327454 164.640015 3.620202"/>
+    <point index="26" value=" 3.307447 164.640015 3.600087"/>
+    <point index="27" value=" 3.327455 164.640015 3.600210"/>
+    <point index="28" value=" 4.137375 164.770813 3.490941"/>
+    <point index="29" value=" 4.157406 164.770813 3.491050"/>
+    <point index="30" value=" 4.137384 164.770813 3.470973"/>
+    <point index="31" value=" 4.157416 164.770813 3.471082"/>
+    <point index="32" value=" 4.847356 165.004807 3.179718"/>
+    <point index="33" value=" 4.867402 165.004807 3.179792"/>
+    <point index="34" value=" 4.847384 165.004807 3.159763"/>
+    <point index="35" value=" 4.867429 165.004807 3.159837"/>
+    <point index="36" value=" 5.429127 165.470993 2.696286"/>
+    <point index="37" value=" 5.449152 165.470993 2.696306"/>
+    <point index="38" value=" 5.429157 165.470993 2.676311"/>
+    <point index="39" value=" 5.449182 165.470993 2.676331"/>
+    <point index="40" value=" 5.685623 166.462173 2.191624"/>
+    <point index="41" value=" 5.705646 166.462173 2.191636"/>
+    <point index="42" value=" 5.685659 166.462173 2.171643"/>
+    <point index="43" value=" 5.705662 166.462173 2.171644"/>
+    <point index="44" value=" 5.420675 166.898331 2.696303"/>
+    <point index="45" value=" 5.440716 166.898331 2.696328"/>
+    <point index="46" value=" 5.420740 166.898331 2.676343"/>
+    <point index="47" value=" 5.440781 166.898331 2.676368"/>
+  </shape>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="hips_bind" shape="lid_l_bindmeshShape" layer="0" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="pelvis_l_bind" shape="lid_l_bindmeshShape" layer="1" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="thighNoTwist_l_bind" shape="lid_l_bindmeshShape" layer="2" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="kneeTwist_l_bind" shape="lid_l_bindmeshShape" layer="3" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="pelvis_r_bind" shape="lid_l_bindmeshShape" layer="4" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="thighNoTwist_r_bind" shape="lid_l_bindmeshShape" layer="5" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="kneeTwist_r_bind" shape="lid_l_bindmeshShape" layer="6" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="face_upper_bind" shape="lid_l_bindmeshShape" layer="7" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="head_tip_bind" shape="lid_l_bindmeshShape" layer="8" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="eyeSocket_l_bind" shape="lid_l_bindmeshShape" layer="9" defaultValue="0.000" size="48" max="47">
+    <point index="0" value="1.000"/>
+    <point index="1" value="1.000"/>
+    <point index="2" value="1.000"/>
+    <point index="3" value="1.000"/>
+    <point index="4" value="1.000"/>
+    <point index="5" value="1.000"/>
+    <point index="6" value="1.000"/>
+    <point index="7" value="1.000"/>
+    <point index="8" value="1.000"/>
+    <point index="9" value="1.000"/>
+    <point index="10" value="1.000"/>
+    <point index="11" value="1.000"/>
+    <point index="12" value="1.000"/>
+    <point index="13" value="1.000"/>
+    <point index="14" value="1.000"/>
+    <point index="15" value="1.000"/>
+    <point index="16" value="1.000"/>
+    <point index="17" value="1.000"/>
+    <point index="18" value="1.000"/>
+    <point index="19" value="1.000"/>
+    <point index="20" value="1.000"/>
+    <point index="21" value="1.000"/>
+    <point index="22" value="1.000"/>
+    <point index="23" value="1.000"/>
+    <point index="24" value="1.000"/>
+    <point index="25" value="1.000"/>
+    <point index="26" value="1.000"/>
+    <point index="27" value="1.000"/>
+    <point index="28" value="1.000"/>
+    <point index="29" value="1.000"/>
+    <point index="30" value="1.000"/>
+    <point index="31" value="1.000"/>
+    <point index="32" value="1.000"/>
+    <point index="33" value="1.000"/>
+    <point index="34" value="1.000"/>
+    <point index="35" value="1.000"/>
+    <point index="36" value="1.000"/>
+    <point index="37" value="1.000"/>
+    <point index="38" value="1.000"/>
+    <point index="39" value="1.000"/>
+    <point index="40" value="1.000"/>
+    <point index="41" value="1.000"/>
+    <point index="42" value="1.000"/>
+    <point index="43" value="1.000"/>
+    <point index="44" value="1.000"/>
+    <point index="45" value="1.000"/>
+    <point index="46" value="1.000"/>
+    <point index="47" value="1.000"/>
+  </weights>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="face_mid_bind" shape="lid_l_bindmeshShape" layer="10" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="jaw_bind" shape="lid_l_bindmeshShape" layer="11" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="nose_bridge_bind" shape="lid_l_bindmeshShape" layer="12" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="nose_bind" shape="lid_l_bindmeshShape" layer="13" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="face_lower_bind" shape="lid_l_bindmeshShape" layer="14" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="neck_1_bind" shape="lid_l_bindmeshShape" layer="15" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="neck_2_bind" shape="lid_l_bindmeshShape" layer="16" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="neck_3_bind" shape="lid_l_bindmeshShape" layer="17" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="skull_bind" shape="lid_l_bindmeshShape" layer="18" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="brow_inner_l_bind" shape="lid_l_bindmeshShape" layer="19" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="brow_inner_r_bind" shape="lid_l_bindmeshShape" layer="20" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="brow_main_l_bind" shape="lid_l_bindmeshShape" layer="21" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="brow_peak_l_bind" shape="lid_l_bindmeshShape" layer="22" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="neck_0_bind" shape="lid_l_bindmeshShape" layer="23" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="spine_3_bind" shape="lid_l_bindmeshShape" layer="24" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="neck_base_bind" shape="lid_l_bindmeshShape" layer="25" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="ankle_l_bind" shape="lid_l_bindmeshShape" layer="26" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="knee_l_bind" shape="lid_l_bindmeshShape" layer="27" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="ankleTwist_l_bind" shape="lid_l_bindmeshShape" layer="28" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="ball_l_bind" shape="lid_l_bindmeshShape" layer="29" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe5_001_l_bind" shape="lid_l_bindmeshShape" layer="30" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe5_002_l_bind" shape="lid_l_bindmeshShape" layer="31" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe1_002_l_bind" shape="lid_l_bindmeshShape" layer="32" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe1_001_l_bind" shape="lid_l_bindmeshShape" layer="33" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe4_002_l_bind" shape="lid_l_bindmeshShape" layer="34" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe3_002_l_bind" shape="lid_l_bindmeshShape" layer="35" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe2_002_l_bind" shape="lid_l_bindmeshShape" layer="36" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe4_001_l_bind" shape="lid_l_bindmeshShape" layer="37" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe5_004_l_bind" shape="lid_l_bindmeshShape" layer="38" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe5_003_l_bind" shape="lid_l_bindmeshShape" layer="39" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe2_001_l_bind" shape="lid_l_bindmeshShape" layer="40" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe2_003_l_bind" shape="lid_l_bindmeshShape" layer="41" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe2_004_l_bind" shape="lid_l_bindmeshShape" layer="42" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe4_003_l_bind" shape="lid_l_bindmeshShape" layer="43" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe4_004_l_bind" shape="lid_l_bindmeshShape" layer="44" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe3_003_l_bind" shape="lid_l_bindmeshShape" layer="45" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe3_004_l_bind" shape="lid_l_bindmeshShape" layer="46" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe3_001_l_bind" shape="lid_l_bindmeshShape" layer="47" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe1_003_l_bind" shape="lid_l_bindmeshShape" layer="48" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe1_004_l_bind" shape="lid_l_bindmeshShape" layer="49" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="spine_0_bind" shape="lid_l_bindmeshShape" layer="50" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="spine_1_bind" shape="lid_l_bindmeshShape" layer="51" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="spine_2_bind" shape="lid_l_bindmeshShape" layer="52" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="spine_4_bind" shape="lid_l_bindmeshShape" layer="53" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="chest_bind" shape="lid_l_bindmeshShape" layer="54" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="shoulderNoTwist_l_bind" shape="lid_l_bindmeshShape" layer="55" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="clavicle_trans_l_bind" shape="lid_l_bindmeshShape" layer="56" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="elbowTwist_l_bind" shape="lid_l_bindmeshShape" layer="57" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="spine_5_bind" shape="lid_l_bindmeshShape" layer="58" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="index_004_l_bind" shape="lid_l_bindmeshShape" layer="59" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="index_003_l_bind" shape="lid_l_bindmeshShape" layer="60" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="middle_004_l_bind" shape="lid_l_bindmeshShape" layer="61" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="middle_003_l_bind" shape="lid_l_bindmeshShape" layer="62" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="ring_004_l_bind" shape="lid_l_bindmeshShape" layer="63" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="ring_003_l_bind" shape="lid_l_bindmeshShape" layer="64" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="pinky_004_l_bind" shape="lid_l_bindmeshShape" layer="65" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="pinky_003_l_bind" shape="lid_l_bindmeshShape" layer="66" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="pinkyCup_l_bind" shape="lid_l_bindmeshShape" layer="67" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="pinky_001_l_bind" shape="lid_l_bindmeshShape" layer="68" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="ring_001_l_bind" shape="lid_l_bindmeshShape" layer="69" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="wrist_l_bind" shape="lid_l_bindmeshShape" layer="70" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="middle_001_l_bind" shape="lid_l_bindmeshShape" layer="71" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="index_001_l_bind" shape="lid_l_bindmeshShape" layer="72" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="thumbCup_l_bind" shape="lid_l_bindmeshShape" layer="73" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="thumb_001_l_bind" shape="lid_l_bindmeshShape" layer="74" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="wristTwist_l_bind" shape="lid_l_bindmeshShape" layer="75" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="thumb_002_l_bind" shape="lid_l_bindmeshShape" layer="76" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="ring_002_l_bind" shape="lid_l_bindmeshShape" layer="77" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="middle_002_l_bind" shape="lid_l_bindmeshShape" layer="78" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="index_002_l_bind" shape="lid_l_bindmeshShape" layer="79" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="pinky_002_l_bind" shape="lid_l_bindmeshShape" layer="80" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="thumb_003_l_bind" shape="lid_l_bindmeshShape" layer="81" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="elbow_l_bind" shape="lid_l_bindmeshShape" layer="82" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="clavicle_trans_r_bind" shape="lid_l_bindmeshShape" layer="83" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="eyeSocket_r_bind" shape="lid_l_bindmeshShape" layer="84" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="brow_main_r_bind" shape="lid_l_bindmeshShape" layer="85" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="brow_peak_r_bind" shape="lid_l_bindmeshShape" layer="86" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="ankle_r_bind" shape="lid_l_bindmeshShape" layer="87" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="knee_r_bind" shape="lid_l_bindmeshShape" layer="88" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="ankleTwist_r_bind" shape="lid_l_bindmeshShape" layer="89" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="ball_r_bind" shape="lid_l_bindmeshShape" layer="90" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe5_001_r_bind" shape="lid_l_bindmeshShape" layer="91" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe5_002_r_bind" shape="lid_l_bindmeshShape" layer="92" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe1_002_r_bind" shape="lid_l_bindmeshShape" layer="93" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe1_001_r_bind" shape="lid_l_bindmeshShape" layer="94" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe4_002_r_bind" shape="lid_l_bindmeshShape" layer="95" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe3_002_r_bind" shape="lid_l_bindmeshShape" layer="96" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe2_002_r_bind" shape="lid_l_bindmeshShape" layer="97" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe4_001_r_bind" shape="lid_l_bindmeshShape" layer="98" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe5_004_r_bind" shape="lid_l_bindmeshShape" layer="99" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe5_003_r_bind" shape="lid_l_bindmeshShape" layer="100" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe2_001_r_bind" shape="lid_l_bindmeshShape" layer="101" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe2_003_r_bind" shape="lid_l_bindmeshShape" layer="102" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe2_004_r_bind" shape="lid_l_bindmeshShape" layer="103" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe4_003_r_bind" shape="lid_l_bindmeshShape" layer="104" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe4_004_r_bind" shape="lid_l_bindmeshShape" layer="105" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe3_003_r_bind" shape="lid_l_bindmeshShape" layer="106" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe3_004_r_bind" shape="lid_l_bindmeshShape" layer="107" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe3_001_r_bind" shape="lid_l_bindmeshShape" layer="108" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe1_003_r_bind" shape="lid_l_bindmeshShape" layer="109" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="toe1_004_r_bind" shape="lid_l_bindmeshShape" layer="110" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="shoulderNoTwist_r_bind" shape="lid_l_bindmeshShape" layer="111" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="elbowTwist_r_bind" shape="lid_l_bindmeshShape" layer="112" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="index_004_r_bind" shape="lid_l_bindmeshShape" layer="113" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="index_003_r_bind" shape="lid_l_bindmeshShape" layer="114" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="middle_004_r_bind" shape="lid_l_bindmeshShape" layer="115" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="middle_003_r_bind" shape="lid_l_bindmeshShape" layer="116" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="ring_004_r_bind" shape="lid_l_bindmeshShape" layer="117" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="ring_003_r_bind" shape="lid_l_bindmeshShape" layer="118" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="pinky_004_r_bind" shape="lid_l_bindmeshShape" layer="119" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="pinky_003_r_bind" shape="lid_l_bindmeshShape" layer="120" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="pinkyCup_r_bind" shape="lid_l_bindmeshShape" layer="121" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="pinky_001_r_bind" shape="lid_l_bindmeshShape" layer="122" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="ring_001_r_bind" shape="lid_l_bindmeshShape" layer="123" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="wrist_r_bind" shape="lid_l_bindmeshShape" layer="124" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="middle_001_r_bind" shape="lid_l_bindmeshShape" layer="125" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="index_001_r_bind" shape="lid_l_bindmeshShape" layer="126" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="thumbCup_r_bind" shape="lid_l_bindmeshShape" layer="127" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="thumb_001_r_bind" shape="lid_l_bindmeshShape" layer="128" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="wristTwist_r_bind" shape="lid_l_bindmeshShape" layer="129" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="thumb_002_r_bind" shape="lid_l_bindmeshShape" layer="130" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="ring_002_r_bind" shape="lid_l_bindmeshShape" layer="131" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="middle_002_r_bind" shape="lid_l_bindmeshShape" layer="132" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="index_002_r_bind" shape="lid_l_bindmeshShape" layer="133" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="pinky_002_r_bind" shape="lid_l_bindmeshShape" layer="134" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="thumb_003_r_bind" shape="lid_l_bindmeshShape" layer="135" defaultValue="0.000" size="0" max="0"/>
+  <weights deformer="lid_l_bindmesh_skinCluster" source="elbow_r_bind" shape="lid_l_bindmeshShape" layer="136" defaultValue="0.000" size="0" max="0"/>
+</deformerWeight>

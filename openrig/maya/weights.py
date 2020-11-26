@@ -544,6 +544,10 @@ def importWeights(geometry, deformer, filepath):
     # adding the geometry to a selection list so I can extend to the shape
     # reliably with out any issues.
     selList = om2.MSelectionList()
+    is_geo_unique = mc.ls(geometry)
+    if not len(is_geo_unique) == 1:
+        print('import weights: [ {} ] is not unique'.format(is_geo_unique))
+        return
     selList.add(geometry)
     dagPath = selList.getDagPath(0)
     dagPath.extendToShape()

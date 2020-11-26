@@ -4030,8 +4030,7 @@
                 "", 
                 "# parent constrain the param node to the last joint in the joint list                    ", 
                 "mc.parentConstraint(joint_list[-1], param_node, mo=False)", 
-                "# turn off the visibility of the param node.", 
-                "mc.setAttr(\"{}.v\".format(mc.listRelatives(param_node, c=True, shapes=True)[0]), 0)", 
+                "", 
                 "# lock and hide attributes on the param control.", 
                 "rig_attribute.lockAndHide(param_node, (\"tx\",\"ty\",\"tz\",\"rx\",\"ry\",\"rz\",\"sx\",\"sy\",\"sz\",\"v\"))                 ", 
                 "", 
@@ -4087,7 +4086,7 @@
             ]
         }, 
         "/limb/create/param/proxy_attributes": {
-            "enabled": true, 
+            "enabled": false, 
             "code": [
                 "if ${create_proxy_attributes}:", 
                 "    for control in ${fk_control_list}:", 

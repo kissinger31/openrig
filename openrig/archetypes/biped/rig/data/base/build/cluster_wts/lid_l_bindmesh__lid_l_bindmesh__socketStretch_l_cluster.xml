@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<deformerWeight>
+  <headerInfo fileName="C:/Users/jx3xo/Desktop/sunrise/rig/david/rig/data/base/build/cluster_wts/lid_l_bindmesh__lid_l_bindmesh__socketStretch_l_cluster.xml" worldMatrix="1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 "/>
+  <shape name="lid_l_bindmeshShape" group="5736" stride="3" size="48" max="48">
+    <point index="0" value=" 4.934847 167.283051 3.325652"/>
+    <point index="1" value=" 4.954904 167.283066 3.325718"/>
+    <point index="2" value=" 4.934896 167.283066 3.305709"/>
+    <point index="3" value=" 4.954953 167.283066 3.305774"/>
+    <point index="4" value=" 3.790135 167.393631 4.033701"/>
+    <point index="5" value=" 3.810165 167.393631 4.033808"/>
+    <point index="6" value=" 3.790143 167.393631 4.013731"/>
+    <point index="7" value=" 3.810174 167.393631 4.013839"/>
+    <point index="8" value=" 2.377505 166.919693 4.013294"/>
+    <point index="9" value=" 2.397492 166.919693 4.013350"/>
+    <point index="10" value=" 2.377508 166.919693 3.993282"/>
+    <point index="11" value=" 2.397495 166.919693 3.993337"/>
+    <point index="12" value=" 2.001047 165.700363 3.656846"/>
+    <point index="13" value=" 2.021044 165.700363 3.656847"/>
+    <point index="14" value=" 2.001051 165.700363 3.636843"/>
+    <point index="15" value=" 2.021048 165.700363 3.636845"/>
+    <point index="16" value=" 2.034910 165.008621 3.613682"/>
+    <point index="17" value=" 2.054911 165.008621 3.613690"/>
+    <point index="18" value=" 2.034910 165.008621 3.593683"/>
+    <point index="19" value=" 2.054911 165.008621 3.593692"/>
+    <point index="20" value=" 2.487818 164.752213 3.592999"/>
+    <point index="21" value=" 2.507820 164.752213 3.593108"/>
+    <point index="22" value=" 2.487818 164.752213 3.573000"/>
+    <point index="23" value=" 2.507820 164.752213 3.573110"/>
+    <point index="24" value=" 3.307446 164.640015 3.620079"/>
+    <point index="25" value=" 3.327454 164.640015 3.620202"/>
+    <point index="26" value=" 3.307447 164.640015 3.600087"/>
+    <point index="27" value=" 3.327455 164.640015 3.600210"/>
+    <point index="28" value=" 4.137375 164.770813 3.490941"/>
+    <point index="29" value=" 4.157406 164.770813 3.491050"/>
+    <point index="30" value=" 4.137384 164.770813 3.470973"/>
+    <point index="31" value=" 4.157416 164.770813 3.471082"/>
+    <point index="32" value=" 4.847356 165.004807 3.179718"/>
+    <point index="33" value=" 4.867402 165.004807 3.179792"/>
+    <point index="34" value=" 4.847384 165.004807 3.159763"/>
+    <point index="35" value=" 4.867429 165.004807 3.159837"/>
+    <point index="36" value=" 5.429127 165.470993 2.696286"/>
+    <point index="37" value=" 5.449152 165.470993 2.696306"/>
+    <point index="38" value=" 5.429157 165.470993 2.676311"/>
+    <point index="39" value=" 5.449182 165.470993 2.676331"/>
+    <point index="40" value=" 5.685623 166.462173 2.191624"/>
+    <point index="41" value=" 5.705646 166.462173 2.191636"/>
+    <point index="42" value=" 5.685659 166.462173 2.171643"/>
+    <point index="43" value=" 5.705662 166.462173 2.171644"/>
+    <point index="44" value=" 5.420675 166.898331 2.696303"/>
+    <point index="45" value=" 5.440716 166.898331 2.696328"/>
+    <point index="46" value=" 5.420740 166.898331 2.676343"/>
+    <point index="47" value=" 5.440781 166.898331 2.676368"/>
+  </shape>
+  <weights deformer="lid_l_bindmesh__socketStretch_l_cluster" source="baseLayer" shape="lid_l_bindmeshShape" layer="0" defaultValue="0.000" size="32" max="47">
+    <point index="0" value="0.477"/>
+    <point index="1" value="0.477"/>
+    <point index="2" value="0.477"/>
+    <point index="3" value="0.477"/>
+    <point index="4" value="0.644"/>
+    <point index="5" value="0.644"/>
+    <point index="6" value="0.644"/>
+    <point index="7" value="0.644"/>
+    <point index="8" value="0.458"/>
+    <point index="9" value="0.458"/>
+    <point index="10" value="0.458"/>
+    <point index="11" value="0.458"/>
+    <point index="12" value="0.186"/>
+    <point index="13" value="0.186"/>
+    <point index="14" value="0.186"/>
+    <point index="15" value="0.186"/>
+    <point index="16" value="0.061"/>
+    <point index="17" value="0.061"/>
+    <point index="18" value="0.061"/>
+    <point index="19" value="0.061"/>
+    <point index="20" value="0.013"/>
+    <point index="21" value="0.013"/>
+    <point index="22" value="0.013"/>
+    <point index="23" value="0.013"/>
+    <point index="40" value="0.048"/>
+    <point index="41" value="0.048"/>
+    <point index="42" value="0.048"/>
+    <point index="43" value="0.048"/>
+    <point index="44" value="0.264"/>
+    <point index="45" value="0.264"/>
+    <point index="46" value="0.264"/>
+    <point index="47" value="0.264"/>
+  </weights>
+</deformerWeight>
