@@ -1,7 +1,7 @@
 {
     "type": "JointData", 
-    "user": "Matt", 
-    "time": "2020-11-25 22:42:13", 
+    "user": "jx3xo", 
+    "time": "2020-12-01 22:40:47", 
     "data": {
         "shoulderNoTwist_l_bind": {
             "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|clavicle_l_bind|shoulderNoTwist_l_bind", 
@@ -1761,9 +1761,9 @@
         "brow_inner_l_bind": {
             "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_upper_bind|head_tip_bind|brow_inner_l_bind", 
             "translate": [
-                1.5454, 
-                1.928, 
-                8.2014
+                1.5948, 
+                2.2753, 
+                8.0435
             ], 
             "rotate": [
                 0.0, 
@@ -1781,14 +1781,14 @@
                 0.0
             ], 
             "world_translate": [
-                1.545400000000016, 
-                166.5452652101874, 
-                5.419840268272921
+                1.5947715513612315, 
+                166.89271858716484, 
+                5.262128553468168
             ], 
             "world_rotate": [
-                -6.14386336986127, 
-                17.292438770407745, 
-                -1.3679241295316173
+                -6.14386336986131, 
+                17.292438770407696, 
+                -1.3679241295316267
             ], 
             "rotateOrder": 0, 
             "jointOrient": [
@@ -1806,9 +1806,9 @@
         "brow_main_l_bind": {
             "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_upper_bind|head_tip_bind|brow_main_l_bind", 
             "translate": [
-                3.3687, 
-                2.1818, 
-                7.4937
+                3.9988, 
+                2.6001, 
+                7.0759
             ], 
             "rotate": [
                 0.0, 
@@ -1826,14 +1826,14 @@
                 0.0
             ], 
             "world_translate": [
-                3.368700000000016, 
-                166.79959996605942, 
-                4.712332274003215
+                3.9987774141924977, 
+                167.21821805568666, 
+                4.294784286204752
             ], 
             "world_rotate": [
-                -5.96445711852939, 
-                20.285680017081123, 
-                -1.6860026887813413
+                -5.964457118529433, 
+                20.285680017081106, 
+                -1.6860026887813553
             ], 
             "rotateOrder": 0, 
             "jointOrient": [
@@ -1851,9 +1851,9 @@
         "brow_peak_l_bind": {
             "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_upper_bind|head_tip_bind|brow_peak_l_bind", 
             "translate": [
-                5.1962, 
-                2.2966, 
-                6.5221
+                5.3687, 
+                2.6426, 
+                6.1192
             ], 
             "rotate": [
                 0.0, 
@@ -1871,14 +1871,14 @@
                 0.0
             ], 
             "world_translate": [
-                5.196200000000016, 
-                166.91513419811025, 
-                3.7408193089716475
+                5.36865440983522, 
+                167.26145148695062, 
+                3.338166203517704
             ], 
             "world_rotate": [
-                -6.593264259268954, 
-                40.00000708288058, 
-                -3.1686247061760566
+                -6.593264259268999, 
+                40.00000708288055, 
+                -3.1686247061760873
             ], 
             "rotateOrder": 0, 
             "jointOrient": [
@@ -1896,9 +1896,9 @@
         "brow_main_r_bind": {
             "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_upper_bind|head_tip_bind|brow_main_r_bind", 
             "translate": [
-                -3.3687, 
-                2.1818, 
-                7.4937
+                -3.9988, 
+                2.6001, 
+                7.0759
             ], 
             "rotate": [
                 0.0, 
@@ -1916,14 +1916,14 @@
                 0.0
             ], 
             "world_translate": [
-                -3.368700000000016, 
-                166.79959996605947, 
-                4.71233227400322
+                -3.9987774141924977, 
+                167.21821805568666, 
+                4.294784286204752
             ], 
             "world_rotate": [
-                5.964457118529325, 
-                159.7143199829189, 
-                1.686002688781242
+                5.964457118529427, 
+                159.71431998291888, 
+                1.6860026887813184
             ], 
             "rotateOrder": 0, 
             "jointOrient": [
@@ -1941,9 +1941,9 @@
         "brow_peak_r_bind": {
             "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_upper_bind|head_tip_bind|brow_peak_r_bind", 
             "translate": [
-                -5.1962, 
-                2.2966, 
-                6.5221
+                -5.3687, 
+                2.6426, 
+                6.1192
             ], 
             "rotate": [
                 0.0, 
@@ -1961,14 +1961,14 @@
                 0.0
             ], 
             "world_translate": [
-                -5.196200000000016, 
-                166.91513419811025, 
-                3.740819308971652
+                -5.36865440983522, 
+                167.26145148695062, 
+                3.338166203517707
             ], 
             "world_rotate": [
-                6.593264259268922, 
+                6.593264259268948, 
                 139.99999291711936, 
-                3.1686247061759203
+                3.1686247061759714
             ], 
             "rotateOrder": 0, 
             "jointOrient": [
@@ -1986,9 +1986,9 @@
         "brow_inner_r_bind": {
             "dagPath": "|bind|hips_bind|spine_0_bind|spine_1_bind|spine_2_bind|spine_3_bind|spine_4_bind|spine_5_bind|chest_bind|neck_base_bind|neck_0_bind|neck_1_bind|neck_2_bind|neck_3_bind|skull_bind|face_upper_bind|head_tip_bind|brow_inner_r_bind", 
             "translate": [
-                -1.5454, 
-                1.928, 
-                8.2014
+                -1.5948, 
+                2.2753, 
+                8.0435
             ], 
             "rotate": [
                 0.0, 
@@ -2006,14 +2006,14 @@
                 0.0
             ], 
             "world_translate": [
-                -1.545400000000016, 
-                166.54526521018744, 
-                5.419840268272919
+                -1.5947715513612315, 
+                166.89271858716484, 
+                5.262128553468173
             ], 
             "world_rotate": [
-                6.143863369861139, 
-                162.7075612295923, 
-                1.3679241295315
+                6.143863369861241, 
+                162.70756122959227, 
+                1.3679241295316018
             ], 
             "rotateOrder": 0, 
             "jointOrient": [

@@ -1057,39 +1057,8 @@
         "/rig_workflow/workflow/psd": {
             "instance": "/panel", 
             "child_order": [
-                "mix", 
-                "add_pose", 
-                "update_pose", 
-                "delete_deltas", 
-                "mirror_deltas"
+                "mix"
             ]
-        }, 
-        "/rig_workflow/workflow/psd/add_pose": {
-            "instance": "/button", 
-            "child_order": [
-                "add"
-            ]
-        }, 
-        "/rig_workflow/workflow/psd/add_pose/add": {
-            "instance": "/psd_add_pose"
-        }, 
-        "/rig_workflow/workflow/psd/delete_deltas": {
-            "instance": "/button", 
-            "child_order": [
-                "delete"
-            ]
-        }, 
-        "/rig_workflow/workflow/psd/delete_deltas/delete": {
-            "instance": "/psd_delete_deltas"
-        }, 
-        "/rig_workflow/workflow/psd/mirror_deltas": {
-            "instance": "/button", 
-            "child_order": [
-                "mirror_deltas"
-            ]
-        }, 
-        "/rig_workflow/workflow/psd/mirror_deltas/mirror_deltas": {
-            "instance": "/psd_mirror_deltas"
         }, 
         "/rig_workflow/workflow/psd/mix": {
             "instance": "/button", 
@@ -1100,18 +1069,8 @@
         "/rig_workflow/workflow/psd/mix/open_ui": {
             "code": [
                 "import mix.test.run_mix as run_mix", 
-                "reload(run_mix)", 
                 "run_mix.launch()"
             ]
-        }, 
-        "/rig_workflow/workflow/psd/update_pose": {
-            "instance": "/button", 
-            "child_order": [
-                "update"
-            ]
-        }, 
-        "/rig_workflow/workflow/psd/update_pose/update": {
-            "instance": "/psd_update_pose"
         }, 
         "/rig_workflow/workflow/sdk": {
             "instance": "/panel", 

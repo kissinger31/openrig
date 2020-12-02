@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <deformerWeight>
-  <headerInfo fileName="C:/Users/jx3xo/Desktop/sunrise/rig/david/rig/data/base/build/wire_wts/cornea_l_geo__head_wire.xml"/>
-  <shape name="cornea_l_geoShape" group="412" stride="3" size="1538" max="1538" worldMatrix="1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 ">
+  <headerInfo fileName="C:/Users/jx3xo/Desktop/squarebit/openrig/openrig/archetypes/biped/rig/data/base/build/wire_wts/cornea_l_geo__head_wire.xml"/>
+  <shape name="cornea_l_geoShape" group="1016" stride="3" size="1538" max="1538" worldMatrix="0.989085 0.028971 0.144467 0.000000 -0.032371 0.999250 0.021239 0.000000 -0.143743 -0.025683 0.989282 0.000000 5.859332 -1.804402 -4.083477 1.000000 ">
     <point index="0" value=" 4.289738 164.737396 -0.171421"/>
     <point index="1" value=" 4.276014 167.547256 -0.237245"/>
     <point index="2" value=" 4.886539 167.615250 2.537650"/>
