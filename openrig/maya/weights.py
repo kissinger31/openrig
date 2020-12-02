@@ -10,7 +10,6 @@ import os
 import xml.etree.ElementTree as et
 import numpy
 
-import showtools
 from openrig.shared import common
 from openrig.maya import weightObject
 import openrig.maya.transform as rig_transform

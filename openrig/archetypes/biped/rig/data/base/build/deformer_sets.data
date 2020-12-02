@@ -1,0 +1,116 @@
+{
+    "type": "SetsData", 
+    "user": "Walter Yoder", 
+    "time": "2020-11-19 14:52:28", 
+    "data": {
+        "DeformerSets": {
+            "dagPath": "DeformerSets", 
+            "type": "objectSet", 
+            "parent": "", 
+            "members": [
+                "body_geo__face_wire_sc_dset", 
+                "body_geo__blink_cluster_sc_dset", 
+                "body_geo__face_post_wire_sc_dset", 
+                "body_geo__face_post_cluster_sc_dset", 
+                "body_geo__face_pre_cluster_sc_dset", 
+                "body_geo__lip_cluster_sc_dset", 
+                "body_geo__face_cluster_sc_dset", 
+                "body_geo__body_wire_sc_dset"
+            ]
+        }, 
+        "body_geo__face_wire_sc_dset": {
+            "dagPath": "body_geo__face_wire_sc_dset", 
+            "type": "objectSet", 
+            "parent": "DeformerSets", 
+            "members": [
+                "brow_l_curve_wire", 
+                "lid_l_curve_wire", 
+                "lip_main_wire", 
+                "brow_r_curve_wire", 
+                "lid_r_curve_wire"
+            ]
+        }, 
+        "body_geo__blink_cluster_sc_dset": {
+            "dagPath": "body_geo__blink_cluster_sc_dset", 
+            "type": "objectSet", 
+            "parent": "DeformerSets", 
+            "members": [
+                "blinkUpper_l_cluster", 
+                "blinkLower_l_cluster", 
+                "blinkUpper_r_cluster", 
+                "blinkLower_r_cluster"
+            ]
+        }, 
+        "body_geo__face_post_wire_sc_dset": {
+            "dagPath": "body_geo__face_post_wire_sc_dset", 
+            "type": "objectSet", 
+            "parent": "DeformerSets", 
+            "members": [
+                "lip_wire"
+            ]
+        }, 
+        "body_geo__face_post_cluster_sc_dset": {
+            "dagPath": "body_geo__face_post_cluster_sc_dset", 
+            "type": "objectSet", 
+            "parent": "DeformerSets", 
+            "members": [
+                "head_low_cluster"
+            ]
+        }, 
+        "body_geo__face_pre_cluster_sc_dset": {
+            "dagPath": "body_geo__face_pre_cluster_sc_dset", 
+            "type": "objectSet", 
+            "parent": "DeformerSets", 
+            "members": [
+                "lid_squash_l_cluster", 
+                "socketLift_l_cluster", 
+                "cheek_l_cluster", 
+                "socketLift_r_cluster", 
+                "lid_squash_r_cluster", 
+                "cheek_r_cluster"
+            ]
+        }, 
+        "body_geo__lip_cluster_sc_dset": {
+            "dagPath": "body_geo__lip_cluster_sc_dset", 
+            "type": "objectSet", 
+            "parent": "DeformerSets", 
+            "members": [
+                "lip_lower_cluster", 
+                "lip_upper_cluster"
+            ]
+        }, 
+        "body_geo__face_cluster_sc_dset": {
+            "dagPath": "body_geo__face_cluster_sc_dset", 
+            "type": "objectSet", 
+            "parent": "DeformerSets", 
+            "members": [
+                "sneer_l_cluster", 
+                "brow_corrugator_l_cluster", 
+                "cheekLift_l_cluster", 
+                "lip_lower_l_cluster", 
+                "ear_l_cluster", 
+                "lip_upper_l_cluster", 
+                "socketStretch_l_cluster", 
+                "sneer_r_cluster", 
+                "brow_corrugator_r_cluster", 
+                "socketStretch_r_cluster", 
+                "lip_upper_r_cluster", 
+                "cheekLift_r_cluster", 
+                "ear_r_cluster", 
+                "lip_lower_r_cluster"
+            ]
+        }, 
+        "body_geo__body_wire_sc_dset": {
+            "dagPath": "body_geo__body_wire_sc_dset", 
+            "type": "objectSet", 
+            "parent": "DeformerSets", 
+            "members": [
+                "spine_curve_wire", 
+                "leg_l_curve_wire", 
+                "arm_r_curve_wire", 
+                "leg_r_curve_wire", 
+                "arm_l_curve_wire"
+            ]
+        }
+    }
+}

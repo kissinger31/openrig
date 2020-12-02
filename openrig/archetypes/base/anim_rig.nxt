@@ -144,7 +144,7 @@
                 "import traceback", 
                 "from collections import OrderedDict", 
                 "", 
-                "# showtools imports", 
+                "# openrig imports",
                 "import openrig.maya.riglib.spline as rig_spline", 
                 "import openrig.maya.riglib.bindmesh as bindmesh", 
                 "import openrig.maya.psd as rig_psd", 
@@ -493,11 +493,43 @@
             }
         }, 
         "/apply/sets": {
+            "child_order": [
+                "rig_sets", 
+                "deformer_sets", 
+                "touch_sets"
+            ]
+        }, 
+        "/apply/sets/deformer_sets": {
+            "instance": "/import_sets", 
+            "attrs": {
+                "filepath": {
+                    "type": "raw", 
+                    "value": "${filelist::build/deformer_sets.data}"
+                }, 
+                "nodes": {
+                    "value": "data_object.getData().keys()"
+                }
+            }
+        }, 
+        "/apply/sets/rig_sets": {
             "instance": "/import_sets", 
             "attrs": {
                 "filepath": {
                     "type": "raw", 
                     "value": "${filelist::build/rig_sets.data}"
+                }, 
+                "nodes": {
+                    "type": "raw", 
+                    "value": "data_object.getData().keys()"
+                }
+            }
+        }, 
+        "/apply/sets/touch_sets": {
+            "instance": "/import_sets", 
+            "enabled": false, 
+            "attrs": {
+                "filepath": {
+                    "value": "${filelist::build/touch_sets.data}"
                 }, 
                 "nodes": {
                     "value": "data_object.getData().keys()"
@@ -1065,6 +1097,9 @@
         "/rig_workflow/file_io/importers/curve_file/load_curve_positions/import": {
             "instance": "/load/curves/load_positions"
         }, 
+        "/rig_workflow/file_io/importers/deformer_sets/import": {
+            "instance": "/apply/sets/deformer_sets"
+        }, 
         "/rig_workflow/file_io/importers/model": {
             "child_order": [
                 "import"
@@ -1074,7 +1109,7 @@
             "instance": "/load/model/load_file"
         }, 
         "/rig_workflow/file_io/importers/rig_sets/import": {
-            "instance": "/apply/sets"
+            "instance": "/apply/sets/rig_sets"
         }, 
         "/rig_workflow/file_io/importers/skeleton": {
             "child_order": [

@@ -1,4 +1,3 @@
-import openrig.maya.riglib.posePanel as posePanel
 import os
 import sys
 

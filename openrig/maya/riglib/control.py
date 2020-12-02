@@ -5,7 +5,7 @@ from collections import OrderedDict
 # maya imports
 import maya.cmds as mc
 
-# showtools imports
+# openrig imports
 import openrig.maya.attr
 import openrig.maya.hierarchy
 import openrig.maya.transform

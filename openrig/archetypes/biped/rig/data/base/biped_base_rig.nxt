@@ -1,13 +1,18 @@
 {
-    "version": "1.16", 
+    "version": "1.17", 
     "alias": "biped_base_rig", 
     "color": "#769b70", 
     "mute": false, 
-    "solo": false, 
+    "solo": true, 
     "references": [
         "../face_rig.nxt", 
         "../body_rig.nxt"
     ], 
+    "comp_overrides": {
+        "../../../base/anim_rig.nxt": {
+            "solo": false
+        }
+    }, 
     "meta_data": {
         "positions": {
             "/": [
@@ -926,7 +931,7 @@
             ]
         }, 
         "collapse": {
-            "/apply": true, 
+            "/apply": false, 
             "/apply/control_defaults": false, 
             "/apply/controls": true, 
             "/apply/controls/control_defaults": false, 
@@ -949,6 +954,7 @@
             "/apply/freeze_wire/freeze_wire_expression": true, 
             "/apply/sdk": false, 
             "/apply/sdk/import": false, 
+            "/apply/sets": false, 
             "/arm": true, 
             "/arm/clavicle": false, 
             "/arm/clavicle/control": false, 
@@ -1504,7 +1510,7 @@
             "/prebuild/connect_geo_attrs": true, 
             "/prebuild/top_nodes": false, 
             "/prebuild/top_nodes/tag_trs_nodes": true, 
-            "/rig_workflow": true, 
+            "/rig_workflow": false, 
             "/rig_workflow/file_io": false, 
             "/rig_workflow/file_io/exporters": true, 
             "/rig_workflow/file_io/exporters/cluster": true, 
@@ -1554,6 +1560,7 @@
             "/rig_workflow/file_io/exporters/wire": true, 
             "/rig_workflow/file_io/exporters/wire/export/export_data": true, 
             "/rig_workflow/file_io/importers": false, 
+            "/rig_workflow/file_io/importers/curve_file": true, 
             "/rig_workflow/file_io/importers/curve_importers": true, 
             "/rig_workflow/file_io/importers/curve_importers/curve_layout": true, 
             "/rig_workflow/file_io/importers/curve_importers/curve_layout/curve_file": true, 
@@ -1575,7 +1582,13 @@
             "/rig_workflow/file_io/importers/model/import_clean": true, 
             "/rig_workflow/file_io/importers/model/import_clean/import": true, 
             "/rig_workflow/file_io/importers/model/import_clean/new_scene": true, 
+            "/rig_workflow/file_io/importers/rig_sets": false, 
+            "/rig_workflow/file_io/importers/rig_sets/import": false, 
+            "/rig_workflow/file_io/importers/skeleton": true, 
+            "/rig_workflow/file_io/importers/skeleton/import": true, 
+            "/rig_workflow/file_io/importers/skeleton/import_clean": true, 
             "/rig_workflow/file_io/importers/skeleton/node": true, 
+            "/rig_workflow/file_io/importers/skincluster": true, 
             "/rig_workflow/file_io/importers/skincluster/import": true, 
             "/rig_workflow/file_io/importers/skincluster/import/non_rigid_transformation": true, 
             "/rig_workflow/file_io/importers/weights": true, 

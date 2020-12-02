@@ -4,8 +4,8 @@ This module is used for everything ikfk
 
 import maya.cmds as mc
 import maya.api.OpenMaya as om2
-from showtools.maya import common
-from showtools.maya import transform
+from openrig.shared import common
+from openrig.maya import transform
 
 class IKFKBase(object):
     '''

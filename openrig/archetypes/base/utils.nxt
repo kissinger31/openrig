@@ -62,10 +62,6 @@
                 -3720.0, 
                 -1420.0
             ], 
-            "/export_psd_new": [
-                -2485.4713493530503, 
-                -1384.2513863216268
-            ], 
             "/export_sdk_data": [
                 -3280.0, 
                 -1220.0
@@ -87,10 +83,6 @@
                 -640.0
             ], 
             "/import_psd": [
-                -1980.0, 
-                -280.0
-            ], 
-            "/import_psd_new": [
                 -1980.0, 
                 -360.0
             ], 
@@ -252,7 +244,7 @@
                 "export_joint_position_data", 
                 "export_sdk_data", 
                 "export_skincluster", 
-                "import_psd_new", 
+                "import_psd", 
                 "import_weight_directory", 
                 "load_curve_data", 
                 "load_data", 
@@ -291,8 +283,6 @@
                 "flip_deformer_map", 
                 "import_sets", 
                 "export_sets_data", 
-                "import_psd", 
-                "export_psd_new", 
                 "save_maya_file", 
                 "trasnfer_data"
             ], 
@@ -309,7 +299,7 @@
                 "import traceback", 
                 "from collections import OrderedDict", 
                 "", 
-                "# showtools imports", 
+                "# openrig imports", 
                 "import openrig.maya.riglib.spline as rig_spline", 
                 "import openrig.maya.riglib.bindmesh as bindmesh", 
                 "import openrig.maya.psd as rig_psd", 
@@ -755,7 +745,7 @@
                     "type": "NoneType"
                 }, 
                 "data_type": {
-                    "comment": "The data type you will be storing. These are modules in showtools.maya.newData", 
+                    "comment": "The data type you will be storing. These are modules in openrig.maya.newData", 
                     "type": "raw", 
                     "value": "node_data"
                 }, 
@@ -1026,14 +1016,6 @@
                 "mc.undoInfo(closeChunk=1)"
             ]
         }, 
-        "/export_psd_new": {
-            "instance": "/export_psd", 
-            "attrs": {
-                "data_type": {
-                    "value": "PSDDataNew"
-                }
-            }
-        }, 
         "/export_sdk_data": {
             "instance": "/export_data", 
             "execute_in": "", 
@@ -1183,120 +1165,6 @@
             ]
         }, 
         "/import_psd": {
-            "attrs": {
-                "directory_path": {
-                    "type": "NoneType"
-                }, 
-                "load_deltas": {
-                    "type": "bool", 
-                    "value": "False"
-                }, 
-                "node_list": {
-                    "type": "raw", 
-                    "value": "mc.ls(type=\"poseInterpolator\")"
-                }, 
-                "psd_group": {
-                    "type": "str", 
-                    "value": "'psd_grp'"
-                }, 
-                "psd_group_parent": {
-                    "type": "str", 
-                    "value": "'rig'"
-                }, 
-                "psd_name_list": {
-                    "type": "list", 
-                    "value": "[]"
-                }
-            }, 
-            "code": [
-                "import os", 
-                "import gzip", 
-                "import shutil", 
-                "", 
-                "for name in ${psd_name_list}:    ", 
-                "    if not os.path.isdir(r'${directory_path}'):", 
-                "        mc.warning('${directory_path} does not exist!!! Skipping loading PSDs')", 
-                "        break", 
-                "    file_pose = r'${directory_path}/{}.pose'.format(name)", 
-                "    file_shape_list = [shape_file for shape_file in os.listdir(r'${directory_path}') if \".shp\" in shape_file and name in shape_file]", 
-                "    if os.path.isfile(file_pose):", 
-                "        print('Loading PSD File: [ {} ]'.format(file_pose))", 
-                "        # DELTAS and WEIGHTS", 
-                "        #", 
-                "        if ${load_deltas}:", 
-                "            # Import shapes", 
-                "            mc.select(cl=True)", 
-                "            for file_shape in file_shape_list:", 
-                "                file_name = file_shape.split(\".\")[1]", 
-                "                ", 
-                "                mc.blendShape(ip=os.path.join(r'${directory_path}' ,file_shape),  ", 
-                "                               name=file_name, ignoreSelected=True, topologyCheck=False, suppressDialog=True)", 
-                "            # Weights       ", 
-                "            deformer = '{}_psd'.format(name)", 
-                "            if mc.objExists(deformer):", 
-                "                geos = mc.deformer(deformer, q=True, g=True)", 
-                "                for geo in geos:", 
-                "                    geo = mc.listRelatives(geo, p=1)[0]", 
-                "                    file_name = '{}__{}.xml'.format(geo, deformer)", 
-                "                    filepath = os.path.join(r'${directory_path}', file_name)", 
-                "                    if os.path.exists(filepath) or os.path.exists(filepath+'.gz'):", 
-                "                        # Unzip", 
-                "                        #       Compare when the zip file was written, if it is more than a minute newer", 
-                "                        #       than the non-zipped, unzip. If no un-zipped file exists it will unzip ", 
-                "                        #       because of the large default diff_time.", 
-                "                        diff_time = 10000", 
-                "                        if os.path.exists(filepath) and os.path.exists(filepath+'.gz'):", 
-                "                            diff_time = os.stat(filepath+'.gz').st_mtime - os.stat(filepath).st_mtime", 
-                "                            ", 
-                "                        if diff_time > 60.0:", 
-                "                            if os.path.exists(filepath+'.gz'):", 
-                "                                print('unzipping', filepath+'.gz')", 
-                "                                with gzip.open(filepath+'.gz', 'rb') as f:", 
-                "                                    file_content = f.read()", 
-                "                                    # Write uncompressed file", 
-                "                                    g = open(filepath, 'w')", 
-                "                                    g.write(file_content)", 
-                "                                    g.close()", 
-                "                        else:", 
-                "                            print('No need to unzip weights, file is update date')", 
-                "                        # Import", 
-                "                        print('Loading Weights filepath: [ {} ]'.format(file_pose))", 
-                "                        rig_weights.importWeights(geo, deformer, filepath)", 
-                "            ", 
-                "        ", 
-                "        # INTERPOLATORS", 
-                "        #", 
-                "        else:          ", 
-                "            # Import pose interpolators - Selection must be cleared for this command to work", 
-                "            mc.select(cl=True)", 
-                "            try:", 
-                "                    mc.poseInterpolator(im=file_pose)", 
-                "            except:", 
-                "                    print \"couldn't load all of the poses in {}\".format(file_pose)", 
-                "            # Import pose control data ", 
-                "            nodes = ${node_list}", 
-                "            data_obj = psd_data.PSDData()", 
-                "            data_file = os.path.join(r'${directory_path}','{}_poseControls.data'.format(name))", 
-                "            data_obj.read(data_file)", 
-                "            data_obj.applyData(nodes)            ", 
-                "    else:", 
-                "        print('Warning: PSD File does not exist [ {} ]'.format(file_pose))", 
-                "", 
-                "# Move nodes into a group", 
-                "if ${node_list}:", 
-                "    if not mc.objExists(${psd_group}):", 
-                "        mc.group(empty=True, n=${psd_group})", 
-                "    if mc.objExists(${psd_group_parent}):", 
-                "        mc.parent(${psd_group}, ${psd_group_parent})", 
-                "    if mc.ls(${node_list}):", 
-                "        nodes = mc.listRelatives(${node_list}, p=True)", 
-                "        mc.parent(${node_list}, ${psd_group})", 
-                "    if mc.objExists('numericPSD_geo'):", 
-                "        mc.parent('numericPSD_geo', ${psd_group})", 
-                ""
-            ]
-        }, 
-        "/import_psd_new": {
             "enabled": true, 
             "attrs": {
                 "directory_path": {
@@ -1385,7 +1253,7 @@
                 "            # Import pose interpolators - Selection must be cleared for this command to work", 
                 "            mc.select(cl=True)", 
                 "            ", 
-                "            data_obj = psd_data.PSDDataNew()", 
+                "            data_obj = psd_data.PSDData()", 
                 "            data_file = os.path.join(r'${directory_path}','{}_poseControls.data'.format(name))", 
                 "            data_obj.read(data_file)            ", 
                 "            data = data_obj.getData()", 
@@ -2277,12 +2145,12 @@
             }, 
             "code": [
                 "import maya.cmds as mc", 
-                "import openrig.maya.riglib.spaces",
+                "import openrig.maya.riglib.spaces", 
                 "", 
                 "if mc.objExists(${constraint_node}) and mc.objExists(${attribute_node}):", 
-                "    group=openrig.maya.riglib.spaces.create(${constraint_node}, ${attribute_node}, parent=${parent},spaceAttrName=${space_attribute_name}, nameDefault=${name_default} )",
+                "    group=openrig.maya.riglib.spaces.create(${constraint_node}, ${attribute_node}, parent=${parent},spaceAttrName=${space_attribute_name}, nameDefault=${name_default} )", 
                 "    if ${target_list} and ${name_list}:", 
-                "        openrig.maya.riglib.spaces.addSpace(${constraint_node}, ${target_list}, ${name_list}, group, ${attribute_node}, ${constraint_type})",
+                "        openrig.maya.riglib.spaces.addSpace(${constraint_node}, ${target_list}, ${name_list}, group, ${attribute_node}, ${constraint_type})", 
                 "        mc.setAttr('{}.{}'.format(${attribute_node}, ${space_attribute_name}), ${default_target_index})", 
                 "        ", 
                 ""

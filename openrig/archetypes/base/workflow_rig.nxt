@@ -606,7 +606,8 @@
                 "skeleton", 
                 "curve_file", 
                 "skincluster", 
-                "rig_sets"
+                "rig_sets", 
+                "deformer_sets"
             ]
         }, 
         "/rig_workflow/file_io/importers/curve_file": {
@@ -630,6 +631,24 @@
             "attrs": {
                 "text": {
                     "value": "curve file"
+                }
+            }
+        }, 
+        "/rig_workflow/file_io/importers/deformer_sets": {
+            "instance": "/button", 
+            "child_order": [
+                "import"
+            ]
+        }, 
+        "/rig_workflow/file_io/importers/deformer_sets/import": {
+            "instance": "/import_sets", 
+            "attrs": {
+                "filepath": {
+                    "type": "raw", 
+                    "value": "${filelist::build/deformer_sets.data}"
+                }, 
+                "nodes": {
+                    "value": "data_object.getData().keys()"
                 }
             }
         }, 
@@ -760,7 +779,7 @@
             "instance": "/button", 
             "code": [
                 "import maya.cmds as mc", 
-                "import openrig.maya.riglib.control as rig_control",
+                "import openrig.maya.riglib.control as rig_control", 
                 "", 
                 "controls = rig_control.getControls()", 
                 "mc.cutKey(controls)"
@@ -1080,11 +1099,9 @@
         }, 
         "/rig_workflow/workflow/psd/mix/open_ui": {
             "code": [
-                "import mix.ui.psdModel", 
-                "reload(mix.ui.psdModel)", 
-                "mix.ui.psdModel.launch()", 
-                "", 
-                ""
+                "import mix.test.run_mix as run_mix", 
+                "reload(run_mix)", 
+                "run_mix.launch()"
             ]
         }, 
         "/rig_workflow/workflow/psd/update_pose": {

@@ -3,7 +3,7 @@
 import maya.cmds as mc
 import maya.mel as mm
 from collections import OrderedDict
-# showtools Modules
+# openrig Modules
 from openrig.maya import skinCluster
 from openrig.maya import cluster
 from openrig.maya import weights
