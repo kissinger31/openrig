@@ -4,7 +4,7 @@ OpenRig is composed of general rig python libraries and NXT rig build graphs.
 # Dependencies 
 * Numpy for Maya (or any Python 2.7)
 `pip install -i https://pypi.anaconda.org/carlkl/simple numpy`
-* NXT Maya plugin
+* NXT Maya plugin - https://github.com/nxt-dev/nxt/releases
 * Maya 2018 and on
 
 # Building a biped rig
