@@ -3,7 +3,6 @@ General rig python libraries and NXT rig build graphs
 
 # Dependencies 
 Numpy for Maya (or any Python 2.7)
-
 `pip install -i https://pypi.anaconda.org/carlkl/simple numpy`
 
 Maya 2018 and on
