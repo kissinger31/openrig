@@ -1,4 +1,4 @@
-# openrig 
+# OpenRig 
 OpenRig is composed of general rig python libraries and NXT rig build graphs.
 
 # Dependencies 
