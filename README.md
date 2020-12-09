@@ -1,5 +1,5 @@
 # openrig 
-General rig python libraries and NXT rig build graphs
+OpenRig is composed of general rig python libraries and NXT rig build graphs.
 
 # Dependencies 
 Numpy for Maya (or any Python 2.7)
