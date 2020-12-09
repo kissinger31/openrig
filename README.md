@@ -10,8 +10,8 @@ OpenRig is collection python rig libraries and NXT build graphs.
 # Building a biped rig
 1. Add the openrig package to your python sys.path so it is available to Maya. (See env example below)
 2. Get the NXT maya plugin from the NXT github release page.
-3. Open the biped_base_rig.nxt graph in NXT in Maya
-openrig/openrig/archetypes/biped/rig/data/base/biped_base_rig.nxt
+3. Open the `biped_base_rig.nxt` graph in NXT in Maya
+`openrig/openrig/archetypes/biped/rig/data/base/biped_base_rig.nxt`
 4. Run a build by clicking the play/build button in nxt.
 
 # NXT file roots
