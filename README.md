@@ -1,6 +1,12 @@
 # openrig 
 General rig python libraries and NXT rig build graphs
 
+# Dependencies 
+Numpy for Maya (or any Python 2.7)
+pip install -i https://pypi.anaconda.org/carlkl/simple numpy
+
+Maya 2018 and on
+
 # Building a biped rig
 1. Add the openrig package to your python sys.path so it is available to Maya. (See env example below)
 2. Get the NXT maya plugin from the NXT github release page.
