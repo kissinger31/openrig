@@ -1,19 +1,22 @@
 Credits
 ======= 
-Original Authors
+Studios
 ------------
-The following people were the authors of openrig.
-* Walter Yoder
-* Matthew Schiller
+* [sunrise productions](http://www.sunriseproductions.tv)
+* [squarebit studios](http://www.squarebitstudios.com)
+* [origamiDollar](http://www.http://origamidollar.com)
 
 Contributors
 ------------
 
 The following people have contributed to openrig.
 
+* Walt Yoder
+* Matt Schiller
 * Joy Johnson
 * Aaron Adams
 * Zach Gray
+* Dan Barker
+* Erik Hansen
 * Chris Cartwright
 * Christian Massyn 
-* Erik Hansen
