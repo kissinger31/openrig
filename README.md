@@ -35,7 +35,7 @@ import os, sys
 # repo path is the directory your repo is located. you cloned you're repo. 
 repo_path = 'C:/Users/{user}/Desktop/sunrise'
 openrig_path = '{}/openrig'.format(repo_path)
-nxt_roots = '{anotherPathToAssets}/character;{}/openrig/openrig/archetypes'.format(repo_path)
+nxt_roots = '{anotherPathToAssets}/character;{}/openrig/archetypes'.format(openrig_path)
 
 sys.path.append(openrig_path)
 sys.path.append(repo_path)
