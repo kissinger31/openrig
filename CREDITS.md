@@ -13,3 +13,4 @@ The following people have contributed to openrig.
 * Zach Gray
 * Chris Cartwright
 * Christian Massyn 
+* Erik Hansen
