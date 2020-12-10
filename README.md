@@ -1,5 +1,12 @@
-# OpenRig 
-OpenRig is collection python libraries and NXT graphs that allow you to author/deliver rigs. Openrig has archetype examples of a biped and prop to show how one might use NXT (https://nxt-dev.github.io/) to create templates and inherit layers to generate asset rigs. It also contains tons of useful libraries to help with exporting, importing, mutating all kinds of data. Most of the libaraies are written to work with Autodesk Maya. There are plans to expand this to other applications in the future.
+# Overview 
+OpenRig is collection python libraries and NXT graphs that allow you to author/deliver rigs. Openrig has archetype example of a biped and prop to show how one might use NXT (https://nxt-dev.github.io/) to create templates and inherit layers to generate asset rigs. It also contains tons of useful libraries to help with exporting, importing, mutating all kinds of data. Most of the libaraies are written to work with Autodesk Maya. There are plans to expand this to other applications in the future.
+
+# Links
+- [Dependencies](#dependencies)
+- [Building](#building-a-biped-rig)
+- [NXT File Roots](#nxt-file-roots)
+- [Contributing](CONTRIBUTING.md)
+- [Licensing](LICENSE)
 
 # Dependencies 
 * Numpy for Maya (or any Python 2.7)
@@ -10,7 +17,7 @@ OpenRig is collection python libraries and NXT graphs that allow you to author/d
 # Building a biped rig
 1. Add the openrig package to your python sys.path so it is available to Maya. (See env example below)
 2. Get the NXT maya plugin from the NXT github release page. 
-https://github.com/nxt-dev/nxt and
+https://github.com/nxt-dev/nxt
 https://github.com/nxt-dev/nxt_editor
 3. Open the `biped_base_rig.nxt` graph in NXT in Maya
 `openrig/openrig/archetypes/biped/rig/data/base/biped_base_rig.nxt`
