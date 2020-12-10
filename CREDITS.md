@@ -1,7 +1,10 @@
 Credits
-=======
-
-The original authors of openrig are Walter Yoder and Matthew Schiller.
+======= 
+Original Authors
+------------
+The following people were the authors of openrig.
+* Walter Yoder
+* Matthew Schiller
 
 Contributors
 ------------
