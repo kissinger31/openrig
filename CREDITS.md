@@ -1,5 +1,10 @@
 Credits
 ======= 
+Original Authors
+------------
+* Walt Yoder
+* Matt Schiller
+
 Studios
 ------------
 * [sunrise productions](http://www.sunriseproductions.tv)
@@ -11,8 +16,7 @@ Contributors
 
 The following people have contributed to openrig.
 
-* Walt Yoder
-* Matt Schiller
+
 * Joy Johnson
 * Aaron Adams
 * Zach Gray
