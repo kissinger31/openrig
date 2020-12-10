@@ -10,6 +10,89 @@ import openrig.shared.common
 import openrig.maya.riglib.bindmesh
 import openrig.maya.riglib.control
 
+def getWires(geometry):
+    '''
+    This will check the geometry to see if it has a wire in it's history stack
+
+    :param geometry: The mesh you want to check for a cluster
+    :type geometry: str
+    '''
+    hist = mc.listHistory(geometry, pdo=True, il=2) or []
+    hist = [node for node in hist if mc.nodeType(node) == "wire"]
+    hist.reverse()
+    return hist
+
+def transferWire(source, target, deformer, surfaceAssociation="closestPoint", createNew=True):
+    '''
+    This will transfer wire from one mesh to another and copy the weights
+
+    :param source: The geomertry you are transfer from
+    :type source:  str
+
+    :param target: The geometry you want to transfer to
+    :type target: str | list
+
+    :param surfaceAssociation: How to copy the weights from source to target available values
+                                are "closestPoint", "rayCast", or "closestComponent"
+    :type surfaceAssociation: str
+    '''
+    # do some error checking
+    if not mc.objExists(source):
+        raise RuntimeError('The source mesh "{}" does not exist in the current Maya session.'.format(source))
+    if not isinstance(surfaceAssociation, basestring):
+        raise TypeError('The surfaceAssociation argument must be a string.')
+    if deformer:
+        if not mc.objExists(deformer):
+            raise RuntimeError("{} doesn't exist in the current Maya session!".format(deformer))
+
+    # first we will turn the target into a list if it's not already a list
+    meshList = openrig.shared.common.toList(target)
+
+    # make sure we have a wire on the source mesh
+    wireList = list()
+    for mesh in meshList:
+        if not mc.objExists(mesh):
+            mc.warning('The target mesh "{}" does not exist in the current Maya session.'.format(target))
+            continue
+
+        # check to see if there is a wire already  on the target mesh
+        hist = [node for node in mc.ls(mc.listHistory(mesh, pdo=True, il=1), type='geometryFilter') if mc.nodeType(node) == "wire"]
+
+        # if there is no wire, we will create one.
+        newDeformer = "{}__{}".format(mesh, deformer)
+        if deformer not in hist and not createNew:
+            # TODO: This is assuming the set name is deformer+Set, should trace it instead.
+            mc.sets(mc.ls("{}.cp[*]".format(mesh))[0], e=True, add="{}Set".format(deformer))
+            newDeformer = deformer
+        elif createNew:
+            if not newDeformer in hist:
+                # query wire data
+                curve = mc.wire(deformer, q=1, wire=True)
+                newDeformer = mc.wire(mesh, gw=False, en=1.00, ce=0.00, li=0.00,
+                                       w=curve, name=newDeformer)[0]
+                # set the default values for the wire deformer
+                attrs = ['rotation', 'dropoffDistance[0]']
+                for attr in attrs:
+                    value = mc.getAttr('{}.{}'.format(deformer, attr))
+                    mc.setAttr('{}.{}'.format(newDeformer, attr), value)
+
+        else:
+            newDeformer = deformer
+
+        wireList.append(newDeformer)
+
+        # Transfer weights
+        #mc.copyDeformerWeights(ss=source, ds=mesh, sd=deformer, dd=newDeformer,
+        #                       sa=surfaceAssociation, noMirror=True)
+
+        print('source {} target {} source {} target {}'.format(source, mesh, deformer, newDeformer))
+        mc.select(newDeformer)
+        #error()
+        openrig.maya.weights.copyDeformerWeight(source, mesh, deformer, newDeformer)
+
+
+    return wireList
+
 def convertWiresToSkinCluster(newSkinName, targetGeometry, wireDeformerList, keepWires=False,
     rootParentNode="rig", rootPreMatrixNode="trs_aux", jointDepth=2):
     '''
@@ -31,6 +114,8 @@ def convertWiresToSkinCluster(newSkinName, targetGeometry, wireDeformerList, kee
 
         # Store deformation order
         deformer_order = mc.listHistory(target, pdo=1, il=2)
+        if not deformer_order:
+            continue
 
         # Remove any wires that are not in the history from the conversion list
         convertWireList = list(set(deformer_order).intersection(convertWireList))
@@ -38,7 +123,6 @@ def convertWiresToSkinCluster(newSkinName, targetGeometry, wireDeformerList, kee
         if not convertWireList:
             continue
 
-        base = mc.duplicate(target)[0]
         reorder_deformer = None
         for deformer in convertWireList:
             orderIndex = deformer_order.index(deformer)
@@ -46,52 +130,7 @@ def convertWiresToSkinCluster(newSkinName, targetGeometry, wireDeformerList, kee
                 if not deformer_order[orderIndex-1] in wireDeformerList:
                     reorder_deformer = deformer_order[orderIndex-1]
 
-        # Delete current skinCluster connections
-        #     TODO: What should be done when multiple skinClusters already exist?
-        #     TODO: Make a function for activating and deactiviing skinClusters
-        #     1. Disconnect all the existing skinClusters and storing their
-        #        connections.
-        #     2. Build the new skinCluster
-        #     3. Reconnect all the skinClusters in reverse order
-        sc_hist_list = mc.ls(mc.listHistory(target, pdo=1, il=2),  type='skinCluster')
-        sc_list = []
-
-        for sc in sc_hist_list:
-            # OUTGOING
-            #
-            # Get the outgoing geom connection of the skinCluster
-            sc_data = [sc]
-            sc_out = mc.listConnections(sc+'.outputGeometry[0]', p=1)[0]
-            sc_data.append(sc_out)
-
-            # INCOMING
-            # Get the group parts node of the skinCluster (incoming connection)
-            sc_gp = mc.listConnections(sc+'.input[0].inputGeometry')[0]
-            sc_data.append(sc_gp)
-
-            # Get the connection coming into the group parts node
-            sc_pre_dfmr = mc.listConnections(sc_gp+'.inputGeometry', p=1)[0]
-            sc_data.append(sc_pre_dfmr)
-            # Remove the connection
-            mc.disconnectAttr(sc_pre_dfmr, sc_gp+'.inputGeometry')
-
-            # Store connection information
-            sc_list.append(sc_data)
-
-            # Disconnect the incoming connection
-            # Bypass the skinCluster by connecting the incoming group parts connection
-            # into the outgoing skinCluster destination connection
-            mc.connectAttr(sc_pre_dfmr, sc_out, f=1)
-
-        # create a base joint that we can put weights on.
-        baseJnt = "root_preMatrix_jnt"
-        if not mc.objExists(baseJnt):
-            jnt = mc.createNode("joint",name="root_preMatrix_jnt")
-            mc.setAttr("{}.v".format(jnt), 0)
-            mc.parent(baseJnt,rootParentNode)
-
-        # create a target skinCluster that will replace the wire defomer
-        targetSkinCluster = mc.skinCluster(target, baseJnt, tsb=1, name='{}__{}'.format(target, newSkinName))[0]
+        base = mc.duplicate(target, n='yank_base')[0]
 
         # get the influences to be used for the target skinCluster
         preMatrixNodeList = list()
@@ -145,10 +184,61 @@ def convertWiresToSkinCluster(newSkinName, targetGeometry, wireDeformerList, kee
                     mc.move( 1, 0, 0, tempInf, r=1, worldSpaceDistance=1)
                     mc.pointPosition('{}.cp[0]'.format(target))
                     # get the delta to put into weightList
-                    weightList.append(openrig.maya.shape.getDeltas(base, target))
+                    weights = openrig.maya.shape.getDeltas(base, target)
+                    if not len(weights):
+                        weights = numpy.zeros(mc.polyEvaluate(target, v=1))
+                    weightList.append(weights)
                     # recconect the joint and delete the temp influence.
                     mc.connectAttr(jnt+'.worldMatrix[0]', curveSkin+'.matrix[{}]'.format(infIndex), f=1)
                     mc.delete(tempInf)
+            # End wire deformer loop
+
+        # Delete current skinCluster connections
+        #     TODO: What should be done when multiple skinClusters already exist?
+        #     TODO: Make a function for activating and deactiviing skinClusters
+        #     1. Disconnect all the existing skinClusters and storing their
+        #        connections.
+        #     2. Build the new skinCluster
+        #     3. Reconnect all the skinClusters in reverse order
+        sc_hist_list = mc.ls(mc.listHistory(target, pdo=1, il=2),  type='skinCluster')
+        sc_list = []
+
+        for sc in sc_hist_list:
+            # OUTGOING
+            #
+            # Get the outgoing geom connection of the skinCluster
+            sc_data = [sc]
+            sc_out = mc.listConnections(sc+'.outputGeometry[0]', p=1)[0]
+            sc_data.append(sc_out)
+
+            # INCOMING
+            # Get the group parts node of the skinCluster (incoming connection)
+            sc_gp = mc.listConnections(sc+'.input[0].inputGeometry')[0]
+            sc_data.append(sc_gp)
+
+            # Get the connection coming into the group parts node
+            sc_pre_dfmr = mc.listConnections(sc_gp+'.inputGeometry', p=1)[0]
+            sc_data.append(sc_pre_dfmr)
+            # Remove the connection
+            mc.disconnectAttr(sc_pre_dfmr, sc_gp+'.inputGeometry')
+
+            # Store connection information
+            sc_list.append(sc_data)
+
+            # Disconnect the incoming connection
+            # Bypass the skinCluster by connecting the incoming group parts connection
+            # into the outgoing skinCluster destination connection
+            mc.connectAttr(sc_pre_dfmr, sc_out, f=1)
+
+        # create a base joint that we can put weights on.
+        baseJnt = "root_preMatrix_jnt"
+        if not mc.objExists(baseJnt):
+            jnt = mc.createNode("joint",name="root_preMatrix_jnt")
+            mc.setAttr("{}.v".format(jnt), 0)
+            mc.parent(baseJnt,rootParentNode)
+
+        # create a target skinCluster that will replace the wire defomer
+        targetSkinCluster = mc.skinCluster(target, baseJnt, tsb=1, name='{}__{}'.format(target, newSkinName))[0]
 
         # Add curve joints as influces to targetSkinCluster and hook up bindPreMatrix nuls
         for jnt, preMatrixNode in zip(influenceList,preMatrixNodeList):
@@ -179,14 +269,12 @@ def convertWiresToSkinCluster(newSkinName, targetGeometry, wireDeformerList, kee
         # make sure we have the correct weights for the baseJnt
         # Create a numpy array the length of the number of verts and assigning
         # a value of 1.0 to each index
-        # TODO: This can be simplified to baseJntArray = numpy.ones(mc.polyEvaluate(target, v=1))
-        baseJntArray = numpy.array([1.0 for id in mc.ls("{}.cp[*]".format(target), fl=True)])
+        baseJntArray = numpy.ones(mc.polyEvaluate(target, v=1))
 
         # Update the base joints weights by subtracting the curve joint weights
-        for weights in weightList:
+        for i,weights in enumerate(weightList):
             if len(weights):
                 baseJntArray = baseJntArray - weights
-
         # add the baseJnt weights first by itself.
         influenceList.insert(0, baseJnt)
         weightList.insert(0, baseJntArray)
@@ -201,6 +289,11 @@ def convertWiresToSkinCluster(newSkinName, targetGeometry, wireDeformerList, kee
         if reorder_deformer:
             mc.reorderDeformers(reorder_deformer, targetSkinCluster, target)
 
+        # normalize weights
+        mc.setAttr(baseJnt+'.liw', 0)
+        for inf in influenceList:
+            mc.setAttr(inf+'.liw', 1)
+        mc.skinPercent(targetSkinCluster, target, normalize=1)
 
     # delete the wire deformers
     if not keepWires:

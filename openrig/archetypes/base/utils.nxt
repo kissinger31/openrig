@@ -1,2336 +1,2516 @@
 {
-    "version": "1.17", 
-    "alias": "utils", 
-    "color": "#aa007f", 
-    "mute": false, 
-    "solo": false, 
+    "version": "1.17",
+    "alias": "utils",
+    "color": "#aa007f",
+    "mute": false,
+    "solo": false,
     "meta_data": {
         "positions": {
             "/check_scene": [
-                -3720.0, 
-                -1260.0
-            ], 
+                -3747.0910472190335,
+                -1227.9833078320517
+            ],
             "/cluster_control": [
-                -1960.0, 
-                -900.0
-            ], 
+                -1960.0,
+                -1116.7283777522657
+            ],
             "/cluster_control/create": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/cluster_to_skincluster": [
-                -2700.0, 
+                -2700.0,
                 -520.0
-            ], 
+            ],
             "/control": [
-                -2700.0, 
+                -2700.0,
                 -760.0
-            ], 
+            ],
+            "/deformers_one_to_one": [
+                -4002.9889203295616,
+                89.07568080238673
+            ],
+            "/export_blendShape": [
+                -3280.519660268955,
+                -1535.0186968358055
+            ],
             "/export_cluster": [
-                -3300.0, 
-                -1640.0
-            ], 
+                -3267.3282270803547,
+                -1869.1882802141834
+            ],
             "/export_control_curve_data": [
-                -3280.0, 
+                -3280.0,
                 -880.0
-            ], 
+            ],
             "/export_control_orients": [
-                -3280.0, 
+                -3280.0,
                 -1140.0
-            ], 
+            ],
             "/export_curve_data": [
-                -3280.0, 
+                -3280.0,
                 -1040.0
-            ], 
+            ],
             "/export_data": [
-                -3740.0, 
+                -3740.0,
                 -960.0
-            ], 
+            ],
             "/export_deformer": [
-                -3720.0, 
-                -1580.0
-            ], 
+                -3807.4233078550164,
+                -1629.1216051180836
+            ],
             "/export_deformer_order_data": [
-                -3280.0, 
+                -3280.0,
                 -800.0
-            ], 
+            ],
             "/export_joint_position_data": [
-                -3280.0, 
+                -3280.0,
                 -720.0
-            ], 
+            ],
             "/export_psd": [
-                -3720.0, 
-                -1420.0
-            ], 
+                -3268.4583838141507,
+                -1388.6108197128112
+            ],
             "/export_sdk_data": [
-                -3280.0, 
+                -3280.0,
                 -1220.0
-            ], 
+            ],
             "/export_sets_data": [
-                -3280.0, 
+                -3280.0,
                 -960.0
-            ], 
+            ],
             "/export_skincluster": [
-                -3720.0, 
-                -1500.0
-            ], 
+                -3760.987429523665,
+                -1407.7660052419712
+            ],
             "/export_wire": [
-                -3300.0, 
-                -1540.0
-            ], 
+                -3287.361980141383,
+                -1688.706700778269
+            ],
             "/flip_deformer_map": [
-                -2700.0, 
+                -2700.0,
                 -640.0
-            ], 
+            ],
+            "/import_blendshapes": [
+                -2540.0000000000005,
+                -1159.0476974085182
+            ],
             "/import_psd": [
-                -1980.0, 
-                -360.0
-            ], 
+                -2734.26585400694,
+                -1183.019470435003
+            ],
             "/import_sets": [
-                -3280.0, 
+                -3280.0,
                 -420.0
-            ], 
+            ],
             "/import_weight_directory": [
-                -1980.0, 
+                -1980.0,
                 -480.0
-            ], 
+            ],
+            "/lash_transfer": [
+                -3043.845095933396,
+                89.96711893350017
+            ],
             "/load_curve_data": [
-                -3280.0, 
+                -3280.0,
                 -320.0
-            ], 
+            ],
             "/load_data": [
-                -3740.0, 
+                -3740.0,
                 -420.0
-            ], 
+            ],
             "/load_deformer_order_data": [
-                -3280.0, 
+                -3280.0,
                 -220.0
-            ], 
+            ],
             "/load_joint_data": [
-                -3280.0, 
+                -3280.0,
                 -120.0
-            ], 
+            ],
             "/load_maya_file": [
-                -1980.0, 
+                -1980.0,
                 -200.0
-            ], 
+            ],
             "/load_node_data": [
-                -3280.0, 
+                -3280.0,
                 -520.0
-            ], 
+            ],
             "/load_sdk_data": [
-                -3280.0, 
+                -3280.0,
                 -600.0
-            ], 
+            ],
             "/mirror_cluster": [
-                -1960.0, 
+                -1960.0,
                 -1680.0
-            ], 
+            ],
             "/mirror_control_curves": [
-                -2360.0, 
+                -2360.0,
                 -1760.0
-            ], 
+            ],
             "/mirror_curves": [
-                -1960.0, 
+                -1960.0,
                 -1760.0
-            ], 
+            ],
             "/mirror_deformer": [
-                -2360.0, 
+                -2360.0,
                 -1640.0
-            ], 
+            ],
             "/mirror_joints": [
-                -2740.0, 
+                -2740.0,
                 -1500.0
-            ], 
+            ],
             "/mirror_sdk": [
-                -2740.0, 
+                -2740.0,
                 -1620.0
-            ], 
+            ],
             "/mirror_skincluster": [
-                -2360.0, 
+                -2360.0,
                 -1500.0
-            ], 
+            ],
             "/mirror_transforms": [
-                -2700.0, 
+                -2700.0,
                 -300.0
-            ], 
+            ],
             "/mirror_wire": [
-                -1960.0, 
+                -1960.0,
                 -1560.0
-            ], 
-            "/psd_actions": [
-                -2700.0, 
-                -1220.0
-            ], 
-            "/psd_add_pose": [
-                -2340.0, 
-                -1100.0
-            ], 
-            "/psd_delete_deltas": [
-                -2340.0, 
-                -1220.0
-            ], 
-            "/psd_mirror_actions": [
-                -1980.0, 
-                -1100.0
-            ], 
-            "/psd_mirror_deltas": [
-                -1640.0, 
-                -1180.0
-            ], 
-            "/psd_mirror_system": [
-                -1640.0, 
-                -1040.0
-            ], 
-            "/psd_update_pose": [
-                -2340.0, 
-                -1320.0
-            ], 
+            ],
+            "/project_data": [
+                -3706.367289100843,
+                89.09848202724703
+            ],
+            "/save_maya_file": [
+                -2677.6979302650007,
+                90.63774425461799
+            ],
             "/select_sdks": [
-                -1960.0, 
+                -1960.0,
                 -1320.0
-            ], 
+            ],
             "/space_switch": [
-                -1973.2459786194056, 
+                -1973.2459786194056,
                 -592.9149283927943
-            ], 
+            ],
+            "/transfer_data": [
+                -3360.8128891010633,
+                89.71184653282357
+            ],
             "/wire_to_skincluster": [
-                -2700.0, 
+                -2700.0,
                 -420.0
-            ], 
+            ],
             "/yank_cluster": [
-                -1960.0, 
+                -1960.0,
                 -1220.0
-            ], 
+            ],
             "/yank_skincluster": [
-                -1960.0, 
+                -1960.0,
                 -1460.0
             ]
-        }, 
+        },
         "collapse": {
-            "/center": false, 
-            "/center/spine": false, 
-            "/center/spine/controls": false, 
-            "/cluster_control": true, 
-            "/control": true, 
-            "/export_cluster": true, 
-            "/export_control_curve_data": true, 
-            "/export_control_orients": true, 
-            "/export_curve_data": true, 
-            "/export_data": true, 
-            "/export_deformer": true, 
-            "/export_deformer_order_data": true, 
-            "/export_joint_position_data": true, 
-            "/export_psd": true, 
-            "/export_sdk_data": true, 
-            "/export_sets_data": true, 
-            "/export_skincluster": true, 
-            "/export_skincluster/check_scene": true, 
-            "/export_wire": true, 
-            "/left": false, 
+            "/center": false,
+            "/center/spine": false,
+            "/center/spine/controls": false,
+            "/cluster_control": true,
+            "/control": true,
+            "/deformers_one_to_one": true,
+            "/export_cluster": false,
+            "/export_control_curve_data": true,
+            "/export_control_orients": true,
+            "/export_curve_data": true,
+            "/export_data": true,
+            "/export_deformer": true,
+            "/export_deformer/export_data": true,
+            "/export_deformer_order_data": true,
+            "/export_joint_position_data": true,
+            "/export_psd": false,
+            "/export_sdk_data": true,
+            "/export_sets_data": true,
+            "/export_skincluster": true,
+            "/export_skincluster/check_scene": true,
+            "/export_wire": false,
+            "/left": false,
+            "/transfer_data": true,
             "/wire_to_skincluster": false
         }
-    }, 
+    },
     "nodes": {
         "/": {
-            "child_order": [
-                "cluster_control", 
-                "cluster_to_skincluster", 
-                "control", 
-                "export_control_curve_data", 
-                "export_curve_data", 
-                "export_data", 
-                "export_deformer_order_data", 
-                "export_joint_position_data", 
-                "export_sdk_data", 
-                "export_skincluster", 
-                "import_psd", 
-                "import_weight_directory", 
-                "load_curve_data", 
-                "load_data", 
-                "load_deformer_order_data", 
-                "load_joint_data", 
-                "load_maya_file", 
-                "load_node_data", 
-                "load_sdk_data", 
-                "space_switch", 
-                "wire_to_skincluster", 
-                "export_control_orients", 
-                "export_deformer", 
-                "export_wire", 
-                "export_cluster", 
-                "export_psd", 
-                "check_scene", 
-                "mirror_joints", 
-                "mirror_skincluster", 
-                "mirror_deformer", 
-                "mirror_cluster", 
-                "mirror_wire", 
-                "mirror_sdk", 
-                "mirror_curves", 
-                "mirror_control_curves", 
-                "mirror_transforms", 
-                "psd_actions", 
-                "psd_add_pose", 
-                "psd_update_pose", 
-                "psd_delete_deltas", 
-                "psd_mirror_actions", 
-                "psd_mirror_deltas", 
-                "psd_mirror_system", 
-                "yank_skincluster", 
-                "yank_cluster", 
-                "select_sdks", 
-                "flip_deformer_map", 
-                "import_sets", 
-                "export_sets_data", 
-                "save_maya_file", 
-                "trasnfer_data"
-            ], 
             "code": [
-                "# maya imports", 
-                "import maya.cmds as mc", 
-                "import maya.api.OpenMaya as om", 
-                "import maya.mel as mm", 
-                "import math", 
-                "", 
-                "# python imports", 
-                "import os", 
-                "import numpy", 
-                "import traceback", 
-                "from collections import OrderedDict", 
-                "", 
-                "# openrig imports", 
-                "import openrig.maya.riglib.spline as rig_spline", 
-                "import openrig.maya.riglib.bindmesh as bindmesh", 
-                "import openrig.maya.psd as rig_psd", 
-                "import openrig.maya.riglib.ikfk as rig_ikfk", 
-                "import openrig.maya.riglib.control as rig_control", 
-                "import openrig.maya.riglib.wire as rig_wire", 
-                "import openrig.maya.riglib.bindmesh as rig_bindmesh", 
-                "import openrig.maya.wrap as rig_wrap", 
-                "import openrig.maya.joint as rig_joint", 
-                "import openrig.maya.cluster as rig_cluster", 
-                "import openrig.maya.skinCluster as rig_skinCluster", 
-                "import openrig.maya.weights as rig_weights", 
-                "import openrig.maya.deformer as rig_deformer", 
-                "import openrig.maya.attr as rig_attribute", 
-                "import openrig.maya.curve as rig_curve", 
-                "import openrig.maya.transform as rig_transform", 
-                "import openrig.maya.blendShape as rig_blendShape", 
-                "import openrig.maya.shape as rig_shape", 
-                "import openrig.maya.weightObject as weight_object", 
-                "import openrig.shared.common as rig_common", 
-                "", 
-                "# data modules", 
-                "import openrig.maya.data.node_data as node_data", 
-                "import openrig.maya.data.joint_data as joint_data", 
-                "import openrig.maya.data.sdk_data as sdk_data", 
-                "import openrig.maya.data.curve_data as curve_data", 
-                "import openrig.maya.data.sets_data as sets_data", 
-                "import openrig.maya.data.deformer_order_data as deformer_order_data", 
+                "# maya imports",
+                "import maya.cmds as mc",
+                "import maya.api.OpenMaya as om",
+                "import maya.mel as mm",
+                "import math",
+                "",
+                "# python imports",
+                "import os",
+                "import numpy",
+                "import traceback",
+                "from collections import OrderedDict",
+                "",
+                "# openrig imports",
+                "import openrig.maya.riglib.spline as rig_spline",
+                "import openrig.maya.riglib.bindmesh as bindmesh",
+                "import openrig.maya.psd as rig_psd",
+                "import openrig.maya.riglib.ikfk as rig_ikfk",
+                "import openrig.maya.riglib.control as rig_control",
+                "import openrig.maya.riglib.wire as rig_wire",
+                "import openrig.maya.riglib.bindmesh as rig_bindmesh",
+                "import openrig.maya.wrap as rig_wrap",
+                "import openrig.maya.joint as rig_joint",
+                "import openrig.maya.cluster as rig_cluster",
+                "import openrig.maya.skinCluster as rig_skinCluster",
+                "import openrig.maya.weights as rig_weights",
+                "import openrig.maya.deformer as rig_deformer",
+                "import openrig.maya.attr as rig_attribute",
+                "import openrig.maya.curve as rig_curve",
+                "import openrig.maya.transform as rig_transform",
+                "import openrig.maya.blendShape as rig_blendShape",
+                "import openrig.maya.shape as rig_shape",
+                "import openrig.maya.weightObject as weight_object",
+                "import openrig.shared.common as rig_common",
+                "",
+                "# data modules",
+                "import openrig.maya.data.node_data as node_data",
+                "import openrig.maya.data.joint_data as joint_data",
+                "import openrig.maya.data.sdk_data as sdk_data",
+                "import openrig.maya.data.curve_data as curve_data",
+                "import openrig.maya.data.sets_data as sets_data",
+                "import openrig.maya.data.deformer_order_data as deformer_order_data",
                 "import openrig.maya.data.psd_data as psd_data"
             ]
-        }, 
+        },
         "/check_scene": {
             "attrs": {
                 "data_type": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "my_data_type"
-                }, 
+                },
                 "filepath": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "my_file_path"
                 }
-            }, 
+            },
             "code": [
-                "'''", 
-                "Warn the user if the element in the scene is different from the active graph element that", 
-                "data is going to be written to.", 
-                "'''", 
-                "", 
-                "scene_element = None", 
-                "active_element = '${element}'", 
-                "data_type = '${data_type}'", 
-                "filepath = '${filepath}'", 
-                "", 
-                "# Find scene element", 
-                "model_nodes = mc.ls('model')", 
-                "if model_nodes:", 
-                "    model = mc.ls(model_nodes[-1], long=1)[0]", 
-                "    scene_element = model.split('|')[1]", 
-                "    ", 
-                "message = 'Exporting: [ {} ] to [ {} ]'.format(data_type, active_element)", 
-                "", 
-                "", 
-                "if scene_element:", 
-                "    if scene_element != active_element:", 
-                "        message = 'WARNING: Exporting [ {} ] from [ {} ] to [ {} ]'.format(data_type, scene_element, active_element)", 
-                "", 
-                "if filepath:", 
-                "    message += '\\n\\n{}'.format(filepath)", 
-                "      ", 
-                "response = mc.confirmDialog( title='Confirm',", 
-                "                    message=message,", 
-                "                    button=['Yes','No'], ", 
-                "                    defaultButton='Yes', ", 
-                "                    cancelButton='No', ", 
-                "                    dismissString='No' )", 
-                "if response == 'No':", 
-                "    mc.error('Data Export - Aborting')", 
+                "'''",
+                "Warn the user if the element in the scene is different from the active graph element that",
+                "data is going to be written to.",
+                "'''",
+                "",
+                "scene_element = None",
+                "active_element = '${element}'",
+                "data_type = '${data_type}'",
+                "filepath = '${filepath}'",
+                "",
+                "# Find scene element",
+                "model_nodes = mc.ls('model')",
+                "if model_nodes:",
+                "    model = mc.ls(model_nodes[-1], long=1)[0]",
+                "    scene_element = model.split('|')[1]",
+                "    ",
+                "message = 'Exporting: [ {} ] to [ {} ]'.format(data_type, active_element)",
+                "",
+                "",
+                "if scene_element:",
+                "    if scene_element != active_element:",
+                "        message = 'WARNING: Exporting [ {} ] from [ {} ] to [ {} ]'.format(data_type, scene_element, active_element)",
+                "",
+                "if filepath:",
+                "    message += '\\n\\n{}'.format(filepath)",
+                "      ",
+                "response = mc.confirmDialog( title='Confirm',",
+                "                    message=message,",
+                "                    button=['Yes','No'], ",
+                "                    defaultButton='Yes', ",
+                "                    cancelButton='No', ",
+                "                    dismissString='No' )",
+                "if response == 'No':",
+                "    mc.error('Data Export - Aborting')",
                 ""
             ]
-        }, 
+        },
         "/cluster_control": {
-            "instance": "", 
+            "instance": "",
             "child_order": [
                 "create"
-            ], 
-            "enabled": true, 
+            ],
+            "enabled": true,
             "attrs": {
                 "align_rotation": {
-                    "type": "bool", 
+                    "type": "bool",
                     "value": "True"
-                }, 
+                },
                 "align_to_node": {
-                    "comment": "What we will align the top node in the hierarchy of the control  to.", 
-                    "type": "raw", 
+                    "comment": "What we will align the top node in the hierarchy of the control  to.",
+                    "type": "raw",
                     "value": "${parent}"
-                }, 
+                },
                 "align_translation": {
-                    "type": "bool", 
+                    "type": "bool",
                     "value": "True"
-                }, 
+                },
                 "color": {
-                    "comment": "Color of the control. 0-31", 
-                    "type": "int", 
+                    "comment": "Color of the control. 0-31",
+                    "type": "int",
                     "value": "0"
-                }, 
+                },
                 "control_name": {
-                    "comment": "The name of the control being created.", 
-                    "type": "str", 
+                    "comment": "The name of the control being created.",
+                    "type": "str",
                     "value": "'control_one'"
-                }, 
+                },
                 "control_type": {
-                    "comment": "The shape to be used for the control", 
-                    "type": "str", 
+                    "comment": "The shape to be used for the control",
+                    "type": "str",
                     "value": "'sphere'"
-                }, 
+                },
                 "display_handle": {
-                    "comment": "Whether or not to display the handle", 
-                    "type": "bool", 
+                    "comment": "Whether or not to display the handle",
+                    "type": "bool",
                     "value": "True"
-                }, 
+                },
                 "geometry": {
-                    "comment": "Name of geometry to put the cluster on.", 
-                    "type": "str", 
+                    "comment": "Name of geometry to put the cluster on.",
+                    "type": "str",
                     "value": "'body_geo'"
-                }, 
+                },
                 "hide_attrs": {
-                    "comment": "Array of attributes to hide on the control being created.", 
-                    "type": "list", 
+                    "comment": "Array of attributes to hide on the control being created.",
+                    "type": "list",
                     "value": "[]"
-                }, 
+                },
                 "hierarchy": {
-                    "comment": "Hierarchy suffix list. This will create the hierarchy above the control useing the control name plus suffix name", 
-                    "type": "list", 
+                    "comment": "Hierarchy suffix list. This will create the hierarchy above the control useing the control name plus suffix name",
+                    "type": "list",
                     "value": "['nul']"
-                }, 
+                },
                 "parent": {
-                    "comment": "The name of the parent for the control hierarchy of the control being created.", 
-                    "type": "str", 
+                    "comment": "The name of the parent for the control hierarchy of the control being created.",
+                    "type": "str",
                     "value": "''"
-                }, 
+                },
                 "tag_as_control": {
-                    "comment": "Whether or not to untag this as a control", 
-                    "type": "bool", 
+                    "comment": "Whether or not to untag this as a control",
+                    "type": "bool",
                     "value": "True"
-                }, 
+                },
                 "transform_type": {
-                    "comment": "The type of transform you want to use for the control. (i.e. joint, transform)", 
-                    "type": "str", 
+                    "comment": "The type of transform you want to use for the control. (i.e. joint, transform)",
+                    "type": "str",
                     "value": "'transform'"
-                }, 
+                },
                 "type": {
-                    "comment": "Type of control. This is good for seperating the difference between different parts of the rig. ", 
-                    "type": "str", 
+                    "comment": "Type of control. This is good for seperating the difference between different parts of the rig. ",
+                    "type": "str",
                     "value": "'body'"
                 }
             }
-        }, 
+        },
         "/cluster_control/create": {
             "code": [
-                "# create the lip lower cluster", 
-                "rig_cluster.create(${geometry}, name=${control_name}, parent=${parent})", 
-                "", 
-                "# rename the cluster and control                                    ", 
-                "mc.rename(${control_name}, '{}_cluster'.format(${control_name}))", 
-                "mc.rename('{}_ctrl'.format(${control_name}), ${control_name})", 
-                "#mc.xform(\"{}_nul\".format(${control_name}), ws=True, matrix=mc.xform(${align_to_node}, q=True, ws=True, matrix=True))", 
-                "# lock attributes if it's in the hide_attrs attribute", 
-                "if ${hide_attrs}:", 
-                "    rig_attribute.lockAndHide(${control_name}, ${hide_attrs})", 
-                "                            ", 
-                "# This will align to the node passed to the align_to_node attribute.", 
-                "if ${align_to_node}:", 
-                "    if ${align_translation} and ${align_rotation}:", 
-                "        rig_transform.align('{}_nul'.format(${control_name}), ${align_to_node})", 
-                "    elif ${align_translation}:", 
-                "        rig_transform.alignTranslate('{}_nul'.format(${control_name}), ${align_to_node})", 
-                "    elif ${align_rotation}:", 
-                "        rig_transform.alignRotate('{}_nul'.format(${control_name}), ${align_to_node})", 
-                "        ", 
-                "if ${tag_as_control}:", 
-                "    mc.setAttr(\"{}.displayHandle\".format(${control_name}), int(${display_handle}))", 
-                "    rig_control.tagAsControl(${control_name}, type=${type})", 
+                "# create the lip lower cluster",
+                "rig_cluster.create(${geometry}, name=${control_name}, parent=${parent})",
+                "",
+                "# rename the cluster and control                                    ",
+                "mc.rename(${control_name}, '{}_cluster'.format(${control_name}))",
+                "mc.rename('{}_ctrl'.format(${control_name}), ${control_name})",
+                "#mc.xform(\"{}_nul\".format(${control_name}), ws=True, matrix=mc.xform(${align_to_node}, q=True, ws=True, matrix=True))",
+                "# lock attributes if it's in the hide_attrs attribute",
+                "if ${hide_attrs}:",
+                "    rig_attribute.lockAndHide(${control_name}, ${hide_attrs})",
+                "                            ",
+                "# This will align to the node passed to the align_to_node attribute.",
+                "if ${align_to_node}:",
+                "    if ${align_translation} and ${align_rotation}:",
+                "        rig_transform.align('{}_nul'.format(${control_name}), ${align_to_node})",
+                "    elif ${align_translation}:",
+                "        rig_transform.alignTranslate('{}_nul'.format(${control_name}), ${align_to_node})",
+                "    elif ${align_rotation}:",
+                "        rig_transform.alignRotate('{}_nul'.format(${control_name}), ${align_to_node})",
+                "        ",
+                "if ${tag_as_control}:",
+                "    mc.setAttr(\"{}.displayHandle\".format(${control_name}), int(${display_handle}))",
+                "    rig_control.tagAsControl(${control_name}, type=${type})",
                 "rig_attribute.lockAndHide([${control_name}], ${hide_attrs})"
             ]
-        }, 
+        },
         "/cluster_to_skincluster": {
-            "instance": "", 
-            "enabled": true, 
-            "comment": "This node will be used to convert clusters to skinClusters\n", 
+            "instance": "",
+            "enabled": true,
+            "comment": "This node will be used to convert clusters to skinClusters\n",
             "attrs": {
                 "cluster_list": {
-                    "comment": "List of cluster you want to convert", 
-                    "type": "list", 
+                    "comment": "List of cluster you want to convert",
+                    "type": "list",
                     "value": "[]"
-                }, 
+                },
                 "deformer_name": {
-                    "comment": "Deformer ", 
-                    "type": "str", 
+                    "comment": "Deformer ",
+                    "type": "str",
                     "value": "''"
-                }, 
+                },
                 "keep_clusters": {
-                    "comment": "Whether or not to keep the clusters around", 
-                    "type": "bool", 
+                    "comment": "Whether or not to keep the clusters around",
+                    "type": "bool",
                     "value": "False"
-                }, 
+                },
                 "root_parent": {
-                    "comment": "The root parent", 
-                    "type": "str", 
+                    "comment": "The root parent",
+                    "type": "str",
                     "value": "'rig'"
-                }, 
+                },
                 "root_pre_matrix": {
-                    "comment": "Node the will be used for the preMatrix", 
-                    "type": "str", 
+                    "comment": "Node the will be used for the preMatrix",
+                    "type": "str",
                     "value": "'trs_aux'"
-                }, 
+                },
                 "target_geometry": {
-                    "comment": "Geometry you want to put the defomer on", 
-                    "type": "str", 
-                    "value": "'body_geo'"
+                    "comment": "Geometry you want to put the defomer on",
+                    "type": "raw",
+                    "value": "mc.listRelatives(mc.ls(mc.ls('model', dag=1, s=1, ni=1), type='mesh'), p=1)"
                 }
-            }, 
+            },
             "code": [
-                "import traceback", 
-                "", 
-                "mc.undoInfo(openChunk=1)", 
-                "try:", 
-                "    rig_cluster.convertClustersToSkinCluster(${deformer_name}, ${target_geometry}, ${cluster_list}, ${keep_clusters}, ${root_parent}, ${root_pre_matrix})", 
-                "except:", 
-                "    traceback.print_exc()", 
-                "mc.undoInfo(closeChunk=1)", 
-                "", 
+                "import traceback",
+                "",
+                "mc.undoInfo(openChunk=1)",
+                "try:",
+                "    rig_cluster.convertClustersToSkinCluster(${deformer_name}, ${target_geometry}, ${cluster_list}, ${keep_clusters}, ${root_parent}, ${root_pre_matrix})",
+                "except:",
+                "    traceback.print_exc()",
+                "mc.undoInfo(closeChunk=1)",
+                "",
                 ""
             ]
-        }, 
+        },
         "/control": {
             "child_order": [
                 "create"
-            ], 
-            "enabled": true, 
-            "comment": "This node is a utility to ensure when you want to creat a control you get the updated results and they're all create the same.", 
+            ],
+            "enabled": true,
+            "comment": "This node is a utility to ensure when you want to creat a control you get the updated results and they're all create the same.",
             "attrs": {
                 "align_rotation": {
-                    "comment": "Whether or not to align the rotation of the control to the align_to_node", 
-                    "type": "bool", 
+                    "comment": "Whether or not to align the rotation of the control to the align_to_node",
+                    "type": "bool",
                     "value": "True"
-                }, 
+                },
                 "align_to_node": {
-                    "comment": "What we will align the top node in the hierarchy of the control  to.", 
-                    "type": "str", 
+                    "comment": "What we will align the top node in the hierarchy of the control  to.",
+                    "type": "str",
                     "value": "''"
-                }, 
+                },
                 "align_translation": {
-                    "comment": "Whether or not to align the translation of the control to the align_to_node", 
-                    "type": "bool", 
+                    "comment": "Whether or not to align the translation of the control to the align_to_node",
+                    "type": "bool",
                     "value": "True"
-                }, 
+                },
                 "color": {
-                    "comment": "Color of the control. 0-31", 
-                    "type": "int", 
+                    "comment": "Color of the control. 0-31",
+                    "type": "int",
                     "value": "0"
-                }, 
+                },
                 "control_name": {
-                    "comment": "The name of the control being created.", 
-                    "type": "str", 
+                    "comment": "The name of the control being created.",
+                    "type": "str",
                     "value": "'control_one'"
-                }, 
+                },
                 "control_type": {
-                    "comment": "The shape to be used for the control", 
-                    "type": "str", 
+                    "comment": "The shape to be used for the control",
+                    "type": "str",
                     "value": "'sphere'"
-                }, 
+                },
                 "hide_attrs": {
-                    "comment": "Array of attributes to hide on the control being created.", 
-                    "type": "list", 
+                    "comment": "Array of attributes to hide on the control being created.",
+                    "type": "list",
                     "value": "[]"
-                }, 
+                },
                 "hierarchy": {
-                    "comment": "Hierarchy suffix list. This will create the hierarchy above the control useing the control name plus suffix name", 
-                    "type": "list", 
+                    "comment": "Hierarchy suffix list. This will create the hierarchy above the control useing the control name plus suffix name",
+                    "type": "list",
                     "value": "['nul']"
-                }, 
+                },
                 "parent": {
-                    "comment": "The name of the parent for the control hierarchy of the control being created.", 
-                    "type": "str", 
+                    "comment": "The name of the parent for the control hierarchy of the control being created.",
+                    "type": "str",
                     "value": "''"
-                }, 
+                },
                 "rotationOrder": {
-                    "comment": "The rotation order that will be used for this control. This can be overidden by data files being imported. ", 
-                    "type": "str", 
+                    "comment": "The rotation order that will be used for this control. This can be overidden by data files being imported. ",
+                    "type": "str",
                     "value": "'xyz'"
-                }, 
+                },
                 "transform_type": {
-                    "comment": "The type of transform you want to use for the control. (i.e. joint, transform)", 
-                    "type": "str", 
+                    "comment": "The type of transform you want to use for the control. (i.e. joint, transform)",
+                    "type": "str",
                     "value": "'transform'"
-                }, 
+                },
                 "type": {
-                    "comment": "Type of control. This is good for seperating the difference between different parts of the rig. ", 
-                    "type": "str", 
+                    "comment": "Type of control. This is good for seperating the difference between different parts of the rig. ",
+                    "type": "str",
                     "value": "'body'"
                 }
             }
-        }, 
+        },
         "/control/create": {
-            "comment": "This will actually run the code to create the control", 
+            "comment": "This will actually run the code to create the control",
             "code": [
-                "# create the gimbal control for the end control", 
-                "control_hierarchy = rig_control.create(name=${control_name},", 
-                "                            controlType=${control_type},", 
-                "                            hierarchy=${hierarchy},", 
-                "                            transformType=${transform_type},", 
-                "                            hideAttrs=${hide_attrs},", 
-                "                            parent=${parent},", 
-                "                            color=${color},", 
-                "                            type=${type},", 
-                "                            rotateOrder=${rotationOrder})", 
-                "                            ", 
-                "# lock attributes if it's in the hide_attrs attribute", 
-                "if ${hide_attrs}:", 
-                "    rig_attribute.lockAndHide(${control_name}, ${hide_attrs})", 
-                "                            ", 
-                "# This will align to the node passed to the align_to_node attribute.", 
-                "if ${align_to_node}:", 
-                "    if ${align_translation} and ${align_rotation}:", 
-                "        rig_transform.align(control_hierarchy[0], ${align_to_node})", 
-                "    elif ${align_translation}:", 
-                "        rig_transform.alignTranslate(control_hierarchy[0], ${align_to_node})", 
-                "    elif ${align_rotation}:", 
+                "# create the gimbal control for the end control",
+                "control_hierarchy = rig_control.create(name=${control_name},",
+                "                            controlType=${control_type},",
+                "                            hierarchy=${hierarchy},",
+                "                            transformType=${transform_type},",
+                "                            hideAttrs=${hide_attrs},",
+                "                            parent=${parent},",
+                "                            color=${color},",
+                "                            type=${type},",
+                "                            rotateOrder=${rotationOrder})",
+                "                            ",
+                "# lock attributes if it's in the hide_attrs attribute",
+                "if ${hide_attrs}:",
+                "    rig_attribute.lockAndHide(${control_name}, ${hide_attrs})",
+                "                            ",
+                "# This will align to the node passed to the align_to_node attribute.",
+                "if ${align_to_node}:",
+                "    if ${align_translation} and ${align_rotation}:",
+                "        rig_transform.align(control_hierarchy[0], ${align_to_node})",
+                "    elif ${align_translation}:",
+                "        rig_transform.alignTranslate(control_hierarchy[0], ${align_to_node})",
+                "    elif ${align_rotation}:",
                 "        rig_transform.alignRotate(control_hierarchy[0], ${align_to_node})"
             ]
-        }, 
+        },
+        "/deformers_one_to_one": {
+            "child_order": [
+                "skincluster",
+                "cluster",
+                "wire",
+                "blendshape"
+            ]
+        },
+        "/deformers_one_to_one/blendshape": {
+            "enabled": false,
+            "code": [
+                "prefix = 'OLD_TOPO__'",
+                "top_node = '${top_node}'",
+                "",
+                "# # Get geometry under the model",
+                "if mc.objExists(prefix+top_node):",
+                "    geos = mc.listRelatives(prefix+top_node, ad=1, type='mesh', path=1, ni=1)",
+                "    # Get transforms of geometry",
+                "    geos = list(set(mc.listRelatives(geos, p=1, path=1, type='transform')))",
+                "",
+                "for geo in geos:",
+                "    blendShapes = rigrepo.libs.blendShape.getBlendShapes(geo)",
+                "    if blendShapes:",
+                "        for blendShape in blendShapes:",
+                "            target = geo.replace(prefix, '')",
+                "            if mc.objExists(target):",
+                "                newBlendShape = rig_blendShape.transferBlendShape(geo, ",
+                "                                                                  target, ",
+                "                                                                  blendShape,",
+                "                                                                  differentTopology=1)",
+                "                #mc.delete(blendShape)",
+                "                mc.rename(blendShape, prefix+blendShape)",
+                "                mc.rename(newBlendShape[0], blendShape)"
+            ]
+        },
+        "/deformers_one_to_one/cluster": {
+            "code": [
+                "prefix = 'OLD_TOPO__'",
+                "top_node = '${top_node}'",
+                "",
+                "# # Get geometry under the model",
+                "if mc.objExists(prefix+top_node):",
+                "    geos = mc.listRelatives(prefix+top_node, ad=1, type='mesh', path=1, ni=1)",
+                "    # Get transforms of geometry",
+                "    geos = list(set(mc.listRelatives(geos, p=1, path=1, type='transform')))",
+                "",
+                "for geo in geos:",
+                "    clusters = rig_cluster.getClusters(geo)",
+                "    if not clusters:",
+                "        continue",
+                "        ",
+                "    for cluster in clusters:",
+                "        target = geo.replace(prefix, '')",
+                "        if not mc.objExists(target):",
+                "            continue",
+                "            ",
+                "        newCluster = rig_cluster.transferCluster(geo, target, cluster, handle=True, ",
+                "                                                 surfaceAssociation=\"closestPoint\", ",
+                "                                                 createNew=True)",
+                "        mc.rename(cluster, prefix+cluster)",
+                "        mc.rename(newCluster[0], cluster)"
+            ]
+        },
+        "/deformers_one_to_one/skincluster": {
+            "enabled": false,
+            "code": [
+                "prefix = '${prefix}'",
+                "top_node = '${top_node}'",
+                "",
+                "# # Get geometry under the model",
+                "if mc.objExists(prefix+top_node):",
+                "    geos = mc.listRelatives(prefix+top_node, ad=1, type='mesh', path=1, ni=1)",
+                "    # Get transforms of geometry",
+                "    geos = list(set(mc.listRelatives(geos, p=1, path=1, type='transform')))",
+                "",
+                "for geo in geos:",
+                "    sc = rig_skinCluster.getSkinCluster(geo)",
+                "    if not sc:",
+                "        continue",
+                "        ",
+                "    target = geo.replace(prefix, '')",
+                "    if not mc.objExists(target):",
+                "        continue",
+                "        ",
+                "    sc = mc.rename(sc, prefix+sc)",
+                "    rig_deformer.transferDeformers(geo, [target], ['skinCluster'], 'closestPoint')",
+                " "
+            ]
+        },
+        "/deformers_one_to_one/wire": {
+            "code": [
+                "prefix = 'OLD_TOPO__'",
+                "top_node = '${top_node}'",
+                "reload(rig_wire)",
+                "# # Get geometry under the model",
+                "if mc.objExists(prefix+top_node):",
+                "    geos = mc.listRelatives(prefix+top_node, ad=1, type='mesh', path=1, ni=1)",
+                "    # Get transforms of geometry",
+                "    geos = list(set(mc.listRelatives(geos, p=1, path=1, type='transform')))",
+                "",
+                "for geo in geos:",
+                "    wires = rig_wire.getWires(geo)",
+                "    if not wires:",
+                "        continue",
+                "        ",
+                "    for wire in wires:",
+                "        target = geo.replace(prefix, '')",
+                "        if not mc.objExists(target):",
+                "            continue",
+                "        print('wire transfer: [ {} ] [ {} ]'.format(geo, wire))    ",
+                "        newWire = rig_wire.transferWire(geo, target, wire, ",
+                "                                        surfaceAssociation=\"closestPoint\", ",
+                "                                        createNew=True)",
+                "        mc.rename(wire, prefix+wire)",
+                "        mc.rename(newWire[0], wire)",
+                "                "
+            ]
+        },
+        "/export_blendShape": {
+            "instance": "/export_deformer",
+            "child_order": [
+                "export_data"
+            ],
+            "attrs": {
+                "deformer_type": {
+                    "type": "raw",
+                    "value": "blendShape"
+                }
+            }
+        },
+        "/export_blendShape/export_data": {
+            "code": [
+                "import gzip",
+                "import shutil",
+                "from threading import Thread",
+                "from functools import partial",
+                "    ",
+                "def zip_data_file(filepath):",
+                "    import shutil",
+                "    import gzip",
+                "    with open(filepath, 'rb') as f_in:",
+                "        with gzip.open(filepath+'.gz', 'wb') as f_out:",
+                "            shutil.copyfileobj(f_in, f_out)",
+                "",
+                "deformer_nodes = list()",
+                "if mc.objExists(${model_group}):",
+                "    for mesh in ${mesh_list}:",
+                "        # Get nodes",
+                "        deformer_nodes = mc.ls(mc.listHistory(mesh, pdo=True, il=True), type=\"${deformer_type}\")",
+                "        if not deformer_nodes:",
+                "            continue",
+                "        if ${exclude_node_list}:",
+                "            deformer_nodes = list(set(deformer_nodes).difference(set(${exclude_node_list})))",
+                "        if ${include_node_list}:",
+                "            deformer_nodes = list(set(deformer_nodes).intersection(set(${include_node_list})))",
+                "        ",
+                "        # Export Weights",
+                "        file_list = rig_weights.exportWeights(mesh, deformer_nodes, r'${dir_path}')",
+                "        print('\\nexported '+str(len(deformer_nodes))+\" ${deformer_type}\"+' deformers')",
+                " ",
+                "        # Zip weight files",
+                "        for filepath in file_list:",
+                "            print('Compressing in background: {}.gz'.format(filepath))",
+                "            zip_func = partial(zip_data_file, filepath)",
+                "            # Compress in a background thread",
+                "            p1 = Thread(target=zip_func)",
+                "            p1.start() ",
+                "            ",
+                "        # Export deltas",
+                "        for deformer in deformer_nodes:",
+                "            target_ids = rig_blendShape.getTargetIds(deformer)",
+                "            if not target_ids:",
+                "                continue",
+                "            # Format ids for export command",
+                "            target_ids = [(0, x) for x in target_ids]",
+                "            # Export",
+                "            if mc.nodeType(mesh) != 'transform':",
+                "                mesh = mc.listRelatives(mesh, p=1)[0]",
+                "            filepath = '${dir_path}/{}__{}.shp'.format(mesh, deformer)",
+                "            print('exporting deltas', mesh, deformer, filepath)",
+                "            mc.blendShape(deformer, e=1, export=filepath, exportTarget=target_ids)",
+                "            ",
+                ""
+            ]
+        },
         "/export_cluster": {
-            "instance": "/export_deformer", 
+            "instance": "/export_deformer",
             "attrs": {
                 "deformer_type": {
                     "value": "cluster"
                 }
             }
-        }, 
+        },
         "/export_control_curve_data": {
-            "instance": "/export_data", 
+            "instance": "/export_data",
             "child_order": [
                 "check_scene"
-            ], 
+            ],
             "attrs": {
                 "data_class": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "CurveData"
-                }, 
+                },
                 "data_type": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "curve_data"
-                }, 
+                },
                 "filename": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "control_positions.data"
-                }, 
+                },
                 "node_list": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "mc.listRelatives(mc.ls(\"*.__control__\", o=1), s=1, ni=1, type=\"nurbsCurve\") or []"
                 }
             }
-        }, 
+        },
         "/export_control_curve_data/check_scene": {
             "attrs": {
                 "data_type": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "control curve positions"
                 }
             }
-        }, 
+        },
         "/export_control_orients": {
-            "instance": "/export_data", 
+            "instance": "/export_data",
             "child_order": [
                 "check_scene"
-            ], 
+            ],
             "attrs": {
                 "filename": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "control_orients.data"
-                }, 
+                },
                 "node_list": {
                     "value": "mc.ls(\"*_ort\", type=\"transform\")"
                 }
             }
-        }, 
+        },
         "/export_control_orients/check_scene": {
             "attrs": {
                 "data_type": {
                     "value": "control orients"
                 }
             }
-        }, 
+        },
         "/export_curve_data": {
-            "instance": "/export_data", 
+            "instance": "/export_data",
             "child_order": [
                 "check_scene"
-            ], 
+            ],
             "attrs": {
                 "data_class": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "CurveData"
-                }, 
+                },
                 "data_type": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "curve_data"
-                }, 
+                },
                 "filename": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "curve_positions.data"
-                }, 
+                },
                 "node_list": {
-                    "type": "list", 
+                    "type": "list",
                     "value": "[mc.listRelatives(shape, p=True, ni=True)[0] for shape in mc.ls(type=\"nurbsCurve\", ni=True)]"
                 }
             }
-        }, 
+        },
         "/export_curve_data/check_scene": {
             "attrs": {
                 "data_type": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "curve positions"
                 }
             }
-        }, 
+        },
         "/export_data": {
-            "instance": "", 
+            "instance": "",
             "child_order": [
-                "check_scene", 
-                "get_data", 
+                "check_scene",
+                "get_data",
                 "export_data"
-            ], 
-            "enabled": true, 
-            "comment": "Abstract node for exporting data. Also make sure that your node_list attribute is looking for nodes that exist in the scene.", 
+            ],
+            "enabled": true,
+            "comment": "Abstract node for exporting data. Also make sure that your node_list attribute is looking for nodes that exist in the scene.",
             "attrs": {
                 "data_class": {
-                    "comment": "The class inside the model you're using for data_type attribute", 
-                    "type": "raw", 
+                    "comment": "The class inside the model you're using for data_type attribute",
+                    "type": "raw",
                     "value": "NodeData"
-                }, 
+                },
                 "data_dir": {
-                    "comment": "data directory to store the file", 
+                    "comment": "data directory to store the file",
                     "type": "NoneType"
-                }, 
+                },
                 "data_type": {
-                    "comment": "The data type you will be storing. These are modules in openrig.maya.newData", 
-                    "type": "raw", 
+                    "comment": "The data type you will be storing. These are modules in openrig.maya.newData",
+                    "type": "raw",
                     "value": "node_data"
-                }, 
+                },
                 "filename": {
-                    "comment": "The name of the file you will be storing the data into.", 
-                    "type": "raw", 
+                    "comment": "The name of the file you will be storing the data into.",
+                    "type": "raw",
                     "value": "data.data"
-                }, 
+                },
                 "filepath": {
-                    "comment": "File path you wish to export your data to.", 
-                    "type": "raw", 
+                    "comment": "File path you wish to export your data to.",
+                    "type": "raw",
                     "value": "${data_dir}/${filename}"
-                }, 
+                },
                 "node_list": {
-                    "comment": "List of nodes you wish to export", 
-                    "type": "list", 
+                    "comment": "List of nodes you wish to export",
+                    "type": "list",
                     "value": "[]"
                 }
-            }, 
+            },
             "code": [
                 ""
             ]
-        }, 
+        },
         "/export_data/check_scene": {
-            "instance": "/check_scene", 
+            "instance": "/check_scene",
             "enabled": true
-        }, 
+        },
         "/export_data/export_data": {
-            "enabled": true, 
+            "enabled": true,
             "code": [
-                "data_object = ${data_type}.${data_class}()", 
-                "", 
-                "# Populated on the get_data node", 
-                "nodes = STAGE.export_nodes", 
-                "", 
-                "filepath = r\"${filepath}\"", 
-                "if os.path.isfile(filepath):", 
-                "    data_object.read(filepath)", 
-                "else:", 
-                "    mc.warning('Export - Filepath [ {} ] does not exist. We will create the file for you.'.format(filepath)) ", 
-                "", 
-                "if nodes: ", 
-                "    data_object.gatherDataIterate(nodes)", 
-                "    data_object.write(filepath)", 
-                "    print('Export - Writing: {}'.format(filepath))", 
-                "else:", 
+                "data_object = ${data_type}.${data_class}()",
+                "",
+                "# Populated on the get_data node",
+                "nodes = STAGE.export_nodes",
+                "",
+                "filepath = r\"${filepath}\"",
+                "if os.path.isfile(filepath):",
+                "    data_object.read(filepath)",
+                "else:",
+                "    mc.warning('Export - Filepath [ {} ] does not exist. We will create the file for you.'.format(filepath)) ",
+                "",
+                "if nodes: ",
+                "    data_object.gatherDataIterate(nodes)",
+                "    data_object.write(filepath)",
+                "    print('Export - Writing: {}'.format(filepath))",
+                "else:",
                 "    mc.warning('Export - No nodes found to write')"
             ]
-        }, 
+        },
         "/export_data/get_data": {
-            "enabled": true, 
+            "enabled": true,
             "code": [
-                "# Get the nodes", 
-                "STAGE.export_nodes = ${node_list}", 
+                "# Get the nodes",
+                "STAGE.export_nodes = ${node_list}",
                 ""
             ]
-        }, 
+        },
         "/export_deformer": {
             "child_order": [
-                "check_scene", 
+                "check_scene",
                 "export_data"
-            ], 
-            "comment": "This is the abstract node for exporting all deformers that are not a skinCluster, PSD/Blendshape", 
+            ],
+            "comment": "This is the abstract node for exporting all deformers that are not a skinCluster, PSD/Blendshape",
             "attrs": {
                 "deformer_type": {
                     "comment": "Node type for the deformer you want to export. "
-                }, 
+                },
                 "dir_path": {
                     "comment": "Directory path to where you want to export the deformers"
-                }, 
+                },
                 "exclude_node_list": {
-                    "comment": "Nodes you want to exclude", 
-                    "type": "list", 
+                    "comment": "Nodes you want to exclude",
+                    "type": "list",
                     "value": "[]"
-                }, 
+                },
                 "include_node_list": {
-                    "comment": "Node you want to include that won't be pulled from the mesh_list", 
-                    "type": "list", 
+                    "comment": "Node you want to include that won't be pulled from the mesh_list",
+                    "type": "list",
                     "value": "[]"
-                }, 
+                },
                 "mesh_list": {
-                    "comment": "List of meshes we will be grabbing the deformers from", 
-                    "type": "raw", 
+                    "comment": "List of meshes we will be grabbing the deformers from",
+                    "type": "raw",
                     "value": "mc.ls(mc.listRelatives(${model_group}, ad=True, type=('mesh', 'nurbsCurve')), ni=True)"
-                }, 
+                },
                 "model_group": {
-                    "comment": "The model group where the geometry lives", 
-                    "type": "str", 
+                    "comment": "The model group where the geometry lives",
+                    "type": "str",
                     "value": "'model'"
                 }
             }
-        }, 
+        },
         "/export_deformer/check_scene": {
-            "instance": "/check_scene", 
+            "instance": "/check_scene",
             "attrs": {
                 "data_type": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "${deformer_type} deformers"
-                }, 
+                },
                 "filepath": {
                     "value": "${dir_path}"
                 }
             }
-        }, 
+        },
         "/export_deformer/export_data": {
             "code": [
-                "deformer_nodes = list()", 
-                "if mc.objExists(${model_group}):", 
-                "    for mesh in ${mesh_list}:", 
-                "        deformer_nodes = mc.ls(mc.listHistory(mesh, pdo=True, il=True), type=\"${deformer_type}\")", 
-                "        if ${exclude_node_list}:", 
-                "            deformer_nodes = list(set(deformer_nodes).difference(set(${exclude_node_list})))", 
-                "        if ${include_node_list}:", 
-                "            deformer_nodes = list(set(deformer_nodes).intersection(set(${include_node_list})))", 
-                "        rig_weights.exportWeights(mesh, deformer_nodes, r'${dir_path}')", 
-                "        print('\\nexported '+str(len(deformer_nodes))+\" ${deformer_type}\"+' deformers')", 
-                "    ", 
-                "", 
-                "    ", 
+                "deformer_nodes = list()",
+                "if mc.objExists(${model_group}):",
+                "    for mesh in ${mesh_list}:",
+                "        deformer_nodes = mc.ls(mc.listHistory(mesh, pdo=True, il=True), type=\"${deformer_type}\")",
+                "        if ${exclude_node_list}:",
+                "            deformer_nodes = list(set(deformer_nodes).difference(set(${exclude_node_list})))",
+                "        if ${include_node_list}:",
+                "            deformer_nodes = list(set(deformer_nodes).intersection(set(${include_node_list})))",
+                "        rig_weights.exportWeights(mesh, deformer_nodes, r'${dir_path}')",
+                "        print('\\nexported '+str(len(deformer_nodes))+\" ${deformer_type}\"+' deformers')",
+                "    ",
+                "",
+                "    ",
                 ""
             ]
-        }, 
+        },
         "/export_deformer_order_data": {
-            "instance": "/export_data", 
+            "instance": "/export_data",
             "child_order": [
                 "check_scene"
-            ], 
+            ],
             "attrs": {
                 "data_class": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "DeformerOrderData"
-                }, 
+                },
                 "data_type": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "deformer_order_data"
-                }, 
+                },
                 "filename": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "deformer_order.data"
-                }, 
+                },
                 "node_list": {
-                    "type": "list", 
+                    "type": "list",
                     "value": "[mc.listRelatives(node, p=True)[0] for node in mc.ls(type=\"mesh\")+mc.ls(type=\"nurbsCurve\")]"
                 }
             }
-        }, 
+        },
         "/export_deformer_order_data/check_scene": {
             "attrs": {
                 "data_type": {
                     "value": "deformer order"
                 }
             }
-        }, 
+        },
         "/export_joint_position_data": {
-            "instance": "/export_data", 
+            "instance": "/export_data",
             "child_order": [
                 "check_scene"
-            ], 
-            "enabled": true, 
+            ],
+            "enabled": true,
             "attrs": {
                 "data_class": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "JointData"
-                }, 
+                },
                 "data_type": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "joint_data"
-                }, 
+                },
                 "filename": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "joint_positions.data"
-                }, 
+                },
                 "node_list": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "mc.ls(mc.listRelatives(\"bind\", ad=True),type=\"joint\", ni=True) + mc.ls(\"*_pivot\",type=\"joint\", ni=True)"
                 }
             }
-        }, 
+        },
         "/export_joint_position_data/check_scene": {
             "attrs": {
                 "data_type": {
                     "value": "joint positions"
                 }
             }
-        }, 
+        },
         "/export_psd": {
             "child_order": [
-                "check_scene", 
+                "check_scene",
                 "export_data"
-            ], 
+            ],
             "attrs": {
                 "data_type": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "PSDData"
-                }, 
+                },
                 "dir_path": {
-                    "comment": "Path to the directory you wish to export your psd data", 
+                    "comment": "Path to the directory you wish to export your psd data",
                     "type": "NoneType"
-                }, 
+                },
                 "exclude_group_list": {
-                    "comment": "List of psd groups you don't want to export", 
-                    "type": "list", 
+                    "comment": "List of psd groups you don't want to export",
+                    "type": "list",
                     "value": "[]"
-                }, 
+                },
                 "group_list": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "rig_psd.getAllGroups()"
                 }
             }
-        }, 
+        },
         "/export_psd/check_scene": {
-            "instance": "/check_scene", 
+            "instance": "/check_scene",
             "attrs": {
                 "filepath": {
                     "value": "${dir_path}"
                 }
             }
-        }, 
+        },
         "/export_psd/export_data": {
             "code": [
-                "import gzip", 
-                "import shutil", 
-                "from threading import Thread", 
-                "from functools import partial", 
-                "", 
-                "def zip_data_file(filepath):", 
-                "    import shutil", 
-                "    import gzip", 
-                "    with open(filepath, 'rb') as f_in:", 
-                "        with gzip.open(filepath+'.gz', 'wb') as f_out:", 
-                "            shutil.copyfileobj(f_in, f_out)", 
-                "            ", 
-                "", 
-                "mc.undoInfo(openChunk=1)", 
-                "try:", 
-                "    if not mc.pluginInfo('poseInterpolator', q=1, l=1):  ", 
-                "        mc.loadPlugin('poseInterpolator')", 
-                "", 
-                "    dir_path = r'${dir_path}'", 
-                "    for group in ${group_list}:", 
-                "        node_list = rig_psd.getGroupChildren(group)", 
-                "        nodes_mel = rig_common.pyListToMelArray(node_list)", 
-                "            ", 
-                "        print('poseInterpolatorExport(\"{}/{}.pose\", {}, {})'.format(dir_path, group, nodes_mel, 1))", 
-                "        mm.eval('poseInterpolatorExport(\"{}/{}.pose\", {}, {})'.format(dir_path, group, nodes_mel, 1))", 
-                "        ", 
-                "        data_obj = psd_data.${data_type}()", 
-                "        data_obj.gatherDataIterate(node_list)", 
-                "        data_file = r'{}/{}_poseControls.data'.format(dir_path, group)", 
-                "        data_obj.write(data_file)", 
-                "        print('Writing: ', data_file)", 
-                "        ", 
-                "        # Weights", 
-                "        deformer = '{}_psd'.format(group)", 
-                "        if mc.objExists(deformer):", 
-                "            geo_list = mc.deformer(deformer, q=True, g=True)", 
-                "            for geometry in geo_list:", 
-                "                file_list = rig_weights.exportWeights(geometry, deformer, dir_path)", 
-                "                for filepath in file_list:", 
-                "                    print('Compressing in background: {}.gz'.format(filepath))", 
-                "                    zip_func = partial(zip_data_file, filepath)", 
-                "                    # Compress in a background thread", 
-                "                    p1 = Thread(target=zip_func)", 
-                "                    p1.start()", 
-                "", 
-                "except:", 
-                "    traceback.print_exc()", 
+                "import gzip",
+                "import shutil",
+                "from threading import Thread",
+                "from functools import partial",
+                "",
+                "def zip_data_file(filepath):",
+                "    import shutil",
+                "    import gzip",
+                "    with open(filepath, 'rb') as f_in:",
+                "        with gzip.open(filepath+'.gz', 'wb') as f_out:",
+                "            shutil.copyfileobj(f_in, f_out)",
+                "            ",
+                "",
+                "mc.undoInfo(openChunk=1)",
+                "try:",
+                "    if not mc.pluginInfo('poseInterpolator', q=1, l=1):  ",
+                "        mc.loadPlugin('poseInterpolator')",
+                "",
+                "    dir_path = r'${dir_path}'",
+                "    for group in ${group_list}:",
+                "        node_list = rig_psd.getGroupChildren(group)",
+                "        nodes_mel = rig_common.pyListToMelArray(node_list)",
+                "            ",
+                "        print('poseInterpolatorExport(\"{}/{}.pose\", {}, {})'.format(dir_path, group, nodes_mel, 1))",
+                "        #mm.eval('poseInterpolatorExport(\"{}/{}.pose\", {}, {})'.format(dir_path, group, nodes_mel, 1))",
+                "        ",
+                "        data_obj = psd_data.${data_type}()",
+                "        data_obj.gatherDataIterate(node_list)",
+                "        data_file = r'{}/{}_poseControls.data'.format(dir_path, group)",
+                "        data_obj.write(data_file)",
+                "        print('Writing: ', data_file)",
+                "",
+                "except:",
+                "    traceback.print_exc()",
                 "mc.undoInfo(closeChunk=1)"
             ]
-        }, 
+        },
         "/export_sdk_data": {
-            "instance": "/export_data", 
-            "execute_in": "", 
-            "comment": "This node is used to export sdk data from the current scene. Make sure your filepath attribute is set properly. Also make sure that your node_list attribute is looking for nodes that exist in the scene.", 
+            "instance": "/export_data",
+            "execute_in": "",
+            "comment": "This node is used to export sdk data from the current scene. Make sure your filepath attribute is set properly. Also make sure that your node_list attribute is looking for nodes that exist in the scene.",
             "attrs": {
                 "data_class": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "SdkData"
-                }, 
+                },
                 "data_type": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "sdk_data"
-                }, 
+                },
                 "filename": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "sdk.data"
-                }, 
+                },
                 "node_list": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "mc.ls(type=[\"animCurveUU\", \"animCurveUA\", \"animCurveUL\", \"animCurveUT\"])"
                 }
             }
-        }, 
+        },
         "/export_sets_data": {
-            "instance": "/export_data", 
+            "instance": "/export_data",
             "attrs": {
                 "data_class": {
                     "value": "SetsData"
-                }, 
+                },
                 "data_type": {
                     "value": "sets_data"
-                }, 
+                },
                 "filename": {
                     "value": "sets_data.data"
-                }, 
+                },
                 "node_list": {
                     "value": "mc.ls(type='objectSet')"
                 }
             }
-        }, 
+        },
         "/export_skincluster": {
             "child_order": [
-                "check_scene", 
+                "check_scene",
                 "export_data"
-            ], 
-            "comment": "This will ensure all skinClusters in the scene are exported\n", 
+            ],
+            "comment": "This will ensure all skinClusters in the scene are exported\n",
             "attrs": {
                 "dir_path": {
-                    "comment": "Directory where you want to store your skinClusters", 
+                    "comment": "Directory where you want to store your skinClusters",
                     "type": "NoneType"
-                }, 
+                },
                 "mesh_list": {
-                    "comment": "list of mesh's you want to export skinClusters for", 
-                    "type": "raw", 
+                    "comment": "list of mesh's you want to export skinClusters for",
+                    "type": "raw",
                     "value": "mc.listRelatives(model_grp, ad=1, type=('mesh', 'nurbsCurve'))"
-                }, 
+                },
                 "model_group": {
-                    "comment": "name of the model group where we will search for the mesh list", 
-                    "type": "str", 
+                    "comment": "name of the model group where we will search for the mesh list",
+                    "type": "str",
                     "value": "'model'"
-                }, 
+                },
                 "skincluster_list": {
-                    "comment": "List of skinClusters you want to export", 
-                    "type": "raw", 
+                    "comment": "List of skinClusters you want to export",
+                    "type": "raw",
                     "value": "mc.ls(type=\"skinCluster\")"
                 }
             }
-        }, 
+        },
         "/export_skincluster/check_scene": {
-            "instance": "/check_scene", 
+            "instance": "/check_scene",
             "attrs": {
                 "data_type": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "skinclusters"
-                }, 
+                },
                 "filepath": {
                     "value": "${dir_path}"
                 }
             }
-        }, 
+        },
         "/export_skincluster/export_data": {
             "code": [
-                "# remove the localization on the skinClusters if it has been localized", 
-                "rig_skinCluster.removeLocalize(${skincluster_list})", 
-                "skincluster_directory = r'${dir_path}'", 
-                "", 
-                "model_grp = ${model_group}", 
-                "sc_nodes = list()", 
-                "if mc.objExists(model_grp):", 
-                "    for mesh in ${mesh_list}:", 
-                "        sc = mc.ls(mc.listHistory(mesh, pdo=1, il=1), type='skinCluster')", 
-                "        if sc:", 
-                "            sc_nodes.append(sc[0])", 
-                "for sc in sc_nodes:", 
-                "    geo = mc.deformer(sc, g=1, q=1)", 
-                "    if geo:", 
-                "        geo = mc.listRelatives(geo, p=1)[0]", 
-                "        if sc != (geo+'_skinCluster'):", 
-                "            sc = mc.rename(sc, geo + '_skinCluster')", 
-                "        print('exporting ' + sc)", 
-                "        rig_weights.exportWeights(geo, sc, skincluster_directory)", 
-                "", 
-                "print('\\nexported '+str(len(sc_nodes))+' skinClusters'),", 
+                "# remove the localization on the skinClusters if it has been localized",
+                "rig_skinCluster.removeLocalize(${skincluster_list})",
+                "skincluster_directory = r'${dir_path}'",
+                "",
+                "model_grp = ${model_group}",
+                "sc_nodes = list()",
+                "if mc.objExists(model_grp):",
+                "    for mesh in ${mesh_list}:",
+                "        sc = mc.ls(mc.listHistory(mesh, pdo=1, il=1), type='skinCluster')",
+                "        if sc:",
+                "            sc_nodes.append(sc[0])",
+                "for sc in sc_nodes:",
+                "    geo = mc.deformer(sc, g=1, q=1)",
+                "    if geo:",
+                "        geo = mc.listRelatives(geo, p=1)[0]",
+                "        if sc != (geo+'_skinCluster'):",
+                "            sc = mc.rename(sc, geo + '_skinCluster')",
+                "        print('exporting ' + sc)",
+                "        rig_weights.exportWeights(geo, sc, skincluster_directory)",
+                "",
+                "print('\\nexported '+str(len(sc_nodes))+' skinClusters'),",
                 ""
             ]
-        }, 
+        },
         "/export_wire": {
-            "instance": "/export_deformer", 
+            "instance": "/export_deformer",
             "attrs": {
                 "deformer_type": {
                     "value": "wire"
                 }
             }
-        }, 
+        },
         "/flip_deformer_map": {
-            "comment": "This node will take the selected map you're painting and flip the map for you.", 
+            "comment": "This node will take the selected map you're painting and flip the map for you.",
             "code": [
-                "mc.undoInfo(openChunk=1)", 
-                "try:", 
-                "    # Get Selection or highlighted", 
-                "    #", 
-                "    sel = mc.ls(sl=1, dag=1, s=1, ni=1)", 
-                "    if not sel:", 
-                "        sel = mc.ls(hl=1, dag=1, s=1, ni=1)", 
-                "", 
-                "    map = None", 
-                "    ctx = mc.currentCtx()", 
-                "    if ctx == 'artAttrBlendShapeContext':", 
-                "        deformer = mc.artAttrCtx(ctx, q=True, attrSelected=True).split('.')[1]", 
-                "        map = mc.textScrollList('blendShapeTargetList', q=True, si=True)[0]", 
-                "    if ctx == 'artAttrContext':", 
-                "        deformer = mc.artAttrCtx(ctx, q=True, attrSelected=True).split('.')[1]", 
-                "            ", 
-                "        ", 
-                "    # Mirror", 
-                "    #", 
-                "    mirror_info = ''", 
-                "    for shape in sel:", 
-                "        rig_weights.flipWeights(deformer,map,shape)", 
-                "        mirror_info += '\\nFlipped: ' + deformer", 
-                "            ", 
-                "    if mirror_info:", 
-                "        print(mirror_info)", 
-                "except:", 
-                "    traceback.print_exc()", 
+                "mc.undoInfo(openChunk=1)",
+                "try:",
+                "    # Get Selection or highlighted",
+                "    #",
+                "    sel = mc.ls(sl=1, dag=1, s=1, ni=1)",
+                "    if not sel:",
+                "        sel = mc.ls(hl=1, dag=1, s=1, ni=1)",
+                "",
+                "    map = None",
+                "    ctx = mc.currentCtx()",
+                "    if ctx == 'artAttrBlendShapeContext':",
+                "        deformer = mc.artAttrCtx(ctx, q=True, attrSelected=True).split('.')[1]",
+                "        map = mc.textScrollList('blendShapeTargetList', q=True, si=True)[0]",
+                "    if ctx == 'artAttrContext':",
+                "        deformer = mc.artAttrCtx(ctx, q=True, attrSelected=True).split('.')[1]",
+                "            ",
+                "        ",
+                "    # Mirror",
+                "    #",
+                "    mirror_info = ''",
+                "    for shape in sel:",
+                "        rig_weights.flipWeights(deformer,map,shape)",
+                "        mirror_info += '\\nFlipped: ' + deformer",
+                "            ",
+                "    if mirror_info:",
+                "        print(mirror_info)",
+                "except:",
+                "    traceback.print_exc()",
                 "mc.undoInfo(closeChunk=1)"
             ]
-        }, 
-        "/import_psd": {
-            "enabled": true, 
+        },
+        "/import_blendshapes": {
+            "enabled": true,
             "attrs": {
                 "directory_path": {
                     "type": "NoneType"
-                }, 
+                },
                 "load_deltas": {
-                    "type": "bool", 
+                    "type": "bool",
                     "value": "False"
-                }, 
+                },
                 "node_list": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "mc.ls(type=\"poseInterpolator\")"
-                }, 
+                },
                 "psd_group": {
-                    "type": "str", 
+                    "type": "str",
                     "value": "'psd_grp'"
-                }, 
+                },
                 "psd_group_parent": {
-                    "type": "str", 
+                    "type": "str",
                     "value": "'rig'"
-                }, 
+                },
                 "psd_name_list": {
-                    "type": "list", 
+                    "type": "list",
                     "value": "[]"
                 }
-            }, 
+            },
             "code": [
-                "import os", 
-                "import gzip", 
-                "import shutil", 
-                "", 
-                "for name in ${psd_name_list}:    ", 
-                "    if not os.path.isdir(r'${directory_path}'):", 
-                "        mc.warning('${directory_path} does not exist!!! Skipping loading PSDs')", 
-                "        break", 
-                "    file_pose = r'${directory_path}/{}.pose'.format(name)", 
-                "    file_shape_list = [shape_file for shape_file in os.listdir(r'${directory_path}') if \".shp\" in shape_file and name in shape_file]", 
-                "    if os.path.isfile(file_pose):", 
-                "        print('Loading PSD File: [ {} ]'.format(file_pose))", 
-                "        # DELTAS and WEIGHTS", 
-                "        #", 
-                "        if ${load_deltas}:", 
-                "            # Import shapes", 
-                "            mc.select(cl=True)", 
-                "            for file_shape in file_shape_list:", 
-                "                file_name = file_shape.split(\".\")[1]", 
-                "                ", 
-                "                mc.blendShape(ip=os.path.join(r'${directory_path}' ,file_shape),  ", 
-                "                               name=file_name, ignoreSelected=True, topologyCheck=False, suppressDialog=True)", 
-                "            # Weights       ", 
-                "            deformer = '{}_psd'.format(name)", 
-                "            if mc.objExists(deformer):", 
-                "                geos = mc.deformer(deformer, q=True, g=True)", 
-                "                for geo in geos:", 
-                "                    geo = mc.listRelatives(geo, p=1)[0]", 
-                "                    file_name = '{}__{}.xml'.format(geo, deformer)", 
-                "                    filepath = os.path.join(r'${directory_path}', file_name)", 
-                "                    if os.path.exists(filepath) or os.path.exists(filepath+'.gz'):", 
-                "                        # Unzip", 
-                "                        #       Compare when the zip file was written, if it is more than a minute newer", 
-                "                        #       than the non-zipped, unzip. If no un-zipped file exists it will unzip ", 
-                "                        #       because of the large default diff_time.", 
-                "                        diff_time = 10000", 
-                "                        if os.path.exists(filepath) and os.path.exists(filepath+'.gz'):", 
-                "                            diff_time = os.stat(filepath+'.gz').st_mtime - os.stat(filepath).st_mtime", 
-                "                            ", 
-                "                        if diff_time > 60.0:", 
-                "                            if os.path.exists(filepath+'.gz'):", 
-                "                                print('unzipping', filepath+'.gz')", 
-                "                                with gzip.open(filepath+'.gz', 'rb') as f:", 
-                "                                    file_content = f.read()", 
-                "                                    # Write uncompressed file", 
-                "                                    g = open(filepath, 'w')", 
-                "                                    g.write(file_content)", 
-                "                                    g.close()", 
-                "                        else:", 
-                "                            print('No need to unzip weights, file is update date')", 
-                "                        # Import", 
-                "                        print('Loading Weights filepath: [ {} ]'.format(file_pose))", 
-                "                        rig_weights.importWeights(geo, deformer, filepath)", 
-                "            ", 
-                "        ", 
-                "        # INTERPOLATORS", 
-                "        #", 
-                "        else:          ", 
-                "            # Import pose interpolators - Selection must be cleared for this command to work", 
-                "            mc.select(cl=True)", 
-                "            ", 
-                "            data_obj = psd_data.PSDData()", 
-                "            data_file = os.path.join(r'${directory_path}','{}_poseControls.data'.format(name))", 
-                "            data_obj.read(data_file)            ", 
-                "            data = data_obj.getData()", 
-                "            for node in data.keys():    ", 
-                "                driver_name_list = mc.ls([data[node]['drivers'][driver]['driver_name'] for driver in data[node]['drivers']])", 
-                "                rig_psd.addInterp(name=node.replace('Shape', ''), driver=driver_name_list)", 
-                "            current_group_list = [mc.getAttr('{}.directoryName'.format(parent_attr)) for parent_attr in mc.ls('poseInterpolatorManager.poseInterpolatorDirectory[*]')]", 
-                "            if not name in current_group_list:", 
-                "                mm.eval('performInterpolatorCreateGroup(`ls %s`)' % ' '.join(data.keys()))", 
-                "                mc.setAttr(\"poseInterpolatorManager.poseInterpolatorDirectory[{}].directoryName\".format(len(current_group_list)), name, type=\"string\")", 
-                "            # Import pose control data", 
-                "            nodes = ${node_list}", 
-                "            data_obj.applyData(nodes)", 
-                "            ", 
-                "    else:", 
-                "        print('Warning: PSD File does not exist [ {} ]'.format(file_pose))", 
-                "", 
-                "# Move nodes into a group", 
-                "if ${node_list}:", 
-                "    if not mc.objExists(${psd_group}):", 
-                "        mc.group(empty=True, n=${psd_group})", 
-                "    if mc.objExists(${psd_group_parent}):", 
-                "        mc.parent(${psd_group}, ${psd_group_parent})", 
-                "    if mc.ls(${node_list}):", 
-                "        nodes = mc.listRelatives(${node_list}, p=True)", 
-                "        mc.parent(${node_list}, ${psd_group})", 
-                "    if mc.objExists('numericPSD_geo'):", 
-                "        mc.parent('numericPSD_geo', ${psd_group})", 
+                "import os",
+                "import gzip",
+                "import shutil",
+                "",
+                "for name in ${psd_name_list}:    ",
+                "    if not os.path.isdir(r'${directory_path}'):",
+                "        mc.warning('${directory_path} does not exist!!! Skipping loading PSDs')",
+                "        break",
+                "    file_pose = r'${directory_path}/{}.pose'.format(name)",
+                "    file_shape_list = [shape_file for shape_file in os.listdir(r'${directory_path}') if \".shp\" in shape_file and name in shape_file]",
+                "    if os.path.isfile(file_pose):",
+                "        print('Loading PSD File: [ {} ]'.format(file_pose))",
+                "        # DELTAS and WEIGHTS",
+                "        #",
+                "        if ${load_deltas}:",
+                "            # Import shapes",
+                "            mc.select(cl=True)",
+                "            for file_shape in file_shape_list:",
+                "                file_name = file_shape.split(\".\")[1]",
+                "                ",
+                "                mc.blendShape(ip=os.path.join(r'${directory_path}' ,file_shape),  ",
+                "                               name=file_name, ignoreSelected=True, topologyCheck=False, suppressDialog=True)",
+                "            # Weights       ",
+                "            deformer = '{}_psd'.format(name)",
+                "            if mc.objExists(deformer):",
+                "                geos = mc.deformer(deformer, q=True, g=True)",
+                "                for geo in geos:",
+                "                    geo = mc.listRelatives(geo, p=1)[0]",
+                "                    file_name = '{}__{}.xml'.format(geo, deformer)",
+                "                    filepath = os.path.join(r'${directory_path}', file_name)",
+                "                    if os.path.exists(filepath) or os.path.exists(filepath+'.gz'):",
+                "                        # Unzip",
+                "                        #       Compare when the zip file was written, if it is more than a minute newer",
+                "                        #       than the non-zipped, unzip. If no un-zipped file exists it will unzip ",
+                "                        #       because of the large default diff_time.",
+                "                        diff_time = 10000",
+                "                        if os.path.exists(filepath) and os.path.exists(filepath+'.gz'):",
+                "                            diff_time = os.stat(filepath+'.gz').st_mtime - os.stat(filepath).st_mtime",
+                "                            ",
+                "                        if diff_time > 60.0:",
+                "                            if os.path.exists(filepath+'.gz'):",
+                "                                print('unzipping', filepath+'.gz')",
+                "                                with gzip.open(filepath+'.gz', 'rb') as f:",
+                "                                    file_content = f.read()",
+                "                                    # Write uncompressed file",
+                "                                    g = open(filepath, 'w')",
+                "                                    g.write(file_content)",
+                "                                    g.close()",
+                "                        else:",
+                "                            print('No need to unzip weights, file is update date')",
+                "                        # Import",
+                "                        print('Loading Weights filepath: [ {} ]'.format(file_pose))",
+                "                        rig_weights.importWeights(geo, deformer, filepath)",
+                "    else:",
+                "        print('Warning: PSD File does not exist [ {} ]'.format(file_pose))"
+            ]
+        },
+        "/import_psd": {
+            "enabled": true,
+            "attrs": {
+                "directory_path": {
+                    "type": "NoneType"
+                },
+                "load_deltas": {
+                    "type": "bool",
+                    "value": "False"
+                },
+                "node_list": {
+                    "type": "raw",
+                    "value": "mc.ls(type=\"poseInterpolator\")"
+                },
+                "psd_group": {
+                    "type": "str",
+                    "value": "'psd_grp'"
+                },
+                "psd_group_parent": {
+                    "type": "str",
+                    "value": "'rig'"
+                },
+                "psd_name_list": {
+                    "type": "list",
+                    "value": "[]"
+                }
+            },
+            "code": [
+                "import os",
+                "import gzip",
+                "import shutil",
+                "",
+                "for name in ${psd_name_list}:    ",
+                "    if not os.path.isdir(r'${directory_path}'):",
+                "        mc.warning('${directory_path} does not exist!!! Skipping loading PSDs')",
+                "        break",
+                "    #data_file = os.path.join(r'${directory_path}','{}_poseControls.data'.format(name))",
+                "    data_file = r'${directory_path}/{}_poseControls.data'.format(name)",
+                "",
+                "    print('data file', data_file)",
+                "    if os.path.isfile(data_file):",
+                "        # DELTAS and WEIGHTS",
+                "        #",
+                "        if ${load_deltas}:",
+                "            pass",
+                "                  ",
+                "        # INTERPOLATORS",
+                "        #",
+                "        else:          ",
+                "            # Import pose interpolators - Selection must be cleared for this command to work",
+                "            mc.select(cl=True)",
+                "            ",
+                "            data_obj = psd_data.PSDData()",
+                "            data_obj.read(data_file)            ",
+                "            data = data_obj.getData()",
+                "            for node in data.keys():    ",
+                "                driver_name_list = mc.ls([data[node]['drivers'][driver]['driver_name'] for driver in data[node]['drivers']])",
+                "                rig_psd.addInterp(name=node.replace('Shape', ''), driver=driver_name_list)",
+                "            current_group_list = [mc.getAttr('{}.directoryName'.format(parent_attr)) for parent_attr in mc.ls('poseInterpolatorManager.poseInterpolatorDirectory[*]')]",
+                "            if not name in current_group_list:",
+                "                mm.eval('performInterpolatorCreateGroup(`ls %s`)' % ' '.join(data.keys()))",
+                "                mc.setAttr(\"poseInterpolatorManager.poseInterpolatorDirectory[{}].directoryName\".format(len(current_group_list)), name, type=\"string\")",
+                "            # Import pose control data",
+                "            nodes = ${node_list}",
+                "            data_obj.applyData(nodes)",
+                "            ",
+                "    else:",
+                "        print('Warning: PSD File does not exist [ {} ]'.format(data_file))",
+                "",
+                "# Move nodes into a group",
+                "if ${node_list}:",
+                "    if not mc.objExists(${psd_group}):",
+                "        mc.group(empty=True, n=${psd_group})",
+                "    if mc.objExists(${psd_group_parent}):",
+                "        mc.parent(${psd_group}, ${psd_group_parent})",
+                "    if mc.ls(${node_list}):",
+                "        nodes = mc.listRelatives(${node_list}, p=True)",
+                "        mc.parent(${node_list}, ${psd_group})",
+                "    if mc.objExists('numericPSD_geo'):",
+                "        mc.parent('numericPSD_geo', ${psd_group})",
                 ""
             ]
-        }, 
+        },
         "/import_sets": {
-            "instance": "/load_data", 
+            "instance": "/load_data",
             "attrs": {
                 "data_class": {
                     "value": "SetsData"
-                }, 
+                },
                 "data_type": {
                     "value": "sets_data"
                 }
             }
-        }, 
+        },
         "/import_weight_directory": {
-            "enabled": true, 
+            "enabled": true,
             "attrs": {
                 "directory_path": {
-                    "type": "str", 
+                    "type": "str",
                     "value": "''"
-                }, 
+                },
                 "exclude_filter": {
-                    "type": "str", 
+                    "type": "str",
                     "value": "''"
-                }, 
+                },
                 "include_filter": {
-                    "type": "str", 
+                    "type": "str",
                     "value": "''"
                 }
-            }, 
+            },
             "code": [
                 "rig_weights.applyWtsDir(${directory_path}, includeFilter=${include_filter}, excludeFilter=${exclude_filter})"
             ]
-        }, 
+        },
+        "/lash_transfer": {
+            "code": [
+                "",
+                "source_geo = 'head_geo'",
+                "",
+                "upper_l_proxy = 'lash_l_proxy'",
+                "lower_l_proxy = 'lash_lower_l_proxy'",
+                "upper_r_proxy = 'lash_r_proxy'",
+                "lower_r_proxy = 'lash_lower_r_proxy'",
+                "",
+                "upper_l_faces = [u'head_geo.f[363]', u'head_geo.f[380]', u'head_geo.f[484]', u'head_geo.f[492]', u'head_geo.f[494]', u'head_geo.f[499:501]', u'head_geo.f[503]', u'head_geo.f[511:512]', u'head_geo.f[528:529]', u'head_geo.f[536]', u'head_geo.f[539]', u'head_geo.f[558]', u'head_geo.f[761:763]', u'head_geo.f[781]', u'head_geo.f[794]', u'head_geo.f[796]', u'head_geo.f[1243]', u'head_geo.f[1260]', u'head_geo.f[1364]', u'head_geo.f[1372]', u'head_geo.f[1374]', u'head_geo.f[1379:1381]', u'head_geo.f[1383]', u'head_geo.f[1391:1392]', u'head_geo.f[1408:1409]', u'head_geo.f[1416]', u'head_geo.f[1419]', u'head_geo.f[1438]', u'head_geo.f[1641:1643]', u'head_geo.f[1661]', u'head_geo.f[1674]', u'head_geo.f[1676]']",
+                "lower_l_faces = upper_l_faces",
+                "upper_r_faces = upper_l_faces",
+                "lower_r_faces = upper_l_faces",
+                "",
+                "# Must have the same number of items in these lists",
+                "face_list  = [upper_l_faces, upper_r_faces]",
+                "proxy_list = [upper_l_proxy, upper_r_proxy]",
+                "squash_cluster = ['lid_squash_l_cluster', 'lid_squash_r_cluster']",
+                "",
+                "def extract_faces(geo, faces):",
+                "    sel = mc.ls(sl=1)",
+                "    extract_geo = mc.duplicate(geo, n=geo+'_extracted')[0]",
+                "    extract_faces = transfer_ids(faces, extract_geo)",
+                "    mc.select(extract_faces)",
+                "    mc.select(extract_geo+'.f[*]', tgl=1)",
+                "    mc.delete()",
+                "    if sel:",
+                "        mc.select(sel)",
+                "    return extract_geo",
+                "def transfer_ids(list_of_ids, target_name):",
+                "    source_name = list_of_ids[0].split('.')[0]",
+                "    ids = [x.replace(source_name, target_name) for x in list_of_ids]",
+                "    return ids",
+                "    ",
+                "shrink_wrap_list = []",
+                "extracted_geo_list = []",
+                "# Shrinkwrap",
+                "for i in range(len(proxy_list)):",
+                "    faces = face_list[i]",
+                "    proxy = proxy_list[i]",
+                "    extracted_geo = extract_faces(source_geo, faces)",
+                "    mc.select(proxy, extracted_geo)",
+                "    shrink_wrap = mm.eval('doShrinkWrapArgList \"1\" { \"1\", \"4\", \"0\", \"0\", \"1\", \"0\", \"0\", \"0\", \"0\", \"0\", \"0\", \"0\", \"1\" }')[0]",
+                "    rig_deformer.arrangeToBottom(proxy, shrink_wrap)",
+                "    shrink_wrap_list.append(shrink_wrap)",
+                "    extracted_geo_list.append(extracted_geo)",
+                "# SkinCluster",
+                "for i in range(len(proxy_list)):",
+                "    faces = face_list[i]",
+                "    proxy = proxy_list[i]",
+                "    sc = rig_skinCluster.getSkinCluster(proxy)",
+                "    sc_source = rig_skinCluster.getSkinCluster(source_geo)",
+                "    if not sc:",
+                "        sc = sc_source",
+                "    rig_weights.copyDeformerWeight(source_geo, proxy, sc_source, sc)",
+                "    sc = rig_skinCluster.getSkinCluster(proxy)",
+                "    rig_skinCluster.remove_unused_influences(sc)",
+                "# Blink cluster - Upper",
+                "rig_weights.copyDeformerWeight(source_geo, upper_l_proxy, 'blinkUpper_l_cluster', 'blinkUpper_l_cluster')",
+                "rig_weights.copyDeformerWeight(source_geo, upper_r_proxy, 'blinkUpper_r_cluster', 'blinkUpper_r_cluster')",
+                "# Blink cluster - Lower",
+                "rig_weights.copyDeformerWeight(source_geo, upper_l_proxy, 'blinkLower_l_cluster', 'blinkLower_l_cluster')",
+                "rig_weights.copyDeformerWeight(source_geo, upper_r_proxy, 'blinkLower_r_cluster', 'blinkLower_r_cluster')",
+                "# Socket Stretch",
+                "rig_weights.copyDeformerWeight(source_geo, upper_l_proxy, 'socketStretch_l_cluster', 'socketStretch_l_cluster')",
+                "rig_weights.copyDeformerWeight(source_geo, upper_r_proxy, 'socketStretch_r_cluster', 'socketStretch_r_cluster')",
+                "# squash cluster",
+                "for i in range(len(proxy_list)):",
+                "    faces = face_list[i]",
+                "    proxy = proxy_list[i]",
+                "    rig_weights.copyDeformerWeight(source_geo, proxy, squash_cluster[i], squash_cluster[i])",
+                "    ",
+                "# Wires",
+                "rig_weights.copyDeformerWeight(source_geo, upper_l_proxy, 'blinkUpper_l_curve_wire', 'blinkUpper_l_curve_wire')",
+                "rig_weights.copyDeformerWeight(source_geo, upper_l_proxy, 'blinkLower_l_curve_wire', 'blinkLower_l_curve_wire')",
+                "",
+                "rig_weights.copyDeformerWeight(source_geo, upper_r_proxy, 'blinkUpper_r_curve_wire', 'blinkUpper_r_curve_wire')",
+                "rig_weights.copyDeformerWeight(source_geo, upper_r_proxy, 'blinkLower_r_curve_wire', 'blinkLower_r_curve_wire')",
+                "",
+                "# # remove shrink wrap",
+                "mc.delete(shrink_wrap_list, extracted_geo_list)"
+            ]
+        },
         "/load_curve_data": {
-            "instance": "/load_data", 
-            "enabled": true, 
+            "instance": "/load_data",
+            "enabled": true,
             "attrs": {
                 "apply": {
-                    "comment": "Whether or not to apply the data or just load it into memory.", 
-                    "type": "bool", 
+                    "comment": "Whether or not to apply the data or just load it into memory.",
+                    "type": "bool",
                     "value": "True"
-                }, 
+                },
                 "attributes": {
-                    "comment": "Which attributes to use when loading the data. ", 
-                    "type": "list", 
+                    "comment": "Which attributes to use when loading the data. ",
+                    "type": "list",
                     "value": "[]"
-                }, 
+                },
                 "data_class": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "CurveData"
-                }, 
+                },
                 "data_type": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "curve_data"
-                }, 
+                },
                 "nodes": {
-                    "comment": "Joint array that we want to load the joint data onto", 
-                    "type": "raw", 
+                    "comment": "Joint array that we want to load the joint data onto",
+                    "type": "raw",
                     "value": "mc.ls(type=\"nurbsCurve\")"
                 }
             }
-        }, 
+        },
         "/load_data": {
             "attrs": {
                 "apply": {
-                    "type": "bool", 
+                    "type": "bool",
                     "value": "True"
-                }, 
+                },
                 "attributes": {
-                    "type": "list", 
+                    "type": "list",
                     "value": "[]"
-                }, 
+                },
                 "data_class": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "NodeData"
-                }, 
+                },
                 "data_type": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "node_data"
-                }, 
+                },
                 "filepath": {
-                    "type": "str", 
+                    "type": "str",
                     "value": "''"
-                }, 
+                },
                 "kwargs": {
-                    "type": "dict", 
+                    "type": "dict",
                     "value": "{}"
-                }, 
+                },
                 "nodes": {
-                    "type": "list", 
+                    "type": "list",
                     "value": "[]"
                 }
-            }, 
+            },
             "code": [
-                "# first create the data object the user is passing in.", 
-                "data_object = ${data_type}.${data_class}()", 
-                "# create a list from the filepath in case we pass multiple filepath's", 
-                "filepath_list = rig_common.toList(${filepath})", 
-                "# loop through the filepath's and comp them.", 
-                "comp = False", 
-                "for filepath in filepath_list:", 
-                "    if os.path.isfile(filepath):", 
-                "        if comp:", 
-                "            comp_data_object = ${data_type}.${data_class}()", 
-                "            comp_data_object.read(filepath)", 
-                "            data_object = comp_data_object + data_object", 
-                "        else:", 
-                "            data_object.read(filepath)", 
-                "            comp = True", 
-                "    else:", 
-                "        mc.warning('{} does not exist'.format(filepath)) ", 
-                "        ", 
-                "if ${apply}:", 
-                "    nodes = ${nodes}", 
-                "    attributes = ${attributes}", 
-                "    if attributes:", 
-                "        data_object.applyData(nodes, attributes=attributes, **${kwargs})", 
-                "    else:", 
+                "# first create the data object the user is passing in.",
+                "data_object = ${data_type}.${data_class}()",
+                "# create a list from the filepath in case we pass multiple filepath's",
+                "filepath_list = rig_common.toList(${filepath})",
+                "# loop through the filepath's and comp them.",
+                "comp = False",
+                "for filepath in filepath_list:",
+                "    if os.path.isfile(filepath):",
+                "        if comp:",
+                "            comp_data_object = ${data_type}.${data_class}()",
+                "            comp_data_object.read(filepath)",
+                "            data_object = comp_data_object + data_object",
+                "        else:",
+                "            data_object.read(filepath)",
+                "            comp = True",
+                "    else:",
+                "        mc.warning('{} does not exist'.format(filepath)) ",
+                "        ",
+                "if ${apply}:",
+                "    nodes = ${nodes}",
+                "    attributes = ${attributes}",
+                "    if attributes:",
+                "        data_object.applyData(nodes, attributes=attributes, **${kwargs})",
+                "    else:",
                 "        data_object.applyData(nodes, **${kwargs})"
             ]
-        }, 
+        },
         "/load_deformer_order_data": {
-            "instance": "/load_data", 
-            "enabled": true, 
+            "instance": "/load_data",
+            "enabled": true,
             "attrs": {
                 "apply": {
-                    "comment": "Whether or not to apply the data or just load it into memory.", 
-                    "type": "bool", 
+                    "comment": "Whether or not to apply the data or just load it into memory.",
+                    "type": "bool",
                     "value": "True"
-                }, 
+                },
                 "attributes": {
-                    "comment": "Which attributes to use when loading the data. ", 
-                    "type": "list", 
+                    "comment": "Which attributes to use when loading the data. ",
+                    "type": "list",
                     "value": "[]"
-                }, 
+                },
                 "data_class": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "DeformerOrderData"
-                }, 
+                },
                 "data_type": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "deformer_order_data"
-                }, 
+                },
                 "nodes": {
-                    "type": "list", 
+                    "type": "list",
                     "value": "[mc.listRelatives(node, p=True)[0] for node in mc.ls(type=\"mesh\")+mc.ls(type=\"nurbsCurve\")]"
                 }
             }
-        }, 
+        },
         "/load_joint_data": {
-            "instance": "/load_data", 
-            "enabled": true, 
+            "instance": "/load_data",
+            "enabled": true,
             "attrs": {
                 "apply": {
-                    "comment": "Whether or not to apply the data or just load it into memory.", 
-                    "type": "raw", 
+                    "comment": "Whether or not to apply the data or just load it into memory.",
+                    "type": "raw",
                     "value": true
-                }, 
+                },
                 "attributes": {
-                    "comment": "Which attributes to use when loading the data. ", 
-                    "type": "list", 
+                    "comment": "Which attributes to use when loading the data. ",
+                    "type": "list",
                     "value": "[]"
-                }, 
+                },
                 "data_class": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "JointData"
-                }, 
+                },
                 "data_type": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "joint_data"
-                }, 
+                },
                 "kwargs": {
-                    "type": "dict", 
+                    "type": "dict",
                     "value": "{}"
-                }, 
+                },
                 "nodes": {
-                    "comment": "Joint array that we want to load the joint data onto", 
-                    "type": "raw", 
+                    "comment": "Joint array that we want to load the joint data onto",
+                    "type": "raw",
                     "value": "mc.ls(type=\"joint\")"
                 }
             }
-        }, 
+        },
         "/load_maya_file": {
-            "enabled": true, 
+            "enabled": true,
             "attrs": {
                 "filepath": {
-                    "comment": "Path to file we want to load", 
+                    "comment": "Path to file we want to load",
                     "type": "NoneType"
                 }
-            }, 
+            },
             "code": [
-                "mc.undoInfo(openChunk=1) ", 
-                "filepath = r\"${filepath}\"", 
-                "try: ", 
-                "    if os.path.isfile(filepath):", 
-                "        mc.file(filepath, i=True, force=True)", 
-                "except:", 
-                "    traceback.print_exc()", 
-                "mc.undoInfo(closeChunk=1) ", 
+                "mc.undoInfo(openChunk=1) ",
+                "filepath = r\"${filepath}\"",
+                "try: ",
+                "    if os.path.isfile(filepath):",
+                "        mc.file(filepath, i=True, force=True)",
+                "except:",
+                "    traceback.print_exc()",
+                "mc.undoInfo(closeChunk=1) ",
                 ""
             ]
-        }, 
+        },
         "/load_node_data": {
-            "instance": "/load_data", 
-            "enabled": true, 
+            "instance": "/load_data",
+            "enabled": true,
             "attrs": {
                 "apply": {
-                    "comment": "Whether or not to apply the orients once the file is loaded.", 
-                    "type": "bool", 
+                    "comment": "Whether or not to apply the orients once the file is loaded.",
+                    "type": "bool",
                     "value": "True"
-                }, 
+                },
                 "attributes": {
-                    "comment": "attribute filter override in case you want to apply specific attributes.", 
-                    "type": "list", 
+                    "comment": "attribute filter override in case you want to apply specific attributes.",
+                    "type": "list",
                     "value": "[]"
                 }
             }
-        }, 
+        },
         "/load_sdk_data": {
-            "instance": "/load_data", 
-            "enabled": true, 
+            "instance": "/load_data",
+            "enabled": true,
             "attrs": {
                 "apply": {
-                    "type": "bool", 
+                    "type": "bool",
                     "value": "True"
-                }, 
+                },
                 "attributes": {
-                    "type": "list", 
+                    "type": "list",
                     "value": "[]"
-                }, 
+                },
                 "data_class": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "SdkData"
-                }, 
+                },
                 "data_type": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "sdk_data"
-                }, 
+                },
                 "nodes": {
-                    "type": "list", 
+                    "type": "list",
                     "value": "[]"
                 }
             }
-        }, 
+        },
         "/mirror_cluster": {
-            "instance": "/mirror_deformer", 
+            "instance": "/mirror_deformer",
             "attrs": {
                 "deformer_type": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "cluster"
                 }
             }
-        }, 
+        },
         "/mirror_control_curves": {
-            "instance": "/mirror_curves", 
+            "instance": "/mirror_curves",
             "attrs": {
                 "node_list": {
                     "value": "mc.listRelatives(mc.listRelatives(mc.ls(\"*.__control__\", o=1), s=1, ni=1, type='nurbsCurve'), p=1) or []"
                 }
             }
-        }, 
+        },
         "/mirror_curves": {
-            "comment": "Mirror all curves. This is the abstract version of mirroring curves.\n", 
+            "comment": "Mirror all curves. This is the abstract version of mirroring curves.\n",
             "attrs": {
                 "node_list": {
-                    "comment": "Node list of curves transforms", 
-                    "type": "raw", 
+                    "comment": "Node list of curves transforms",
+                    "type": "raw",
                     "value": " mc.listRelatives(mc.ls(type='nurbsCurve'), p=True) or []"
                 }
-            }, 
+            },
             "code": [
-                "mc.undoInfo(openChunk=1)", 
-                "try:", 
-                "    controls = rig_control.getControls()", 
-                "    if controls:", 
-                "        # Store current pose", 
-                "        rig_control.setPoseAttr(controls, 5)", 
-                "        # Got to bind pose", 
-                "        rig_control.toPoseAttr(controls, 0)", 
-                "    # Mirror", 
-                "    for node in ${node_list}:", 
-                "        if rig_common.getSideToken(node) is 'l':", 
-                "            rig_curve.mirror(node)", 
-                "    if controls:", 
-                "        # Restore pose", 
-                "        rig_control.toPoseAttr(controls, 5)", 
-                "except:", 
-                "    traceback.print_exc()", 
-                "mc.undoInfo(closeChunk=1)", 
+                "mc.undoInfo(openChunk=1)",
+                "try:",
+                "    controls = rig_control.getControls()",
+                "    if controls:",
+                "        # Store current pose",
+                "        rig_control.setPoseAttr(controls, 5)",
+                "        # Got to bind pose",
+                "        rig_control.toPoseAttr(controls, 0)",
+                "    # Mirror",
+                "    for node in ${node_list}:",
+                "        if rig_common.getSideToken(node) is 'l':",
+                "            rig_curve.mirror(node)",
+                "    if controls:",
+                "        # Restore pose",
+                "        rig_control.toPoseAttr(controls, 5)",
+                "except:",
+                "    traceback.print_exc()",
+                "mc.undoInfo(closeChunk=1)",
                 ""
             ]
-        }, 
+        },
         "/mirror_deformer": {
-            "comment": "The abstract node for mirroring deformers that aren't a skinCluster.", 
+            "comment": "The abstract node for mirroring deformers that aren't a skinCluster.",
             "attrs": {
                 "deformer_type": {
-                    "comment": "Deformer type you want to mirror", 
-                    "type": "raw", 
+                    "comment": "Deformer type you want to mirror",
+                    "type": "raw",
                     "value": "cluster"
-                }, 
+                },
                 "mirror_selected": {
-                    "type": "bool", 
+                    "type": "bool",
                     "value": "False"
                 }
-            }, 
+            },
             "code": [
-                "mc.undoInfo(openChunk=1)", 
-                "try:", 
-                "    deformer_type = '${deformer_type}'", 
-                "    ", 
-                "    # Get Selection or highlighted", 
-                "    #", 
-                "    sel = mc.ls(sl=1, dag=1, s=1, ni=1)", 
-                "    if not sel:", 
-                "        sel = mc.ls(hl=1, dag=1, s=1, ni=1)", 
-                "    map = None", 
-                "    if ${mirror_selected}:", 
-                "        ctx = mc.currentCtx()", 
-                "        '''", 
-                "        if ctx == 'artAttrBlendShapeContext':", 
-                "            deformer = mc.artAttrCtx(ctx, q=True, attrSelected=True).split('.')[1]", 
-                "            geo = mc.deformer(deformer, q=True, g=True)[0]", 
-                "            map = mc.textScrollList('blendShapeTargetList', q=True, si=True)[0]", 
-                "        '''", 
-                "        if 'artAttrContext' in ctx or 'artAttrCtx' in ctx:", 
-                "            deformer = mc.artAttrCtx(ctx, q=True, attrSelected=True).split('.')[1]", 
-                "            sel = mc.deformer(deformer, q=True, g=True)", 
-                "        ", 
-                "    # Mirror", 
-                "    #", 
-                "    mirror_info = ''", 
-                "    for shape in sel:", 
-                "        destination_shape = rig_common.getMirrorName(shape)", 
-                "        if ${mirror_selected}:", 
-                "            destination_deformer = rig_common.getMirrorName(deformer) or deformer", 
-                "            rig_weights.mirrorWeights(deformer, shape, destination_deformer, destination_shape, map)", 
-                "            mirror_info += '\\nMirrored: ' + deformer", 
-                "        else:", 
-                "            deformers = [deformer for deformer in mc.ls(mc.listHistory(shape, pdo=1, il=1), type=deformer_type) if 'r' != rig_common.getSideToken(deformer)]", 
-                "            for deformer in deformers:", 
-                "                destination_deformer = rig_common.getMirrorName(deformer) or deformer", 
-                "                rig_weights.mirrorWeights(deformer, shape, destination_deformer, destination_shape, None)", 
-                "                mirror_info += '\\nMirrored: ' + deformer", 
-                "            ", 
-                "    if mirror_info:", 
-                "        print(mirror_info)", 
-                "except:", 
-                "    traceback.print_exc()", 
-                "mc.undoInfo(closeChunk=1)", 
+                "mc.undoInfo(openChunk=1)",
+                "try:",
+                "    deformer_type = '${deformer_type}'",
+                "    ",
+                "    # Get Selection or highlighted",
+                "    #",
+                "    sel = mc.ls(sl=1, dag=1, s=1, ni=1)",
+                "    if not sel:",
+                "        sel = mc.ls(hl=1, dag=1, s=1, ni=1)",
+                "    map = None",
+                "    if ${mirror_selected}:",
+                "        ctx = mc.currentCtx()",
+                "        '''",
+                "        if ctx == 'artAttrBlendShapeContext':",
+                "            deformer = mc.artAttrCtx(ctx, q=True, attrSelected=True).split('.')[1]",
+                "            geo = mc.deformer(deformer, q=True, g=True)[0]",
+                "            map = mc.textScrollList('blendShapeTargetList', q=True, si=True)[0]",
+                "        '''",
+                "        if 'artAttrContext' in ctx or 'artAttrCtx' in ctx:",
+                "            deformer = mc.artAttrCtx(ctx, q=True, attrSelected=True).split('.')[1]",
+                "            sel = mc.deformer(deformer, q=True, g=True)",
+                "        ",
+                "    # Mirror",
+                "    #",
+                "    mirror_info = ''",
+                "    for shape in sel:",
+                "        destination_shape = rig_common.getMirrorName(shape)",
+                "        if ${mirror_selected}:",
+                "            destination_deformer = rig_common.getMirrorName(deformer) or deformer",
+                "            rig_weights.mirrorWeights(deformer, shape, destination_deformer, destination_shape, map)",
+                "            mirror_info += '\\nMirrored: ' + deformer",
+                "        else:",
+                "            deformers = [deformer for deformer in mc.ls(mc.listHistory(shape, pdo=1, il=1), type=deformer_type) if 'r' != rig_common.getSideToken(deformer)]",
+                "            for deformer in deformers:",
+                "                destination_deformer = rig_common.getMirrorName(deformer) or deformer",
+                "                rig_weights.mirrorWeights(deformer, shape, destination_deformer, destination_shape, None)",
+                "                mirror_info += '\\nMirrored: ' + deformer",
+                "            ",
+                "    if mirror_info:",
+                "        print(mirror_info)",
+                "except:",
+                "    traceback.print_exc()",
+                "mc.undoInfo(closeChunk=1)",
                 ""
             ]
-        }, 
+        },
         "/mirror_joints": {
-            "comment": "This is the node used to mirror joints based on the node_list attribute", 
+            "comment": "This is the node used to mirror joints based on the node_list attribute",
             "attrs": {
                 "node_list": {
-                    "comment": "The joints you wish to mirror", 
-                    "type": "raw", 
+                    "comment": "The joints you wish to mirror",
+                    "type": "raw",
                     "value": "mc.ls('*_bind', type='joint')"
                 }
-            }, 
+            },
             "code": [
-                "mc.undoInfo(openChunk=1)", 
-                "try:", 
-                "    jointList = list()", 
-                "    faceJointList = list()", 
-                "    for node in ${node_list}:", 
-                "        if rig_common.getSideToken(node) is 'l':", 
-                "            path = mc.ls(node, l=True)[0]", 
-                "            if '|skull_bind|' in path:", 
-                "                faceJointList.append(node)", 
-                "            else:", 
-                "                jointList.append(node)", 
-                "", 
-                "    rig_joint.rotateToOrient(jointList+faceJointList)", 
-                "    rig_joint.mirror(jointList, mode='rotate', zeroRotate=True)", 
-                "    rig_joint.mirror(faceJointList, mode='translate', zeroRotate=True)", 
-                "", 
-                "    # Freeze rotations", 
-                "    #mc.makeIdentity(${node_list}, apply=1, t=0, r=1, s=0, pn=1)", 
-                "except:", 
-                "    traceback.print_exc()", 
-                "mc.undoInfo(closeChunk=1)", 
+                "mc.undoInfo(openChunk=1)",
+                "try:",
+                "    jointList = list()",
+                "    faceJointList = list()",
+                "    for node in ${node_list}:",
+                "        if rig_common.getSideToken(node) is 'l':",
+                "            path = mc.ls(node, l=True)[0]",
+                "            if '|skull_bind|' in path:",
+                "                faceJointList.append(node)",
+                "            else:",
+                "                jointList.append(node)",
+                "",
+                "    rig_joint.rotateToOrient(jointList+faceJointList)",
+                "    rig_joint.mirror(jointList, mode='rotate', zeroRotate=True)",
+                "    rig_joint.mirror(faceJointList, mode='translate', zeroRotate=True)",
+                "",
+                "    # Freeze rotations",
+                "    #mc.makeIdentity(${node_list}, apply=1, t=0, r=1, s=0, pn=1)",
+                "except:",
+                "    traceback.print_exc()",
+                "mc.undoInfo(closeChunk=1)",
                 ""
             ]
-        }, 
+        },
         "/mirror_sdk": {
-            "comment": "Mirror node for SDK's. To change what's being mirrored, ,change the node_list attribute as well as the replace and search attributes.", 
+            "comment": "Mirror node for SDK's. To change what's being mirrored, ,change the node_list attribute as well as the replace and search attributes.",
             "attrs": {
                 "node_list": {
-                    "comment": "SDK nodes you want to mirror", 
-                    "type": "raw", 
+                    "comment": "SDK nodes you want to mirror",
+                    "type": "raw",
                     "value": "mc.ls(type=[\"animCurveUU\", \"animCurveUA\", \"animCurveUL\", \"animCurveUT\"])"
-                }, 
+                },
                 "replace": {
-                    "comment": "This is what you're replacing the search attribute with when found.", 
-                    "type": "raw", 
+                    "comment": "This is what you're replacing the search attribute with when found.",
+                    "type": "raw",
                     "value": "_r_"
-                }, 
+                },
                 "search": {
-                    "comment": "This is what will be searched for to be replaced in the name of the sdk", 
-                    "type": "raw", 
+                    "comment": "This is what will be searched for to be replaced in the name of the sdk",
+                    "type": "raw",
                     "value": "_l_"
                 }
-            }, 
+            },
             "code": [
-                "currentData = sdk_data.SdkData()", 
-                "currentData.gatherDataIterate(${node_list})", 
-                "data = currentData.getData()", 
-                "for k in data.keys():", 
-                "    data[k.replace('${search}','${replace}')] = data[k]", 
-                "", 
-                "currentData.applyData(data.keys())", 
+                "currentData = sdk_data.SdkData()",
+                "currentData.gatherDataIterate(${node_list})",
+                "data = currentData.getData()",
+                "for k in data.keys():",
+                "    data[k.replace('${search}','${replace}')] = data[k]",
+                "",
+                "currentData.applyData(data.keys())",
                 ""
             ]
-        }, 
+        },
         "/mirror_skincluster": {
             "code": [
-                "mc.undoInfo(openChunk=1)", 
-                "try:", 
-                "    rig_skinCluster.removeLocalize(mc.ls(type=\"skinCluster\"))", 
-                "    controls = rig_control.getControls()", 
-                "    if controls:", 
-                "        # Store current pose", 
-                "        rig_control.setPoseAttr(controls, 5)", 
-                "        # Got to bind pose", 
-                "        rig_control.toPoseAttr(controls, 0)", 
-                "    # Mirror", 
-                "    sel = mc.ls(sl=1, dag=1, s=1, ni=1)", 
-                "    if not sel:", 
-                "        sel = mc.ls(hl=1, dag=1, s=1, ni=1)", 
-                "    for s in sel:", 
-                "        sc = mc.ls(mc.listHistory(s, pdo=1, il=1), type='skinCluster')", 
-                "        if sc:", 
-                "            sc = sc[0]", 
-                "            # smoother - World space mirroring messes up interpenetratin parts of the mesh", 
-                "            #            at times, so add a smoother at the begging of the chain to remove", 
-                "            #            most interpenetration to resolve this issue.", 
-                "            delta_mush = mc.deltaMush(s, frontOfChain=1)[0]", 
-                "            mc.setAttr(delta_mush+'.displacement', 0)", 
-                "            mc.copySkinWeights(ss=sc, ds=sc, mirrorMode='YZ', ", 
-                "                               surfaceAssociation='closestPoint', ", 
-                "                               influenceAssociation=('label', 'closestJoint'))", 
-                "            mc.delete(delta_mush)", 
-                "            print(\"mirrored \" + sc),", 
-                "    if controls:", 
-                "        # Restore pose", 
-                "        rig_control.toPoseAttr(controls, 5)", 
-                "", 
-                "except:", 
-                "    traceback.print_exc()", 
-                "mc.undoInfo(closeChunk=1)", 
+                "mc.undoInfo(openChunk=1)",
+                "try:",
+                "    rig_skinCluster.removeLocalize(mc.ls(type=\"skinCluster\"))",
+                "    controls = rig_control.getControls()",
+                "    if controls:",
+                "        # Store current pose",
+                "        rig_control.setPoseAttr(controls, 5)",
+                "        # Got to bind pose",
+                "        rig_control.toPoseAttr(controls, 0)",
+                "    # Mirror",
+                "    sel = mc.ls(sl=1, dag=1, s=1, ni=1)",
+                "    if not sel:",
+                "        sel = mc.ls(hl=1, dag=1, s=1, ni=1)",
+                "    for s in sel:",
+                "        sc = mc.ls(mc.listHistory(s, pdo=1, il=1), type='skinCluster')",
+                "        if sc:",
+                "            sc = sc[0]",
+                "            # smoother - World space mirroring messes up interpenetratin parts of the mesh",
+                "            #            at times, so add a smoother at the begging of the chain to remove",
+                "            #            most interpenetration to resolve this issue.",
+                "            delta_mush = mc.deltaMush(s, frontOfChain=1)[0]",
+                "            mc.setAttr(delta_mush+'.displacement', 0)",
+                "            mc.copySkinWeights(ss=sc, ds=sc, mirrorMode='YZ', ",
+                "                               surfaceAssociation='closestPoint', ",
+                "                               influenceAssociation=('label', 'closestJoint'))",
+                "            mc.delete(delta_mush)",
+                "            print(\"mirrored \" + sc),",
+                "    if controls:",
+                "        # Restore pose",
+                "        rig_control.toPoseAttr(controls, 5)",
+                "",
+                "except:",
+                "    traceback.print_exc()",
+                "mc.undoInfo(closeChunk=1)",
                 ""
             ]
-        }, 
+        },
         "/mirror_transforms": {
             "attrs": {
                 "node_list": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "mc.ls(type=\"transform\")"
-                }, 
+                },
                 "position_vector": {
-                    "type": "tuple", 
+                    "type": "tuple",
                     "value": "(-1, 1, 1)"
-                }, 
+                },
                 "replace": {
-                    "type": "str", 
+                    "type": "str",
                     "value": "'_r_'"
-                }, 
+                },
                 "rotate_vector": {
-                    "type": "tuple", 
+                    "type": "tuple",
                     "value": "(-1, 1, 1)"
-                }, 
+                },
                 "scale_vector": {
-                    "type": "tuple", 
+                    "type": "tuple",
                     "value": "(1, 1, -1)"
-                }, 
+                },
                 "search": {
-                    "type": "str", 
+                    "type": "str",
                     "value": "'_l_'"
                 }
-            }, 
+            },
             "code": [
                 "rig_transform.mirror(${node_list}, search=${search}, replace=${replace}, posVector=${position_vector}, rotVector=${rotate_vector}, scaleVector=${scale_vector})"
             ]
-        }, 
+        },
         "/mirror_wire": {
-            "instance": "/mirror_deformer", 
+            "instance": "/mirror_deformer",
             "attrs": {
                 "deformer_type": {
                     "value": "wire"
                 }
             }
-        }, 
-        "/psd_actions": {
-            "comment": "This node is used to house the code for different actions that are used during editing PSD's\n", 
+        },
+        "/project_data": {
             "attrs": {
-                "action": {
-                    "comment": "Currently, the actions that can be used are as follows. (add_pose, update_pose, delete_pose)", 
-                    "type": "raw", 
-                    "value": "add_pose"
+                "deformer_list": {
+                    "type": "list",
+                    "value": "['lip_wire']"
+                },
+                "node_list_source": {
+                    "type": "list",
+                    "value": "['${prefix}body_geo']"
+                },
+                "node_list_target": {
+                    "type": "list",
+                    "value": "['body_geo']"
+                },
+                "prefix": {
+                    "type": "raw",
+                    "value": "OLD_TOPO__"
                 }
-            }, 
+            },
             "code": [
-                "mc.undoInfo(openChunk=1)", 
-                "try:", 
-                "", 
-                "    # ------------------------------------------------------------------------", 
-                "    # Get selection", 
-                "    # ------------------------------------------------------------------------", 
-                "    ", 
-                "    # Interps", 
-                "    interp_list = mm.eval('getPoseEditorTreeviewSelection(1)')", 
-                "    ", 
-                "    # Poses", 
-                "    pose_list = list()", 
-                "    pose_connections = mm.eval('getPoseEditorTreeviewSelection(2)') ", 
-                "    for pose_connection in pose_connections:", 
-                "        interp, index = pose_connection.split('.')", 
-                "        interp = rig_psd.getInterp(interp)", 
-                "        if index:", 
-                "            bs = rig_psd.getDeformer(interp)", 
-                "            ", 
-                "            pose = mc.getAttr('{}.pose[{}].poseName'.format(interp, index))", 
-                "            #pose = mc.listConnections(interp+'.output['+str(index)+']', p=1)", 
-                "            if pose:", 
-                "                pose_list.append((interp, pose, bs))", 
-                "                ", 
-                "    # ------------------------------------------------------------------------", 
-                "    # Add pose ", 
-                "    # ------------------------------------------------------------------------", 
-                "    ", 
-                "    if '${action}' == 'add_pose':", 
-                "        poseName = 'NEW_POSE'", 
-                "        ", 
-                "        for interp in interp_list:", 
-                "            interp =rig_psd.getInterp(interp)", 
-                "            rig_psd.addPose(interp, poseName, type='swing')", 
-                "            bs = rig_psd.getDeformer(interp)", 
-                "            if not bs:", 
-                "                if mc.objExists('skin_psd'):", 
-                "                    bs = 'skin_psd'", 
-                "                else:", 
-                "                    print('could not find blendShape associated with '+interp)", 
-                "                    continue", 
-                "            rig_psd.addShape(interp, poseName, bs=bs)", 
-                "            ", 
-                "    # ------------------------------------------------------------------------", 
-                "    # Update pose ", 
-                "    # ------------------------------------------------------------------------", 
-                "    ", 
-                "    if '${action}' == 'update_pose':", 
-                "    ", 
-                "        for pose in pose_list:", 
-                "            interp, pose, bs = pose", 
-                "            ", 
-                "            # Update pose", 
-                "            rig_psd.updatePose(interp, pose)", 
-                "            ", 
-                "            # Update pose control data", 
-                "            #", 
-                "            pose_control_data = rig_psd.getPoseControlData(interp, pose)", 
-                "            if not pose_control_data:", 
-                "                continue", 
-                "            for data in pose_control_data:", 
-                "                name, type, value = data", 
-                "                value = mc.getAttr(name)", 
-                "                ", 
-                "                # Rotate", 
-                "                if type == 8:", 
-                "                    # Convert degrees to radians", 
-                "                    value = [math.radians(value[0][0]), math.radians(value[0][1]), math.radians(value[0][2])]", 
-                "                    rig_psd.setPoseControlData(interp, pose, name, type, value)", 
-                "                    ", 
-                "    # ------------------------------------------------------------------------", 
-                "    # Delete Deltas", 
-                "    # ------------------------------------------------------------------------", 
-                "                    ", 
-                "    if '${action}' == 'delete_deltas':", 
-                "        for pose in pose_list:", 
-                "            interp, pose, bs = pose", 
-                "            rig_blendShape.clearTargetDeltas(bs, pose)", 
-                "", 
-                "except:", 
-                "    traceback.print_exc()", 
-                "mc.undoInfo(closeChunk=1)", 
-                ""
+                "node_list_source = ${node_list_source}",
+                "node_list_target = ${node_list_target}",
+                "deformer_list = ${deformer_list}",
+                "reload(rig_wire)",
+                "reload(rig_weights)",
+                "",
+                "",
+                "for source, target in zip(node_list_source, node_list_target):",
+                "    for deformer in deformer_list:",
+                "        print(source, target, deformer)",
+                "        newWire = rig_wire.transferWire(source, target, deformer, ",
+                "                                        surfaceAssociation=\"closestPoint\", ",
+                "                                        createNew=True)"
             ]
-        }, 
-        "/psd_add_pose": {
-            "instance": "/psd_actions", 
+        },
+        "/save_maya_file": {
             "attrs": {
-                "action": {
-                    "type": "raw", 
-                    "value": "add_pose"
+                "dir_path": {
+                    "type": "raw",
+                    "value": "${file::build}"
+                },
+                "file_name": {
+                    "type": "raw",
+                    "value": "${element}_${variant}_${file_type}.ma"
+                },
+                "file_type": {
+                    "type": "raw",
+                    "value": "rig"
                 }
-            }
-        }, 
-        "/psd_delete_deltas": {
-            "instance": "/psd_actions", 
-            "attrs": {
-                "action": {
-                    "value": "delete_deltas"
-                }
-            }
-        }, 
-        "/psd_mirror_actions": {
-            "comment": "This node is the base node that is used for mirror psd data.", 
-            "attrs": {
-                "action": {
-                    "comment": "Action to use for mirror. ", 
-                    "type": "raw", 
-                    "value": "deltas"
-                }
-            }, 
+            },
             "code": [
-                "mc.undoInfo(openChunk=1)", 
-                "try:", 
-                "    # Store Global symmetry setting, something is changing this during the mirror", 
-                "    global_mirror_state = mc.symmetricModelling(symmetry=1, q=1)", 
-                "    ", 
-                "    # ------------------------------------", 
-                "    # Get Selection", 
-                "    # ------------------------------------", 
-                "    ", 
-                "    # Targets and their blendshapes", 
-                "    #", 
-                "    if '${action}' == 'deltas':", 
-                "        target_connections = mm.eval('getPoseEditorTreeviewSelection(2)') ", 
-                "        target_list = list()", 
-                "        blendshape_list = list()", 
-                "        for targ in target_connections:", 
-                "            node, index = targ.split('.')", 
-                "            if index:", 
-                "                bs = rig_psd.getDeformer(node)", 
-                "                target = mc.listConnections('{}.output[{}]'.format(node, index), p=True)", 
-                "                if target:", 
-                "                    target = target[0].split('.')[1]", 
-                "                    target_list.append(target)", 
-                "                    blendshape_list.append(bs) ", 
-                "            ", 
-                "    # Interpolators", 
-                "    # ", 
-                "    node_list = mm.eval('getPoseEditorTreeviewSelection(1)')", 
-                "    ", 
-                "    # ------------------------------------", 
-                "    # Store pose", 
-                "    # ------------------------------------", 
-                "    ", 
-                "    #if '{action}' == 'system':", 
-                "    #    controls = rigrepo.libs.control.getControls()", 
-                "    #    if controls:", 
-                "    #        rigrepo.libs.control.setPoseAttr(controls, 6)", 
-                "    #        # Got to bind pose", 
-                "    #        rigrepo.libs.control.toPoseAttr(controls, 0)", 
-                "    ", 
-                "    # ------------------------------------", 
-                "    # Main Loop", 
-                "    # ------------------------------------", 
-                "    ", 
-                "    for node in node_list:", 
-                "        node = rig_psd.getInterp(node)", 
-                "        mirror_token = rig_common.getSideToken(node)", 
-                "        if mirror_token == 'r':", 
-                "            print('mirror only works for left to right'),", 
-                "            continue", 
-                "        ", 
-                "        mirror_node = rig_common.getMirrorName(node)", 
-                "        ", 
-                "        if not mirror_node:", 
-                "            print('PSD Mirror: Warning [{}] has no mirror system'.format(node))", 
-                "            continue", 
-                "        ", 
-                "        # -------------------------------", 
-                "        # MIRROR SYSTEM", 
-                "        # -------------------------------", 
-                "        ", 
-                "        if '${action}' == 'system':", 
-                "        ", 
-                "            # Remove existing pose controls before mirror. They cause mirror errors", 
-                "            if mc.objExists(mirror_node):", 
-                "                mirror_pose_controls = rig_psd.getPoseControls(mirror_node)", 
-                "                for pose_control in mirror_pose_controls:", 
-                "                    rig_psd.removePoseControl(mirror_node, pose_control)", 
-                "                    ", 
-                "            pose_list = rig_common.pyListToMelArray(rig_psd.getPoseNames(node))", 
-                "            try:", 
-                "                mm.eval('poseInterpolatorMirror {} {} _l_ _r_ 1 1 1'.format(node, pose_list))", 
-                "            except:", 
-                "                traceback.print_exc()", 
-                "            ", 
-                "            # Attr settings", 
-                "            attr_list = ['outputSmoothing', 'regularization']", 
-                "            for attr in attr_list:", 
-                "                value = mc.getAttr('{}.{}'.format(node, attr))", 
-                "                mc.setAttr('{}.{}'.format(mirror_node, attr), value)", 
-                "            ", 
-                "            pose_controls = rig_psd.getPoseControls(node)", 
-                "            ", 
-                "            interpolation = mc.getAttr(node+'.interpolation')", 
-                "            mc.setAttr(mirror_node+'.interpolation', interpolation)", 
-                "", 
-                "            for pc in pose_controls:", 
-                "                con = mc.listConnections(pc, p=1)", 
-                "                for c in con:", 
-                "                    con_node = c.split('.')[0]", 
-                "                    if con_node == node:", 
-                "                        mirror_pose_control = rig_common.getMirrorName(pc)", 
-                "                        if not mirror_pose_control in rig_psd.getPoseControls(mirror_node):", 
-                "                            if mc.objExists(mirror_pose_control):", 
-                "                                rig_psd.addPoseControl(mirror_node, mirror_pose_control)          ", 
-                "", 
-                "            data_obj = psd_data.PSDData()", 
-                "            data_obj.gatherDataIterate([node])", 
-                "            data_obj.applyData([node], mirror=True)", 
-                "            ", 
-                "            print('Mirrored Interpolator: ' + node)", 
-                "       ", 
-                "            ", 
-                "        # -------------------------------", 
-                "        # MIRROR ONLY DELTAS", 
-                "        # -------------------------------", 
-                "        ", 
-                "        if '${action}' == 'deltas':", 
-                "            ", 
-                "            bs = rig_psd.getDeformer(node)", 
-                "            mirror_bs = rig_psd.getDeformer(mirror_node)", 
-                "            deltas_list = list()", 
-                "            ", 
-                "            # Get Deltas", 
-                "            for pose in rig_psd.getPoseNames(node):", 
-                "                if pose not in target_list:", 
-                "                    continue", 
-                "                index = rig_psd.getPoseShapeIndex(node, pose)", 
-                "                mirror_pose = rig_common.getMirrorName(pose)", 
-                "                mirror_index = rig_psd.getPoseShapeIndex(mirror_node, mirror_pose)", 
-                "                ", 
-                "                if index != None and mirror_index != None:", 
-                "                    target_name = rig_blendShape.getTargetName(mirror_bs, mirror_index)", 
-                "                    deltas, indices = rig_blendShape.getTargetDeltas(bs, index)", 
-                "                    if not deltas:", 
-                "                        continue", 
-                "                    ", 
-                "                    # Center Mirror", 
-                "                    if node == mirror_node and index == mirror_index:", 
-                "                        rig_blendShape.setTargetDeltas(mirror_bs, deltas, indices, mirror_index) ", 
-                "                        mc.blendShape(bs, e=True, mt=(0, mirror_index), ss=1, sa='x')", 
-                "                        print('Mirrored deltas: ' + pose)", 
-                "                    # Side Flip    ", 
-                "                    else:", 
-                "                        rig_blendShape.clearTargetDeltas(mirror_bs, mirror_index)", 
-                "                        rig_blendShape.setTargetDeltas(mirror_bs, deltas, indices, mirror_index) ", 
-                "                        values = rig_blendShape.getTargetMapWeights(mirror_bs, mirror_pose)", 
-                "                        mc.blendShape(mirror_bs, e=True, ft=(0, mirror_index), ss=1, sa='x')", 
-                "                        rig_blendShape.setTargetMapWeights(mirror_bs, mirror_pose, values)", 
-                "                        print('flipped deltas: ' + pose)", 
-                "                    ", 
-                "    # restore pose", 
-                "    #if '{action}' == 'system':", 
-                "    #    if controls:", 
-                "    #        rigrepo.libs.control.toPoseAttr(controls, 6)", 
-                "except:", 
-                "    traceback.print_exc()", 
-                "mc.undoInfo(closeChunk=1)", 
-                "", 
-                "# GLOBAL MIRROR SETTINGS", 
-                "#   Setting the global mirror state is going into the undo stack", 
-                "#   so undoing the mirror action is turning it back on if it was changed.", 
-                "#   This shuts off undo so the mirror setting doesn't get added to ", 
-                "#   the undo stack.", 
-                "try:", 
-                "    mc.undoInfo(stateWithoutFlush=0)", 
-                "    # Restore global mirror state", 
-                "    mc.symmetricModelling(symmetry=globalMirrorState)", 
-                "    mc.undoInfo(stateWithoutFlush=1)", 
-                "except:", 
-                "    mc.undoInfo(stateWithoutFlush=1)", 
-                "                ", 
-                ""
+                "import os.path",
+                "",
+                "dir_path = '${dir_path}'",
+                "file_path = '${dir_path}/${file_name}'",
+                "",
+                "if os.path.exists(dir_path):",
+                "",
+                "    mc.file(rename=file_path)",
+                "    mc.file(save=True, type=\"mayaAscii\")",
+                "    print 'Saved ${file_type} file: ' + file_path"
             ]
-        }, 
-        "/psd_mirror_deltas": {
-            "instance": "/psd_mirror_actions", 
-            "comment": "This node will mirror the deltas for the psd system selected in the interface\n\n", 
-            "attrs": {
-                "action": {
-                    "type": "raw", 
-                    "value": "deltas"
-                }
-            }
-        }, 
-        "/psd_mirror_system": {
-            "instance": "/psd_mirror_actions", 
-            "comment": "This node will mirror the entire system selected.", 
-            "attrs": {
-                "action": {
-                    "value": "system"
-                }
-            }
-        }, 
-        "/psd_update_pose": {
-            "instance": "/psd_actions", 
-            "attrs": {
-                "action": {
-                    "value": "update_pose"
-                }
-            }
-        }, 
+        },
         "/select_sdks": {
             "attrs": {
                 "sdk_name_list": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "mc.ls(\"*_def_auto*\", type=[\"animCurveUU\", \"animCurveUA\", \"animCurveUL\", \"animCurveUT\"])"
                 }
-            }, 
+            },
             "code": [
-                "mc.select(${sdk_name_list})", 
+                "mc.select(${sdk_name_list})",
                 "        "
             ]
-        }, 
+        },
         "/space_switch": {
-            "enabled": true, 
+            "enabled": true,
             "attrs": {
                 "attribute_node": {
-                    "type": "str", 
+                    "type": "str",
                     "value": "''"
-                }, 
+                },
                 "constraint_node": {
-                    "type": "str", 
+                    "type": "str",
                     "value": "''"
-                }, 
+                },
                 "constraint_type": {
-                    "type": "str", 
+                    "type": "str",
                     "value": "'orient'"
-                }, 
+                },
                 "default_target_index": {
-                    "type": "int", 
+                    "type": "int",
                     "value": "0"
-                }, 
+                },
                 "name_default": {
-                    "type": "str", 
+                    "type": "str",
                     "value": "'local'"
-                }, 
+                },
                 "name_list": {
-                    "type": "list", 
+                    "type": "list",
                     "value": "[]"
-                }, 
+                },
                 "parent": {
-                    "type": "str", 
+                    "type": "str",
                     "value": "''"
-                }, 
+                },
                 "space_attribute_name": {
-                    "type": "str", 
+                    "type": "str",
                     "value": "'space'"
-                }, 
+                },
                 "target_list": {
-                    "type": "list", 
+                    "type": "list",
                     "value": "[]"
                 }
-            }, 
+            },
             "code": [
-                "import maya.cmds as mc", 
-                "import openrig.maya.riglib.spaces", 
-                "", 
-                "if mc.objExists(${constraint_node}) and mc.objExists(${attribute_node}):", 
-                "    group=openrig.maya.riglib.spaces.create(${constraint_node}, ${attribute_node}, parent=${parent},spaceAttrName=${space_attribute_name}, nameDefault=${name_default} )", 
-                "    if ${target_list} and ${name_list}:", 
-                "        openrig.maya.riglib.spaces.addSpace(${constraint_node}, ${target_list}, ${name_list}, group, ${attribute_node}, ${constraint_type})", 
-                "        mc.setAttr('{}.{}'.format(${attribute_node}, ${space_attribute_name}), ${default_target_index})", 
-                "        ", 
+                "import maya.cmds as mc",
+                "import openrig.maya.riglib.spaces",
+                "",
+                "if mc.objExists(${constraint_node}) and mc.objExists(${attribute_node}):",
+                "    group=openrig.maya.riglib.spaces.create(${constraint_node}, ${attribute_node}, parent=${parent},spaceAttrName=${space_attribute_name}, nameDefault=${name_default} )",
+                "    if ${target_list} and ${name_list}:",
+                "        openrig.maya.riglib.spaces.addSpace(${constraint_node}, ${target_list}, ${name_list}, group, ${attribute_node}, ${constraint_type})",
+                "        mc.setAttr('{}.{}'.format(${attribute_node}, ${space_attribute_name}), ${default_target_index})",
+                "        ",
                 ""
             ]
-        }, 
-        "/trasnfer_data": {
+        },
+        "/transfer_data": {
             "child_order": [
-                "rename", 
-                "skincluster", 
-                "node3", 
-                "node4"
-            ], 
+                "setup_data",
+                "deformers",
+                "replace"
+            ],
+            "comment": "Transfer data between geos.",
             "attrs": {
-                "model": {}, 
-                "prefix": {}
-            }
-        }, 
-        "/trasnfer_data/node3": {}, 
-        "/trasnfer_data/node4": {}, 
-        "/trasnfer_data/rename": {
-            "attrs": {
-                "model": {
-                    "value": "model"
-                }, 
+                "filepath_source": {
+                    "type": "raw",
+                    "value": "${file::uman/rig/data/base/uman_base_rig_pre.ma}"
+                },
+                "intersections_suffix": {
+                    "comment": "Suffix for geos that are used to remove self intersections",
+                    "type": "raw",
+                    "value": "_remove_intersections"
+                },
+                "node_list": {
+                    "type": "raw",
+                    "value": "mc.listRelatives('${top_node}', ad=1, type='transform', path=1)"
+                },
+                "node_list_source": {
+                    "type": "raw",
+                    "value": "mc.listRelatives('${prefix}${top_node}', ad=1, type='transform', path=1)"
+                },
                 "prefix": {
+                    "type": "raw",
                     "value": "OLD_TOPO__"
+                },
+                "refit_source_geo": {
+                    "type": "str",
+                    "value": "'body_geo'"
+                },
+                "refit_target_face_geo": {
+                    "type": "str",
+                    "value": "'head_geo'"
+                },
+                "refit_target_geo": {
+                    "type": "str",
+                    "value": "'body_geo_refit'"
+                },
+                "top_node": {
+                    "type": "raw",
+                    "value": "model"
                 }
-            }, 
+            }
+        },
+        "/transfer_data/deformers": {
+            "child_order": [
+                "skincluster",
+                "clusters",
+                "wire"
+            ],
             "code": [
-                "", 
-                "import maya.cmds as mc", 
-                "import rigrepo.libs.common as common", 
-                "import maya.mel as mm", 
-                "import rigrepo.libs.deformer", 
-                "import rigrepo.libs.skinCluster as skinCluster", 
-                "", 
-                "################", 
-                "# Rename Model #", 
-                "################", 
-                "", 
-                "if action == 'rename':", 
-                "    topNodes = list(set(mc.ls(assemblies=1))-set(['persp', 'top', 'front', 'side']))", 
-                "", 
-                "    for node in topNodes:", 
-                "        allDescendents = mc.listRelatives(node, ad=1, type='transform', path=1)", 
-                "        if allDescendents:", 
-                "            for child in allDescendents+[node]:", 
-                "                mc.rename(child, prefix + child.split('|')[-1])"
+                "mc.refresh()"
             ]
-        }, 
-        "/trasnfer_data/skincluster": {
+        },
+        "/transfer_data/deformers/clusters": {
+            "child_order": [
+                "face_clusters"
+            ]
+        },
+        "/transfer_data/deformers/clusters/face_clusters": {
             "attrs": {
-                "model": {
-                    "type": "str", 
-                    "value": "'model'"
-                }, 
-                "prefix": {
-                    "type": "str", 
-                    "value": "'OLD_TOPO__'"
+                "top_node": {
+                    "value": "${refit_target_face_geo}"
                 }
-            }, 
+            },
             "code": [
-                "prefix = ${prefix}", 
-                "model = ${model}", 
-                "", 
-                "# # Get geometry under the model", 
-                "if mc.objExists(prefix+model):", 
-                "    geos = mc.listRelatives(prefix+model, ad=1, type='mesh', path=1, ni=1)", 
-                "    # Get transforms of geometry", 
-                "    geos = list(set(mc.listRelatives(geos, p=1, path=1, type='transform')))", 
-                "", 
-                "for geo in geos:", 
-                "    sc = skinCluster.getSkinCluster(geo)", 
-                "    if not sc:", 
-                "        continue", 
-                "        ", 
-                "    target = geo.replace(prefix, '')", 
-                "    if not mc.objExists(target):", 
-                "        continue", 
-                "        ", 
-                "    sc = mc.rename(sc, prefix+sc)", 
-                "    rig_deformer.transferDeformers(geo, [target], ['skinCluster'], 'closestPoint')", 
+                "prefix = '${prefix}'",
+                "top_node = ${top_node}",
+                "source_geo = '${prefix}'+${refit_source_geo}",
+                "reload(rig_cluster)",
+                "",
+                "# get all meshes under top node",
+                "geo_list = mc.listRelatives(top_node, ad=1, type='mesh', path=1, ni=1)",
+                "geo_list = list(set(mc.listRelatives(geo_list, p=1, path=1, type='transform')))",
+                "",
+                "for geo in geo_list:",
+                "    clusters = rig_cluster.getClusters(source_geo)",
+                "    if not clusters:",
+                "        continue",
+                "    for cluster in clusters:",
+                "",
+                "        newCluster = rig_cluster.transferCluster(source_geo, geo, cluster, handle=True, ",
+                "                                             surfaceAssociation=\"closestPoint\", ",
+                "                                             createNew=True)",
+                "        mc.rename(cluster, prefix+cluster)",
+                "        mc.rename(newCluster[0], cluster)"
+            ]
+        },
+        "/transfer_data/deformers/skincluster": {
+            "code": [
+                "prefix = '${prefix}'",
+                "top_node = '${top_node}'",
+                "source_geo = '${prefix}'+${refit_source_geo}",
+                "",
+                "# get all meshes under top node",
+                "geo_list = mc.listRelatives(top_node, ad=1, type='mesh', path=1, ni=1)",
+                "geo_list = list(set(mc.listRelatives(geo_list, p=1, path=1, type='transform')))",
+                "",
+                "sc = rig_skinCluster.getSkinCluster(source_geo)        ",
+                "sc = mc.rename(sc, prefix+sc)",
+                "for geo in geo_list:",
+                "    rig_deformer.transferDeformers(source_geo, [geo], ['skinCluster'], 'closestPoint')",
                 " "
             ]
-        }, 
-        "/wire_to_skincluster": {
-            "enabled": "/", 
-            "comment": "This node will be used to convert wires to skinClusters\n", 
+        },
+        "/transfer_data/deformers/wire": {
+            "child_order": [
+                "face_wires",
+                "body_wires"
+            ],
             "attrs": {
-                "deformer_name": {
-                    "comment": "Deformer ", 
-                    "type": "str", 
-                    "value": "''"
-                }, 
-                "joint_depth": {
-                    "comment": "How far to go to keep make sure the deformation happens correctly", 
-                    "type": "int", 
-                    "value": "3"
-                }, 
-                "keep_wires": {
-                    "comment": "Whether or not to keep the wires", 
-                    "type": "bool", 
-                    "value": "False"
-                }, 
-                "root_parent": {
-                    "comment": "The root parent", 
-                    "type": "str", 
-                    "value": "'rig'"
-                }, 
-                "root_pre_matrix": {
-                    "comment": "Node the will be used for the preMatrix", 
-                    "type": "str", 
-                    "value": "'trs_aux'"
-                }, 
-                "target_geometry": {
-                    "comment": "Geometry you want to put the defomer on", 
-                    "type": "str", 
-                    "value": "'body_geo'"
-                }, 
-                "wire_list": {
-                    "comment": "List of wires you wish to convert", 
-                    "type": "list", 
+                "deformer_list": {
+                    "type": "raw",
+                    "value": "rig_wire.getWires('${prefix}'+${refit_source_geo})"
+                },
+                "exclude_wire_list": {
+                    "type": "list",
                     "value": "[]"
+                },
+                "top_node": {
+                    "value": "${refit_target_face_geo}"
                 }
-            }, 
+            }
+        },
+        "/transfer_data/deformers/wire/body_wires": {
+            "instance": "../face_wires",
+            "attrs": {
+                "deformer_list": {
+                    "value": "mc.ls([u'arm_?_curve_wire', u'leg_?_curve_wire', u'spine_curve_wire'])"
+                },
+                "exclude_wire_list": {
+                    "value": "[]"
+                },
+                "top_node": {
+                    "value": "'body_geo'"
+                }
+            }
+        },
+        "/transfer_data/deformers/wire/face_wires": {
+            "attrs": {
+                "exclude_wire_list": {
+                    "type": "raw",
+                    "value": "mc.ls([u'arm_?_curve_wire', u'leg_?_curve_wire', u'spine_curve_wire'])"
+                }
+            },
             "code": [
-                "import traceback", 
-                "", 
-                "mc.undoInfo(openChunk=1)", 
-                "try:", 
-                "    rig_wire.convertWiresToSkinCluster(${deformer_name}, ${target_geometry}, ${wire_list}, ${keep_wires}, ${root_parent}, ${root_pre_matrix}, ${joint_depth})   ", 
-                "except:", 
-                "    traceback.print_exc()", 
-                "mc.undoInfo(closeChunk=1)", 
+                "prefix = '${prefix}'",
+                "top_node = ${top_node}",
+                "source_geo = '${prefix}'+${refit_source_geo}",
+                "exclude_wires = ${exclude_wire_list}",
+                "",
+                "# get all meshes under top node",
+                "geo_list = mc.listRelatives(top_node, ad=1, type='mesh', path=1, ni=1)",
+                "geo_list = list(set(mc.listRelatives(geo_list, p=1, path=1, type='transform')))",
+                "",
+                "for geo in geo_list:",
+                "    wires = ${deformer_list}",
+                "    if not wires:",
+                "        continue",
+                "    for wire in wires:",
+                "        if wire in exclude_wires:",
+                "            continue",
+                "        newWire = rig_wire.transferWire(source_geo, geo, wire, ",
+                "                                        surfaceAssociation=\"closestPoint\", ",
+                "                                        createNew=True)",
+                "        mc.rename(wire, prefix+wire)",
+                "        mc.rename(newWire[0], wire)"
+            ]
+        },
+        "/transfer_data/replace": {
+            "code": [
+                "prefix = 'OLD_TOPO__'",
+                "top_node = 'model'",
+                "",
+                "# Find the old model's parent",
+                "par = mc.listRelatives(prefix+top_node, p=1, path=1)[0]",
+                "# Get old root",
+                "new_root = mc.ls(top_node, long=1)[0].split('|')[1]",
+                "root =  mc.ls(prefix+top_node, long=1)[0].split('|')[1]",
+                "# Move the new model there",
+                "mc.parent(top_node, par)",
+                "# Remove the old model and the new top node",
+                "mc.delete(prefix+top_node)",
+                "",
+                "# Remove the prefix",
+                "oldNames = mc.ls(prefix+'*')",
+                "for name in oldNames:",
+                "    if mc.objExists(name):",
+                "        if name != name.replace(prefix, ''):",
+                "            mc.rename(name, name.replace(prefix, ''))",
+                "            ",
+                "mc.delete(new_root)",
+                "mc.rename(root, new_root)"
+            ]
+        },
+        "/transfer_data/setup_data": {
+            "child_order": [
+                "file_new",
+                "open_source",
+                "prefix_source",
+                "import_target",
+                "blend_to_target",
+                "remove_intersections"
+            ]
+        },
+        "/transfer_data/setup_data/blend_to_target": {
+            "code": [
+                "refit_source_geo = '${prefix}'+${refit_source_geo}",
+                "refit_target_geo = ${refit_target_geo}",
+                "",
+                "for deformer in  mc.listHistory(refit_source_geo, pdo=1, il=2):",
+                "    try:",
+                "        mc.setAttr(deformer+'.envelope', 0)",
+                "    except:",
+                "        pass",
+                "        ",
+                "if mc.objExists(refit_source_geo):",
+                "    mc.blendShape(refit_target_geo, refit_source_geo, w=(0, 1), foc=1, suppressDialog=1)"
+            ]
+        },
+        "/transfer_data/setup_data/file_new": {
+            "comment": "Clear scene",
+            "code": [
+                "mc.file(new=True, f=True)",
+                "mc.setAttr('perspShape.focalLength', 55)"
+            ]
+        },
+        "/transfer_data/setup_data/import_target": {
+            "comment": "Import the target maya data nodes to be transfered to."
+        },
+        "/transfer_data/setup_data/open_source": {
+            "comment": "Open/import a file with data to be transfered",
+            "code": [
+                "mc.file('${file::${filepath_source}}', i=True, force=True)"
+            ]
+        },
+        "/transfer_data/setup_data/prefix_source": {
+            "comment": "Prefix the source node names.",
+            "code": [
+                "prefix = '${prefix}'",
+                "",
+                "node_list = ${node_list} + ['${top_node}']",
+                "for node in node_list:",
+                "    mc.rename(node, prefix + node.split('|')[-1])"
+            ]
+        },
+        "/transfer_data/setup_data/remove_intersections": {
+            "enabled": false,
+            "code": [
+                "prefix = '${prefix}'",
+                "",
+                "mc.rename('body_geo_transfer_proxy', 'body_geo')",
                 ""
             ]
-        }, 
-        "/yank_cluster": {}, 
-        "/yank_skincluster": {
-            "comment": "This node is used to pull influences around to calculate a falloff based on a smoother version of the weighting.", 
+        },
+        "/wire_to_skincluster": {
+            "enabled": "/",
+            "comment": "This node will be used to convert wires to skinClusters\n",
+            "attrs": {
+                "deformer_name": {
+                    "comment": "Deformer ",
+                    "type": "str",
+                    "value": "''"
+                },
+                "joint_depth": {
+                    "comment": "How far to go to keep make sure the deformation happens correctly",
+                    "type": "int",
+                    "value": "3"
+                },
+                "keep_wires": {
+                    "comment": "Whether or not to keep the wires",
+                    "type": "bool",
+                    "value": "False"
+                },
+                "root_parent": {
+                    "comment": "The root parent",
+                    "type": "str",
+                    "value": "'rig'"
+                },
+                "root_pre_matrix": {
+                    "comment": "Node the will be used for the preMatrix",
+                    "type": "str",
+                    "value": "'trs_aux'"
+                },
+                "target_geometry": {
+                    "comment": "Geometry you want to put the defomer on",
+                    "type": "raw",
+                    "value": "mc.listRelatives(mc.ls(mc.ls('model', dag=1, s=1, ni=1), type='mesh'), p=1)"
+                },
+                "wire_list": {
+                    "comment": "List of wires you wish to convert",
+                    "type": "list",
+                    "value": "[]"
+                }
+            },
             "code": [
-                "mc.undoInfo(openChunk=1)", 
-                "try:", 
-                "    selection_list = mc.ls(sl=True, dag=True, s=True, ni=True)", 
-                "    if not selection_list:", 
-                "        selection_list = mc.ls(hl=True, dag=True, s=True, ni=True)", 
-                "    if selection_list:", 
-                "        skincluster = mc.ls(mc.listHistory(selection_list, pdo=True, il=True), type='skinCluster')", 
-                "        if skincluster:", 
-                "            deltamush_list = mc.ls(mc.listHistory(selection_list, pdo=True, il=True), type='deltaMush')", 
-                "            if deltamush_list:", 
-                "                for deltamush in deltamush_list:", 
-                "                    mc.setAttr('{}.envelope'.format(deltamush), 1)", 
-                "            target = mc.listRelatives(selection_list, p=True)[0]", 
-                "            base = mc.duplicate(target)[0]", 
-                "            weight_list = list()", 
-                "            skincluster = skincluster[0]", 
-                "            influence_list = mc.skinCluster(skincluster, q=True, inf=True)", 
-                "            for influence in influence_list:", 
-                "                matrix_connection = mc.listConnections('{}.worldMatrix[0]'.format(influence), p=True, d=True, s=True)", 
-                "                influence_index = None", 
-                "                for connection in matrix_connection:", 
-                "                    node = connection.split('.')[0]", 
-                "                    if node == skincluster:", 
-                "                        influence_index = connection.split('[')[1].split(']')[0]", 
-                "                if influence_index:", 
-                "                    temp_influence = mc.duplicate(influence, po=True)[0]", 
-                "                    mc.connectAttr('{}.worldMatrix[0]'.format(temp_influence), '{}.matrix[{}]'.format(skincluster, influence_index), f=True)", 
-                "                    mc.move(1, 0, 0, temp_influence, r=True, worldSpaceDistance=True) ", 
-                "                    weight_list.append(rig_shape.getDeltas(base, target))", 
-                "                    mc.connectAttr('{}.worldMatrix[0]'.format(influence), '{}.matrix[{}]'.format(skincluster, influence_index), f=True)                         ", 
-                "                    mc.delete(temp_influence)", 
-                "            # Set Weights", 
-                "            rig_weights.setWeights(skincluster, weight_object.WeightObject(maps=influence_list, weights=weight_list)) ", 
-                "            if deltamush_list:", 
-                "                for deltamush in deltamush_list:", 
-                "                    mc.setAttr('{}.envelope'.format(deltamush), 0)", 
-                "            mc.delete(base)     ", 
-                "except:", 
-                "    traceback.print_exc()", 
+                "import traceback",
+                "",
+                "mc.undoInfo(openChunk=1)",
+                "try:",
+                "    rig_wire.convertWiresToSkinCluster(${deformer_name}, ${target_geometry}, ${wire_list}, ${keep_wires}, ${root_parent}, ${root_pre_matrix}, ${joint_depth})   ",
+                "except:",
+                "    traceback.print_exc()",
+                "mc.undoInfo(closeChunk=1)",
+                ""
+            ]
+        },
+        "/yank_cluster": {},
+        "/yank_skincluster": {
+            "comment": "This node is used to pull influences around to calculate a falloff based on a smoother version of the weighting.",
+            "code": [
+                "mc.undoInfo(openChunk=1)",
+                "try:",
+                "    selection_list = mc.ls(sl=True, dag=True, s=True, ni=True)",
+                "    if not selection_list:",
+                "        selection_list = mc.ls(hl=True, dag=True, s=True, ni=True)",
+                "    if selection_list:",
+                "        skincluster = mc.ls(mc.listHistory(selection_list, pdo=True, il=True), type='skinCluster')",
+                "        if skincluster:",
+                "            deltamush_list = mc.ls(mc.listHistory(selection_list, pdo=True, il=True), type='deltaMush')",
+                "            if deltamush_list:",
+                "                for deltamush in deltamush_list:",
+                "                    mc.setAttr('{}.envelope'.format(deltamush), 1)",
+                "            target = mc.listRelatives(selection_list, p=True)[0]",
+                "            base = mc.duplicate(target)[0]",
+                "            weight_list = list()",
+                "            skincluster = skincluster[0]",
+                "            influence_list = mc.skinCluster(skincluster, q=True, inf=True)",
+                "            for influence in influence_list:",
+                "                matrix_connection = mc.listConnections('{}.worldMatrix[0]'.format(influence), p=True, d=True, s=True)",
+                "                influence_index = None",
+                "                for connection in matrix_connection:",
+                "                    node = connection.split('.')[0]",
+                "                    if node == skincluster:",
+                "                        influence_index = connection.split('[')[1].split(']')[0]",
+                "                if influence_index:",
+                "                    temp_influence = mc.duplicate(influence, po=True)[0]",
+                "                    mc.connectAttr('{}.worldMatrix[0]'.format(temp_influence), '{}.matrix[{}]'.format(skincluster, influence_index), f=True)",
+                "                    mc.move(1, 0, 0, temp_influence, r=True, worldSpaceDistance=True) ",
+                "                    weight_list.append(rig_shape.getDeltas(base, target))",
+                "                    mc.connectAttr('{}.worldMatrix[0]'.format(influence), '{}.matrix[{}]'.format(skincluster, influence_index), f=True)                         ",
+                "                    mc.delete(temp_influence)",
+                "            # Set Weights",
+                "            rig_weights.setWeights(skincluster, weight_object.WeightObject(maps=influence_list, weights=weight_list)) ",
+                "            if deltamush_list:",
+                "                for deltamush in deltamush_list:",
+                "                    mc.setAttr('{}.envelope'.format(deltamush), 0)",
+                "            mc.delete(base)     ",
+                "except:",
+                "    traceback.print_exc()",
                 "mc.undoInfo(closeChunk=1)"
             ]
         }

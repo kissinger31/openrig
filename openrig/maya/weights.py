@@ -16,6 +16,8 @@ import openrig.maya.transform as rig_transform
 import openrig.maya.blendShape as rig_blendshape
 import openrig.maya.skinCluster as rig_skincluster
 import openrig.maya.shape as rig_shape
+import gzip
+import shutil
 
 BLENDWEIGHTS_ATTR = 'blendWeights'
 SKINCLUSTER_ATTRIBUTE_LIST = ['skinningMethod', BLENDWEIGHTS_ATTR, 'normalizeWeights']
@@ -200,6 +202,8 @@ def getWeights(deformer, mapList=None, geometry=None):
 
         if geoList and geometryFullPath in geoList:
             geometryindex = geoList.index(geometryFullPath)
+        else:
+            return weightObject.WeightObject(maps=mapList, weights=weightList)
 
         # Define attrs
         attr = '{}.wl[{}].w[0:{}]'.format(deformer, geometryindex, pnt_count)
@@ -591,6 +595,62 @@ def importWeights(geometry, deformer, filepath):
     except:
         print "\ncouldn't apply {} to {}".format(filename, deformer)
 
+def unzipWts(filepath):
+
+    # Unzip
+    #       Compare when the zip file was written, if it is more than a minute newer
+    #       than the non-zipped, unzip. If no un-zipped file exists it will unzip
+    #       because of the large default diff_time.
+    unzip = False
+    diff_time = 10000
+    filepath_nonzip = filepath.replace('.gz', '')
+    filename = os.path.basename(filepath)
+
+    if os.path.exists(filepath) and os.path.exists(filepath_nonzip):
+        diff_time = os.stat(filepath).st_mtime - os.stat(filepath_nonzip).st_mtime
+
+    # Always unzip if the unzipped file does not exist
+    if not os.path.exists(filepath_nonzip):
+        print ('unzipping - unzipped file does not exist', filename)
+        unzip = True
+    # Unzipped file exists, only unzip if zipped file is newer
+    elif diff_time > 60.0:
+        print ('unzipping - zip file is newer than non-zipped file', filename)
+        unzip = True
+
+    if unzip:
+        if os.path.exists(filepath):
+            with gzip.open(filepath, 'rb') as f:
+                file_content = f.read()
+                # Write uncompressed file
+                g = open(filepath_nonzip, 'w')
+                g.write(file_content)
+                g.close()
+    else:
+        print('No need to unzip, file is update date', filename)
+
+def unzipWtsDir(directory):
+
+    directory_list = common.toList(directory)
+    # loop through all of the files in the directory and make sure they're weights files.
+    loadedFiles = ''
+
+    # Comp files
+    files_comped = common.compDirFiles(directory_list)
+
+    # Reverse comped files to ensure top directory files are applied last
+    files_comped.reverse()
+    directory_list.reverse()
+
+    for i in range(len(directory_list)):
+        directory = directory_list[i]
+        dir_name = directory.split('/')[-1]
+
+        for filename in files_comped[i]:
+            if filename.endswith('.gz'):
+                filepath = '{}/{}'.format(directory, filename)
+                unzipWts(filepath)
+
 def applyWtsDir(directory, includeFilter=None, excludeFilter=None):
     '''
     This function will take a directory with properly named weight files,
@@ -603,6 +663,9 @@ def applyWtsDir(directory, includeFilter=None, excludeFilter=None):
     :param directory: Directory path with weight files inside of it.
     :type directory: str
     '''
+    # Unzip if needed, copy directory var so it is not mutated
+    unzipWtsDir(list(directory))
+
     directory_list = common.toList(directory)
     # loop through all of the files in the directory and make sure they're weights files.
     skippedFiles = ''
@@ -631,9 +694,11 @@ def applyWtsDir(directory, includeFilter=None, excludeFilter=None):
             if len(fileSplit) > 2:
                 fileSplit[1] = fileSplit[1] + '__' + fileSplit[2]
 
-            # Apply name filters
-            if ".xml" != os.path.splitext(filepath)[-1]:
+            # Check file extensions
+            extension = os.path.splitext(filepath)[-1]
+            if extension not in [".xml"]:
                 continue
+            # Apply name filters
             if includeFilter != '':
                 if includeFilter not in filename:
                     skippedFiles+=('Load filter skipped: ' + filename + '\r')
@@ -674,6 +739,15 @@ def applyWtsDir(directory, includeFilter=None, excludeFilter=None):
                     mc.deltaMush(geometry,name=deformer,
                                  smoothingIterations=10,smoothingStep=0.5,
                                  pinBorderVertices=True,envelope=True)
+                if deformerType == "blendShape":
+                    # Create the blendshape with its deltas
+                    delta_file = filepath.replace('.xml', '.shp')
+                    if not os.path.isfile(delta_file):
+                        # If no shp file exists then we must assum no weights exist
+                        continue
+                    mc.blendShape(ip=delta_file, name=deformer,
+                                  ignoreSelected=True, topologyCheck=False, suppressDialog=True)
+
             # apply the weights
             if not mc.objExists(deformer):
                 print('deformer does not exist [ {} ]'.format(deformer))
@@ -819,7 +893,7 @@ def copyDeformerWeight(source_mesh, target_mesh, source_deformer, target_deforme
         setWeights(target_deformer, weights, mapList=target_map)
         mc.delete(sc_group, sc_target_mesh)
 
-    if mc.nodeType(source_deformer) in ['cluster']:
+    if mc.nodeType(source_deformer) in ['cluster', 'wire']:
         map = source_deformer
         sc_source_mesh, sc_group = copyMapsToSkincluster(source_mesh, map)
         sc_target_mesh = mc.duplicate(target_mesh, '{}_sc_target_copy'.format(target_mesh))[0]

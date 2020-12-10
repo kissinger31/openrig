@@ -140,8 +140,9 @@ def transferCluster(source, target, deformer, handle=False, surfaceAssociation="
                                                                                                 newDeformer,
                                                                                                 surfaceAssociation)
         #print(cmd)
-        mc.copyDeformerWeights(ss=source, ds=mesh, sd=deformer, dd=newDeformer,
-                               sa=surfaceAssociation, noMirror=True)
+        #mc.copyDeformerWeights(ss=source, ds=mesh, sd=deformer, dd=newDeformer,
+        #                       sa=surfaceAssociation, noMirror=True)
+        openrig.maya.weights.copyDeformerWeight(source, mesh, deformer, newDeformer)
 
     return clusterList
 
@@ -169,6 +170,8 @@ def convertClustersToSkinCluster(newSkinName, targetGeometry, clusterDeformerLis
         # Get existing wire deformers from the wireDeformerList
         convertClusterList = mc.ls(clusterDeformerList, type="cluster")
         deformer_order = mc.listHistory(target, pdo=1, il=2)
+        if not deformer_order:
+            continue
 
         # Remove any wires that are not in the history from the conversion list
         convertClusterList = list(set(deformer_order).intersection(convertClusterList))
@@ -297,6 +300,11 @@ def convertClustersToSkinCluster(newSkinName, targetGeometry, clusterDeformerLis
         # Reorder deformers
         if reorder_deformer:
             mc.reorderDeformers(reorder_deformer, targetSkinCluster, target)
+
+        mc.setAttr(baseJnt+'.liw', 0)
+        for inf in influenceList:
+            mc.setAttr(inf+'.liw', 1)
+        mc.skinPercent(targetSkinCluster, target, normalize=1)
 
     convertClusterList = mc.ls(clusterDeformerList, type="cluster")
     if not keepClusters:

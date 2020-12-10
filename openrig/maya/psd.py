@@ -561,6 +561,26 @@ def getDeformer(interp):
             if mc.nodeType(con[0]) == 'blendShape':
                 return(con[0])
 
+def getDrivens(interp, pose=None):
+    # NOTE: This is continuing on from getDeformer to be able to handle multiple drivens
+    interp = getInterp(interp)
+    poses = getPoseNames(interp) or []
+    neutral_poses = [pose for pose in poses if 'neutral' in pose]
+    # Query blendshape attribute if no non-neutral poses exist
+    if len(poses) == len(neutral_poses):
+        if mc.objExists('{}.blendShape'.format(interp)):
+            con = mc.listConnections('{}.blendShape'.format(interp))
+            if con:
+                return(con)
+        return None
+
+    # Returns the first thing found connected to a target's output
+    indexes = getPoseIndexes(interp)
+    for pose, index in zip(poses, indexes):
+        con = mc.listConnections(interp+'.output[{index}]'.format(index=index))
+        if con:
+            return(con)
+
 def goToPose(interp, pose, symmetry=True):
     mm.eval('poseInterpolatorGoToPose "{}" "{}"'.format(interp, pose))
     if symmetry:
@@ -905,6 +925,7 @@ def duplicatePoseShape(interp, pose):
         return
     # Only deal with one driven geo for now
     geo = geo[0]
+    geo = mc.listRelatives(geo, p=1, path=1)[0].split('|')[-1]
 
     # Get the psd group
     group = getGroup(interp)
@@ -924,6 +945,7 @@ def duplicatePoseShape(interp, pose):
     goToPose(interp, pose)
 
     # Duplicate geo
+    #geo_dup = mc.duplicate(geo, n='{}__{}'.format(geo, pose))[0]
     geo_dup = mc.duplicate(geo, n=pose)[0]
     mc.parent(geo_dup, interp_grp)
 

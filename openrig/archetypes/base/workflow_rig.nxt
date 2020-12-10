@@ -1,181 +1,181 @@
 {
-    "version": "1.17", 
-    "alias": "workflow_rig", 
-    "color": "#ff55ff", 
-    "mute": false, 
-    "solo": false, 
+    "version": "1.17",
+    "alias": "workflow_rig",
+    "color": "#ff55ff",
+    "mute": false,
+    "solo": false,
     "references": [
-        "$NXT_BUILTINS/WidgetNodes.nxt", 
+        "$NXT_BUILTINS/WidgetNodes.nxt",
         "utils.nxt"
-    ], 
+    ],
     "meta_data": {
         "positions": {
             "/rig_workflow": [
-                500.0, 
+                500.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/body_tab/exporters": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/body_tab/importers": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/exporters/cluster": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/exporters/control_curve_positions": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/exporters/control_curve_positions/export": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/exporters/control_orients": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/exporters/curve_positions": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/exporters/curve_positions/export": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/exporters/deformer_order": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/exporters/deformer_order/export": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/exporters/deformer_order/export_selected": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/exporters/deformer_order/export_selected/export": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/exporters/joint_positions": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/exporters/joint_positions/export": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/exporters/joint_positions/export_selected": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/exporters/joint_positions/export_selected/export": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/exporters/psd": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/exporters/sdk": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/exporters/sdk/export": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/exporters/skincluster": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/exporters/skincluster/export": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/exporters/skincluster/export_selected": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/exporters/skincluster/export_selected/export": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/exporters/wire": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/importers/curves": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/importers/curves/curve_file": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/importers/curves/curve_positions": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/importers/curves/curve_positions/import": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/importers/curves/import": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/importers/joint_positions": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/importers/joints/import": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/importers/model": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/importers/model/import": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/importers/skeleton": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/importers/skeleton/import": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/importers/skincluster": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/file_io/importers/skincluster/import": [
-                0.0, 
+                0.0,
                 0.0
-            ], 
+            ],
             "/rig_workflow/workflow": [
-                0.0, 
+                0.0,
                 0.0
             ]
-        }, 
+        },
         "collapse": {
-            "/rig_workflow/file_io": true, 
+            "/rig_workflow/file_io": true,
             "/rig_workflow/workflow": true
         }
-    }, 
+    },
     "nodes": {
         "/button": {
             "attrs": {
@@ -183,1137 +183,1154 @@
                     "value": "rgba(171, 171, 171, 1)"
                 }
             }
-        }, 
+        },
         "/panel": {
             "attrs": {
                 "panel_border_color": {
                     "value": "rgba(171, 171, 171, 1)"
                 }
             }
-        }, 
+        },
         "/rig_workflow": {
-            "instance": "/window", 
+            "instance": "/window",
             "child_order": [
-                "file_io", 
+                "file_io",
                 "workflow"
-            ], 
+            ],
             "attrs": {
                 "_widget_window": {
-                    "type": "bool", 
+                    "type": "bool",
                     "value": "True"
-                }, 
+                },
                 "window_title": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "Rig Workflow"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io": {
-            "instance": "/tab", 
+            "instance": "/tab",
             "child_order": [
-                "importers", 
+                "importers",
                 "exporters"
             ]
-        }, 
+        },
         "/rig_workflow/file_io/exporters": {
-            "instance": "/panel", 
+            "instance": "/panel",
             "child_order": [
-                "positions", 
-                "deformer_maps", 
-                "sdk", 
-                "deformer_order", 
+                "positions",
+                "deformer_maps",
+                "sdk",
+                "deformer_order",
                 "rig_sets"
             ]
-        }, 
+        },
         "/rig_workflow/file_io/exporters/deformer_maps": {
-            "instance": "/panel", 
+            "instance": "/panel",
             "child_order": [
-                "skincluster", 
-                "wire", 
-                "cluster", 
+                "skincluster",
+                "wire",
+                "cluster",
+                "blendshape",
                 "psd"
-            ], 
+            ],
             "attrs": {
                 "text": {
-                    "value": "deformer maps"
+                    "type": "raw",
+                    "value": "deformers"
                 }
             }
-        }, 
-        "/rig_workflow/file_io/exporters/deformer_maps/cluster": {
-            "instance": "/button", 
+        },
+        "/rig_workflow/file_io/exporters/deformer_maps/blendshape": {
+            "instance": "/button",
             "child_order": [
-                "export", 
+                "export"
+            ],
+            "attrs": {
+                "text": {
+                    "type": "raw",
+                    "value": "blendShape maps/deltas"
+                }
+            }
+        },
+        "/rig_workflow/file_io/exporters/deformer_maps/blendshape/export": {
+            "instance": "/export_blendShape"
+        },
+        "/rig_workflow/file_io/exporters/deformer_maps/cluster": {
+            "instance": "/button",
+            "child_order": [
+                "export",
                 "export_selected"
-            ], 
+            ],
             "attrs": {
                 "button_color": {
                     "value": "rgba(0, 116, 178, 1)"
-                }, 
+                },
                 "text": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "cluster maps"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/exporters/deformer_maps/cluster/export": {
             "instance": "/export_cluster"
-        }, 
+        },
         "/rig_workflow/file_io/exporters/deformer_maps/cluster/export_selected": {
-            "instance": "/menuItem", 
+            "instance": "/menuItem",
             "child_order": [
                 "export"
-            ], 
+            ],
             "attrs": {
                 "text": {
                     "value": "selected cluster maps"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/exporters/deformer_maps/cluster/export_selected/export": {
-            "instance": "../../export", 
+            "instance": "../../export",
             "attrs": {
                 "mesh_list": {
                     "value": "mc.ls(mc.listRelatives(mc.ls(sl=True), ad=True, type=('mesh', 'nurbsCurve')), ni=True)"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/exporters/deformer_maps/psd": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
                 "export"
-            ], 
+            ],
             "attrs": {
                 "text": {
-                    "type": "raw", 
-                    "value": "PSD maps/deltas"
+                    "type": "raw",
+                    "value": "PSD Interps"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/exporters/deformer_maps/psd/export": {
             "instance": "/export_psd"
-        }, 
+        },
         "/rig_workflow/file_io/exporters/deformer_maps/skincluster": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
-                "export", 
+                "export",
                 "export_selected"
-            ], 
+            ],
             "attrs": {
                 "button_color": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "rgba(0, 116, 178, 1)"
-                }, 
+                },
                 "text": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "skinCluster maps"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/exporters/deformer_maps/skincluster/export": {
             "instance": "/export_skincluster"
-        }, 
+        },
         "/rig_workflow/file_io/exporters/deformer_maps/skincluster/export_selected": {
-            "instance": "/menuItem", 
+            "instance": "/menuItem",
             "child_order": [
                 "export"
-            ], 
+            ],
             "attrs": {
                 "text": {
                     "value": "selected geometry maps"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/exporters/deformer_maps/skincluster/export_selected/export": {
-            "instance": "../../export", 
+            "instance": "../../export",
             "attrs": {
                 "mesh_list": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "mc.ls(sl=True)"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/exporters/deformer_maps/wire": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
-                "export", 
+                "export",
                 "export_selected"
-            ], 
+            ],
             "attrs": {
                 "button_color": {
                     "value": "rgba(0, 116, 178, 1)"
-                }, 
+                },
                 "text": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "wire maps"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/exporters/deformer_maps/wire/export": {
             "instance": "/export_wire"
-        }, 
+        },
         "/rig_workflow/file_io/exporters/deformer_maps/wire/export_selected": {
-            "instance": "/menuItem", 
+            "instance": "/menuItem",
             "child_order": [
                 "export"
-            ], 
+            ],
             "attrs": {
                 "text": {
                     "value": "selected wire maps"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/exporters/deformer_maps/wire/export_selected/export": {
-            "instance": "../../export", 
+            "instance": "../../export",
             "attrs": {
                 "mesh_list": {
                     "value": "mc.ls(mc.listRelatives(mc.ls(sl=True), ad=True, type=('mesh', 'nurbsCurve')), ni=True)"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/exporters/deformer_order": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
-                "export", 
+                "export",
                 "export_selected"
-            ], 
+            ],
             "attrs": {
                 "button_color": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "rgba(0, 116, 178, 1)"
-                }, 
+                },
                 "text": {
                     "value": "deformer order"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/exporters/deformer_order/export": {
             "instance": "/export_deformer_order_data"
-        }, 
+        },
         "/rig_workflow/file_io/exporters/deformer_order/export_selected": {
-            "instance": "/menuItem", 
+            "instance": "/menuItem",
             "child_order": [
                 "export"
-            ], 
+            ],
             "attrs": {
                 "text": {
                     "value": "selected geometry deformer order"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/exporters/deformer_order/export_selected/export": {
-            "instance": "../../export", 
+            "instance": "../../export",
             "attrs": {
                 "node_list": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "mc.ls(sl=True)"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/exporters/positions": {
-            "instance": "/panel", 
+            "instance": "/panel",
             "child_order": [
-                "joint_positions", 
-                "curve_positions", 
-                "control_curve_positions", 
+                "joint_positions",
+                "curve_positions",
+                "control_curve_positions",
                 "control_orients"
             ]
-        }, 
+        },
         "/rig_workflow/file_io/exporters/positions/control_curve_positions": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
                 "export"
-            ], 
+            ],
             "attrs": {
                 "text": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "control shapes"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/exporters/positions/control_curve_positions/export": {
             "instance": "/export_control_curve_data"
-        }, 
+        },
         "/rig_workflow/file_io/exporters/positions/control_orients": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
-                "export", 
+                "export",
                 "export_selected"
-            ], 
+            ],
             "attrs": {
                 "button_color": {
                     "value": "rgba(0, 116, 178, 1)"
-                }, 
+                },
                 "text": {
                     "value": "control orients"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/exporters/positions/control_orients/export": {
             "instance": "/export_control_orients"
-        }, 
+        },
         "/rig_workflow/file_io/exporters/positions/control_orients/export_selected": {
-            "instance": "/menuItem", 
+            "instance": "/menuItem",
             "child_order": [
                 "export"
-            ], 
+            ],
             "attrs": {
                 "text": {
                     "value": "selected control orients"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/exporters/positions/control_orients/export_selected/export": {
-            "instance": "../../export", 
+            "instance": "../../export",
             "attrs": {
                 "node_list": {
-                    "type": "list", 
+                    "type": "list",
                     "value": "[sel for sel in mc.ls(sl=True, type=\"transform\") if sel in mc.ls(\"*_ort\", type=\"transform\")]"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/exporters/positions/curve_positions": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
-                "export", 
+                "export",
                 "export_selected"
-            ], 
+            ],
             "attrs": {
                 "button_color": {
                     "value": "rgba(0, 116, 178, 1)"
-                }, 
+                },
                 "text": {
                     "value": "curve positions"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/exporters/positions/curve_positions/export": {
             "instance": "/export_curve_data"
-        }, 
+        },
         "/rig_workflow/file_io/exporters/positions/curve_positions/export_selected": {
-            "instance": "/menuItem", 
+            "instance": "/menuItem",
             "child_order": [
                 "export"
-            ], 
+            ],
             "attrs": {
                 "text": {
                     "value": "selected curve positions"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/exporters/positions/curve_positions/export_selected/export": {
-            "instance": "../../export", 
+            "instance": "../../export",
             "attrs": {
                 "node_list": {
                     "value": "mc.listRelatives(mc.listRelatives(mc.ls(sl=True), s=True, type='nurbsCurve'), p=True) or []"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/exporters/positions/joint_positions": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
-                "export", 
+                "export",
                 "export_selected"
-            ], 
+            ],
             "attrs": {
                 "button_color": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "rgba(0, 116, 178, 1)"
-                }, 
+                },
                 "text": {
                     "value": "joint positions"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/exporters/positions/joint_positions/export": {
             "instance": "/export_joint_position_data"
-        }, 
+        },
         "/rig_workflow/file_io/exporters/positions/joint_positions/export_selected": {
-            "instance": "/menuItem", 
+            "instance": "/menuItem",
             "child_order": [
                 "export"
-            ], 
+            ],
             "attrs": {
                 "text": {
                     "value": "selected joint positions"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/exporters/positions/joint_positions/export_selected/export": {
-            "instance": "../../export", 
+            "instance": "../../export",
             "attrs": {
                 "node_list": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "mc.ls(sl=True, type='joint')"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/exporters/rig_sets": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
-                "export", 
+                "export",
                 "export_selected"
-            ], 
+            ],
             "attrs": {
                 "button_color": {
                     "value": "rgba(0, 116, 178, 1)"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/exporters/rig_sets/export": {
-            "instance": "/export_sets_data", 
+            "instance": "/export_sets_data",
             "attrs": {
                 "filename": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "rig_sets.data"
-                }, 
+                },
                 "node_list": {
                     "value": "mc.ls('RigSets', type='objectSet')"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/exporters/rig_sets/export_selected": {
-            "instance": "/menuItem", 
+            "instance": "/menuItem",
             "child_order": [
                 "export"
             ]
-        }, 
+        },
         "/rig_workflow/file_io/exporters/rig_sets/export_selected/export": {
-            "instance": "../../export", 
+            "instance": "../../export",
             "attrs": {
                 "node_list": {
                     "value": "mc.ls(sl=True, type='objectSet')"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/exporters/sdk": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
                 "export"
-            ], 
+            ],
             "attrs": {
                 "text": {
                     "value": "sdk"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/exporters/sdk/export": {
             "instance": "/export_sdk_data"
-        }, 
+        },
         "/rig_workflow/file_io/importers": {
-            "instance": "/panel", 
+            "instance": "/panel",
             "child_order": [
-                "model", 
-                "skeleton", 
-                "curve_file", 
-                "skincluster", 
-                "rig_sets", 
+                "model",
+                "skeleton",
+                "curve_file",
+                "skincluster",
+                "rig_sets",
                 "deformer_sets"
             ]
-        }, 
+        },
         "/rig_workflow/file_io/importers/curve_file": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
-                "import", 
+                "import",
                 "curve_positions"
-            ], 
+            ],
             "attrs": {
                 "text": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "curve file"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/importers/curve_file/curve_positions": {
             "instance": "../load_curve_positions/import"
-        }, 
+        },
         "/rig_workflow/file_io/importers/curve_file/import": {
-            "instance": "/load_maya_file", 
+            "instance": "/load_maya_file",
             "attrs": {
                 "text": {
                     "value": "curve file"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/importers/deformer_sets": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
                 "import"
             ]
-        }, 
+        },
         "/rig_workflow/file_io/importers/deformer_sets/import": {
-            "instance": "/import_sets", 
+            "instance": "/import_sets",
             "attrs": {
                 "filepath": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "${filelist::build/deformer_sets.data}"
-                }, 
+                },
                 "nodes": {
                     "value": "data_object.getData().keys()"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/importers/model": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
-                "import", 
+                "import",
                 "import_clean"
-            ], 
+            ],
             "attrs": {
                 "button_color": {
                     "value": "rgba(0, 116, 178, 1)"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/importers/model/import": {
             "instance": "/load_maya_file"
-        }, 
+        },
         "/rig_workflow/file_io/importers/model/import_clean": {
-            "instance": "/menuItem", 
+            "instance": "/menuItem",
             "child_order": [
-                "new_scene", 
+                "new_scene",
                 "import"
             ]
-        }, 
+        },
         "/rig_workflow/file_io/importers/model/import_clean/import": {
             "instance": "../../import"
-        }, 
+        },
         "/rig_workflow/file_io/importers/model/import_clean/new_scene": {
             "code": [
                 "mc.file(new=True, f=True)"
             ]
-        }, 
+        },
         "/rig_workflow/file_io/importers/rig_sets": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
                 "import"
             ]
-        }, 
+        },
         "/rig_workflow/file_io/importers/rig_sets/import": {
-            "instance": "/import_sets", 
+            "instance": "/import_sets",
             "attrs": {
                 "filepath": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "${filelist::build/rig_sets.data}"
-                }, 
+                },
                 "nodes": {
                     "value": "data_object.getData().keys()"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/importers/skeleton": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
-                "import", 
-                "import_clean", 
+                "import",
+                "import_clean",
                 "joint_positions"
-            ], 
+            ],
             "attrs": {
                 "button_color": {
                     "value": "rgba(0, 116, 178, 1)"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/importers/skeleton/import": {
             "enabled": "/rig_workflow/file_io/importers/joint_importers/joints_layout/skeleton"
-        }, 
+        },
         "/rig_workflow/file_io/importers/skeleton/import_clean": {
-            "instance": "/menuItem", 
+            "instance": "/menuItem",
             "child_order": [
-                "new_scene", 
+                "new_scene",
                 "import"
-            ], 
-            "enabled": true, 
+            ],
+            "enabled": true,
             "attrs": {
                 "text": {
                     "value": "import clean"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/importers/skeleton/import_clean/import": {
             "instance": "../../import"
-        }, 
+        },
         "/rig_workflow/file_io/importers/skeleton/import_clean/new_scene": {
             "code": [
                 "mc.file(new=True, f=True)"
             ]
-        }, 
+        },
         "/rig_workflow/file_io/importers/skeleton/joint_positions": {
-            "instance": "/menuItem", 
+            "instance": "/menuItem",
             "child_order": [
                 "import"
-            ], 
+            ],
             "attrs": {
                 "text": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "load joint positions"
                 }
             }
-        }, 
+        },
         "/rig_workflow/file_io/importers/skeleton/joint_positions/import": {
             "instance": "/load_joint_data"
-        }, 
+        },
         "/rig_workflow/file_io/importers/skincluster": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
                 "import"
             ]
-        }, 
+        },
         "/rig_workflow/file_io/importers/skincluster/import": {
             "instance": "/import_weight_directory"
-        }, 
+        },
         "/rig_workflow/workflow": {
-            "instance": "/tab", 
+            "instance": "/tab",
             "child_order": [
-                "bind_pose", 
-                "freeze_wires", 
-                "clear_animation", 
-                "joints", 
-                "curves", 
-                "weights", 
-                "controls", 
-                "sdk", 
+                "bind_pose",
+                "freeze_wires",
+                "clear_animation",
+                "joints",
+                "curves",
+                "weights",
+                "controls",
+                "sdk",
                 "psd"
             ]
-        }, 
+        },
         "/rig_workflow/workflow/clear_animation": {
-            "instance": "/button", 
+            "instance": "/button",
             "code": [
-                "import maya.cmds as mc", 
-                "import openrig.maya.riglib.control as rig_control", 
-                "", 
-                "controls = rig_control.getControls()", 
+                "import maya.cmds as mc",
+                "import openrig.maya.riglib.control as rig_control",
+                "",
+                "controls = rig_control.getControls()",
                 "mc.cutKey(controls)"
             ]
-        }, 
+        },
         "/rig_workflow/workflow/controls": {
-            "instance": "/panel", 
+            "instance": "/panel",
             "child_order": [
-                "bind_pose", 
-                "mirror_shapes", 
+                "bind_pose",
+                "mirror_shapes",
                 "orients"
             ]
-        }, 
+        },
         "/rig_workflow/workflow/controls/bind_pose": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
                 "to_pose"
             ]
-        }, 
+        },
         "/rig_workflow/workflow/controls/bind_pose/to_pose": {
             "code": [
-                "", 
-                "mc.undoInfo(openChunk=1)", 
-                "try:", 
-                "    controls = rig_control.getControls()", 
-                "    if controls:", 
-                "        # Got to bind pose", 
-                "        rig_control.toPoseAttr(controls, 0)", 
-                "", 
-                "except:", 
-                "    traceback.print_exc()", 
-                "mc.undoInfo(closeChunk=1)", 
+                "",
+                "mc.undoInfo(openChunk=1)",
+                "try:",
+                "    controls = rig_control.getControls()",
+                "    if controls:",
+                "        # Got to bind pose",
+                "        rig_control.toPoseAttr(controls, 0)",
+                "",
+                "except:",
+                "    traceback.print_exc()",
+                "mc.undoInfo(closeChunk=1)",
                 ""
             ]
-        }, 
+        },
         "/rig_workflow/workflow/controls/mirror_shapes": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
-                "mirror", 
+                "mirror",
                 "mirror_selected"
-            ], 
+            ],
             "attrs": {
                 "button_color": {
                     "value": "rgba(0, 116, 178, 1)"
                 }
             }
-        }, 
+        },
         "/rig_workflow/workflow/controls/mirror_shapes/mirror": {
             "instance": "/mirror_control_curves"
-        }, 
+        },
         "/rig_workflow/workflow/controls/mirror_shapes/mirror_selected": {
-            "instance": "/menuItem", 
+            "instance": "/menuItem",
             "child_order": [
                 "mirror"
             ]
-        }, 
+        },
         "/rig_workflow/workflow/controls/mirror_shapes/mirror_selected/mirror": {
-            "instance": "../../mirror", 
+            "instance": "../../mirror",
             "attrs": {
                 "node_list": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "mc.listRelatives(mc.listRelatives([ctrl for ctrl in mc.ls(sl=True) if ctrl in mc.ls(\"*.__control__\", o=1)], s=1, ni=1, type='nurbsCurve'), p=1) or []"
                 }
             }
-        }, 
+        },
         "/rig_workflow/workflow/controls/orients": {
-            "instance": "/panel", 
+            "instance": "/panel",
             "child_order": [
                 "load_positions"
             ]
-        }, 
+        },
         "/rig_workflow/workflow/controls/orients/load_positions": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
-                "load", 
-                "load_world_space", 
-                "load_selected", 
+                "load",
+                "load_world_space",
+                "load_selected",
                 "load_selected_world_space"
-            ], 
+            ],
             "attrs": {
                 "button_color": {
                     "value": "rgba(0, 116, 178, 1)"
                 }
             }
-        }, 
+        },
         "/rig_workflow/workflow/controls/orients/load_positions/load": {
             "instance": "/load_node_data"
-        }, 
+        },
         "/rig_workflow/workflow/controls/orients/load_positions/load_selected": {
-            "instance": "/menuItem", 
+            "instance": "/menuItem",
             "child_order": [
                 "load"
             ]
-        }, 
+        },
         "/rig_workflow/workflow/controls/orients/load_positions/load_selected/load": {
-            "instance": "../../load", 
+            "instance": "../../load",
             "attrs": {
                 "nodes": {
                     "value": "mc.ls('*_ort',type='transform', sl=True)"
                 }
             }
-        }, 
+        },
         "/rig_workflow/workflow/controls/orients/load_positions/load_selected_world_space": {
-            "instance": "/menuItem", 
+            "instance": "/menuItem",
             "child_order": [
                 "load"
             ]
-        }, 
+        },
         "/rig_workflow/workflow/controls/orients/load_positions/load_selected_world_space/load": {
-            "instance": "../../load_world_space/load", 
+            "instance": "../../load_world_space/load",
             "attrs": {
                 "nodes": {
                     "value": "mc.ls('*_ort',type='transform', sl=True)"
                 }
             }
-        }, 
+        },
         "/rig_workflow/workflow/controls/orients/load_positions/load_world_space": {
-            "instance": "/menuItem", 
+            "instance": "/menuItem",
             "child_order": [
                 "load"
             ]
-        }, 
+        },
         "/rig_workflow/workflow/controls/orients/load_positions/load_world_space/load": {
-            "instance": "../../load", 
+            "instance": "../../load",
             "attrs": {
                 "world_space": {
                     "value": "True"
                 }
             }
-        }, 
+        },
         "/rig_workflow/workflow/curves": {
-            "instance": "/panel", 
+            "instance": "/panel",
             "child_order": [
                 "mirror_curves"
             ]
-        }, 
+        },
         "/rig_workflow/workflow/curves/mirror_curves": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
-                "mirror", 
+                "mirror",
                 "mirror_selected_curves"
-            ], 
+            ],
             "attrs": {
                 "button_color": {
                     "value": "rgba(0, 116, 178, 1)"
-                }, 
+                },
                 "text": {
                     "value": "mirror curves"
                 }
             }
-        }, 
+        },
         "/rig_workflow/workflow/curves/mirror_curves/mirror": {
             "instance": "/mirror_curves"
-        }, 
+        },
         "/rig_workflow/workflow/curves/mirror_curves/mirror_selected_curves": {
-            "instance": "/menuItem", 
+            "instance": "/menuItem",
             "child_order": [
                 "mirror"
-            ], 
+            ],
             "attrs": {
                 "text": {
                     "value": "mirror selected curves"
                 }
             }
-        }, 
+        },
         "/rig_workflow/workflow/curves/mirror_curves/mirror_selected_curves/mirror": {
-            "instance": "../../mirror", 
+            "instance": "../../mirror",
             "attrs": {
                 "node_list": {
                     "value": " mc.listRelatives(mc.listRelatives(mc.ls(sl=True), s=True, type='nurbsCurve'), p=True) or []"
                 }
             }
-        }, 
+        },
         "/rig_workflow/workflow/freeze_wires": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
                 "freeze"
-            ], 
+            ],
             "attrs": {
                 "text": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "Re-freeze wires"
                 }
             }
-        }, 
-        "/rig_workflow/workflow/freeze_wires/freeze": {}, 
+        },
+        "/rig_workflow/workflow/freeze_wires/freeze": {},
         "/rig_workflow/workflow/joints": {
-            "instance": "/panel", 
+            "instance": "/panel",
             "child_order": [
-                "zero_joints", 
-                "mirror_joints", 
+                "zero_joints",
+                "mirror_joints",
                 "move_joint_toggle"
             ]
-        }, 
+        },
         "/rig_workflow/workflow/joints/mirror_joints": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
                 "mirror"
             ]
-        }, 
+        },
         "/rig_workflow/workflow/joints/mirror_joints/mirror": {
             "instance": "/mirror_joints"
-        }, 
+        },
         "/rig_workflow/workflow/joints/move_joint_toggle": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
-                "move_joint_on", 
+                "move_joint_on",
                 "move_joint_off"
-            ], 
-            "comment": "This node is for the grid layout to turn on and off the move joints for skinClusters", 
+            ],
+            "comment": "This node is for the grid layout to turn on and off the move joints for skinClusters",
             "attrs": {
                 "button_color": {
                     "value": "rgba(0, 116, 178, 1)"
                 }
-            }, 
+            },
             "code": [
-                "for node in mc.ls(sl=True):", 
-                "    node_state = mc.getAttr('{}.nodeState'.format(node))", 
-                "    mc.skinCluster(node, e=True, mjm=not node_state)", 
+                "for node in mc.ls(sl=True):",
+                "    node_state = mc.getAttr('{}.nodeState'.format(node))",
+                "    mc.skinCluster(node, e=True, mjm=not node_state)",
                 "    mc.setAttr('{}.nodeState'.format(node), int(not node_state))"
             ]
-        }, 
+        },
         "/rig_workflow/workflow/joints/move_joint_toggle/move_joint_off": {
-            "instance": "/menuItem", 
-            "comment": "This will turn back on the affect of the skinCluster and not allow you to move the joint without affecting the skinCluster", 
+            "instance": "/menuItem",
+            "comment": "This will turn back on the affect of the skinCluster and not allow you to move the joint without affecting the skinCluster",
             "code": [
-                "for node in mc.ls(sl=True):", 
-                "    mc.skinCluster(node, e=True, mjm=False)", 
+                "for node in mc.ls(sl=True):",
+                "    mc.skinCluster(node, e=True, mjm=False)",
                 "    mc.setAttr('{}.nodeState'.format(node), 0)"
             ]
-        }, 
+        },
         "/rig_workflow/workflow/joints/move_joint_toggle/move_joint_on": {
-            "instance": "/menuItem", 
-            "comment": "This will ensure the selected mesh that has a skinCluster will allow you to move joints without affecting the skinCluster", 
+            "instance": "/menuItem",
+            "comment": "This will ensure the selected mesh that has a skinCluster will allow you to move joints without affecting the skinCluster",
             "code": [
-                "for node in mc.ls(sl=True):", 
-                "    mc.skinCluster(node, e=True, mjm=True)", 
+                "for node in mc.ls(sl=True):",
+                "    mc.skinCluster(node, e=True, mjm=True)",
                 "    mc.setAttr('{}.nodeState'.format(node), 1)"
             ]
-        }, 
+        },
         "/rig_workflow/workflow/joints/zero_joints": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
-                "zero", 
+                "zero",
                 "zero_selcted_joints"
-            ], 
+            ],
             "attrs": {
                 "button_color": {
                     "value": "rgba(0, 116, 178, 1)"
-                }, 
+                },
                 "node_list": {
-                    "comment": "List of joints you want to zero out the rotations and put onto the joint orients", 
-                    "type": "raw", 
+                    "comment": "List of joints you want to zero out the rotations and put onto the joint orients",
+                    "type": "raw",
                     "value": "mc.ls(type='joint')"
                 }
             }
-        }, 
+        },
         "/rig_workflow/workflow/joints/zero_joints/zero": {
             "code": [
                 "rig_joint.rotateToOrient(${node_list})"
             ]
-        }, 
+        },
         "/rig_workflow/workflow/joints/zero_joints/zero_selcted_joints": {
-            "instance": "/menuItem", 
+            "instance": "/menuItem",
             "attrs": {
                 "node_list": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "mc.ls(sl=True, type='joint')"
                 }
-            }, 
+            },
             "code": [
                 "rig_joint.rotateToOrient(${node_list})"
             ]
-        }, 
+        },
         "/rig_workflow/workflow/psd": {
-            "instance": "/panel", 
+            "instance": "/panel",
             "child_order": [
                 "mix"
             ]
-        }, 
+        },
         "/rig_workflow/workflow/psd/mix": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
                 "open_ui"
             ]
-        }, 
+        },
         "/rig_workflow/workflow/psd/mix/open_ui": {
             "code": [
-                "import mix.test.run_mix as run_mix", 
+                "import mix.test.run_mix as run_mix",
                 "run_mix.launch()"
             ]
-        }, 
+        },
         "/rig_workflow/workflow/sdk": {
-            "instance": "/panel", 
+            "instance": "/panel",
             "child_order": [
-                "mirror_sdk", 
+                "mirror_sdk",
                 "select_sdk_layout"
             ]
-        }, 
+        },
         "/rig_workflow/workflow/sdk/mirror_sdk": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
                 "mirror"
             ]
-        }, 
+        },
         "/rig_workflow/workflow/sdk/mirror_sdk/mirror": {
             "instance": "/mirror_sdk"
-        }, 
+        },
         "/rig_workflow/workflow/sdk/select_sdk_layout": {
-            "instance": "/gridLayout", 
+            "instance": "/gridLayout",
             "child_order": [
-                "select_all", 
+                "select_all",
                 "select_mouth"
             ]
-        }, 
+        },
         "/rig_workflow/workflow/sdk/select_sdk_layout/select_all": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
                 "select"
             ]
-        }, 
+        },
         "/rig_workflow/workflow/sdk/select_sdk_layout/select_all/select": {
             "instance": "/select_sdks"
-        }, 
+        },
         "/rig_workflow/workflow/sdk/select_sdk_layout/select_mouth": {
-            "instance": "../select_all", 
+            "instance": "../select_all",
             "child_order": [
                 "select"
             ]
-        }, 
+        },
         "/rig_workflow/workflow/sdk/select_sdk_layout/select_mouth/select": {
             "attrs": {
                 "sdk_name_list": {
                     "value": "mc.ls(\"lipMain*_def_auto*\", type=[\"animCurveUU\", \"animCurveUA\", \"animCurveUL\", \"animCurveUT\"])"
                 }
             }
-        }, 
+        },
         "/rig_workflow/workflow/weights": {
-            "instance": "/panel", 
+            "instance": "/panel",
             "child_order": [
-                "mirror_weights", 
-                "flip_selected_weights", 
-                "copy", 
-                "paste", 
+                "mirror_weights",
+                "flip_selected_weights",
+                "copy",
+                "paste",
                 "yank_skincluster"
-            ], 
+            ],
             "attrs": {
                 "weights": {}
             }
-        }, 
+        },
         "/rig_workflow/workflow/weights/copy": {
-            "instance": "/button", 
+            "instance": "/button",
             "code": [
-                "ctx = mc.currentCtx()", 
-                "deformer = None", 
-                "map = None", 
-                "geo = mc.ls(sl=1, dag=1, type='mesh', ni=1)", 
-                "if geo:", 
-                "    geo = geo[0]", 
-                "", 
-                "if ctx == 'artAttrBlendShapeContext':", 
-                "    deformer = mc.artAttrCtx(ctx, q=True, attrSelected=True).split('.')[1]", 
-                "    map = mc.textScrollList('blendShapeTargetList', q=True, si=True)[0]", 
-                "elif ctx == 'artAttrContext':", 
-                "    deformer = mc.artAttrCtx(ctx, q=True, attrSelected=True).split('.')[1]", 
-                "elif ctx in ['dragAttrContext', 'selectSuperContext']:", 
-                "    selected_deformer = mc.ls(sl=1, type='weightGeometryFilter')", 
-                "    if selected_deformer:", 
-                "        deformer = selected_deformer[0]", 
-                "           ", 
-                "if deformer:", 
-                "    if not geo:", 
-                "        geo = mc.deformer(deformer, q=1, g=1)[0]", 
-                "    print 'copy/paste deformer: [ {} ] map: [ {} ] geo: [ {} ]'.format(deformer, map, geo)", 
-                "    weights = rig_weights.getWeights(deformer, map, geometry=geo)      ", 
-                "    STAGE.weights = weights", 
-                "else:", 
+                "ctx = mc.currentCtx()",
+                "deformer = None",
+                "map = None",
+                "geo = mc.ls(sl=1, dag=1, type='mesh', ni=1)",
+                "if geo:",
+                "    geo = geo[0]",
+                "",
+                "if ctx == 'artAttrBlendShapeContext':",
+                "    deformer = mc.artAttrCtx(ctx, q=True, attrSelected=True).split('.')[1]",
+                "    map = mc.textScrollList('blendShapeTargetList', q=True, si=True)[0]",
+                "elif ctx == 'artAttrContext':",
+                "    deformer = mc.artAttrCtx(ctx, q=True, attrSelected=True).split('.')[1]",
+                "elif ctx in ['dragAttrContext', 'selectSuperContext']:",
+                "    selected_deformer = mc.ls(sl=1, type='weightGeometryFilter')",
+                "    if selected_deformer:",
+                "        deformer = selected_deformer[0]",
+                "           ",
+                "if deformer:",
+                "    if not geo:",
+                "        geo = mc.deformer(deformer, q=1, g=1)[0]",
+                "    print 'copy/paste deformer: [ {} ] map: [ {} ] geo: [ {} ]'.format(deformer, map, geo)",
+                "    weights = rig_weights.getWeights(deformer, map, geometry=geo)      ",
+                "    STAGE.weights = weights",
+                "else:",
                 "    mc.warning('Could not find a selected/active deformer to copy/paste')"
             ]
-        }, 
+        },
         "/rig_workflow/workflow/weights/flip_selected_weights": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
                 "flip"
-            ], 
+            ],
             "attrs": {
                 "text": {
                     "value": "flip selected weights"
                 }
             }
-        }, 
+        },
         "/rig_workflow/workflow/weights/flip_selected_weights/flip": {
             "instance": "/flip_deformer_map"
-        }, 
+        },
         "/rig_workflow/workflow/weights/mirror_weights": {
-            "instance": "/panel", 
+            "instance": "/panel",
             "child_order": [
-                "mirror_cluster", 
-                "mirror_wire", 
+                "mirror_cluster",
+                "mirror_wire",
                 "mirror_skincluster"
-            ], 
+            ],
             "attrs": {
                 "text": {
                     "value": "mirror weights"
                 }
             }
-        }, 
+        },
         "/rig_workflow/workflow/weights/mirror_weights/mirror_cluster": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
-                "mirror", 
+                "mirror",
                 "mirror_selected_cluster"
-            ], 
+            ],
             "attrs": {
                 "button_color": {
                     "value": "rgba(0, 116, 178, 1)"
-                }, 
+                },
                 "text": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "cluster maps"
                 }
             }
-        }, 
+        },
         "/rig_workflow/workflow/weights/mirror_weights/mirror_cluster/mirror": {
             "instance": "/mirror_cluster"
-        }, 
+        },
         "/rig_workflow/workflow/weights/mirror_weights/mirror_cluster/mirror_selected_cluster": {
-            "instance": "/menuItem", 
+            "instance": "/menuItem",
             "child_order": [
                 "mirror"
-            ], 
+            ],
             "attrs": {
                 "text": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "selected cluster map"
                 }
             }
-        }, 
+        },
         "/rig_workflow/workflow/weights/mirror_weights/mirror_cluster/mirror_selected_cluster/mirror": {
-            "instance": "/mirror_cluster", 
+            "instance": "/mirror_cluster",
             "attrs": {
                 "mirror_selected": {
                     "value": "True"
                 }
             }
-        }, 
+        },
         "/rig_workflow/workflow/weights/mirror_weights/mirror_skincluster": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
                 "mirror"
-            ], 
+            ],
             "attrs": {
                 "text": {
                     "value": "skinCluster maps"
                 }
             }
-        }, 
+        },
         "/rig_workflow/workflow/weights/mirror_weights/mirror_skincluster/mirror": {
             "instance": "/mirror_skincluster"
-        }, 
+        },
         "/rig_workflow/workflow/weights/mirror_weights/mirror_wire": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
-                "mirror", 
+                "mirror",
                 "mirror_selected_wire"
-            ], 
+            ],
             "attrs": {
                 "button_color": {
                     "value": "rgba(0, 116, 178, 1)"
-                }, 
+                },
                 "text": {
-                    "type": "raw", 
+                    "type": "raw",
                     "value": "wire maps"
                 }
             }
-        }, 
+        },
         "/rig_workflow/workflow/weights/mirror_weights/mirror_wire/mirror": {
             "instance": "/mirror_wire"
-        }, 
+        },
         "/rig_workflow/workflow/weights/mirror_weights/mirror_wire/mirror_selected_wire": {
-            "instance": "/menuItem", 
+            "instance": "/menuItem",
             "child_order": [
                 "mirror"
-            ], 
+            ],
             "attrs": {
                 "text": {
                     "value": "selected  wire map"
                 }
             }
-        }, 
+        },
         "/rig_workflow/workflow/weights/mirror_weights/mirror_wire/mirror_selected_wire/mirror": {
-            "instance": "/mirror_wire", 
+            "instance": "/mirror_wire",
             "attrs": {
                 "mirror_selected": {
                     "value": "True"
                 }
             }
-        }, 
+        },
         "/rig_workflow/workflow/weights/paste": {
-            "instance": "/button", 
+            "instance": "/button",
             "code": [
-                "ctx = mc.currentCtx()", 
-                "deformer = None", 
-                "map = None", 
-                "geo = mc.ls(sl=1, dag=1, type='mesh', ni=1)", 
-                "if geo:", 
-                "    geo = geo[0]", 
-                "", 
-                "if ctx == 'artAttrBlendShapeContext':", 
-                "    deformer = mc.artAttrCtx(ctx, q=True, attrSelected=True).split('.')[1]", 
-                "    map = mc.textScrollList('blendShapeTargetList', q=True, si=True)[0]", 
-                "elif ctx == 'artAttrContext':", 
-                "    deformer = mc.artAttrCtx(ctx, q=True, attrSelected=True).split('.')[1]", 
-                "elif ctx in ['dragAttrContext', 'selectSuperContext']:", 
-                "    selected_deformer = mc.ls(sl=1, type='weightGeometryFilter')", 
-                "    if selected_deformer:", 
-                "        deformer = selected_deformer[0]", 
-                "           ", 
-                "if deformer:", 
-                "    if not geo:", 
-                "        geo = mc.deformer(deformer, q=1, g=1)[0]", 
-                "    print 'copy/paste deformer: [ {} ] map: [ {} ] geo: [ {} ]'.format(deformer, map, geo)", 
-                "    rig_weights.setWeights(deformer, STAGE.weights, map, geo)", 
-                "else:", 
-                "    mc.warning('Could not find a selected/active deformer to copy/paste')", 
+                "ctx = mc.currentCtx()",
+                "deformer = None",
+                "map = None",
+                "geo = mc.ls(sl=1, dag=1, type='mesh', ni=1)",
+                "if geo:",
+                "    geo = geo[0]",
+                "",
+                "if ctx == 'artAttrBlendShapeContext':",
+                "    deformer = mc.artAttrCtx(ctx, q=True, attrSelected=True).split('.')[1]",
+                "    map = mc.textScrollList('blendShapeTargetList', q=True, si=True)[0]",
+                "elif ctx == 'artAttrContext':",
+                "    deformer = mc.artAttrCtx(ctx, q=True, attrSelected=True).split('.')[1]",
+                "elif ctx in ['dragAttrContext', 'selectSuperContext']:",
+                "    selected_deformer = mc.ls(sl=1, type='weightGeometryFilter')",
+                "    if selected_deformer:",
+                "        deformer = selected_deformer[0]",
+                "           ",
+                "if deformer:",
+                "    if not geo:",
+                "        geo = mc.deformer(deformer, q=1, g=1)[0]",
+                "    print 'copy/paste deformer: [ {} ] map: [ {} ] geo: [ {} ]'.format(deformer, map, geo)",
+                "    rig_weights.setWeights(deformer, STAGE.weights, map, geo)",
+                "else:",
+                "    mc.warning('Could not find a selected/active deformer to copy/paste')",
                 ""
             ]
-        }, 
+        },
         "/rig_workflow/workflow/weights/yank_skincluster": {
-            "instance": "/button", 
+            "instance": "/button",
             "child_order": [
                 "yank"
             ]
-        }, 
+        },
         "/rig_workflow/workflow/weights/yank_skincluster/yank": {
             "instance": "/yank_skincluster"
         }
