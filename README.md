@@ -1,5 +1,5 @@
 # Overview 
-OpenRig is collection python libraries and NXT graphs that allow you to author/deliver rigs. Openrig has archetype example of a biped and prop to show how one might use NXT (https://nxt-dev.github.io/) to create templates and inherit layers to generate asset rigs. It also contains tons of useful libraries to help with exporting, importing, mutating all kinds of data. Most of the libaraies are written to work with Autodesk Maya. There are plans to expand this to other applications in the future.
+OpenRig is collection python libraries and NXT graphs that allow you to author and deliver rigs. Openrig has archetype example of a biped and prop to show how one might use NXT (https://nxt-dev.github.io/) to create templates and inherit layers to generate asset rigs. It also contains tons of useful libraries to help with exporting, importing, mutating all kinds of data. Most of the libaraies are written to work with Autodesk Maya. There are plans to expand this to other applications in the future.
 
 # Links
 - [Dependencies](#dependencies)
