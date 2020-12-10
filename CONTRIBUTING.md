@@ -1,4 +1,3 @@
 # Contributing
 
-When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. 
+When contributing to this repository, please contact the contributors before making a pull request. When doing so, please include the issues being resolved or features being added. There is no gaurentee that unsolicited pull requests will be reviewed.
