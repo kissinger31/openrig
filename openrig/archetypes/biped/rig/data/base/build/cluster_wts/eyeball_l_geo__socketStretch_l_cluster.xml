@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <deformerWeight>
-  <headerInfo fileName="C:/Users/jx3xo/Desktop/sunrise/rig/david/rig/data/base/build/cluster_wts/eyeball_l_geo__socketStretch_l_cluster.xml"/>
-  <shape name="eyeball_l_geoShape" group="509" stride="3" size="554" max="554" worldMatrix="1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 ">
+  <headerInfo fileName="C:/Users/wyoder/Desktop/shows/SQB/collections/openrig/openrig/archetypes/biped/rig/data/base/build/cluster_wts/eyeball_l_geo__socketStretch_l_cluster.xml"/>
+  <shape name="eyeball_l_geoShape" group="6326" stride="3" size="554" max="554" worldMatrix="0.989085 0.028971 0.144467 0.000000 -0.032371 0.999250 0.021239 0.000000 -0.143743 -0.025683 0.989282 0.000000 5.859332 -1.804402 -4.083477 1.000000 ">
     <point index="0" value=" 2.986713 166.201309 -0.961138"/>
     <point index="1" value=" 2.955033 166.278687 -0.956064"/>
     <point index="2" value=" 2.904913 166.345123 -0.946664"/>
