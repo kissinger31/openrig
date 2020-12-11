@@ -1,7 +1,7 @@
 {
     "type": "DeformerOrderData", 
-    "user": "Walter Yoder", 
-    "time": "2020-12-10 22:45:04", 
+    "user": "Matt", 
+    "time": "2020-10-18 12:04:36", 
     "data": {
         "blinkLower_l_bindmesh": {
             "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|blink_l|blink_l_grp|blinkLower_l_bindmesh", 
@@ -739,24 +739,6 @@
                 "blinkLower_r_curve_wire", 
                 "blinkLower_r_cluster", 
                 "tweak21"
-            ]
-        }, 
-        "eyeball_l_geo": {
-            "dagPath": "|biped|trs_master|trs_shot|trs_aux|model|nude_mod|face_mod|eyes_mod|eye_l_mod|eyeball_l_geo", 
-            "deformerOrder": [
-                "head_wire", 
-                "socketStretch_l_cluster", 
-                "eyeball_l_geo_skinCluster", 
-                "tweak22"
-            ]
-        }, 
-        "eyeball_r_geo": {
-            "dagPath": "|biped|trs_master|trs_shot|trs_aux|model|nude_mod|face_mod|eyes_mod|eye_r_mod|eyeball_r_geo", 
-            "deformerOrder": [
-                "head_wire", 
-                "socketStretch_r_cluster", 
-                "eyeball_r_geo_skinCluster", 
-                "tweak23"
             ]
         }
     }

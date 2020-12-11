@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <deformerWeight>
-  <headerInfo fileName="C:/Users/wyoder/Desktop/shows/SQB/collections/openrig/openrig/archetypes/biped/rig/data/base/build/cluster_wts/gums_upper_geo__head_low_cluster.xml"/>
-  <shape name="gums_upper_geoShape" group="6162" stride="3" size="1132" max="1132" worldMatrix="1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 ">
+  <headerInfo fileName="C:/Users/jx3xo/Desktop/squarebit/openrig/openrig/archetypes/biped/rig/data/base/build/cluster_wts/gums_upper_geo__head_low_cluster.xml"/>
+  <shape name="gums_upper_geoShape" group="1045" stride="3" size="1132" max="1132" worldMatrix="1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 ">
     <point index="0" value=" 0.000000 157.434525 4.829893"/>
     <point index="1" value=" 0.263558 157.658264 4.835768"/>
     <point index="2" value=" 0.269714 157.664185 4.786237"/>

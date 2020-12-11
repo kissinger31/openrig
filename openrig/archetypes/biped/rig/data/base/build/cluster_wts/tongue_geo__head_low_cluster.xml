@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <deformerWeight>
-  <headerInfo fileName="C:/Users/wyoder/Desktop/shows/SQB/collections/openrig/openrig/archetypes/biped/rig/data/base/build/cluster_wts/tongue_geo__head_low_cluster.xml"/>
-  <shape name="tongue_geoShape" group="6160" stride="3" size="282" max="282" worldMatrix="1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 ">
+  <headerInfo fileName="C:/Users/jx3xo/Desktop/squarebit/openrig/openrig/archetypes/biped/rig/data/base/build/cluster_wts/tongue_geo__head_low_cluster.xml"/>
+  <shape name="tongue_geoShape" group="1043" stride="3" size="282" max="282" worldMatrix="1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 ">
     <point index="0" value=" 0.000000 155.989380 3.993668"/>
     <point index="1" value=" 0.000000 155.666763 4.282960"/>
     <point index="2" value=" 0.000000 155.316971 4.062244"/>
     <point index="3" value=" 0.000000 156.264343 3.384336"/>
     <point index="4" value=" 0.000000 156.466095 2.706554"/>
     <point index="5" value=" 0.000000 156.729614 1.130802"/>
-    <point index="6" value=" -0.000000 156.814514 -0.361243"/>
+    <point index="6" value=" 0.000000 156.814514 -0.361243"/>
     <point index="7" value=" -0.000000 156.735611 -1.832481"/>
-    <point index="8" value=" 0.000000 156.117004 -3.122702"/>
+    <point index="8" value=" -0.000000 156.117004 -3.122702"/>
     <point index="9" value=" 0.000000 155.218063 -3.825745"/>
     <point index="10" value=" 0.000000 154.612656 -4.213581"/>
     <point index="11" value=" 0.000000 154.308685 -3.929559"/>
@@ -18,7 +18,7 @@
     <point index="13" value=" 0.000000 154.638519 -3.414894"/>
     <point index="14" value=" 0.000000 155.019348 -2.729773"/>
     <point index="15" value=" -0.000000 155.273697 -1.642503"/>
-    <point index="16" value=" -0.000000 155.343094 -0.373955"/>
+    <point index="16" value=" 0.000000 155.343094 -0.373955"/>
     <point index="17" value=" 0.000000 155.303909 0.990181"/>
     <point index="18" value=" 0.000000 155.278000 2.418749"/>
     <point index="19" value=" 0.000000 155.294342 3.378040"/>
