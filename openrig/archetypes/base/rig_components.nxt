@@ -864,7 +864,7 @@
                 }, 
                 "target_list": {
                     "type": "list", 
-                    "value": "['chest_bind', 'wrist_fk_${side}_driver_pv']"
+                    "value": "['chest_bind', 'wrist_fk_${side}_grp_pv']"
                 }
             }
         }, 
@@ -2654,6 +2654,10 @@
                     "type": "str", 
                     "value": "'ankle_${side}_bind_ik_tgt'"
                 }, 
+                "ankle_stretch_parent": {
+                    "type": "str", 
+                    "value": "'ankle_fk_${side}_grp'"
+                }, 
                 "ankle_stretch_target": {
                     "type": "str", 
                     "value": "'ankle_fk_${side}_offset'"
@@ -2734,8 +2738,9 @@
                 "pivot_list = STAGE.ikfk_system.pivotList", 
                 "", 
                 "# parent the ankle stretch target", 
-                "if mc.objExists(${ankle_stretch_target}):", 
-                "    mc.parent(${ankle_stretch_target}, pivot_list[-2])", 
+                "for node in mc.ls([${ankle_stretch_target}, ${ankle_stretch_parent}]):", 
+                "    if mc.objExists(node):", 
+                "        mc.parent(node, pivot_list[-2])", 
                 "", 
                 "# parent the ankle handle to the pivot hierarchy", 
                 "if mc.objExists(${anchor_ik}):", 
@@ -3106,11 +3111,14 @@
                 "    mc.setAttr(\"{}.v\".format(joint), 0)"
             ]
         }, 
-        "/left/arm/limb/create/ik/offset": {
-            "instance": "/arm/limb/create/ik/offset"
+        "/left/arm/limb/create/connect": {
+            "instance": "/arm/limb/create/connect"
         }, 
         "/left/arm/limb/spaces_pv": {
             "instance": "/arm/limb/spaces_pv"
+        }, 
+        "/left/leg/foot/create/connect": {
+            "instance": "/leg/foot/create/connect"
         }, 
         "/left/leg/limb/create/ik/offset/zero_control": {
             "instance": "/leg/limb/create/ik/offset/zero_control"
@@ -3194,6 +3202,9 @@
                     "value": "'leg_ik_mpivot_${side}_grp'"
                 }
             }
+        }, 
+        "/leg/foot/create/connect": {
+            "instance": "/foot/create/connect"
         }, 
         "/leg/limb": {
             "instance": "/arm/limb", 
@@ -3297,6 +3308,7 @@
             "enabled": true
         }, 
         "/leg/limb/create/ik/offset": {
+            "instance": "/arm/limb/create/ik/offset", 
             "child_order": [
                 "zero_control"
             ], 
@@ -3314,7 +3326,7 @@
                 "ik_ankle_control = ik_control_list[1]", 
                 "", 
                 "", 
-                "offset_joint = \"{}_driver\".format(fk_control_list[-2])", 
+                "offset_joint = \"{}_grp\".format(fk_control_list[-2])", 
                 "fk_offset_joint = \"{}_offset\".format(ik_control_list[1])", 
                 "mc.setAttr(\"{}.r\".format(ik_ankle_control), 0,0,0)", 
                 "fk_ankle_matrix=mc.xform(fk_ankle_control,q=True, ws=True, matrix=True)", 
@@ -3381,7 +3393,7 @@
                 }, 
                 "target_list": {
                     "type": "list", 
-                    "value": "['pelvis_${side}', 'ankle_fk_${side}_driver_pv']"
+                    "value": "['pelvis_${side}', 'ankle_fk_${side}_grp_pv']"
                 }
             }
         }, 
@@ -3767,7 +3779,7 @@
                 "if mc.objExists(twist_joint):", 
                 "    # make sure we create a node for the pv foot space. We need to make a twist joint ", 
                 "    # that follows the ik control", 
-                "    offset_joint = \"{}_driver\".format(fk_control_list[-2])", 
+                "    offset_joint = \"{}_grp\".format(fk_control_list[-2])", 
                 "    ", 
                 "    if mc.objExists(offset_joint):", 
                 "        # create the pvSpaceNode and make sure it's in the correct space", 
@@ -3986,7 +3998,7 @@
                 "# ik control to drive the end joint", 
                 "# get the fk joint list", 
                 "mc.select(clear=True)", 
-                "end_offset_driver = mc.createNode('transform', name=\"{}_driver\".format(fk_control_list[-2]))", 
+                "end_offset_driver = mc.createNode('transform', name=\"{}_grp\".format(fk_control_list[-2]))", 
                 "end_offset_offset = mc.createNode('transform', name=\"{}_offset\".format(fk_control_list[-2]))", 
                 "mc.setAttr('{}.ro'.format(end_offset_driver), mc.getAttr(\"{}.ro\".format(fk_joint_list[-1])))", 
                 "# get the aim vector we will be using to set the ik control default rotation", 
@@ -4294,7 +4306,7 @@
                 "# this will connect the param stretch  top and bottom to the fk controls", 
                 "mc.connectAttr(\"{}.stretchTop\".format(param_node), \"{}.s{}\".format(fk_control_list[0], aim_attr.strip(\"-\")), f=True)", 
                 "mc.connectAttr(\"{}.stretchBottom\".format(param_node), \"{}.s{}\".format(fk_control_list[1], aim_attr.strip(\"-\")), f=True)", 
-                "mc.parent(stretch_target_joint_list[-1], \"{}_driver\".format(fk_control_list[-2]))", 
+                "mc.parent(stretch_target_joint_list[-1], \"{}_grp\".format(fk_control_list[-2]))", 
                 "", 
                 "STAGE.stretch_target_joint_list = stretch_target_joint_list", 
                 ""

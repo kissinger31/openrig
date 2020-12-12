@@ -1,7 +1,7 @@
 {
     "type": "PSDData", 
-    "user": "Matt", 
-    "time": "2020-12-05 15:17:04", 
+    "user": "Walter Yoder", 
+    "time": "2020-12-11 22:41:07", 
     "data": {
         "wristSwing_l_driver_poseInterpolatorShape": {
             "dagPath": "|biped|trs_master|trs_shot|trs_aux|rig|psd_grp|wristSwing_l_driver_poseInterpolator|wristSwing_l_driver_poseInterpolatorShape", 
@@ -6042,7 +6042,7 @@
                     "controllers": [
                         "head.rotate"
                     ], 
-                    "driverTwistAxis": 1, 
+                    "driverTwistAxis": 0, 
                     "driverEulerTwist": false
                 }
             }, 
@@ -6093,7 +6093,7 @@
                             "type": 8, 
                             "value": [
                                 [
-                                    -1.5707964, 
+                                    -1.5707961732043343, 
                                     0.0, 
                                     0.0
                                 ]
@@ -6116,10 +6116,10 @@
                     }, 
                     "poseRotation": {
                         "head_poseInterpolatorShape.pose[1].poseRotation[0]": [
-                            -0.7071067811865475, 
                             0.0, 
+                            0.7071067553046345, 
                             0.0, 
-                            0.7071067811865476
+                            0.7071068070684596
                         ]
                     }, 
                     "driver_attr": "head_poseInterpolatorShape.output[1]", 
@@ -6134,7 +6134,7 @@
                             "type": 8, 
                             "value": [
                                 [
-                                    0.69813168, 
+                                    0.6981315792026597, 
                                     0.0, 
                                     0.0
                                 ]
@@ -6157,10 +6157,10 @@
                     }, 
                     "poseRotation": {
                         "head_poseInterpolatorShape.pose[2].poseRotation[0]": [
-                            0.3420201433256687, 
                             0.0, 
+                            -0.3420201335539313, 
                             0.0, 
-                            0.9396926207859084
+                            0.9396926243425299
                         ]
                     }, 
                     "driver_attr": "head_poseInterpolatorShape.output[2]", 
@@ -6177,7 +6177,7 @@
                                 [
                                     0.0, 
                                     0.0, 
-                                    -0.87266463
+                                    -0.8726645040020393
                                 ]
                             ]
                         }
@@ -6200,8 +6200,8 @@
                         "head_poseInterpolatorShape.pose[3].poseRotation[0]": [
                             0.0, 
                             0.0, 
-                            -0.4226182617406995, 
-                            0.9063077870366499
+                            -0.42261826355459975, 
+                            0.9063077861908143
                         ]
                     }, 
                     "driver_attr": "head_poseInterpolatorShape.output[3]", 
@@ -6218,7 +6218,7 @@
                                 [
                                     0.0, 
                                     0.0, 
-                                    0.87266463
+                                    0.8726645040020393
                                 ]
                             ]
                         }
@@ -6241,8 +6241,8 @@
                         "head_poseInterpolatorShape.pose[4].poseRotation[0]": [
                             0.0, 
                             0.0, 
-                            0.4226182617406995, 
-                            0.9063077870366499
+                            0.42261826355459975, 
+                            0.9063077861908143
                         ]
                     }, 
                     "driver_attr": "head_poseInterpolatorShape.output[4]", 
@@ -6264,7 +6264,7 @@
             "enableTranslation": false, 
             "drivers": {
                 "head_twist_poseInterpolatorShape.driver[0]": {
-                    "driver_name": "skull_bind", 
+                    "driver_name": "head_driver", 
                     "controllers": [
                         "head.rotate"
                     ], 
@@ -6296,8 +6296,8 @@
                     "poseTranslationFalloff": 0.0, 
                     "poseTranslation": {
                         "head_twist_poseInterpolatorShape.pose[0].poseTranslation[0]": [
-                            2.0757, 
-                            -0.0765, 
+                            0.0, 
+                            0.0, 
                             0.0
                         ]
                     }, 
@@ -6320,7 +6320,7 @@
                             "value": [
                                 [
                                     0.0, 
-                                    0.9599309414025093, 
+                                    0.9599308028059335, 
                                     0.0
                                 ]
                             ]
@@ -6335,17 +6335,17 @@
                     "poseTranslationFalloff": 0.0, 
                     "poseTranslation": {
                         "head_twist_poseInterpolatorShape.pose[1].poseTranslation[0]": [
-                            2.0749791606528896, 
-                            -0.07623887697523977, 
-                            0.0016506183655959567
+                            0.0, 
+                            0.0, 
+                            0.0
                         ]
                     }, 
                     "poseRotation": {
                         "head_twist_poseInterpolatorShape.pose[1].poseRotation[0]": [
-                            -0.0016568285345067966, 
-                            0.005394252762406069, 
-                            -0.0026894119498747536, 
-                            0.999980461818983
+                            0.4617485479535314, 
+                            0.0, 
+                            0.0, 
+                            0.8870108671616179
                         ]
                     }, 
                     "driver_attr": "head_twist_poseInterpolatorShape.output[1]", 
@@ -6361,7 +6361,7 @@
                             "value": [
                                 [
                                     0.0, 
-                                    -0.9599309414025093, 
+                                    -0.9599308028059335, 
                                     0.0
                                 ]
                             ]
@@ -6376,17 +6376,17 @@
                     "poseTranslationFalloff": 0.0, 
                     "poseTranslation": {
                         "head_twist_poseInterpolatorShape.pose[2].poseTranslation[0]": [
-                            2.074979160652918, 
-                            -0.07623887697524155, 
-                            -0.0016506183655955802
+                            0.0, 
+                            0.0, 
+                            0.0
                         ]
                     }, 
                     "poseRotation": {
                         "head_twist_poseInterpolatorShape.pose[2].poseRotation[0]": [
-                            0.0016568285345069831, 
-                            -0.005394252762405574, 
-                            -0.002689411949874976, 
-                            0.999980461818983
+                            -0.4617485479535314, 
+                            0.0, 
+                            0.0, 
+                            0.8870108671616179
                         ]
                     }, 
                     "driver_attr": "head_twist_poseInterpolatorShape.output[2]", 

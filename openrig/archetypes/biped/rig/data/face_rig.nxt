@@ -411,7 +411,8 @@
                     "value": "['head_wire', 'head_low_wire']"
                 }, 
                 "wire_list": {
-                    "value": "mc.ls(mc.listHistory(${body_geo}), type=\"wire\")"
+                    "type": "raw", 
+                    "value": "mc.ls(list(set(mc.listHistory(${body_geo}) + mc.listHistory(${face_geo}))), type=\"wire\")"
                 }
             }, 
             "code": [
@@ -524,7 +525,7 @@
                 "for wire in ${wire_list}:", 
                 "    mc.setAttr(\"{}.freezeGeometry\".format(wire), 0)", 
                 "    ", 
-                "psdNodes = mc.ls('skin_psd', r=1)", 
+                "psdNodes = mc.ls('*_blendshape', r=1)", 
                 "psdValues = {}", 
                 "for psd in psdNodes:", 
                 "    psdValues[psd] = mc.getAttr(psd+'.envelope')", 
