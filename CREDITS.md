@@ -9,7 +9,7 @@ Studios
 ------------
 * [sunrise productions](http://www.sunriseproductions.tv)
 * [squarebit studios](http://www.squarebitstudios.com)
-* [origamiDollar](http://www.http://origamidollar.com)
+* [origamiDollar](http://www.origamidollar.com)
 
 Contributors
 ------------
