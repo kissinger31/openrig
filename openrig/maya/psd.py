@@ -557,6 +557,7 @@ def getDeformer(interp):
     indexes = getPoseIndexes(interp)
     for pose, index in zip(poses, indexes):
         con = mc.listConnections(interp+'.output[{index}]'.format(index=index))
+        print con
         if con:
             if mc.nodeType(con[0]) == 'blendShape':
                 return(con[0])
@@ -916,11 +917,13 @@ def duplicatePoseShape(interp, pose):
 
     # Verify there is a shape to duplicate
     bs = getDeformer(interp)
+    print 'blendshape ---> ', bs
     if not bs:
         return
 
     # Get the connected geo
     geo = mc.deformer(bs, q=1, g=1)
+    print 'geometry ---> ', geo
     if not geo:
         return
     # Only deal with one driven geo for now
@@ -929,6 +932,7 @@ def duplicatePoseShape(interp, pose):
 
     # Get the psd group
     group = getGroup(interp)
+    print group,interp
     if not group:
         return
 

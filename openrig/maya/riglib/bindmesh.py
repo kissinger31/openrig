@@ -4,7 +4,7 @@ This module will handle everything to do with how bindmesh's are handled.
 import maya.cmds as mc
 import maya.api.OpenMaya as om2
 
-def create(name, positionList, cv_names=[]):
+def create(name, positionList, cv_names=[], size=.1):
     '''
     This will create a bindmesh based on the give N amount of positions. 
     .. note::
@@ -38,9 +38,9 @@ def create(name, positionList, cv_names=[]):
     for i, position in enumerate(positionList):
         geo,createNode = mc.polyPlane()
         for attr in ["subdivisionsHeight","subdivisionsWidth"]:
-            mc.setAttr("{0}.{1}".format(createNode,attr),1)
+            mc.setAttr("{0}.{1}".format(createNode, attr), 1)
         for attr in ["height","width"]:
-            mc.setAttr("{0}.{1}".format(createNode,attr),1.0)
+            mc.setAttr("{0}.{1}".format(createNode, attr), size)
         mc.xform(geo,ws=True,t=position)
         geoList.append(geo)
         pointList.append(om2.MPoint(*position))
@@ -48,7 +48,7 @@ def create(name, positionList, cv_names=[]):
         mc.select(cl=True)
 
     # combine the plane's into one piece of geometry.
-    newGeo = mc.polyUnite(geoList,ch=False,n="{0}_bindmesh".format(name))[0]
+    newGeo = mc.polyUnite(geoList, ch=False, n="{0}_bindmesh".format(name))[0]
     newGeoFaces = mc.ls("{0}.f[*]".format(newGeo))
     mc.polyAutoProjection(newGeoFaces,ch=False,lm=False,pb=False,ibd=True,cm=False,l=2,sc=1,o=1,p=6,ps=0.2,ws=0)
     mc.select(newGeo,r=True)

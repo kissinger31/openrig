@@ -49,8 +49,8 @@
                 20.0
             ],
             "/blink": [
-                -2600.0,
-                20.0
+                -3100.0,
+                240.0
             ],
             "/blink/blink_rig_setup/upper/socket": [
                 0.0,
@@ -1020,9 +1020,10 @@
             "/arm/limb/world_orient": false,
             "/auto_parent": true,
             "/auto_parent/duplicate_chain": false,
-            "/blink": true,
-            "/blink/blink_collision": false,
-            "/blink/blink_rig_setup": false,
+            "/blink": false,
+            "/blink/blink_collision": true,
+            "/blink/blink_collision/lid_squash": true,
+            "/blink/blink_rig_setup": true,
             "/blink/blink_rig_setup/lid_wire": false,
             "/blink/blink_rig_setup/lower": true,
             "/blink/blink_rig_setup/upper": true,
@@ -1064,6 +1065,7 @@
             "/blink/create/controls/upper_lid/create": false,
             "/blink/create/controls/upper_lid/driver": false,
             "/blink/create/controls/upper_lid/selection_handle": false,
+            "/blink/eye_drag/eye_drag_upper": false,
             "/blink/scale_compensate": false,
             "/brow": true,
             "/brow/brow_inner": true,

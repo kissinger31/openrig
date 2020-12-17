@@ -640,7 +640,7 @@
             }, 
             "code": [
                 "save = ${save}", 
-                "path = '${file::build/${variant}}'", 
+                "path = '${file::/${element}/cloth/build/${variant}}'", 
                 "node = '${garment}_'+${rig_group}+'Shape'", 
                 "file = '${garment}'+'_preset'", 
                 "", 
@@ -694,7 +694,7 @@
             }, 
             "code": [
                 "save = ${save}", 
-                "path = '${file::build/${variant}}'", 
+                "path = '${file::/${element}/cloth/build/${variant}}'", 
                 "node = '${collider}Shape'", 
                 "file = '${geo}'+'_${variant}'", 
                 "", 
@@ -748,7 +748,7 @@
             }, 
             "code": [
                 "save = ${save}", 
-                "path = '${file::build/${variant}}'", 
+                "path = '${file::/${element}/cloth/build/${variant}}'", 
                 "node = ${solver}+'Shape'", 
                 "file = ${solver}+'_Node'", 
                 "", 
