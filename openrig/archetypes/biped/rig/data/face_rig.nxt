@@ -753,8 +753,16 @@
                 "        mc.setDrivenKeyframe(\"{}_def_auto.tz\".format(${jaw}), ",
                 "                        cd=\"{}.rx\".format(${jaw}), v=-0, dv=0)",
                 "        mc.setInfinity('{}_def_auto'.format(${jaw}), at='.tz', pri= 'linear', poi= 'linear')",
-                "",
+                "", 
                 "                        "
+                "    if mc.objExists('{}_def_auto'.format(${jaw})):", 
+                "        # create the setDriven keys for the jaw driver (for the purpose of jaw PSD combos)", 
+                "        mc.setDrivenKeyframe(\"{}_driver.tx\".format(${jaw}), ", 
+                "                        cd=\"{}.rx\".format(${jaw}), v=0.0, dv=0.0, ott='clamped', itt='clamped')", 
+                "        mc.setDrivenKeyframe(\"{}_driver.tx\".format(${jaw}), ", 
+                "                        cd=\"{}.rx\".format(${jaw}), v=-1.0, dv=30.0, ott='clamped', itt='clamped')", 
+                "        mc.setInfinity('{}_driver'.format(${jaw}), at='.tx', pri= 'linear', poi= 'linear')", 
+                "     "
             ]
         },
         "/center/face_lower/jaw/teeth_lower": {
