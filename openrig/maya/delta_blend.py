@@ -47,10 +47,12 @@ def delta_blend(geo):
         mc.setAttr(bodyGeoDeformer + '.envelope', 1)
 
     # Create a "noDelta" target
-    mc.setAttr('skin_psd.envelope', 0)
+    body_geo_history = mc.listHistory('body_geo')
+    body_geo_blendshape = mc.ls(history, type='blendShape')[0]
+    mc.setAttr(body_geo_blendshape + '.envelope', 0)
     noDelta = mc.duplicate('body_geo', name=PSDtarget + '_noDelta_target')[0]
     mc.parent(noDelta, targetGroup)
-    mc.setAttr('skin_psd.envelope', 1)
+    mc.setAttr(body_geo_blendshape + '.envelope', 1)
 
     # Create an "inheritDelta" target
     psd.disablePose(interp, PSDtarget)
